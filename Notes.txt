@@ -1,0 +1,30 @@
+Test 1: Wrong steps, no attached consents : Produces Error @ History, RX, Medical Chart
+	Conclusion: Musst not be able to transfer manualy to Clinics without proper consultation process..
+
+Test 2: Correct steps with ff cases
+	a) Correct step but manual transfer: Doesn't produce error. 
+	b) Correct stepts and auto transfer: Doesn't produce error. 
+
+
+
+
+NOTES:
+1) Current consultation: Sick Leave error, at first it gets all sick leave history
+			 if refreshed, gets the correct sick leave. this should be fix.
+2) Consultation history: Doesn't view Sick leaves.
+
+
+OVER CONCLUSION:
+Sytem can still be use, but some minor modification needs to be done. ff are
+	- Manual transfer of patient to consultation clinic must not be allowed IF no attached consent
+	- Fetching of sick leave for current consultaiton
+	- Fetching of sick leave for Consultation history..
+
+Username: 135177010
+Password: hhmh.2023
+
+encoder1
+'
+
+2
+22
