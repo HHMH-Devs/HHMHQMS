@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsTicketNo" targetNamespace="http://tempuri.org/dsTicketNo.xsd" xmlns:mstns="http://tempuri.org/dsTicketNo.xsd" xmlns="http://tempuri.org/dsTicketNo.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsTicketNo" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsTicketNo" msprop:Generator_UserDSName="dsTicketNo">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dtTicketNo" msprop:Generator_TableClassName="dtTicketNoDataTable" msprop:Generator_TableVarName="tabledtTicketNo" msprop:Generator_RowChangedName="dtTicketNoRowChanged" msprop:Generator_TablePropName="dtTicketNo" msprop:Generator_RowDeletingName="dtTicketNoRowDeleting" msprop:Generator_RowChangingName="dtTicketNoRowChanging" msprop:Generator_RowEvHandlerName="dtTicketNoRowChangeEventHandler" msprop:Generator_RowDeletedName="dtTicketNoRowDeleted" msprop:Generator_RowClassName="dtTicketNoRow" msprop:Generator_UserTableName="dtTicketNo" msprop:Generator_RowEvArgName="dtTicketNoRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ticketNo" msprop:Generator_ColumnVarNameInTable="columnticketNo" msprop:Generator_ColumnPropNameInRow="ticketNo" msprop:Generator_ColumnPropNameInTable="ticketNoColumn" msprop:Generator_UserColumnName="ticketNo" type="xs:string" minOccurs="0" />
+              <xs:element name="paymentMethod" msprop:Generator_ColumnVarNameInTable="columnpaymentMethod" msprop:Generator_ColumnPropNameInRow="paymentMethod" msprop:Generator_ColumnPropNameInTable="paymentMethodColumn" msprop:Generator_UserColumnName="paymentMethod" type="xs:string" minOccurs="0" />
+              <xs:element name="transactionMethod" msprop:Generator_ColumnVarNameInTable="columntransactionMethod" msprop:Generator_ColumnPropNameInRow="transactionMethod" msprop:Generator_ColumnPropNameInTable="transactionMethodColumn" msprop:Generator_UserColumnName="transactionMethod" type="xs:string" minOccurs="0" />
+              <xs:element name="patName" msprop:Generator_ColumnVarNameInTable="columnpatName" msprop:Generator_ColumnPropNameInRow="patName" msprop:Generator_ColumnPropNameInTable="patNameColumn" msprop:Generator_UserColumnName="patName" type="xs:string" minOccurs="0" />
+              <xs:element name="counter" msprop:Generator_ColumnVarNameInTable="columncounter" msprop:Generator_ColumnPropNameInRow="counter" msprop:Generator_ColumnPropNameInTable="counterColumn" msprop:Generator_UserColumnName="counter" type="xs:string" minOccurs="0" />
+              <xs:element name="note" msprop:Generator_ColumnVarNameInTable="columnnote" msprop:Generator_ColumnPropNameInRow="note" msprop:Generator_ColumnPropNameInTable="noteColumn" msprop:Generator_UserColumnName="note" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

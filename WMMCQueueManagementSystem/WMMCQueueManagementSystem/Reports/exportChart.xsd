@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="exportChart" targetNamespace="http://tempuri.org/exportChart.xsd" xmlns:mstns="http://tempuri.org/exportChart.xsd" xmlns="http://tempuri.org/exportChart.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="exportChart" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="exportChart" msprop:Generator_UserDSName="exportChart">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="PCCSummary" msprop:Generator_TableClassName="PCCSummaryDataTable" msprop:Generator_TableVarName="tablePCCSummary" msprop:Generator_RowChangedName="PCCSummaryRowChanged" msprop:Generator_TablePropName="PCCSummary" msprop:Generator_RowDeletingName="PCCSummaryRowDeleting" msprop:Generator_RowChangingName="PCCSummaryRowChanging" msprop:Generator_RowEvHandlerName="PCCSummaryRowChangeEventHandler" msprop:Generator_RowDeletedName="PCCSummaryRowDeleted" msprop:Generator_RowClassName="PCCSummaryRow" msprop:Generator_UserTableName="PCCSummary" msprop:Generator_RowEvArgName="PCCSummaryRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SectionName" msprop:Generator_ColumnVarNameInTable="columnSectionName" msprop:Generator_ColumnPropNameInRow="SectionName" msprop:Generator_ColumnPropNameInTable="SectionNameColumn" msprop:Generator_UserColumnName="SectionName" type="xs:string" minOccurs="0" />
+              <xs:element name="TotalPatient" msprop:Generator_ColumnVarNameInTable="columnTotalPatient" msprop:Generator_ColumnPropNameInRow="TotalPatient" msprop:Generator_ColumnPropNameInTable="TotalPatientColumn" msprop:Generator_UserColumnName="TotalPatient" type="xs:long" default="0" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PCCCLinic" msprop:Generator_TableClassName="PCCCLinicDataTable" msprop:Generator_TableVarName="tablePCCCLinic" msprop:Generator_TablePropName="PCCCLinic" msprop:Generator_RowDeletingName="PCCCLinicRowDeleting" msprop:Generator_RowChangingName="PCCCLinicRowChanging" msprop:Generator_RowEvHandlerName="PCCCLinicRowChangeEventHandler" msprop:Generator_RowDeletedName="PCCCLinicRowDeleted" msprop:Generator_UserTableName="PCCCLinic" msprop:Generator_RowChangedName="PCCCLinicRowChanged" msprop:Generator_RowEvArgName="PCCCLinicRowChangeEvent" msprop:Generator_RowClassName="PCCCLinicRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SectionName" msprop:Generator_ColumnVarNameInTable="columnSectionName" msprop:Generator_ColumnPropNameInRow="SectionName" msprop:Generator_ColumnPropNameInTable="SectionNameColumn" msprop:Generator_UserColumnName="SectionName" type="xs:string" minOccurs="0" />
+              <xs:element name="TotalPatient" msprop:Generator_ColumnVarNameInTable="columnTotalPatient" msprop:Generator_ColumnPropNameInRow="TotalPatient" msprop:Generator_ColumnPropNameInTable="TotalPatientColumn" msprop:Generator_UserColumnName="TotalPatient" type="xs:long" default="0" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PCCHybridClinic" msprop:Generator_TableClassName="PCCHybridClinicDataTable" msprop:Generator_TableVarName="tablePCCHybridClinic" msprop:Generator_TablePropName="PCCHybridClinic" msprop:Generator_RowDeletingName="PCCHybridClinicRowDeleting" msprop:Generator_RowChangingName="PCCHybridClinicRowChanging" msprop:Generator_RowEvHandlerName="PCCHybridClinicRowChangeEventHandler" msprop:Generator_RowDeletedName="PCCHybridClinicRowDeleted" msprop:Generator_UserTableName="PCCHybridClinic" msprop:Generator_RowChangedName="PCCHybridClinicRowChanged" msprop:Generator_RowEvArgName="PCCHybridClinicRowChangeEvent" msprop:Generator_RowClassName="PCCHybridClinicRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SectionName" msprop:Generator_ColumnVarNameInTable="columnSectionName" msprop:Generator_ColumnPropNameInRow="SectionName" msprop:Generator_ColumnPropNameInTable="SectionNameColumn" msprop:Generator_UserColumnName="SectionName" type="xs:string" minOccurs="0" />
+              <xs:element name="TotalPatient" msprop:Generator_ColumnVarNameInTable="columnTotalPatient" msprop:Generator_ColumnPropNameInRow="TotalPatient" msprop:Generator_ColumnPropNameInTable="TotalPatientColumn" msprop:Generator_UserColumnName="TotalPatient" type="xs:long" default="0" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="MABClinic" msprop:Generator_TableClassName="MABClinicDataTable" msprop:Generator_TableVarName="tableMABClinic" msprop:Generator_TablePropName="MABClinic" msprop:Generator_RowDeletingName="MABClinicRowDeleting" msprop:Generator_RowChangingName="MABClinicRowChanging" msprop:Generator_RowEvHandlerName="MABClinicRowChangeEventHandler" msprop:Generator_RowDeletedName="MABClinicRowDeleted" msprop:Generator_UserTableName="MABClinic" msprop:Generator_RowChangedName="MABClinicRowChanged" msprop:Generator_RowEvArgName="MABClinicRowChangeEvent" msprop:Generator_RowClassName="MABClinicRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SectionName" msprop:Generator_ColumnVarNameInTable="columnSectionName" msprop:Generator_ColumnPropNameInRow="SectionName" msprop:Generator_ColumnPropNameInTable="SectionNameColumn" msprop:Generator_UserColumnName="SectionName" type="xs:string" minOccurs="0" />
+              <xs:element name="TotalPatient" msprop:Generator_ColumnVarNameInTable="columnTotalPatient" msprop:Generator_ColumnPropNameInRow="TotalPatient" msprop:Generator_ColumnPropNameInTable="TotalPatientColumn" msprop:Generator_UserColumnName="TotalPatient" type="xs:long" default="0" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="MABHybridClinic" msprop:Generator_TableClassName="MABHybridClinicDataTable" msprop:Generator_TableVarName="tableMABHybridClinic" msprop:Generator_TablePropName="MABHybridClinic" msprop:Generator_RowDeletingName="MABHybridClinicRowDeleting" msprop:Generator_RowChangingName="MABHybridClinicRowChanging" msprop:Generator_RowEvHandlerName="MABHybridClinicRowChangeEventHandler" msprop:Generator_RowDeletedName="MABHybridClinicRowDeleted" msprop:Generator_UserTableName="MABHybridClinic" msprop:Generator_RowChangedName="MABHybridClinicRowChanged" msprop:Generator_RowEvArgName="MABHybridClinicRowChangeEvent" msprop:Generator_RowClassName="MABHybridClinicRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SectionName" msprop:Generator_ColumnVarNameInTable="columnSectionName" msprop:Generator_ColumnPropNameInRow="SectionName" msprop:Generator_ColumnPropNameInTable="SectionNameColumn" msprop:Generator_UserColumnName="SectionName" type="xs:string" minOccurs="0" />
+              <xs:element name="TotalPatient" msprop:Generator_ColumnVarNameInTable="columnTotalPatient" msprop:Generator_ColumnPropNameInRow="TotalPatient" msprop:Generator_ColumnPropNameInTable="TotalPatientColumn" msprop:Generator_UserColumnName="TotalPatient" type="xs:long" default="0" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

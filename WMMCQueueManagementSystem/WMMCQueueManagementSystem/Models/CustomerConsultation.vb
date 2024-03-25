@@ -1,0 +1,76 @@
+﻿Public Class CustomerConsultation
+    Public Consultation_ID As Long
+    Public Weight As Double
+    Public WeightUnit As String
+    Public Height As Double
+    Public HeightUnit As String
+    Public Systolic As Long
+    Public Diastolic As Long
+    Public Temperature As Double
+    Public PulseRate As Double
+    Public RespiratoryRate As Double
+    Public Oxygen As Double
+    Public Allergies As String
+    Public SignAndSymptoms As String
+    Public Pain As String
+    Public PainLocation As String
+    Public Hypertension As Boolean
+    Public Diabetes As Boolean
+    Public Asthma As Boolean
+    Public HeartDisease As Boolean
+    Public Arthitis As Boolean
+    Public Cancer As Boolean
+    Public Tuberculosis As Boolean
+    Public Stroke As Boolean
+    Public COPD As Boolean
+    Public TransferredReferred As Boolean
+    Public RefusedAdmission As Boolean
+    Public ERDeath As Boolean
+    Public Discharged As Boolean
+    Public ForFollowUp As Boolean
+    Public Absconed As Boolean
+    Public HAMADAMA As Boolean
+    Public DOA As Boolean
+    Public Admitted As Boolean
+    Public RoomAdmitted As String
+    Public WardAdmitted As String
+    Public AdmittedProgressNote As String
+    Public AdmittedDoctorsOrder As String
+    Public AdmittedRemarks As String
+    Public othermedicalhistory As String
+    Public MedicineTaken As String
+    Public ChiefComplaint As String
+    Public IllnessHistory As String
+    Public Findings As String
+    Public Diagnosis As String
+    Public DoctorsOrder As String
+    Public ConsultType As Integer
+    Public PccConsultation As Boolean
+    Public tempQueue As Boolean
+    Public OPDConsent1 As String
+    Public OPDConsent2 As String
+    Public isFollowUpConsultation As Boolean
+    Public isEConsulta As Boolean
+    Public isHealee As Boolean
+    Public DateCreated As Date
+    Public DateModified As Nullable(Of Date)
+    Public TriageNurseOnDuty As String
+    Public FK_emdPatients As Long
+    Public ServerTransaction_ID As Long
+    Public Info_ID As Long
+    Public ServedCustomer_ID As Long
+    Public AssignConsultationCounter_ID As Long
+    Public ReferringConsulant_ID As Long
+    Public ReferringConsultant As ReferringConsultant
+    Public ServerAssignCounter As ServerAssignCounter
+    Public ServerTransaction As ServerTransaction
+    Public ServedCustomer As ServedCustomer
+    Public Diagnostics As Diagnostics
+    Public Prescriptions As List(Of Prescription)
+    Public FollowUpConsultation As List(Of FollowUpConsultation)
+    Public ERTraigeForm As ERTraigeForm
+    Public ERDoctorsOrder As ERDoctorsOrder
+    Public NurseNotes As NurseNote
+    Public ProcedureConsent As ProcedureConsent
+    Public ProgressNotes As List(Of ProgressNotes)
+End Class

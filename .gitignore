@@ -396,3 +396,9 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+/WMMCQueueManagementSystem/WMMCQueueManagementSystem/Resources/nCov1.mp4
+/WMMCQueueManagementSystem/WMMCQueueManagementSystem/Resources/nCoV2.mp4
+/WMMCQueueManagementSystem/WMMCQueueManagementSystem/Resources/wmmc.mp4
+/WMMCQueueManagementSystem/WMMCQueueManagementSystem/Resources/wmmc2.mp4
+/WMMCQueueManagementSystem/WMMCQueueManagementSystem/Resources/wmmc3.mp4
+/WMMCQueueManagementSystem/WMMCQueueManagementSystem/Resources/wmmc4.mp4

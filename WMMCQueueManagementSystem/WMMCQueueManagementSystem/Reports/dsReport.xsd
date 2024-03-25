@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsReport" targetNamespace="http://tempuri.org/dsReport.xsd" xmlns:mstns="http://tempuri.org/dsReport.xsd" xmlns="http://tempuri.org/dsReport.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsReport" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsReport" msprop:Generator_UserDSName="dsReport">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dtReport" msprop:Generator_TableClassName="dtReportDataTable" msprop:Generator_TableVarName="tabledtReport" msprop:Generator_RowChangedName="dtReportRowChanged" msprop:Generator_TablePropName="dtReport" msprop:Generator_RowDeletingName="dtReportRowDeleting" msprop:Generator_RowChangingName="dtReportRowChanging" msprop:Generator_RowEvHandlerName="dtReportRowChangeEventHandler" msprop:Generator_RowDeletedName="dtReportRowDeleted" msprop:Generator_RowClassName="dtReportRow" msprop:Generator_UserTableName="dtReport" msprop:Generator_RowEvArgName="dtReportRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="counterName" msprop:Generator_ColumnVarNameInTable="columncounterName" msprop:Generator_ColumnPropNameInRow="counterName" msprop:Generator_ColumnPropNameInTable="counterNameColumn" msprop:Generator_UserColumnName="counterName" type="xs:string" minOccurs="0" />
+              <xs:element name="queuedNumbers" msprop:Generator_ColumnVarNameInTable="columnqueuedNumbers" msprop:Generator_ColumnPropNameInRow="queuedNumbers" msprop:Generator_ColumnPropNameInTable="queuedNumbersColumn" msprop:Generator_UserColumnName="queuedNumbers" type="xs:string" minOccurs="0" />
+              <xs:element name="servedNumbers" msprop:Generator_ColumnVarNameInTable="columnservedNumbers" msprop:Generator_ColumnPropNameInRow="servedNumbers" msprop:Generator_ColumnPropNameInTable="servedNumbersColumn" msprop:Generator_UserColumnName="servedNumbers" type="xs:string" minOccurs="0" />
+              <xs:element name="unservedNumbers" msprop:Generator_ColumnVarNameInTable="columnunservedNumbers" msprop:Generator_ColumnPropNameInRow="unservedNumbers" msprop:Generator_ColumnPropNameInTable="unservedNumbersColumn" msprop:Generator_UserColumnName="unservedNumbers" type="xs:string" minOccurs="0" />
+              <xs:element name="servedPercentage" msprop:Generator_ColumnVarNameInTable="columnservedPercentage" msprop:Generator_ColumnPropNameInRow="servedPercentage" msprop:Generator_ColumnPropNameInTable="servedPercentageColumn" msprop:Generator_UserColumnName="servedPercentage" type="xs:string" minOccurs="0" />
+              <xs:element name="unservedPercentage" msprop:Generator_ColumnVarNameInTable="columnunservedPercentage" msprop:Generator_ColumnPropNameInRow="unservedPercentage" msprop:Generator_ColumnPropNameInTable="unservedPercentageColumn" msprop:Generator_UserColumnName="unservedPercentage" type="xs:string" minOccurs="0" />
+              <xs:element name="avgTAT" msprop:Generator_ColumnVarNameInTable="columnavgTAT" msprop:Generator_ColumnPropNameInRow="avgTAT" msprop:Generator_ColumnPropNameInTable="avgTATColumn" msprop:Generator_UserColumnName="avgTAT" type="xs:string" minOccurs="0" />
+              <xs:element name="totalCounters" msprop:Generator_ColumnVarNameInTable="columntotalCounters" msprop:Generator_ColumnPropNameInRow="totalCounters" msprop:Generator_ColumnPropNameInTable="totalCountersColumn" msprop:Generator_UserColumnName="totalCounters" type="xs:string" minOccurs="0" />
+              <xs:element name="totalQueued" msprop:Generator_ColumnVarNameInTable="columntotalQueued" msprop:Generator_ColumnPropNameInRow="totalQueued" msprop:Generator_ColumnPropNameInTable="totalQueuedColumn" msprop:Generator_UserColumnName="totalQueued" type="xs:string" minOccurs="0" />
+              <xs:element name="totalServed" msprop:Generator_ColumnVarNameInTable="columntotalServed" msprop:Generator_ColumnPropNameInRow="totalServed" msprop:Generator_ColumnPropNameInTable="totalServedColumn" msprop:Generator_UserColumnName="totalServed" type="xs:string" minOccurs="0" />
+              <xs:element name="totalUnserved" msprop:Generator_ColumnVarNameInTable="columntotalUnserved" msprop:Generator_ColumnPropNameInRow="totalUnserved" msprop:Generator_ColumnPropNameInTable="totalUnservedColumn" msprop:Generator_UserColumnName="totalUnserved" type="xs:string" minOccurs="0" />
+              <xs:element name="fromDate" msprop:Generator_ColumnVarNameInTable="columnfromDate" msprop:Generator_ColumnPropNameInRow="fromDate" msprop:Generator_ColumnPropNameInTable="fromDateColumn" msprop:Generator_UserColumnName="fromDate" type="xs:string" minOccurs="0" />
+              <xs:element name="toDate" msprop:Generator_ColumnVarNameInTable="columntoDate" msprop:Generator_ColumnPropNameInRow="toDate" msprop:Generator_ColumnPropNameInTable="toDateColumn" msprop:Generator_UserColumnName="toDate" type="xs:string" minOccurs="0" />
+              <xs:element name="waitTAT" msprop:Generator_ColumnVarNameInTable="columnwaitTAT" msprop:Generator_ColumnPropNameInRow="waitTAT" msprop:Generator_ColumnPropNameInTable="waitTATColumn" msprop:Generator_UserColumnName="waitTAT" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtDoctorCensus" msprop:Generator_TableClassName="dtDoctorCensusDataTable" msprop:Generator_TableVarName="tabledtDoctorCensus" msprop:Generator_TablePropName="dtDoctorCensus" msprop:Generator_RowDeletingName="dtDoctorCensusRowDeleting" msprop:Generator_RowChangingName="dtDoctorCensusRowChanging" msprop:Generator_RowEvHandlerName="dtDoctorCensusRowChangeEventHandler" msprop:Generator_RowDeletedName="dtDoctorCensusRowDeleted" msprop:Generator_UserTableName="dtDoctorCensus" msprop:Generator_RowChangedName="dtDoctorCensusRowChanged" msprop:Generator_RowEvArgName="dtDoctorCensusRowChangeEvent" msprop:Generator_RowClassName="dtDoctorCensusRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="clinic" msprop:Generator_ColumnVarNameInTable="columnclinic" msprop:Generator_ColumnPropNameInRow="clinic" msprop:Generator_ColumnPropNameInTable="clinicColumn" msprop:Generator_UserColumnName="clinic" type="xs:string" minOccurs="0" />
+              <xs:element name="floor" msprop:Generator_ColumnVarNameInTable="columnfloor" msprop:Generator_ColumnPropNameInRow="floor" msprop:Generator_ColumnPropNameInTable="floorColumn" msprop:Generator_UserColumnName="floor" type="xs:string" minOccurs="0" />
+              <xs:element name="queuedNumbers" msprop:Generator_ColumnVarNameInTable="columnqueuedNumbers" msprop:Generator_ColumnPropNameInRow="queuedNumbers" msprop:Generator_ColumnPropNameInTable="queuedNumbersColumn" msprop:Generator_UserColumnName="queuedNumbers" type="xs:string" minOccurs="0" />
+              <xs:element name="servedNumbers" msprop:Generator_ColumnVarNameInTable="columnservedNumbers" msprop:Generator_ColumnPropNameInRow="servedNumbers" msprop:Generator_ColumnPropNameInTable="servedNumbersColumn" msprop:Generator_UserColumnName="servedNumbers" type="xs:string" minOccurs="0" />
+              <xs:element name="unservedNumbers" msprop:Generator_ColumnVarNameInTable="columnunservedNumbers" msprop:Generator_ColumnPropNameInRow="unservedNumbers" msprop:Generator_ColumnPropNameInTable="unservedNumbersColumn" msprop:Generator_UserColumnName="unservedNumbers" type="xs:string" minOccurs="0" />
+              <xs:element name="servedPercentage" msprop:Generator_ColumnVarNameInTable="columnservedPercentage" msprop:Generator_ColumnPropNameInRow="servedPercentage" msprop:Generator_ColumnPropNameInTable="servedPercentageColumn" msprop:Generator_UserColumnName="servedPercentage" type="xs:string" minOccurs="0" />
+              <xs:element name="unservedPercentage" msprop:Generator_ColumnVarNameInTable="columnunservedPercentage" msprop:Generator_ColumnPropNameInRow="unservedPercentage" msprop:Generator_ColumnPropNameInTable="unservedPercentageColumn" msprop:Generator_UserColumnName="unservedPercentage" type="xs:string" minOccurs="0" />
+              <xs:element name="avgTAT" msprop:Generator_ColumnVarNameInTable="columnavgTAT" msprop:Generator_ColumnPropNameInRow="avgTAT" msprop:Generator_ColumnPropNameInTable="avgTATColumn" msprop:Generator_UserColumnName="avgTAT" type="xs:string" minOccurs="0" />
+              <xs:element name="totalCounters" msprop:Generator_ColumnVarNameInTable="columntotalCounters" msprop:Generator_ColumnPropNameInRow="totalCounters" msprop:Generator_ColumnPropNameInTable="totalCountersColumn" msprop:Generator_UserColumnName="totalCounters" type="xs:string" minOccurs="0" />
+              <xs:element name="totalQueued" msprop:Generator_ColumnVarNameInTable="columntotalQueued" msprop:Generator_ColumnPropNameInRow="totalQueued" msprop:Generator_ColumnPropNameInTable="totalQueuedColumn" msprop:Generator_UserColumnName="totalQueued" type="xs:string" minOccurs="0" />
+              <xs:element name="totalServed" msprop:Generator_ColumnVarNameInTable="columntotalServed" msprop:Generator_ColumnPropNameInRow="totalServed" msprop:Generator_ColumnPropNameInTable="totalServedColumn" msprop:Generator_UserColumnName="totalServed" type="xs:string" minOccurs="0" />
+              <xs:element name="totalUnserved" msprop:Generator_ColumnVarNameInTable="columntotalUnserved" msprop:Generator_ColumnPropNameInRow="totalUnserved" msprop:Generator_ColumnPropNameInTable="totalUnservedColumn" msprop:Generator_UserColumnName="totalUnserved" type="xs:string" minOccurs="0" />
+              <xs:element name="fromDate" msprop:Generator_ColumnVarNameInTable="columnfromDate" msprop:Generator_ColumnPropNameInRow="fromDate" msprop:Generator_ColumnPropNameInTable="fromDateColumn" msprop:Generator_UserColumnName="fromDate" type="xs:string" minOccurs="0" />
+              <xs:element name="toDate" msprop:Generator_ColumnVarNameInTable="columntoDate" msprop:Generator_ColumnPropNameInRow="toDate" msprop:Generator_ColumnPropNameInTable="toDateColumn" msprop:Generator_UserColumnName="toDate" type="xs:string" minOccurs="0" />
+              <xs:element name="physicianName" msprop:Generator_ColumnVarNameInTable="columnphysicianName" msprop:Generator_ColumnPropNameInRow="physicianName" msprop:Generator_ColumnPropNameInTable="physicianNameColumn" msprop:Generator_UserColumnName="physicianName" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
