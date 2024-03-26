@@ -211,7 +211,7 @@ Partial Class frmCounterQueuingBoardSelectedCountersStandalone
         Me.lblHighlightServing.BackColor = System.Drawing.Color.LimeGreen
         Me.lblHighlightServing.Font = New System.Drawing.Font("Arial", 72.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblHighlightServing.ForeColor = System.Drawing.Color.White
-        Me.lblHighlightServing.Location = New System.Drawing.Point(357, 162)
+        Me.lblHighlightServing.Location = New System.Drawing.Point(357, 383)
         Me.lblHighlightServing.Name = "lblHighlightServing"
         Me.lblHighlightServing.Size = New System.Drawing.Size(721, 294)
         Me.lblHighlightServing.TabIndex = 0
@@ -501,7 +501,7 @@ Partial Class frmCounterQueuingBoardSelectedCountersStandalone
         Me.Panel4.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel4.Location = New System.Drawing.Point(428, 3)
         Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(278, 482)
+        Me.Panel4.Size = New System.Drawing.Size(278, 925)
         Me.Panel4.TabIndex = 4
         '
         'Panel36
@@ -540,7 +540,7 @@ Partial Class frmCounterQueuingBoardSelectedCountersStandalone
         Me.TableLayoutPanel2.Name = "TableLayoutPanel2"
         Me.TableLayoutPanel2.RowCount = 1
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.TableLayoutPanel2.Size = New System.Drawing.Size(709, 488)
+        Me.TableLayoutPanel2.Size = New System.Drawing.Size(709, 931)
         Me.TableLayoutPanel2.TabIndex = 47
         '
         'Panel37
@@ -561,7 +561,7 @@ Partial Class frmCounterQueuingBoardSelectedCountersStandalone
         Me.Panel37.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel37.Location = New System.Drawing.Point(3, 3)
         Me.Panel37.Name = "Panel37"
-        Me.Panel37.Size = New System.Drawing.Size(419, 482)
+        Me.Panel37.Size = New System.Drawing.Size(419, 925)
         Me.Panel37.TabIndex = 2
         '
         'Panel56
@@ -869,7 +869,7 @@ Partial Class frmCounterQueuingBoardSelectedCountersStandalone
         Me.Panel5.BackColor = System.Drawing.Color.LimeGreen
         Me.Panel5.Controls.Add(Me.lblCounters)
         Me.Panel5.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Panel5.Location = New System.Drawing.Point(0, 555)
+        Me.Panel5.Location = New System.Drawing.Point(0, 998)
         Me.Panel5.Name = "Panel5"
         Me.Panel5.Size = New System.Drawing.Size(1435, 63)
         Me.Panel5.TabIndex = 46
@@ -1160,7 +1160,7 @@ Partial Class frmCounterQueuingBoardSelectedCountersStandalone
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel2.Location = New System.Drawing.Point(438, 3)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(285, 482)
+        Me.Panel2.Size = New System.Drawing.Size(285, 925)
         Me.Panel2.TabIndex = 4
         '
         'Panel27
@@ -1208,7 +1208,7 @@ Partial Class frmCounterQueuingBoardSelectedCountersStandalone
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
         Me.TableLayoutPanel1.RowCount = 1
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.TableLayoutPanel1.Size = New System.Drawing.Size(726, 488)
+        Me.TableLayoutPanel1.Size = New System.Drawing.Size(726, 931)
         Me.TableLayoutPanel1.TabIndex = 45
         '
         'Panel3
@@ -1229,7 +1229,7 @@ Partial Class frmCounterQueuingBoardSelectedCountersStandalone
         Me.Panel3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel3.Location = New System.Drawing.Point(3, 3)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(429, 482)
+        Me.Panel3.Size = New System.Drawing.Size(429, 925)
         Me.Panel3.TabIndex = 2
         '
         'Panel52
@@ -1525,9 +1525,9 @@ Partial Class frmCounterQueuingBoardSelectedCountersStandalone
         Me.txtclock.Dock = System.Windows.Forms.DockStyle.Right
         Me.txtclock.Font = New System.Drawing.Font("Arial Narrow", 30.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtclock.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.txtclock.Location = New System.Drawing.Point(1186, 0)
+        Me.txtclock.Location = New System.Drawing.Point(1115, 0)
         Me.txtclock.Name = "txtclock"
-        Me.txtclock.Size = New System.Drawing.Size(249, 67)
+        Me.txtclock.Size = New System.Drawing.Size(320, 67)
         Me.txtclock.TabIndex = 2
         Me.txtclock.Text = "04:00:00 PM"
         Me.txtclock.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -1551,7 +1551,7 @@ Partial Class frmCounterQueuingBoardSelectedCountersStandalone
         Me.lbwelcome.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.lbwelcome.Location = New System.Drawing.Point(0, 0)
         Me.lbwelcome.Name = "lbwelcome"
-        Me.lbwelcome.Size = New System.Drawing.Size(1186, 67)
+        Me.lbwelcome.Size = New System.Drawing.Size(1115, 67)
         Me.lbwelcome.TabIndex = 3
         Me.lbwelcome.Text = "WELCOME TO HOWARD HUBBARD MEMORIAL HOSPITAL "
         Me.lbwelcome.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -1560,7 +1560,7 @@ Partial Class frmCounterQueuingBoardSelectedCountersStandalone
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1435, 618)
+        Me.ClientSize = New System.Drawing.Size(1435, 1061)
         Me.Controls.Add(Me.lblHighlightServing)
         Me.Controls.Add(Me.TableLayoutPanel1)
         Me.Controls.Add(Me.TableLayoutPanel2)

@@ -193,6 +193,11 @@ Public Class frmCounterQueuingBoardSelectedCountersStandalone
                 callString = callString & tmpServingCustomerOfServers.customerAssigncounter.ProcessedQueueNumber & ", "
                 highlightNumber = tmpServingCustomerOfServers.customerAssigncounter.ProcessedQueueNumber
             End If
+        ElseIf id24 = tmpServingCustomerOfServers.serverTransaction.ServerTransaction_ID Then
+            If counter24.ToLower <> tmpServingCustomerOfServers.customerAssigncounter.ProcessedQueueNumber.ToLower Then
+                callString = callString & tmpServingCustomerOfServers.customerAssigncounter.ProcessedQueueNumber & ", "
+                highlightNumber = tmpServingCustomerOfServers.customerAssigncounter.ProcessedQueueNumber
+            End If
         End If
     End Sub
 
