@@ -419,7 +419,7 @@ Public Class frmServiceCounter
             Dim custBDay As String = Strings.Format(customerInfo.BirthDate, "MMM dd, yyyy")
             Dim custGender As String = customerInfo.Sex
             Dim custCivilStatus As String = customerInfo.CivilStatus
-            Dim custCountry As String = customerInfo.Nationality.Split("-")(1).Trim()
+            Dim custCountry As String = IIf(customerInfo.Nationality.Split("-").Length > 1, customerInfo.Nationality.Split("-")(1).Trim(), "")
             Dim custNationality As String = customerInfo.Nationality.Split("-")(0).Trim()
             Dim custEmail As String = customerInfo.Email
             Dim custContact As String = customerInfo.PhoneNumber
