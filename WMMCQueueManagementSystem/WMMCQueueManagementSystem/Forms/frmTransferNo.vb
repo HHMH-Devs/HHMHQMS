@@ -411,16 +411,4 @@
             End If
         End If
     End Sub
-
-    Private Sub txtFindDoctor_TextChanged(sender As Object, e As EventArgs) Handles txtFindDoctor.TextChanged
-
-    End Sub
-
-    Private Sub dgvDoctorsList_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvDoctorsList.CellContentClick
-
-    End Sub
-
-    Private Sub pnlDoctors_Paint(sender As Object, e As PaintEventArgs) Handles pnlDoctors.Paint
-
-    End Sub
 End Class
