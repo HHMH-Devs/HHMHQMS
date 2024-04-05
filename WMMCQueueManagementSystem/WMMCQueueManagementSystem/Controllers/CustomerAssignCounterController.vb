@@ -1293,11 +1293,11 @@ Public Class CustomerAssignCounterController
                                 (SELECT count(wmmcqms.customerassigncounter.counter_id) from wmmcqms.customerassigncounter where wmmcqms.customerassigncounter.customerassigncounter_id in (select wmmcqms.servedcustomer.customerassigncounter_id from wmmcqms.servedcustomer where datetimeservedend is not null) and wmmcqms.customerassigncounter.counter_id = a.counter_id and  CONVERT(DATE,datetimequeued) BETWEEN @dt1 and @dt2) AS servedCount,
                                 (SELECT count(wmmcqms.customerassigncounter.counter_id) from wmmcqms.customerassigncounter where wmmcqms.customerassigncounter.customerassigncounter_id in (select wmmcqms.servedcustomer.customerassigncounter_id from wmmcqms.servedcustomer where datetimeservedend is null) and wmmcqms.customerassigncounter.counter_id = a.counter_id and  CONVERT(DATE,datetimequeued) BETWEEN @dt1 and @dt2) AS holdCount,
                                 (SELECT avg(DATEDIFF(MINUTE,c.datetimeservedstart,c.datetimeservedend)) from (wmmcqms.customerassigncounter b join wmmcqms.servedcustomer c on(b.customerassigncounter_id = c.customerassigncounter_id)) where c.customerassigncounter_id in (select wmmcqms.servedcustomer.customerassigncounter_id from wmmcqms.servedcustomer) and b.counter_id = a.counter_id and  CONVERT(DATE,b.datetimequeued) BETWEEN @dt1 and @dt2) AS averageTime,
-                                (SELECT avg(DATEDIFF(MINUTE,b.datetimequeued,c.datetimeservedend)) from (wmmcqms.customerassigncounter b join wmmcqms.servedcustomer c on(b.customerassigncounter_id = c.customerassigncounter_id)) where c.customerassigncounter_id in (select wmmcqms.servedcustomer.customerassigncounter_id from wmmcqms.servedcustomer) and b.counter_id = a.counter_id and  CONVERT(DATE,b.datetimequeued) BETWEEN @dt1 and @dt2) AS averageWaitingTime
+                                (SELECT avg(DATEDIFF(MINUTE,case WHEN DATEDIFF(MINUTE, b.datetimequeued, c.datetimeservedstart) >= 120 THEN DATEADD(MINUTE, -15, c.datetimeservedstart) ELSE b.datetimequeued END,c.datetimeservedend)) from (wmmcqms.customerassigncounter b join wmmcqms.servedcustomer c on(b.customerassigncounter_id = c.customerassigncounter_id)) where c.customerassigncounter_id in (select wmmcqms.servedcustomer.customerassigncounter_id from wmmcqms.servedcustomer) and b.counter_id = a.counter_id and  CONVERT(DATE,b.datetimequeued) BETWEEN @dt1 and @dt2) AS averageWaitingTime
                                 FROM wmmcqms.serverassigncounter as c
                                 JOIN wmmcqms.counter a ON c.counter_id = a.counter_id
                                 RIGHT JOIN wmmcqms.server b on c.server_id = b.server_id
-                               WHERE a.counterType = 1 or a.counterType = 2 or a.counterType = 3 ORDER BY b.fullname ASC"
+                                WHERE a.counterType = 1 or a.counterType = 2 or a.counterType = 3 ORDER BY b.fullname ASC"
             cmd.Parameters.AddWithValue("@dt1", dt1)
             cmd.Parameters.AddWithValue("@dt2", dt2)
             Dim data As DataTable = fetchData(cmd).Tables(0)
@@ -1334,11 +1334,11 @@ Public Class CustomerAssignCounterController
                                 (SELECT count(wmmcqms.customerassigncounter.counter_id) from wmmcqms.customerassigncounter where wmmcqms.customerassigncounter.customerassigncounter_id in (select wmmcqms.servedcustomer.customerassigncounter_id from wmmcqms.servedcustomer where datetimeservedend is not null) and wmmcqms.customerassigncounter.counter_id = a.counter_id and  CONVERT(DATE,datetimequeued) BETWEEN @dt1 and @dt2) AS servedCount,
                                 (SELECT count(wmmcqms.customerassigncounter.counter_id) from wmmcqms.customerassigncounter where wmmcqms.customerassigncounter.customerassigncounter_id in (select wmmcqms.servedcustomer.customerassigncounter_id from wmmcqms.servedcustomer where datetimeservedend is null) and wmmcqms.customerassigncounter.counter_id = a.counter_id and  CONVERT(DATE,datetimequeued) BETWEEN @dt1 and @dt2) AS holdCount,
                                 (SELECT avg(DATEDIFF(MINUTE,c.datetimeservedstart,c.datetimeservedend)) from (wmmcqms.customerassigncounter b join wmmcqms.servedcustomer c on(b.customerassigncounter_id = c.customerassigncounter_id)) where c.customerassigncounter_id in (select wmmcqms.servedcustomer.customerassigncounter_id from wmmcqms.servedcustomer) and b.counter_id = a.counter_id and  CONVERT(DATE,b.datetimequeued) BETWEEN @dt1 and @dt2) AS averageTime,
-                                (SELECT avg(DATEDIFF(MINUTE,b.datetimequeued,c.datetimeservedstart)) from (wmmcqms.customerassigncounter b join wmmcqms.servedcustomer c on(b.customerassigncounter_id = c.customerassigncounter_id)) where c.customerassigncounter_id in (select wmmcqms.servedcustomer.customerassigncounter_id from wmmcqms.servedcustomer) and b.counter_id = a.counter_id and  CONVERT(DATE,b.datetimequeued) BETWEEN @dt1 and @dt2) AS averageWaitingTime
+                                (SELECT avg(DATEDIFF(MINUTE,case WHEN DATEDIFF(MINUTE, b.datetimequeued, c.datetimeservedstart) >= 120 THEN DATEADD(MINUTE, -15, c.datetimeservedstart) ELSE b.datetimequeued END,c.datetimeservedstart)) from (wmmcqms.customerassigncounter b join wmmcqms.servedcustomer c on(b.customerassigncounter_id = c.customerassigncounter_id)) where c.customerassigncounter_id in (select wmmcqms.servedcustomer.customerassigncounter_id from wmmcqms.servedcustomer) and b.counter_id = a.counter_id and  CONVERT(DATE,b.datetimequeued) BETWEEN @dt1 and @dt2) AS averageWaitingTime
                                 FROM wmmcqms.serverassigncounter as c
                                 JOIN wmmcqms.counter a ON c.counter_id = a.counter_id
                                 RIGHT JOIN wmmcqms.server b on c.server_id = b.server_id
-                               WHERE a.counterType = 2 ORDER BY b.fullname ASC"
+                                WHERE a.counterType = 2 ORDER BY b.fullname ASC"
             cmd.Parameters.AddWithValue("@dt1", dt1)
             cmd.Parameters.AddWithValue("@dt2", dt2)
             Dim data As DataTable = fetchData(cmd).Tables(0)
@@ -1379,7 +1379,7 @@ Public Class CustomerAssignCounterController
                                 FROM wmmcqms.serverassigncounter as c
                                 JOIN wmmcqms.counter a ON c.counter_id = a.counter_id
                                 RIGHT JOIN wmmcqms.server b on c.server_id = b.server_id
-                               WHERE a.counterType = 3 ORDER BY b.fullname ASC"
+                                WHERE a.counterType = 3 ORDER BY b.fullname ASC"
             cmd.Parameters.AddWithValue("@dt1", dt1)
             cmd.Parameters.AddWithValue("@dt2", dt2)
             Dim data As DataTable = fetchData(cmd).Tables(0)
@@ -1420,7 +1420,7 @@ Public Class CustomerAssignCounterController
                                 FROM wmmcqms.serverassigncounter as c
                                 JOIN wmmcqms.counter a ON c.counter_id = a.counter_id
                                 RIGHT JOIN wmmcqms.server b on c.server_id = b.server_id
-                               WHERE a.counterType = 1 ORDER BY b.fullname ASC"
+                                WHERE a.counterType = 1 ORDER BY b.fullname ASC"
             cmd.Parameters.AddWithValue("@dt1", dt1)
             cmd.Parameters.AddWithValue("@dt2", dt2)
             Dim data As DataTable = fetchData(cmd).Tables(0)

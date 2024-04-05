@@ -382,6 +382,12 @@
     <Compile Include="Forms\frmManageNurseNotes.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Forms\frmManageServerSchedule.Designer.vb">
+      <DependentUpon>frmManageServerSchedule.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmManageServerSchedule.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\frmMyPatients.Designer.vb">
       <DependentUpon>frmMyPatients.vb</DependentUpon>
     </Compile>
@@ -416,6 +422,12 @@
       <DependentUpon>frmScanQRCode.vb</DependentUpon>
     </Compile>
     <Compile Include="Forms\frmScanQRCode.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmSchedulesAddEdit.Designer.vb">
+      <DependentUpon>frmSchedulesAddEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmSchedulesAddEdit.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\frmSelectBDayForTouch.Designer.vb">
@@ -689,6 +701,7 @@
     <Compile Include="Models\CustomerQueuedSummary.vb" />
     <Compile Include="Models\DetailModel.vb" />
     <Compile Include="Models\Diagnostics.vb" />
+    <Compile Include="Models\DoctorSchedule.vb" />
     <Compile Include="Models\DoctorsPrescription.vb" />
     <Compile Include="Models\DoctorSummary.vb" />
     <Compile Include="Models\ERDoctorsOrder.vb" />
@@ -1028,6 +1041,9 @@
     <EmbeddedResource Include="Forms\frmManageNurseNotes.resx">
       <DependentUpon>frmManageNurseNotes.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmManageServerSchedule.resx">
+      <DependentUpon>frmManageServerSchedule.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmMyPatients.resx">
       <DependentUpon>frmMyPatients.vb</DependentUpon>
     </EmbeddedResource>
@@ -1121,6 +1137,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmScanQRCode.resx">
       <DependentUpon>frmScanQRCode.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmSchedulesAddEdit.resx">
+      <DependentUpon>frmSchedulesAddEdit.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmSelectBDayForTouch.resx">
       <DependentUpon>frmSelectBDayForTouch.vb</DependentUpon>

@@ -20,5 +20,6 @@
     Public Username As String
     Public Pasaword As String
     Public CounterAssignNumber As Integer
-    Public ServerAssignCounter As List(Of ServerAssignCounter) = New List(Of ServerAssignCounter)
+    Public ServerAssignCounter As New List(Of ServerAssignCounter)
+    Public Schedules As List(Of DoctorSchedule)
 End Class

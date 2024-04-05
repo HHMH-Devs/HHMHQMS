@@ -208,138 +208,138 @@ Partial Class frmHomeMainCounterForTouch
         '
         Me.QueuingBoardsToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ClassicQueuingBoardToolStripMenuItem, Me.SelfAlarmQueuingBoardToolStripMenuItem, Me.MonitoringBoardToolStripMenuItem, Me.TestQueueBoardToolStripMenuItem})
         Me.QueuingBoardsToolStripMenuItem.Name = "QueuingBoardsToolStripMenuItem"
-        Me.QueuingBoardsToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.QueuingBoardsToolStripMenuItem.Size = New System.Drawing.Size(175, 22)
         Me.QueuingBoardsToolStripMenuItem.Text = "Queuing Boards"
         '
         'ClassicQueuingBoardToolStripMenuItem
         '
         Me.ClassicQueuingBoardToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.QueuingBoardADSToolStripMenuItem, Me.QueuingBoardBILLINGSATUSToolStripMenuItem, Me.QueuingBoardLABRESULTSToolStripMenuItem, Me.ToolStripMenuItem5, Me.QueuingBoardSELECTEDCOUNTERSToolStripMenuItem})
         Me.ClassicQueuingBoardToolStripMenuItem.Name = "ClassicQueuingBoardToolStripMenuItem"
-        Me.ClassicQueuingBoardToolStripMenuItem.Size = New System.Drawing.Size(211, 22)
+        Me.ClassicQueuingBoardToolStripMenuItem.Size = New System.Drawing.Size(210, 22)
         Me.ClassicQueuingBoardToolStripMenuItem.Text = "Classic Queuing Board"
         '
         'QueuingBoardADSToolStripMenuItem
         '
         Me.QueuingBoardADSToolStripMenuItem.Name = "QueuingBoardADSToolStripMenuItem"
-        Me.QueuingBoardADSToolStripMenuItem.Size = New System.Drawing.Size(279, 22)
+        Me.QueuingBoardADSToolStripMenuItem.Size = New System.Drawing.Size(277, 22)
         Me.QueuingBoardADSToolStripMenuItem.Text = "Queuing Board (ADS)"
         '
         'QueuingBoardBILLINGSATUSToolStripMenuItem
         '
         Me.QueuingBoardBILLINGSATUSToolStripMenuItem.Name = "QueuingBoardBILLINGSATUSToolStripMenuItem"
-        Me.QueuingBoardBILLINGSATUSToolStripMenuItem.Size = New System.Drawing.Size(279, 22)
+        Me.QueuingBoardBILLINGSATUSToolStripMenuItem.Size = New System.Drawing.Size(277, 22)
         Me.QueuingBoardBILLINGSATUSToolStripMenuItem.Text = "Queuing Board (BILLING SATUS)"
         '
         'QueuingBoardLABRESULTSToolStripMenuItem
         '
         Me.QueuingBoardLABRESULTSToolStripMenuItem.Name = "QueuingBoardLABRESULTSToolStripMenuItem"
-        Me.QueuingBoardLABRESULTSToolStripMenuItem.Size = New System.Drawing.Size(279, 22)
+        Me.QueuingBoardLABRESULTSToolStripMenuItem.Size = New System.Drawing.Size(277, 22)
         Me.QueuingBoardLABRESULTSToolStripMenuItem.Text = "Queuing Board (LAB RESULTS)"
         '
         'ToolStripMenuItem5
         '
         Me.ToolStripMenuItem5.Name = "ToolStripMenuItem5"
-        Me.ToolStripMenuItem5.Size = New System.Drawing.Size(279, 22)
+        Me.ToolStripMenuItem5.Size = New System.Drawing.Size(277, 22)
         Me.ToolStripMenuItem5.Text = "Queuing Board (SELECTED COUNTERS)"
         '
         'QueuingBoardSELECTEDCOUNTERSToolStripMenuItem
         '
         Me.QueuingBoardSELECTEDCOUNTERSToolStripMenuItem.Name = "QueuingBoardSELECTEDCOUNTERSToolStripMenuItem"
-        Me.QueuingBoardSELECTEDCOUNTERSToolStripMenuItem.Size = New System.Drawing.Size(279, 22)
+        Me.QueuingBoardSELECTEDCOUNTERSToolStripMenuItem.Size = New System.Drawing.Size(277, 22)
         Me.QueuingBoardSELECTEDCOUNTERSToolStripMenuItem.Text = "Queuing Board (ALL COUNTERS)"
         '
         'SelfAlarmQueuingBoardToolStripMenuItem
         '
         Me.SelfAlarmQueuingBoardToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.QueuingBoardADSToolStripMenuItem1, Me.QueuingBoardBILLINGSATUSToolStripMenuItem1, Me.QueuingBoardLABRESULTSToolStripMenuItem1, Me.ToolStripMenuItem6, Me.QueuingBoardALLCOUNTERSToolStripMenuItem})
         Me.SelfAlarmQueuingBoardToolStripMenuItem.Name = "SelfAlarmQueuingBoardToolStripMenuItem"
-        Me.SelfAlarmQueuingBoardToolStripMenuItem.Size = New System.Drawing.Size(211, 22)
+        Me.SelfAlarmQueuingBoardToolStripMenuItem.Size = New System.Drawing.Size(210, 22)
         Me.SelfAlarmQueuingBoardToolStripMenuItem.Text = "Self Alarm Queuing Board"
         '
         'QueuingBoardADSToolStripMenuItem1
         '
         Me.QueuingBoardADSToolStripMenuItem1.Name = "QueuingBoardADSToolStripMenuItem1"
-        Me.QueuingBoardADSToolStripMenuItem1.Size = New System.Drawing.Size(279, 22)
+        Me.QueuingBoardADSToolStripMenuItem1.Size = New System.Drawing.Size(277, 22)
         Me.QueuingBoardADSToolStripMenuItem1.Text = "Queuing Board (ADS)"
         '
         'QueuingBoardBILLINGSATUSToolStripMenuItem1
         '
         Me.QueuingBoardBILLINGSATUSToolStripMenuItem1.Name = "QueuingBoardBILLINGSATUSToolStripMenuItem1"
-        Me.QueuingBoardBILLINGSATUSToolStripMenuItem1.Size = New System.Drawing.Size(279, 22)
+        Me.QueuingBoardBILLINGSATUSToolStripMenuItem1.Size = New System.Drawing.Size(277, 22)
         Me.QueuingBoardBILLINGSATUSToolStripMenuItem1.Text = "Queuing Board (BILLING SATUS)"
         '
         'QueuingBoardLABRESULTSToolStripMenuItem1
         '
         Me.QueuingBoardLABRESULTSToolStripMenuItem1.Name = "QueuingBoardLABRESULTSToolStripMenuItem1"
-        Me.QueuingBoardLABRESULTSToolStripMenuItem1.Size = New System.Drawing.Size(279, 22)
+        Me.QueuingBoardLABRESULTSToolStripMenuItem1.Size = New System.Drawing.Size(277, 22)
         Me.QueuingBoardLABRESULTSToolStripMenuItem1.Text = "Queuing Board (LAB RESULTS)"
         '
         'ToolStripMenuItem6
         '
         Me.ToolStripMenuItem6.Name = "ToolStripMenuItem6"
-        Me.ToolStripMenuItem6.Size = New System.Drawing.Size(279, 22)
+        Me.ToolStripMenuItem6.Size = New System.Drawing.Size(277, 22)
         Me.ToolStripMenuItem6.Text = "Queuing Board (SELECTED COUNTERS)"
         '
         'QueuingBoardALLCOUNTERSToolStripMenuItem
         '
         Me.QueuingBoardALLCOUNTERSToolStripMenuItem.Name = "QueuingBoardALLCOUNTERSToolStripMenuItem"
-        Me.QueuingBoardALLCOUNTERSToolStripMenuItem.Size = New System.Drawing.Size(279, 22)
+        Me.QueuingBoardALLCOUNTERSToolStripMenuItem.Size = New System.Drawing.Size(277, 22)
         Me.QueuingBoardALLCOUNTERSToolStripMenuItem.Text = "Queuing Board (ALL COUNTERS)"
         '
         'MonitoringBoardToolStripMenuItem
         '
         Me.MonitoringBoardToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ThisDepartmentToolStripMenuItem, Me.AllDepartmentToolStripMenuItem, Me.DepartmentSummaryToolStripMenuItem})
         Me.MonitoringBoardToolStripMenuItem.Name = "MonitoringBoardToolStripMenuItem"
-        Me.MonitoringBoardToolStripMenuItem.Size = New System.Drawing.Size(211, 22)
+        Me.MonitoringBoardToolStripMenuItem.Size = New System.Drawing.Size(210, 22)
         Me.MonitoringBoardToolStripMenuItem.Text = "Monitoring Board"
         '
         'ThisDepartmentToolStripMenuItem
         '
         Me.ThisDepartmentToolStripMenuItem.Name = "ThisDepartmentToolStripMenuItem"
-        Me.ThisDepartmentToolStripMenuItem.Size = New System.Drawing.Size(191, 22)
+        Me.ThisDepartmentToolStripMenuItem.Size = New System.Drawing.Size(188, 22)
         Me.ThisDepartmentToolStripMenuItem.Text = "This Department"
         '
         'AllDepartmentToolStripMenuItem
         '
         Me.AllDepartmentToolStripMenuItem.Name = "AllDepartmentToolStripMenuItem"
-        Me.AllDepartmentToolStripMenuItem.Size = New System.Drawing.Size(191, 22)
+        Me.AllDepartmentToolStripMenuItem.Size = New System.Drawing.Size(188, 22)
         Me.AllDepartmentToolStripMenuItem.Text = "All Department"
         '
         'DepartmentSummaryToolStripMenuItem
         '
         Me.DepartmentSummaryToolStripMenuItem.Name = "DepartmentSummaryToolStripMenuItem"
-        Me.DepartmentSummaryToolStripMenuItem.Size = New System.Drawing.Size(191, 22)
+        Me.DepartmentSummaryToolStripMenuItem.Size = New System.Drawing.Size(188, 22)
         Me.DepartmentSummaryToolStripMenuItem.Text = "Department Summary"
         '
         'TestQueueBoardToolStripMenuItem
         '
         Me.TestQueueBoardToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AllCounterToolStripMenuItem, Me.AllCounterAlertToolStripMenuItem, Me.ClinicCounterAlertToolStripMenuItem})
         Me.TestQueueBoardToolStripMenuItem.Name = "TestQueueBoardToolStripMenuItem"
-        Me.TestQueueBoardToolStripMenuItem.Size = New System.Drawing.Size(211, 22)
+        Me.TestQueueBoardToolStripMenuItem.Size = New System.Drawing.Size(210, 22)
         Me.TestQueueBoardToolStripMenuItem.Text = "OCC Queue Board"
         '
         'AllCounterToolStripMenuItem
         '
         Me.AllCounterToolStripMenuItem.Name = "AllCounterToolStripMenuItem"
-        Me.AllCounterToolStripMenuItem.Size = New System.Drawing.Size(186, 22)
+        Me.AllCounterToolStripMenuItem.Size = New System.Drawing.Size(184, 22)
         Me.AllCounterToolStripMenuItem.Text = "All Counter"
         '
         'AllCounterAlertToolStripMenuItem
         '
         Me.AllCounterAlertToolStripMenuItem.Name = "AllCounterAlertToolStripMenuItem"
-        Me.AllCounterAlertToolStripMenuItem.Size = New System.Drawing.Size(186, 22)
+        Me.AllCounterAlertToolStripMenuItem.Size = New System.Drawing.Size(184, 22)
         Me.AllCounterAlertToolStripMenuItem.Text = "All Counter - Alert"
         '
         'ClinicCounterAlertToolStripMenuItem
         '
         Me.ClinicCounterAlertToolStripMenuItem.Name = "ClinicCounterAlertToolStripMenuItem"
-        Me.ClinicCounterAlertToolStripMenuItem.Size = New System.Drawing.Size(186, 22)
+        Me.ClinicCounterAlertToolStripMenuItem.Size = New System.Drawing.Size(184, 22)
         Me.ClinicCounterAlertToolStripMenuItem.Text = "Clinic Counter - Alert"
         '
         'MinimizeToolStripMenuItem
         '
         Me.MinimizeToolStripMenuItem.Name = "MinimizeToolStripMenuItem"
         Me.MinimizeToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F11
-        Me.MinimizeToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.MinimizeToolStripMenuItem.Size = New System.Drawing.Size(175, 22)
         Me.MinimizeToolStripMenuItem.Text = "Minimize/Hide"
         '
         'ChangeCounterToolStripMenuItem

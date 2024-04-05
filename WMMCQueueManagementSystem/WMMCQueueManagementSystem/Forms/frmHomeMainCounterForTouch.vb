@@ -1,5 +1,4 @@
-﻿Imports Newtonsoft
-Public Class frmHomeMainCounterForTouch
+﻿Public Class frmHomeMainCounterForTouch
     Private _loggedServer As Server
     Private _listOfSelectionCounter As List(Of Counter)
     Private _listOfMabClinics As List(Of ServerAssignCounter)
@@ -11,6 +10,7 @@ Public Class frmHomeMainCounterForTouch
     Private _language As Boolean = False
     Private _generateScreening As Boolean = False
     Declare Auto Function SetDefaultPrinter Lib "winspool.drv" (ByVal pszPrinter As String) As Boolean
+    Public Property PCCClinics() As List(Of ServerAssignCounter)
 
     Public Property SelectionCounters As List(Of Counter)
         Get
@@ -52,7 +52,7 @@ Public Class frmHomeMainCounterForTouch
     Private Sub ToogleMabClinicsQueue(flag As Boolean)
         If flag Then
             lblHelp.Text = If(_language, "PUMILI NG DOKTOR NA IYONG NINANAIS.", "PLEASE SELECT A DOCTOR.")
-            If Me.MabCounters.Count > 0 Then
+            If Me.PCCClinics.Count > 0 Then
                 pnlNoDoctorAlert.Hide()
             Else
                 pnlNoDoctorAlert.Show()
@@ -63,6 +63,17 @@ Public Class frmHomeMainCounterForTouch
             lblHelp.Text = If(_language, "ANONG GUSTO MONG GAWIN?", "WHAT SERVICE DO YOU WANT?")
             pnlDoctorsDirectory.Hide()
         End If
+    End Sub
+
+    Private Sub getAllPCCClinics()
+        Dim counterController As New CounterController
+        flpDoctorsList.Controls.Clear()
+        PCCClinics = counterController.GetAllClinicQueuingCounters()
+        For Each queuecounter As ServerAssignCounter In PCCClinics
+            If queuecounter.Counter.CounterType = 2 Then
+                CreateDoctorPanel(queuecounter)
+            End If
+        Next
     End Sub
 
     Private Sub getOnlyMabClinics()
@@ -115,9 +126,9 @@ Public Class frmHomeMainCounterForTouch
         Next
         lstFetchCounter.Items.Add(If(_language, "BUMISITA SA CLINIC", "PRIVATE CLINIC VISIT"), lstFetchCounter.LargeImageList.Images.Count - 1)
         flpDoctorsList.Controls.Clear()
-        MabCounters = counterController.GetAllMABClinicQueuingCounters()
-        For Each queuecounter As ServerAssignCounter In MabCounters
-            If queuecounter.Counter.CounterType = 1 Then
+        PCCClinics = counterController.GetAllClinicQueuingCounters()
+        For Each queuecounter As ServerAssignCounter In PCCClinics
+            If queuecounter.Counter.CounterType = 2 Then
                 CreateDoctorPanel(queuecounter)
             End If
         Next
@@ -741,7 +752,7 @@ PrintNormalNumber:
         If e.KeyCode = Keys.Enter Then
             If lstFetchCounter.SelectedItems.Count > 0 Then
                 If lstFetchCounter.SelectedIndices(0) = (lstFetchCounter.Items.Count - 1) Then
-                    getOnlyMabClinics()
+                    getAllPCCClinics()
                     ToogleMabClinicsQueue(True)
                 Else
                     GenerateNormalNumber()
@@ -766,7 +777,7 @@ PrintNormalNumber:
     Private Sub ListView1_MouseClick(sender As Object, e As MouseEventArgs) Handles lstFetchCounter.MouseClick
         If lstFetchCounter.SelectedItems.Count > 0 Then
             If lstFetchCounter.SelectedIndices(0) = (lstFetchCounter.Items.Count - 1) Then
-                getOnlyMabClinics()
+                getAllPCCClinics()
                 ToogleMabClinicsQueue(True)
             Else
                 GenerateNormalNumber()

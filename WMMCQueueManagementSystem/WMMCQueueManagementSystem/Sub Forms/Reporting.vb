@@ -1546,53 +1546,55 @@ Public Class Reporting
             counteSummary = customerAssignCounterController.GetMABClinicSummaryByDate(dtpFromDoctorCensus.Value, dtpToDoctorCensus.Value)
         End If
         dgvDoctorSummary.Rows.Clear()
-        If counteSummary.Count > 0 Then
-            Dim ctr As Long = 0
-            tmpQueuedPatientCount = 0
-            tmpConsultedPatientCount = 0
-            tmpHoldPatientCount = 0
-            tmpUnconsultedPatientCount = 0
-            For Each counter As DoctorSummary In counteSummary
-                Dim strServedPercent As String = "0 %"
-                Dim strUnservedPercent As String = "0 %"
-                Dim strHoldPercent As String = "0 %"
-                Dim strAveTimePercent As String = "0 %"
-                Dim strAveWaitingTimePercent As String = "0 %"
-                tmpQueuedPatientCount += counter.QueuedCount
-                tmpConsultedPatientCount += counter.ServedCount
-                tmpHoldPatientCount += counter.HoldCount
-                tmpUnconsultedPatientCount += counter.UnservedCount
-                If counter.ServedCount > 0 Then
-                    strServedPercent = (Format(((counter.ServedCount / counter.QueuedCount) * 100), "0") & " %").ToString
-                End If
-                If counter.HoldCount > 0 Then
-                    strHoldPercent = (Format(((counter.HoldCount / counter.QueuedCount) * 100), "0") & " %").ToString
-                End If
-                If counter.UnservedCount > 0 Then
-                    strUnservedPercent = (Format(((counter.UnservedCount / counter.QueuedCount) * 100), "0") & " %").ToString
-                End If
-                If counter.AverageTurnoverTime > 0 Then
-                    strAveTimePercent = (Format(counter.AverageTurnoverTime & " Minutes")).ToString
-                ElseIf counter.AverageTurnoverTime < 0 Then
-                    strAveTimePercent = "0 %"
-                Else
-                    strAveTimePercent = "Less than a Minute"
-                End If
-                If counter.AverageWaitingTurnoverTime > 0 Then
-                    strAveWaitingTimePercent = (Format(counter.AverageWaitingTurnoverTime & " Minutes")).ToString
-                ElseIf counter.AverageWaitingTurnoverTime < 0 Then
-                    strAveWaitingTimePercent = "0 %"
-                Else
-                    strAveWaitingTimePercent = "Less than a Minute"
-                End If
-                dgvDoctorSummary.Rows.Add(counter.Counter.Counter_ID, counter.Doctor.FullName, counter.Counter.Department, counter.Counter.Section, counter.QueuedCount, counter.ServedCount, counter.HoldCount, counter.UnservedCount, strServedPercent, strHoldPercent, strUnservedPercent, strAveTimePercent, strAveWaitingTimePercent)
-                dgvDoctorSummary.Rows(ctr).Height = 30
-                ctr += 1
-            Next
-            lblTotalClinics.Text = ctr
-            lblQueuedPatient.Text = tmpQueuedPatientCount
-            lblConsultedPatient.Text = tmpConsultedPatientCount
-            lblUnconsultedPatient.Text = tmpUnconsultedPatientCount
+        If counteSummary IsNot Nothing Then
+            If counteSummary.Count > 0 Then
+                Dim ctr As Long = 0
+                tmpQueuedPatientCount = 0
+                tmpConsultedPatientCount = 0
+                tmpHoldPatientCount = 0
+                tmpUnconsultedPatientCount = 0
+                For Each counter As DoctorSummary In counteSummary
+                    Dim strServedPercent As String = "0 %"
+                    Dim strUnservedPercent As String = "0 %"
+                    Dim strHoldPercent As String = "0 %"
+                    Dim strAveTimePercent As String = "0 %"
+                    Dim strAveWaitingTimePercent As String = "0 %"
+                    tmpQueuedPatientCount += counter.QueuedCount
+                    tmpConsultedPatientCount += counter.ServedCount
+                    tmpHoldPatientCount += counter.HoldCount
+                    tmpUnconsultedPatientCount += counter.UnservedCount
+                    If counter.ServedCount > 0 Then
+                        strServedPercent = (Format(((counter.ServedCount / counter.QueuedCount) * 100), "0") & " %").ToString
+                    End If
+                    If counter.HoldCount > 0 Then
+                        strHoldPercent = (Format(((counter.HoldCount / counter.QueuedCount) * 100), "0") & " %").ToString
+                    End If
+                    If counter.UnservedCount > 0 Then
+                        strUnservedPercent = (Format(((counter.UnservedCount / counter.QueuedCount) * 100), "0") & " %").ToString
+                    End If
+                    If counter.AverageTurnoverTime > 0 Then
+                        strAveTimePercent = (Format(counter.AverageTurnoverTime & " Minutes")).ToString
+                    ElseIf counter.AverageTurnoverTime < 0 Then
+                        strAveTimePercent = "0 %"
+                    Else
+                        strAveTimePercent = "Less than a Minute"
+                    End If
+                    If counter.AverageWaitingTurnoverTime > 0 Then
+                        strAveWaitingTimePercent = (Format(counter.AverageWaitingTurnoverTime & " Minutes")).ToString
+                    ElseIf counter.AverageWaitingTurnoverTime < 0 Then
+                        strAveWaitingTimePercent = "0 %"
+                    Else
+                        strAveWaitingTimePercent = "Less than a Minute"
+                    End If
+                    dgvDoctorSummary.Rows.Add(counter.Counter.Counter_ID, counter.Doctor.FullName, counter.Counter.Department, counter.Counter.Section, counter.QueuedCount, counter.ServedCount, counter.HoldCount, counter.UnservedCount, strServedPercent, strHoldPercent, strUnservedPercent, strAveTimePercent, strAveWaitingTimePercent)
+                    dgvDoctorSummary.Rows(ctr).Height = 30
+                    ctr += 1
+                Next
+                lblTotalClinics.Text = ctr
+                lblQueuedPatient.Text = tmpQueuedPatientCount
+                lblConsultedPatient.Text = tmpConsultedPatientCount
+                lblUnconsultedPatient.Text = tmpUnconsultedPatientCount
+            End If
         End If
     End Sub
 

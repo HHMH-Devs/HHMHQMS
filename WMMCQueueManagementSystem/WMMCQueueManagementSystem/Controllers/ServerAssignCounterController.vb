@@ -1,5 +1,4 @@
-﻿Imports System.Data
-Imports System.Data.SqlClient
+﻿Imports System.Data.SqlClient
 Public Class ServerAssignCounterController
     Public Function GetCertainServerAssignCounter(id As Long) As List(Of ServerAssignCounter)
         Try
@@ -85,6 +84,23 @@ Public Class ServerAssignCounterController
                     clinic.Counter.eprescriptionAddEdit = data.Rows(0)("eprescirptionAddEdit")
                     clinic.Counter.SyncDetail = data.Rows(0)("syncDetail")
                     clinic.Counter.showOnMainCounter = If(data.Rows(0)("isQueuingCounter") > 1, True, False)
+                    clinic.Server.Schedules = New List(Of DoctorSchedule)
+                    cmd = New SqlCommand() With
+                    {
+                        .CommandText = $"select * from serverschedule where serverid = {clinic.Server.Server_ID} and day = {Now.DayOfWeek}"
+                    }
+                    Dim sched = fetchData(cmd).Tables(0)
+
+                    For Each row As DataRow In sched.Rows
+                        Dim docSched As New DoctorSchedule() With {
+                            .ID = row("ID"),
+                            .ServerID = row("ServerID"),
+                            .Day = row("Day"),
+                            .Availability = row("Availability"),
+                            .SchedStatus = row("ScheduleStatus")
+                        }
+                        clinic.Server.Schedules.Add(docSched)
+                    Next
                     Return clinic
                 End If
             End If

@@ -1,5 +1,4 @@
-﻿Imports System.Data
-Imports System.Data.SqlClient
+﻿Imports System.Data.SqlClient
 Public Class CounterController
 
     Public Function NewDoctorClinic(doctorClinic As ServerAssignCounter) As Boolean

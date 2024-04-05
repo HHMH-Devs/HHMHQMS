@@ -51,6 +51,7 @@ Partial Class frmManageServer
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.gbDoctors = New System.Windows.Forms.GroupBox()
+        Me.Schedules_BTN = New System.Windows.Forms.Button()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.rbDoctor = New System.Windows.Forms.RadioButton()
         Me.rbPccAccount = New System.Windows.Forms.RadioButton()
@@ -413,6 +414,7 @@ Partial Class frmManageServer
         'gbDoctors
         '
         Me.gbDoctors.BackColor = System.Drawing.Color.Transparent
+        Me.gbDoctors.Controls.Add(Me.Schedules_BTN)
         Me.gbDoctors.Controls.Add(Me.GroupBox3)
         Me.gbDoctors.Controls.Add(Me.Panel13)
         Me.gbDoctors.Controls.Add(Me.btnSync)
@@ -428,6 +430,22 @@ Partial Class frmManageServer
         Me.gbDoctors.TabIndex = 44
         Me.gbDoctors.TabStop = False
         Me.gbDoctors.Text = "Doctor's Detail (Only for Doctors)"
+        '
+        'Schedules_BTN
+        '
+        Me.Schedules_BTN.BackColor = System.Drawing.Color.LimeGreen
+        Me.Schedules_BTN.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.Schedules_BTN.FlatAppearance.BorderSize = 0
+        Me.Schedules_BTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Schedules_BTN.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Schedules_BTN.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Schedules_BTN.ImageAlign = System.Drawing.ContentAlignment.BottomLeft
+        Me.Schedules_BTN.Location = New System.Drawing.Point(635, 71)
+        Me.Schedules_BTN.Name = "Schedules_BTN"
+        Me.Schedules_BTN.Size = New System.Drawing.Size(203, 30)
+        Me.Schedules_BTN.TabIndex = 48
+        Me.Schedules_BTN.Text = "MANAGE CLINIC SCHEDULES"
+        Me.Schedules_BTN.UseVisualStyleBackColor = False
         '
         'GroupBox3
         '
@@ -448,7 +466,7 @@ Partial Class frmManageServer
         Me.rbDoctor.AutoSize = True
         Me.rbDoctor.Location = New System.Drawing.Point(15, 59)
         Me.rbDoctor.Name = "rbDoctor"
-        Me.rbDoctor.Size = New System.Drawing.Size(130, 20)
+        Me.rbDoctor.Size = New System.Drawing.Size(129, 20)
         Me.rbDoctor.TabIndex = 3
         Me.rbDoctor.Text = "Doctor/Consultant"
         Me.rbDoctor.UseVisualStyleBackColor = True
@@ -459,7 +477,7 @@ Partial Class frmManageServer
         Me.rbPccAccount.Checked = True
         Me.rbPccAccount.Location = New System.Drawing.Point(15, 28)
         Me.rbPccAccount.Name = "rbPccAccount"
-        Me.rbPccAccount.Size = New System.Drawing.Size(148, 20)
+        Me.rbPccAccount.Size = New System.Drawing.Size(147, 20)
         Me.rbPccAccount.TabIndex = 0
         Me.rbPccAccount.TabStop = True
         Me.rbPccAccount.Text = "PCC Service Counter"
@@ -670,7 +688,7 @@ Partial Class frmManageServer
         Me.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnSave.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold)
         Me.btnSave.ForeColor = System.Drawing.Color.White
-        Me.btnSave.Location = New System.Drawing.Point(252, 451)
+        Me.btnSave.Location = New System.Drawing.Point(254, 451)
         Me.btnSave.Name = "btnSave"
         Me.btnSave.Size = New System.Drawing.Size(178, 37)
         Me.btnSave.TabIndex = 10
@@ -792,4 +810,5 @@ Partial Class frmManageServer
     Friend WithEvents txts2 As TextBox
     Friend WithEvents Label12 As Label
     Friend WithEvents btnUpdate As Button
+    Friend WithEvents Schedules_BTN As Button
 End Class
