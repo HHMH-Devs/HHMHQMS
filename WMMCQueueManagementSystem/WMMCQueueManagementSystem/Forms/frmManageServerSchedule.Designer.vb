@@ -26,7 +26,7 @@ Partial Class frmManageServerSchedule
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.lblTittle = New System.Windows.Forms.Label()
-        Me.dgvServer = New System.Windows.Forms.DataGridView()
+        Me.dgvSchedule = New System.Windows.Forms.DataGridView()
         Me.DayColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.AvailabilityColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Panel1 = New System.Windows.Forms.Panel()
@@ -35,7 +35,7 @@ Partial Class frmManageServerSchedule
         Me.AddNewSched_BTN = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
-        CType(Me.dgvServer, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dgvSchedule, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -52,14 +52,14 @@ Partial Class frmManageServerSchedule
         Me.lblTittle.Text = "Manage Clinic Schedule"
         Me.lblTittle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'dgvServer
+        'dgvSchedule
         '
-        Me.dgvServer.AllowUserToAddRows = False
-        Me.dgvServer.AllowUserToDeleteRows = False
-        Me.dgvServer.AllowUserToResizeRows = False
-        Me.dgvServer.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
-        Me.dgvServer.BackgroundColor = System.Drawing.Color.Honeydew
-        Me.dgvServer.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
+        Me.dgvSchedule.AllowUserToAddRows = False
+        Me.dgvSchedule.AllowUserToDeleteRows = False
+        Me.dgvSchedule.AllowUserToResizeRows = False
+        Me.dgvSchedule.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.dgvSchedule.BackgroundColor = System.Drawing.Color.Honeydew
+        Me.dgvSchedule.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
         DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle1.BackColor = System.Drawing.Color.White
         DataGridViewCellStyle1.Font = New System.Drawing.Font("Century Gothic", 9.0!)
@@ -67,9 +67,9 @@ Partial Class frmManageServerSchedule
         DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.PaleGreen
         DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.ControlText
         DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgvServer.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
-        Me.dgvServer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvServer.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DayColumn, Me.AvailabilityColumn})
+        Me.dgvSchedule.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
+        Me.dgvSchedule.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvSchedule.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DayColumn, Me.AvailabilityColumn})
         DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window
         DataGridViewCellStyle2.Font = New System.Drawing.Font("Century Gothic", 9.0!)
@@ -77,19 +77,19 @@ Partial Class frmManageServerSchedule
         DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.PaleGreen
         DataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black
         DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.dgvServer.DefaultCellStyle = DataGridViewCellStyle2
-        Me.dgvServer.Dock = System.Windows.Forms.DockStyle.Top
-        Me.dgvServer.Location = New System.Drawing.Point(0, 101)
-        Me.dgvServer.Name = "dgvServer"
-        Me.dgvServer.ReadOnly = True
-        Me.dgvServer.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken
-        Me.dgvServer.RowHeadersVisible = False
+        Me.dgvSchedule.DefaultCellStyle = DataGridViewCellStyle2
+        Me.dgvSchedule.Dock = System.Windows.Forms.DockStyle.Top
+        Me.dgvSchedule.Location = New System.Drawing.Point(0, 101)
+        Me.dgvSchedule.Name = "dgvSchedule"
+        Me.dgvSchedule.ReadOnly = True
+        Me.dgvSchedule.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken
+        Me.dgvSchedule.RowHeadersVisible = False
         DataGridViewCellStyle3.BackColor = System.Drawing.Color.White
         DataGridViewCellStyle3.Font = New System.Drawing.Font("Century Gothic", 9.0!)
-        Me.dgvServer.RowsDefaultCellStyle = DataGridViewCellStyle3
-        Me.dgvServer.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgvServer.Size = New System.Drawing.Size(871, 347)
-        Me.dgvServer.TabIndex = 14
+        Me.dgvSchedule.RowsDefaultCellStyle = DataGridViewCellStyle3
+        Me.dgvSchedule.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.dgvSchedule.Size = New System.Drawing.Size(871, 347)
+        Me.dgvSchedule.TabIndex = 14
         '
         'DayColumn
         '
@@ -202,7 +202,7 @@ Partial Class frmManageServerSchedule
         Me.ControlBox = False
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.dgvServer)
+        Me.Controls.Add(Me.dgvSchedule)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.lblTittle)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
@@ -210,14 +210,14 @@ Partial Class frmManageServerSchedule
         Me.MinimizeBox = False
         Me.Name = "frmManageServerSchedule"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        CType(Me.dgvServer, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgvSchedule, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
 
     Friend WithEvents lblTittle As Label
-    Friend WithEvents dgvServer As DataGridView
+    Friend WithEvents dgvSchedule As DataGridView
     Friend WithEvents DayColumn As DataGridViewTextBoxColumn
     Friend WithEvents AvailabilityColumn As DataGridViewTextBoxColumn
     Friend WithEvents Panel1 As Panel

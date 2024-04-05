@@ -133,6 +133,34 @@ Public Class ServerController
         End Try
     End Function
 
+    Public Function GetServerSchedules(id As Integer) As List(Of DoctorSchedule)
+        Try
+            Dim cmd As New SqlCommand
+            cmd.CommandText = "SELECT *  FROM wmmcqms.serverschedule where ServerID = @ID"
+            cmd.Parameters.AddWithValue("@ID", id)
+            Dim data As DataTable = fetchData(cmd).Tables(0)
+            If data.Rows.Count > 0 Then
+                Dim schedList As New List(Of DoctorSchedule)
+                For Each row As DataRow In data.Rows
+
+                    Dim scheds As New DoctorSchedule With {
+                        .ID = row("ID"),
+                        .ServerID = row("ServerID"),
+                        .Day = row("Day"),
+                        .Availability = row("Availability"),
+                        .SchedStatus = row("ScheduleStatus")
+                    }
+                    schedList.Add(scheds)
+                Next
+                Return schedList
+            End If
+            Return Nothing
+        Catch ex As SqlException
+            MessageBox.Show(ex.ToString)
+            Return Nothing
+        End Try
+    End Function
+
     Public Function DeleteMultipleServer(ids As List(Of Long)) As Boolean
         Try
             Dim cmds As New List(Of SqlCommand)
