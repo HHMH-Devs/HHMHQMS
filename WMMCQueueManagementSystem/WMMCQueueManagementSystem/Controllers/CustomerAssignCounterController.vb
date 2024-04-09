@@ -1293,7 +1293,7 @@ Public Class CustomerAssignCounterController
                                 (SELECT count(wmmcqms.customerassigncounter.counter_id) from wmmcqms.customerassigncounter where wmmcqms.customerassigncounter.customerassigncounter_id in (select wmmcqms.servedcustomer.customerassigncounter_id from wmmcqms.servedcustomer where datetimeservedend is not null) and wmmcqms.customerassigncounter.counter_id = a.counter_id and  CONVERT(DATE,datetimequeued) BETWEEN @dt1 and @dt2) AS servedCount,
                                 (SELECT count(wmmcqms.customerassigncounter.counter_id) from wmmcqms.customerassigncounter where wmmcqms.customerassigncounter.customerassigncounter_id in (select wmmcqms.servedcustomer.customerassigncounter_id from wmmcqms.servedcustomer where datetimeservedend is null) and wmmcqms.customerassigncounter.counter_id = a.counter_id and  CONVERT(DATE,datetimequeued) BETWEEN @dt1 and @dt2) AS holdCount,
                                 (SELECT avg(DATEDIFF(MINUTE,c.datetimeservedstart,c.datetimeservedend)) from (wmmcqms.customerassigncounter b join wmmcqms.servedcustomer c on(b.customerassigncounter_id = c.customerassigncounter_id)) where c.customerassigncounter_id in (select wmmcqms.servedcustomer.customerassigncounter_id from wmmcqms.servedcustomer) and b.counter_id = a.counter_id and  CONVERT(DATE,b.datetimequeued) BETWEEN @dt1 and @dt2) AS averageTime,
-                                (SELECT avg(DATEDIFF(MINUTE,b.datetimequeued,c.datetimeservedend)) from (wmmcqms.customerassigncounter b join wmmcqms.servedcustomer c on(b.customerassigncounter_id = c.customerassigncounter_id)) where c.customerassigncounter_id in (select wmmcqms.servedcustomer.customerassigncounter_id from wmmcqms.servedcustomer) and b.counter_id = a.counter_id and  CONVERT(DATE,b.datetimequeued) BETWEEN @dt1 and @dt2) AS averageWaitingTime
+                                (SELECT ISNULL(avg(DATEDIFF(MINUTE, case WHEN DATEDIFF(MINUTE, b.datetimequeued, c.datetimeservedstart) >= 60 THEN DATEADD(MINUTE, -15, c.datetimeservedstart) ELSE b.datetimequeued END,c.datetimeservedstart)), 0) from (wmmcqms.customerassigncounter b join wmmcqms.servedcustomer c on(b.customerassigncounter_id = c.customerassigncounter_id)) where c.customerassigncounter_id in (select wmmcqms.servedcustomer.customerassigncounter_id from wmmcqms.servedcustomer) and b.counter_id = a.counter_id and  CONVERT(DATE,b.datetimequeued) BETWEEN @dt1 and @dt2) AS averageWaitingTime
                                 FROM wmmcqms.serverassigncounter as c
                                 JOIN wmmcqms.counter a ON c.counter_id = a.counter_id
                                 RIGHT JOIN wmmcqms.server b on c.server_id = b.server_id
@@ -1334,7 +1334,7 @@ Public Class CustomerAssignCounterController
                                 (SELECT count(wmmcqms.customerassigncounter.counter_id) from wmmcqms.customerassigncounter where wmmcqms.customerassigncounter.customerassigncounter_id in (select wmmcqms.servedcustomer.customerassigncounter_id from wmmcqms.servedcustomer where datetimeservedend is not null) and wmmcqms.customerassigncounter.counter_id = a.counter_id and  CONVERT(DATE,datetimequeued) BETWEEN @dt1 and @dt2) AS servedCount,
                                 (SELECT count(wmmcqms.customerassigncounter.counter_id) from wmmcqms.customerassigncounter where wmmcqms.customerassigncounter.customerassigncounter_id in (select wmmcqms.servedcustomer.customerassigncounter_id from wmmcqms.servedcustomer where datetimeservedend is null) and wmmcqms.customerassigncounter.counter_id = a.counter_id and  CONVERT(DATE,datetimequeued) BETWEEN @dt1 and @dt2) AS holdCount,
                                 (SELECT avg(DATEDIFF(MINUTE,c.datetimeservedstart,c.datetimeservedend)) from (wmmcqms.customerassigncounter b join wmmcqms.servedcustomer c on(b.customerassigncounter_id = c.customerassigncounter_id)) where c.customerassigncounter_id in (select wmmcqms.servedcustomer.customerassigncounter_id from wmmcqms.servedcustomer) and b.counter_id = a.counter_id and  CONVERT(DATE,b.datetimequeued) BETWEEN @dt1 and @dt2) AS averageTime,
-                                (SELECT avg(DATEDIFF(MINUTE,b.datetimequeued,c.datetimeservedstart)) from (wmmcqms.customerassigncounter b join wmmcqms.servedcustomer c on(b.customerassigncounter_id = c.customerassigncounter_id)) where c.customerassigncounter_id in (select wmmcqms.servedcustomer.customerassigncounter_id from wmmcqms.servedcustomer) and b.counter_id = a.counter_id and  CONVERT(DATE,b.datetimequeued) BETWEEN @dt1 and @dt2) AS averageWaitingTime
+                                (SELECT ISNULL(avg(DATEDIFF(MINUTE, case WHEN DATEDIFF(MINUTE, b.datetimequeued, c.datetimeservedstart) >= 60 THEN DATEADD(MINUTE, -15, c.datetimeservedstart) ELSE b.datetimequeued END,c.datetimeservedstart)), 0) from (wmmcqms.customerassigncounter b join wmmcqms.servedcustomer c on(b.customerassigncounter_id = c.customerassigncounter_id)) where c.customerassigncounter_id in (select wmmcqms.servedcustomer.customerassigncounter_id from wmmcqms.servedcustomer) and b.counter_id = a.counter_id and  CONVERT(DATE,b.datetimequeued) BETWEEN @dt1 and @dt2) AS averageWaitingTime
                                 FROM wmmcqms.serverassigncounter as c
                                 JOIN wmmcqms.counter a ON c.counter_id = a.counter_id
                                 RIGHT JOIN wmmcqms.server b on c.server_id = b.server_id
@@ -2175,32 +2175,39 @@ skip:
                     End If
                 End If
             End If
-            cmd0.CommandText = "INSERT INTO [dbo].[customerinfo] ([firstname],[middlename],[lastname],[sex],[birthdate],[civilstatus],[street],[barangay],[city],[province],[phonenumber],[nationality],[email], [picturelocation], [FK_emdPatients]) VALUES (@fname,@mname,@lname,@sex,@bday,@cstat,@street,@brgy,@ct,@cp,@nat,@email,@imgloc,@fkemd); SELECT @@IDENTITY;"
-            cmd0.Parameters.AddWithValue("@fname", If(Not IsNothing(customerAssignCounter.Customer.CustomerInfo.FirstName), customerAssignCounter.Customer.CustomerInfo.FirstName, ""))
-            cmd0.Parameters.AddWithValue("@mname", If(Not IsNothing(customerAssignCounter.Customer.CustomerInfo.Middlename), customerAssignCounter.Customer.CustomerInfo.Middlename, ""))
-            cmd0.Parameters.AddWithValue("@lname", If(Not IsNothing(customerAssignCounter.Customer.CustomerInfo.Lastname), customerAssignCounter.Customer.CustomerInfo.Lastname, ""))
-            cmd0.Parameters.AddWithValue("@sex", If(Not IsNothing(customerAssignCounter.Customer.CustomerInfo.Sex), customerAssignCounter.Customer.CustomerInfo.Sex, ""))
-            cmd0.Parameters.AddWithValue("@bday", If(Not IsNothing(customerAssignCounter.Customer.CustomerInfo.BirthDate), customerAssignCounter.Customer.CustomerInfo.BirthDate, ""))
-            cmd0.Parameters.AddWithValue("@cstat", If(Not IsNothing(customerAssignCounter.Customer.CustomerInfo.CivilStatus), customerAssignCounter.Customer.CustomerInfo.CivilStatus, ""))
-            cmd0.Parameters.AddWithValue("@street", If(Not IsNothing(customerAssignCounter.Customer.CustomerInfo.StreetDrive), customerAssignCounter.Customer.CustomerInfo.StreetDrive, ""))
-            cmd0.Parameters.AddWithValue("@brgy", If(Not IsNothing(customerAssignCounter.Customer.CustomerInfo.Barangay), customerAssignCounter.Customer.CustomerInfo.Barangay, ""))
-            cmd0.Parameters.AddWithValue("@ct", If(Not IsNothing(customerAssignCounter.Customer.CustomerInfo.CityMunicipality), customerAssignCounter.Customer.CustomerInfo.CityMunicipality, ""))
-            cmd0.Parameters.AddWithValue("@cp", If(Not IsNothing(customerAssignCounter.Customer.CustomerInfo.PhoneNumber), customerAssignCounter.Customer.CustomerInfo.PhoneNumber, ""))
-            cmd0.Parameters.AddWithValue("@province", If(Not IsNothing(customerAssignCounter.Customer.CustomerInfo.Province), customerAssignCounter.Customer.CustomerInfo.Province, ""))
-            cmd0.Parameters.AddWithValue("@nat", If(Not IsNothing(customerAssignCounter.Customer.CustomerInfo.Nationality), customerAssignCounter.Customer.CustomerInfo.Nationality, ""))
-            cmd0.Parameters.AddWithValue("@email", If(Not IsNothing(customerAssignCounter.Customer.CustomerInfo.Email), customerAssignCounter.Customer.CustomerInfo.Email, ""))
-            cmd0.Parameters.AddWithValue("@imgloc", If(Not IsNothing(customerAssignCounter.Customer.CustomerInfo.PatientPicture), customerAssignCounter.Customer.CustomerInfo.PatientPicture, ""))
-            cmd0.Parameters.AddWithValue("@fkemd", customerAssignCounter.Customer.CustomerInfo.FK_emdPatients)
-            infoID = excecuteCommandReturnID(cmd0)
-            cmd0 = New SqlCommand
-            cmd0.CommandText = "INSERT INTO [dbo].[customerotherinfo] (Info_ID, ID_Type, ID_Number, Valid_Until) 
-                                                VALUES (@ID, @IDType, @IDNumber, @ValidUntil)"
-            cmd0.Parameters.AddWithValue("@ID", infoID)
-            cmd0.Parameters.AddWithValue("@IDType", customerAssignCounter.Customer.CustomerInfo.IdentificationInfo.ID_Type)
-            cmd0.Parameters.AddWithValue("@IDNumber", customerAssignCounter.Customer.CustomerInfo.IdentificationInfo.ID_Number)
-            cmd0.Parameters.AddWithValue("@ValidUntil", customerAssignCounter.Customer.CustomerInfo.IdentificationInfo.ValidUntil)
-            otherInfoID = excecuteCommandReturnID(cmd0)
+            Try
+                cmd0.CommandText = "INSERT INTO [dbo].[customerinfo] ([firstname],[middlename],[lastname],[sex],[birthdate],[civilstatus],[street],[barangay],[city],[province],[phonenumber],[nationality],[email], [picturelocation], [FK_emdPatients]) VALUES (@fname,@mname,@lname,@sex,@bday,@cstat,@street,@brgy,@ct,@cp,@province,@nat,@email,@imgloc,@fkemd); SELECT @@IDENTITY;"
+                cmd0.Parameters.AddWithValue("@fname", If(Not IsNothing(customerAssignCounter.Customer.CustomerInfo.FirstName), customerAssignCounter.Customer.CustomerInfo.FirstName, ""))
+                cmd0.Parameters.AddWithValue("@mname", If(Not IsNothing(customerAssignCounter.Customer.CustomerInfo.Middlename), customerAssignCounter.Customer.CustomerInfo.Middlename, ""))
+                cmd0.Parameters.AddWithValue("@lname", If(Not IsNothing(customerAssignCounter.Customer.CustomerInfo.Lastname), customerAssignCounter.Customer.CustomerInfo.Lastname, ""))
+                cmd0.Parameters.AddWithValue("@sex", If(Not IsNothing(customerAssignCounter.Customer.CustomerInfo.Sex), customerAssignCounter.Customer.CustomerInfo.Sex, ""))
+                cmd0.Parameters.AddWithValue("@bday", If(Not IsNothing(customerAssignCounter.Customer.CustomerInfo.BirthDate), customerAssignCounter.Customer.CustomerInfo.BirthDate, ""))
+                cmd0.Parameters.AddWithValue("@cstat", If(Not IsNothing(customerAssignCounter.Customer.CustomerInfo.CivilStatus), customerAssignCounter.Customer.CustomerInfo.CivilStatus, ""))
+                cmd0.Parameters.AddWithValue("@street", If(Not IsNothing(customerAssignCounter.Customer.CustomerInfo.StreetDrive), customerAssignCounter.Customer.CustomerInfo.StreetDrive, ""))
+                cmd0.Parameters.AddWithValue("@brgy", If(Not IsNothing(customerAssignCounter.Customer.CustomerInfo.Barangay), customerAssignCounter.Customer.CustomerInfo.Barangay, ""))
+                cmd0.Parameters.AddWithValue("@ct", If(Not IsNothing(customerAssignCounter.Customer.CustomerInfo.CityMunicipality), customerAssignCounter.Customer.CustomerInfo.CityMunicipality, ""))
+                cmd0.Parameters.AddWithValue("@cp", If(Not IsNothing(customerAssignCounter.Customer.CustomerInfo.PhoneNumber), customerAssignCounter.Customer.CustomerInfo.PhoneNumber, ""))
+                cmd0.Parameters.AddWithValue("@province", If(Not IsNothing(customerAssignCounter.Customer.CustomerInfo.Province), customerAssignCounter.Customer.CustomerInfo.Province, ""))
+                cmd0.Parameters.AddWithValue("@nat", If(Not IsNothing(customerAssignCounter.Customer.CustomerInfo.Nationality), customerAssignCounter.Customer.CustomerInfo.Nationality, ""))
+                cmd0.Parameters.AddWithValue("@email", If(Not IsNothing(customerAssignCounter.Customer.CustomerInfo.Email), customerAssignCounter.Customer.CustomerInfo.Email, ""))
+                cmd0.Parameters.AddWithValue("@imgloc", If(Not IsNothing(customerAssignCounter.Customer.CustomerInfo.PatientPicture), customerAssignCounter.Customer.CustomerInfo.PatientPicture, ""))
+                cmd0.Parameters.AddWithValue("@fkemd", customerAssignCounter.Customer.CustomerInfo.FK_emdPatients)
 
+                infoID = excecuteCommandReturnID(cmd0)
+                If infoID > 0 Then
+                    cmd0 = New SqlCommand
+                    cmd0.CommandText = "INSERT INTO [dbo].[customerotherinfo] (Info_ID, ID_Type, ID_Number, Valid_Until) 
+                                                VALUES (@ID, @IDType, @IDNumber, @ValidUntil)"
+                    cmd0.Parameters.AddWithValue("@ID", infoID)
+                    cmd0.Parameters.AddWithValue("@IDType", customerAssignCounter.Customer.CustomerInfo.IdentificationInfo.ID_Type)
+                    cmd0.Parameters.AddWithValue("@IDNumber", customerAssignCounter.Customer.CustomerInfo.IdentificationInfo.ID_Number)
+                    cmd0.Parameters.AddWithValue("@ValidUntil", customerAssignCounter.Customer.CustomerInfo.IdentificationInfo.ValidUntil)
+                    otherInfoID = excecuteCommandReturnID(cmd0)
+                End If
+
+            Catch ex As Exception
+                Console.WriteLine(ex)
+            End Try
 skip:
             If infoID > 0 Then
                 Dim cmd As New SqlCommand

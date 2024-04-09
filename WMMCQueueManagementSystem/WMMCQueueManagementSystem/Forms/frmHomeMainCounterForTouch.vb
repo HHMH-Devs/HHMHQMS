@@ -1,5 +1,4 @@
-﻿Imports Newtonsoft
-Public Class frmHomeMainCounterForTouch
+﻿Public Class frmHomeMainCounterForTouch
     Private _loggedServer As Server
     Private _listOfSelectionCounter As List(Of Counter)
     Private _listOfMabClinics As List(Of ServerAssignCounter)

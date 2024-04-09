@@ -65,6 +65,10 @@ Partial Class frmPatientProfiling
         Me.Button1 = New System.Windows.Forms.Button()
         Me.txtEmail = New System.Windows.Forms.TextBox()
         Me.Label10 = New System.Windows.Forms.Label()
+        Me.ListView1 = New System.Windows.Forms.ListView()
+        Me.ColumnHeader1 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader2 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader3 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.Panel1.SuspendLayout()
         Me.gbsex.SuspendLayout()
         Me.gbcivilstatus.SuspendLayout()
@@ -333,9 +337,9 @@ Partial Class frmPatientProfiling
         Me.pnlOptionalSaving.Controls.Add(Me.btnCancel)
         Me.pnlOptionalSaving.Controls.Add(Me.btnSkip)
         Me.pnlOptionalSaving.Controls.Add(Me.btnSave)
-        Me.pnlOptionalSaving.Location = New System.Drawing.Point(317, 498)
+        Me.pnlOptionalSaving.Location = New System.Drawing.Point(742, 487)
         Me.pnlOptionalSaving.Name = "pnlOptionalSaving"
-        Me.pnlOptionalSaving.Size = New System.Drawing.Size(587, 112)
+        Me.pnlOptionalSaving.Size = New System.Drawing.Size(458, 112)
         Me.pnlOptionalSaving.TabIndex = 32
         '
         'btnCancel
@@ -345,7 +349,7 @@ Partial Class frmPatientProfiling
         Me.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnCancel.Font = New System.Drawing.Font("Arial", 18.0!, System.Drawing.FontStyle.Bold)
         Me.btnCancel.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.btnCancel.Location = New System.Drawing.Point(202, 64)
+        Me.btnCancel.Location = New System.Drawing.Point(140, 64)
         Me.btnCancel.Name = "btnCancel"
         Me.btnCancel.Size = New System.Drawing.Size(178, 40)
         Me.btnCancel.TabIndex = 27
@@ -359,9 +363,9 @@ Partial Class frmPatientProfiling
         Me.btnSkip.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnSkip.Font = New System.Drawing.Font("Arial", 26.25!, System.Drawing.FontStyle.Bold)
         Me.btnSkip.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.btnSkip.Location = New System.Drawing.Point(355, 9)
+        Me.btnSkip.Location = New System.Drawing.Point(251, 9)
         Me.btnSkip.Name = "btnSkip"
-        Me.btnSkip.Size = New System.Drawing.Size(186, 49)
+        Me.btnSkip.Size = New System.Drawing.Size(154, 49)
         Me.btnSkip.TabIndex = 26
         Me.btnSkip.Text = "SKIP"
         Me.btnSkip.UseVisualStyleBackColor = False
@@ -373,9 +377,9 @@ Partial Class frmPatientProfiling
         Me.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnSave.Font = New System.Drawing.Font("Arial", 26.25!, System.Drawing.FontStyle.Bold)
         Me.btnSave.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.btnSave.Location = New System.Drawing.Point(45, 9)
+        Me.btnSave.Location = New System.Drawing.Point(54, 9)
         Me.btnSave.Name = "btnSave"
-        Me.btnSave.Size = New System.Drawing.Size(304, 49)
+        Me.btnSave.Size = New System.Drawing.Size(191, 49)
         Me.btnSave.TabIndex = 25
         Me.btnSave.Text = "CONFIRM"
         Me.btnSave.UseVisualStyleBackColor = False
@@ -386,9 +390,9 @@ Partial Class frmPatientProfiling
         Me.pnlRequiredSaving.BackColor = System.Drawing.Color.Transparent
         Me.pnlRequiredSaving.Controls.Add(Me.btnCancel2)
         Me.pnlRequiredSaving.Controls.Add(Me.btnSave2)
-        Me.pnlRequiredSaving.Location = New System.Drawing.Point(317, 498)
+        Me.pnlRequiredSaving.Location = New System.Drawing.Point(742, 487)
         Me.pnlRequiredSaving.Name = "pnlRequiredSaving"
-        Me.pnlRequiredSaving.Size = New System.Drawing.Size(587, 112)
+        Me.pnlRequiredSaving.Size = New System.Drawing.Size(458, 112)
         Me.pnlRequiredSaving.TabIndex = 33
         '
         'btnCancel2
@@ -398,7 +402,7 @@ Partial Class frmPatientProfiling
         Me.btnCancel2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnCancel2.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnCancel2.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.btnCancel2.Location = New System.Drawing.Point(157, 64)
+        Me.btnCancel2.Location = New System.Drawing.Point(90, 64)
         Me.btnCancel2.Name = "btnCancel2"
         Me.btnCancel2.Size = New System.Drawing.Size(278, 40)
         Me.btnCancel2.TabIndex = 27
@@ -412,7 +416,7 @@ Partial Class frmPatientProfiling
         Me.btnSave2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnSave2.Font = New System.Drawing.Font("Arial", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnSave2.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.btnSave2.Location = New System.Drawing.Point(157, 9)
+        Me.btnSave2.Location = New System.Drawing.Point(90, 9)
         Me.btnSave2.Name = "btnSave2"
         Me.btnSave2.Size = New System.Drawing.Size(278, 49)
         Me.btnSave2.TabIndex = 25
@@ -578,14 +582,42 @@ Partial Class frmPatientProfiling
         Me.Label10.TabIndex = 45
         Me.Label10.Text = "EMAIL"
         '
+        'ListView1
+        '
+        Me.ListView1.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader1, Me.ColumnHeader2, Me.ColumnHeader3})
+        Me.ListView1.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ListView1.HideSelection = False
+        Me.ListView1.Location = New System.Drawing.Point(8, 480)
+        Me.ListView1.Name = "ListView1"
+        Me.ListView1.Size = New System.Drawing.Size(728, 119)
+        Me.ListView1.TabIndex = 47
+        Me.ListView1.UseCompatibleStateImageBehavior = False
+        Me.ListView1.View = System.Windows.Forms.View.Details
+        '
+        'ColumnHeader1
+        '
+        Me.ColumnHeader1.Text = "ID TYPE"
+        Me.ColumnHeader1.Width = 181
+        '
+        'ColumnHeader2
+        '
+        Me.ColumnHeader2.Text = "ID NUMBER"
+        Me.ColumnHeader2.Width = 231
+        '
+        'ColumnHeader3
+        '
+        Me.ColumnHeader3.Text = "VALID UNTIL"
+        Me.ColumnHeader3.Width = 286
+        '
         'frmPatientProfiling
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(1221, 615)
+        Me.ClientSize = New System.Drawing.Size(1221, 604)
         Me.ControlBox = False
+        Me.Controls.Add(Me.ListView1)
         Me.Controls.Add(Me.txtEmail)
         Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.Button1)
@@ -600,8 +632,6 @@ Partial Class frmPatientProfiling
         Me.Controls.Add(Me.txtbday_day)
         Me.Controls.Add(Me.txtbday_month)
         Me.Controls.Add(Me.lbnote)
-        Me.Controls.Add(Me.pnlRequiredSaving)
-        Me.Controls.Add(Me.pnlOptionalSaving)
         Me.Controls.Add(Me.txtSuffix)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.txtcontactno)
@@ -616,6 +646,8 @@ Partial Class frmPatientProfiling
         Me.Controls.Add(Me.txtmname)
         Me.Controls.Add(Me.txtfname)
         Me.Controls.Add(Me.Panel1)
+        Me.Controls.Add(Me.pnlRequiredSaving)
+        Me.Controls.Add(Me.pnlOptionalSaving)
         Me.ForeColor = System.Drawing.Color.FromArgb(CType(CType(13, Byte), Integer), CType(CType(52, Byte), Integer), CType(CType(145, Byte), Integer))
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.Name = "frmPatientProfiling"
@@ -675,4 +707,8 @@ Partial Class frmPatientProfiling
     Friend WithEvents Button1 As Button
     Friend WithEvents txtEmail As TextBox
     Friend WithEvents Label10 As Label
+    Friend WithEvents ListView1 As ListView
+    Friend WithEvents ColumnHeader1 As ColumnHeader
+    Friend WithEvents ColumnHeader2 As ColumnHeader
+    Friend WithEvents ColumnHeader3 As ColumnHeader
 End Class

@@ -137,17 +137,17 @@ endline:
 
     Private Function connectionString() As String
         If My.Settings.isLive Then 'Live Database
-            Return "Data Source=hhmh-bb; User ID=sa; Initial Catalog=hhmhqueueingdb;Password=@Letmein.2023;"
+            Return "Data Source=hhmh-s-bb; User ID=sa; Initial Catalog=hhmhqueueingdb;Password=@Letmein.2023;"
         Else 'Testing Database
-            Return "Data Source=206.101.216.117; User ID=sa; Initial Catalog=wmmcqms;Password=tuscany.2023;"
+            Return "Data Source=hhmh-bb; User ID=sa; Initial Catalog=hhmhqueueingdb;Password=@Letmein.2023;"
         End If
     End Function
 
     Private Function sqlconnectionString() As String
         If My.Settings.isLive Then 'Live Database
-            Return "Data Source=hhmh-bb;User ID=sa;Initial Catalog=HISPRDDTA;Password=@Letmein.2023;"
+            Return "Data Source=hhmh-s-bb;User ID=sa;Initial Catalog=HISPRDDTA;Password=@Letmein.2023;"
         Else 'Testing Database
-            Return "Data Source=206.101.216.117;User ID=sa;Initial Catalog=HISPRDDTA;Password=tuscany.2023;"
+            Return "Data Source=hhmh-bb; User ID=sa; Initial Catalog=hhmhqueueingdb;Password=@Letmein.2023;"
         End If
     End Function
 

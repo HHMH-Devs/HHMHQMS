@@ -856,7 +856,7 @@ Public Class APIController
                     custInfo.PhoneNumber = If(Not IsDBNull(data.Rows(0)("mobilephone")), data.Rows(0)("mobilephone").ToString.ToUpper, "")
                     custInfo.Email = If(Not IsDBNull(data.Rows(0)("email")), data.Rows(0)("email").ToString.ToUpper, "")
                     custInfo.FK_emdPatients = If(Not IsDBNull(data.Rows(0)("PK_psPersonalData")), data.Rows(0)("PK_psPersonalData").ToString.ToUpper, "")
-                    custInfo.Province = If(Not IsDBNull(foundData.Rows(0)("cpprovince")), foundData.Rows(0)("cpprovince").ToString.ToUpper, "")
+                    custInfo.Province = If(Not IsDBNull(data.Rows(0)("cpprovince")), data.Rows(0)("cpprovince").ToString.ToUpper, "")
 
                     Dim cmd2 = New SqlCommand
                     cmd2.CommandText = "SELECT * FROM [dbo].[customerotherinfo] WHERE Info_ID = @ID"

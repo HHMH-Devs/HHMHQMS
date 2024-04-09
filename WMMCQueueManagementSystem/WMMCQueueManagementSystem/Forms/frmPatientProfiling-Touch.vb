@@ -300,7 +300,7 @@
         Else
             bdayString &= " ----"
         End If
-        txtbday.Text = bdayString
+        txtbday.Text = bdayString.ToUpper()
     End Sub
 
     Private Sub SetValidUntil()
@@ -324,7 +324,7 @@
         Else
             dayString &= " ----"
         End If
-        txtidvaliduntil.Text = dayString
+        txtidvaliduntil.Text = dayString.ToUpper()
     End Sub
 
     Private Sub pbMale_Click(sender As Object, e As EventArgs) Handles pbMale.Click

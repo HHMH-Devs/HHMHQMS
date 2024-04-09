@@ -1,6 +1,4 @@
-﻿Imports System.ComponentModel
-
-Public Class frmPatientProfiling
+﻿Public Class frmPatientProfiling
     Private imageChanged As Boolean = False
     Private _isRequired As Boolean = False
     Private isTouch As Boolean = False
@@ -317,4 +315,5 @@ Public Class frmPatientProfiling
             pbProfilePicture.Image = frm.CapturedImage
         End If
     End Sub
+
 End Class

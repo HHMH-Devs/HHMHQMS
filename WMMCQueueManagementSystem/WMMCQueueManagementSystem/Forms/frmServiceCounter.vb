@@ -419,7 +419,7 @@ Public Class frmServiceCounter
             Dim custBDay As String = Strings.Format(customerInfo.BirthDate, "MMM dd, yyyy")
             Dim custGender As String = customerInfo.Sex
             Dim custCivilStatus As String = customerInfo.CivilStatus
-            Dim custCountry As String = IIf(String.IsNullOrEmpty(customerInfo.Nationality), "", IIf(customerInfo.Nationality.Split("-").Length > 1, customerInfo.Nationality.Split("-")(1).Trim(), ""))
+            Dim custCountry As String
             Dim custNationality As String = customerInfo.Nationality.Split("-")(0).Trim()
             Dim custEmail As String = customerInfo.Email
             Dim custContact As String = customerInfo.PhoneNumber
@@ -427,6 +427,16 @@ Public Class frmServiceCounter
             Dim custBarangay As String = customerInfo.Barangay
             Dim custCity As String = customerInfo.CityMunicipality
             Dim custPicture As String = ""
+
+            If customerInfo.Nationality.Length = 0 Then
+                custCountry = ""
+            Else
+                If customerInfo.Nationality.Split("-").Length > 1 Then
+                    custCountry = customerInfo.Nationality.Split("-")(1).Trim()
+                Else
+                    custCountry = ""
+                End If
+            End If
             If IsNothing(customerInfo.FirstName) And IsNothing(customerInfo.Lastname) Then
                 custName = "NAME NOT INDICATED"
             ElseIf (Not customerInfo.FirstName.Trim.Length > 0) And (Not customerInfo.Lastname.Trim.Length > 0) Then
@@ -610,7 +620,7 @@ Public Class frmServiceCounter
                 Me.lblRefNo.BackColor = Color.Gray
                 Me.lblRefNo.ForeColor = Color.White
             End If
-            profile_info1.Text = custLName & Environment.NewLine & custFName & Environment.NewLine & custMName & Environment.NewLine & custAge & Environment.NewLine & custBDay
+            profile_info1.Text = custLName & Environment.NewLine & custFName & Environment.NewLine & custMName & Environment.NewLine & custAge & Environment.NewLine & custBDay & Environment.NewLine & custContact
             profile_info2.Text = custGender & Environment.NewLine & custCivilStatus & Environment.NewLine & custCountry & Environment.NewLine & custNationality & Environment.NewLine & custEmail & Environment.NewLine & custStreet + " " + custBarangay + " " + custCity
             IDInfo_Label.Text = customerInfo.IdentificationInfo.ID_Type & Environment.NewLine & customerInfo.IdentificationInfo.ID_Number & Environment.NewLine & customerInfo.IdentificationInfo.ValidUntil
             If custPicture.Length > 0 Then
