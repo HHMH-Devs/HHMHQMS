@@ -65,10 +65,6 @@ Partial Class frmPatientProfiling
         Me.Button1 = New System.Windows.Forms.Button()
         Me.txtEmail = New System.Windows.Forms.TextBox()
         Me.Label10 = New System.Windows.Forms.Label()
-        Me.ListView1 = New System.Windows.Forms.ListView()
-        Me.ColumnHeader1 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeader2 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeader3 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.Panel1.SuspendLayout()
         Me.gbsex.SuspendLayout()
         Me.gbcivilstatus.SuspendLayout()
@@ -337,7 +333,7 @@ Partial Class frmPatientProfiling
         Me.pnlOptionalSaving.Controls.Add(Me.btnCancel)
         Me.pnlOptionalSaving.Controls.Add(Me.btnSkip)
         Me.pnlOptionalSaving.Controls.Add(Me.btnSave)
-        Me.pnlOptionalSaving.Location = New System.Drawing.Point(742, 487)
+        Me.pnlOptionalSaving.Location = New System.Drawing.Point(381, 487)
         Me.pnlOptionalSaving.Name = "pnlOptionalSaving"
         Me.pnlOptionalSaving.Size = New System.Drawing.Size(458, 112)
         Me.pnlOptionalSaving.TabIndex = 32
@@ -390,7 +386,7 @@ Partial Class frmPatientProfiling
         Me.pnlRequiredSaving.BackColor = System.Drawing.Color.Transparent
         Me.pnlRequiredSaving.Controls.Add(Me.btnCancel2)
         Me.pnlRequiredSaving.Controls.Add(Me.btnSave2)
-        Me.pnlRequiredSaving.Location = New System.Drawing.Point(742, 487)
+        Me.pnlRequiredSaving.Location = New System.Drawing.Point(381, 487)
         Me.pnlRequiredSaving.Name = "pnlRequiredSaving"
         Me.pnlRequiredSaving.Size = New System.Drawing.Size(458, 112)
         Me.pnlRequiredSaving.TabIndex = 33
@@ -582,33 +578,6 @@ Partial Class frmPatientProfiling
         Me.Label10.TabIndex = 45
         Me.Label10.Text = "EMAIL"
         '
-        'ListView1
-        '
-        Me.ListView1.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader1, Me.ColumnHeader2, Me.ColumnHeader3})
-        Me.ListView1.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ListView1.HideSelection = False
-        Me.ListView1.Location = New System.Drawing.Point(8, 480)
-        Me.ListView1.Name = "ListView1"
-        Me.ListView1.Size = New System.Drawing.Size(728, 119)
-        Me.ListView1.TabIndex = 47
-        Me.ListView1.UseCompatibleStateImageBehavior = False
-        Me.ListView1.View = System.Windows.Forms.View.Details
-        '
-        'ColumnHeader1
-        '
-        Me.ColumnHeader1.Text = "ID TYPE"
-        Me.ColumnHeader1.Width = 181
-        '
-        'ColumnHeader2
-        '
-        Me.ColumnHeader2.Text = "ID NUMBER"
-        Me.ColumnHeader2.Width = 231
-        '
-        'ColumnHeader3
-        '
-        Me.ColumnHeader3.Text = "VALID UNTIL"
-        Me.ColumnHeader3.Width = 286
-        '
         'frmPatientProfiling
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -617,7 +586,6 @@ Partial Class frmPatientProfiling
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1221, 604)
         Me.ControlBox = False
-        Me.Controls.Add(Me.ListView1)
         Me.Controls.Add(Me.txtEmail)
         Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.Button1)
@@ -707,8 +675,4 @@ Partial Class frmPatientProfiling
     Friend WithEvents Button1 As Button
     Friend WithEvents txtEmail As TextBox
     Friend WithEvents Label10 As Label
-    Friend WithEvents ListView1 As ListView
-    Friend WithEvents ColumnHeader1 As ColumnHeader
-    Friend WithEvents ColumnHeader2 As ColumnHeader
-    Friend WithEvents ColumnHeader3 As ColumnHeader
 End Class

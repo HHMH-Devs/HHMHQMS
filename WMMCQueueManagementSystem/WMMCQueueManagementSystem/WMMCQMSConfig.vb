@@ -147,7 +147,7 @@ endline:
         If My.Settings.isLive Then 'Live Database
             Return "Data Source=hhmh-s-bb;User ID=sa;Initial Catalog=HISPRDDTA;Password=@Letmein.2023;"
         Else 'Testing Database
-            Return "Data Source=hhmh-bb; User ID=sa; Initial Catalog=hhmhqueueingdb;Password=@Letmein.2023;"
+            Return "Data Source=hhmh-bb; User ID=sa; Initial Catalog=HISPRDDTA;Password=@Letmein.2023;"
         End If
     End Function
 
@@ -748,7 +748,7 @@ endline:
         If My.Settings.isLive Then
             Return "\\192.168.11.2\update\QMS\hhmh_files\template_forms\"
         Else
-            Return "D:\Deploy Apps\HHMHQMS\hhmh_files\template_forms\"
+            Return "\\192.168.11.2\update\QMS\hhmh_files\template_forms\"
         End If
     End Function
 
@@ -756,7 +756,7 @@ endline:
         If My.Settings.isLive Then
             Return "\\192.168.11.2\update\QMS\hhmh_files\patient_forms\"
         Else
-            Return "D:\Deploy Apps\HHMHQMS\hhmh_files\patient_forms\"
+            Return "\\192.168.11.2\update\QMS\hhmh_files\patient_forms\"
         End If
     End Function
 
@@ -764,7 +764,7 @@ endline:
         If My.Settings.isLive Then
             Return "\\192.168.11.2\update\QMS\hhmh_files\doctors_headers\"
         Else
-            Return "D:\Deploy Apps\HHMHQMS\hhmh_files\doctors_headers"
+            Return "\\192.168.11.2\update\QMS\hhmh_files\doctors_headers\"
         End If
     End Function
 
@@ -772,7 +772,7 @@ endline:
         If My.Settings.isLive Then
             Return "\\192.168.11.2\update\QMS\hhmh_files\doctors_signatures\"
         Else
-            Return "D:\Deploy Apps\HHMHQMS\hhmh_files\doctors_signatures"
+            Return "\\192.168.11.2\update\QMS\hhmh_files\doctors_signatures\"
         End If
     End Function
 
