@@ -364,6 +364,12 @@
     <Compile Include="Forms\frmHomeCounterSolo.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Forms\frmManageClinicHours.Designer.vb">
+      <DependentUpon>frmManageClinicHours.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmManageClinicHours.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\frmManageDoctorsClinic.Designer.vb">
       <DependentUpon>frmManageDoctorsClinic.vb</DependentUpon>
     </Compile>
@@ -689,6 +695,7 @@
     <Compile Include="Models\CustomerQueuedSummary.vb" />
     <Compile Include="Models\DetailModel.vb" />
     <Compile Include="Models\Diagnostics.vb" />
+    <Compile Include="Models\DoctorSchedule.vb" />
     <Compile Include="Models\DoctorsPrescription.vb" />
     <Compile Include="Models\DoctorSummary.vb" />
     <Compile Include="Models\ERDoctorsOrder.vb" />
@@ -1018,6 +1025,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmHomeCounterSolo.resx">
       <DependentUpon>frmHomeCounterSolo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmManageClinicHours.resx">
+      <DependentUpon>frmManageClinicHours.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmManageDoctorsClinic.resx">
       <DependentUpon>frmManageDoctorsClinic.vb</DependentUpon>
