@@ -34,6 +34,112 @@ Public Class ServerController
         End Try
     End Function
 
+    Public Function GetDoctorSchedule() As DataTable
+        Try
+            Dim cmd As New SqlCommand
+            cmd.CommandText = "select a.fullname, a.prc, b.[Day], b.Availability, b.ScheduleStatus from wmmcqms.server a LEFT OUTER JOIN wmmcqms.serverschedule b on a.server_id = b.ServerID WHERE a.accountType = 1 ORDER BY a.fullname ASC"
+            Dim schedules = fetchData(cmd).Tables(0)
+            If schedules.Rows.Count > 0 Then
+                Return schedules
+            Else
+                Return Nothing
+            End If
+        Catch ex As Exception
+            Return Nothing
+        End Try
+    End Function
+
+    Public Function GetDoctorSchedule(prc As String) As List(Of DoctorSchedule)
+        Dim Schedule As New List(Of DoctorSchedule)
+        Dim serverId As Long = 0
+        Try
+            Dim cmd As New SqlCommand With {
+               .CommandText = "SELECT * FROM wmmcqms.server where prc = @prc"
+           }
+            cmd.Parameters.AddWithValue("@prc", prc)
+            Dim table As DataTable = WMMCQMSConfig.fetchData(cmd).Tables(0)
+            If (table.Rows.Count > 0) Then
+                serverId = table.Rows(0)("server_id")
+                cmd = New SqlCommand With {
+                    .CommandText = "select * from wmmcqms.serverschedule where ServerID = @id"
+                }
+                cmd.Parameters.AddWithValue("@id", table.Rows(0)("server_id"))
+                table = New DataTable()
+                table = WMMCQMSConfig.fetchData(cmd).Tables(0)
+                If table.Rows.Count <= 0 Then
+                    Return Nothing
+                Else
+                    For Each data As DataRow In table.Rows
+                        Schedule.Add(New DoctorSchedule With {
+                            .SchedID = data.Item("ID"),
+                            .ServerID = data.Item("ServerID"),
+                            .Day = data.Item("Day"),
+                            .Time = data.Item("Availability"),
+                            .Status = data.Item("ScheduleStatus")
+                        })
+                    Next
+                End If
+            End If
+        Catch ex As Exception
+            Return Nothing
+        End Try
+        Return Schedule
+        ''test
+    End Function
+
+    Public Function NewDoctorSchedule(prc As String, sched As List(Of DoctorSchedule)) As Boolean
+        Dim st = False
+        Try
+            Dim cmd As New SqlCommand With {
+               .CommandText = "SELECT * FROM wmmcqms.server where prc = @prc"
+            }
+            cmd.Parameters.AddWithValue("@prc", prc)
+            Dim table As DataTable = WMMCQMSConfig.fetchData(cmd).Tables(0)
+            For Each item In sched
+                If (table.Rows.Count > 0) Then
+                    cmd = New SqlCommand With {
+                        .CommandText = "insert into wmmcqms.serverschedule(ServerID, Day, Availability, ScheduleStatus) values(@ServerID, @Day, @Availability, 1); SELECT @@IDENTITY;"
+                    }
+                    cmd.Parameters.AddWithValue("@ServerID", table.Rows(0)("server_id"))
+                    cmd.Parameters.AddWithValue("@Day", item.Day)
+                    cmd.Parameters.AddWithValue("@Availability", item.Time)
+                    Dim result = excecuteCommandReturnID(cmd)
+                    If result > 0 Then
+                        st = True
+                    Else
+                        st = False
+                    End If
+                End If
+            Next
+        Catch ex As Exception
+            Return st
+        End Try
+        Return st
+    End Function
+
+    Public Function UpdateSchedule(sched As List(Of DoctorSchedule)) As Boolean
+        Dim st = False
+        Try
+            If sched(0).ServerID > 0 Then
+                For Each item In sched
+                    Dim cmd As New SqlCommand With {
+                        .CommandText = "update wmmcqms.serverschedule set Day = @Day, Availability = @Availability, ScheduleStatus = @ScheduleStatus where ID = @ID;"
+                    }
+                    cmd.Parameters.AddWithValue("@Day", item.Day)
+                    cmd.Parameters.AddWithValue("@Availability", item.Time)
+                    cmd.Parameters.AddWithValue("@ScheduleStatus", 1)
+                    cmd.Parameters.AddWithValue("@ID", item.SchedID)
+                    st = excecuteCommand(cmd)
+                Next
+            Else
+                st = True
+            End If
+        Catch ex As Exception
+            Return st
+        End Try
+        Return st
+    End Function
+
     Public Function GetAllServers() As List(Of Server)
         Try
             Dim cmd As New SqlCommand

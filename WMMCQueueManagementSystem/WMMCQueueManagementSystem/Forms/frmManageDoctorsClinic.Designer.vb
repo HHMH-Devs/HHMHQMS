@@ -22,9 +22,9 @@ Partial Class frmManageDoctorsClinic
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.gbMAB = New System.Windows.Forms.GroupBox()
         Me.Panel16 = New System.Windows.Forms.Panel()
         Me.cbFloor = New System.Windows.Forms.ComboBox()
@@ -57,6 +57,7 @@ Partial Class frmManageDoctorsClinic
         Me.btnNewClinic = New System.Windows.Forms.Button()
         Me.btnCancel = New System.Windows.Forms.Button()
         Me.btnSaveClinic = New System.Windows.Forms.Button()
+        Me.ManageClinicHours_Btn = New System.Windows.Forms.Button()
         Me.gbMAB.SuspendLayout()
         Me.Panel16.SuspendLayout()
         Me.Panel15.SuspendLayout()
@@ -245,24 +246,24 @@ Partial Class frmManageDoctorsClinic
         Me.dgvClinicList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.dgvClinicList.BackgroundColor = System.Drawing.Color.Honeydew
         Me.dgvClinicList.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
-        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle4.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle4.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold)
-        DataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgvClinicList.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle4
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold)
+        DataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvClinicList.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
         Me.dgvClinicList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvClinicList.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.id, Me.roomNo, Me.location, Me.type})
-        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.PaleGreen
-        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.dgvClinicList.DefaultCellStyle = DataGridViewCellStyle5
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.PaleGreen
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgvClinicList.DefaultCellStyle = DataGridViewCellStyle2
         Me.dgvClinicList.Dock = System.Windows.Forms.DockStyle.Fill
         Me.dgvClinicList.Location = New System.Drawing.Point(0, 0)
         Me.dgvClinicList.MultiSelect = False
@@ -270,10 +271,10 @@ Partial Class frmManageDoctorsClinic
         Me.dgvClinicList.ReadOnly = True
         Me.dgvClinicList.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken
         Me.dgvClinicList.RowHeadersVisible = False
-        DataGridViewCellStyle6.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle6.Font = New System.Drawing.Font("Arial Narrow", 9.75!)
-        DataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black
-        Me.dgvClinicList.RowsDefaultCellStyle = DataGridViewCellStyle6
+        DataGridViewCellStyle3.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Arial Narrow", 9.75!)
+        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black
+        Me.dgvClinicList.RowsDefaultCellStyle = DataGridViewCellStyle3
         Me.dgvClinicList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.dgvClinicList.Size = New System.Drawing.Size(643, 173)
         Me.dgvClinicList.TabIndex = 34
@@ -322,7 +323,7 @@ Partial Class frmManageDoctorsClinic
         Me.cbCanEKonsulta.Enabled = False
         Me.cbCanEKonsulta.Location = New System.Drawing.Point(10, 21)
         Me.cbCanEKonsulta.Name = "cbCanEKonsulta"
-        Me.cbCanEKonsulta.Size = New System.Drawing.Size(271, 20)
+        Me.cbCanEKonsulta.Size = New System.Drawing.Size(270, 20)
         Me.cbCanEKonsulta.TabIndex = 0
         Me.cbCanEKonsulta.Text = "This Doctor Can Handle eKonsulta Patient"
         Me.cbCanEKonsulta.UseVisualStyleBackColor = True
@@ -376,7 +377,7 @@ Partial Class frmManageDoctorsClinic
         Me.rbERClinics.Enabled = False
         Me.rbERClinics.Location = New System.Drawing.Point(24, 72)
         Me.rbERClinics.Name = "rbERClinics"
-        Me.rbERClinics.Size = New System.Drawing.Size(105, 20)
+        Me.rbERClinics.Size = New System.Drawing.Size(104, 20)
         Me.rbERClinics.TabIndex = 6
         Me.rbERClinics.Text = "ER Physician"
         Me.rbERClinics.UseVisualStyleBackColor = True
@@ -387,7 +388,7 @@ Partial Class frmManageDoctorsClinic
         Me.rbPccClinic.Enabled = False
         Me.rbPccClinic.Location = New System.Drawing.Point(24, 27)
         Me.rbPccClinic.Name = "rbPccClinic"
-        Me.rbPccClinic.Size = New System.Drawing.Size(89, 20)
+        Me.rbPccClinic.Size = New System.Drawing.Size(88, 20)
         Me.rbPccClinic.TabIndex = 3
         Me.rbPccClinic.Text = "PCC Clinic"
         Me.rbPccClinic.UseVisualStyleBackColor = True
@@ -398,7 +399,7 @@ Partial Class frmManageDoctorsClinic
         Me.rbMABClinic.Enabled = False
         Me.rbMABClinic.Location = New System.Drawing.Point(24, 49)
         Me.rbMABClinic.Name = "rbMABClinic"
-        Me.rbMABClinic.Size = New System.Drawing.Size(101, 20)
+        Me.rbMABClinic.Size = New System.Drawing.Size(100, 20)
         Me.rbMABClinic.TabIndex = 1
         Me.rbMABClinic.Text = "Private Clinic"
         Me.rbMABClinic.UseVisualStyleBackColor = True
@@ -471,12 +472,27 @@ Partial Class frmManageDoctorsClinic
         Me.btnSaveClinic.UseVisualStyleBackColor = False
         Me.btnSaveClinic.Visible = False
         '
+        'ManageClinicHours_Btn
+        '
+        Me.ManageClinicHours_Btn.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.ManageClinicHours_Btn.BackColor = System.Drawing.Color.LimeGreen
+        Me.ManageClinicHours_Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ManageClinicHours_Btn.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold)
+        Me.ManageClinicHours_Btn.ForeColor = System.Drawing.Color.White
+        Me.ManageClinicHours_Btn.Location = New System.Drawing.Point(352, 223)
+        Me.ManageClinicHours_Btn.Name = "ManageClinicHours_Btn"
+        Me.ManageClinicHours_Btn.Size = New System.Drawing.Size(168, 53)
+        Me.ManageClinicHours_Btn.TabIndex = 100
+        Me.ManageClinicHours_Btn.Text = "MANAGE CLINIC" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "HOURS"
+        Me.ManageClinicHours_Btn.UseVisualStyleBackColor = False
+        '
         'frmManageDoctorsClinic
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(878, 462)
+        Me.Controls.Add(Me.ManageClinicHours_Btn)
         Me.Controls.Add(Me.btnSaveClinic)
         Me.Controls.Add(Me.btnCancel)
         Me.Controls.Add(Me.btnNewClinic)
@@ -543,4 +559,5 @@ Partial Class frmManageDoctorsClinic
     Friend WithEvents btnSaveClinic As Button
     Friend WithEvents txtClinicDesc As TextBox
     Friend WithEvents rbERClinics As RadioButton
+    Friend WithEvents ManageClinicHours_Btn As Button
 End Class

@@ -1701,26 +1701,112 @@ Public Class CustomerAssignCounterController
                     cmd3.CommandText = "SELECT ISNULL(MAX(queuenumber) + 1,101) as nextNum FROM wmmcqms.customerassigncounter where CONVERT(DATE,datetimequeued) = convert(DATE,GETDATE()) and counter_id = @ID"
                     cmd3.Parameters.AddWithValue("@ID", customerAssignCounter.Counter.Counter_ID)
                     Dim nextNum As Long = fetchData(cmd3).Tables(0).Rows(0).Item("nextNum")
-                    Dim cmd2 As New SqlCommand
-                    cmd2.CommandText = "INSERT INTO [wmmcqms].[customerassigncounter] (counter_id, customer_id, priority, queuenumber, paymentmethod, notes, notedepartment, notesection) VALUES (@countrID,@custID,@prio,@nextNum,@payment,@note,@ntdept,@ntsect);"
-                    cmd2.Parameters.AddWithValue("@countrID", customerAssignCounter.Counter.Counter_ID)
-                    cmd2.Parameters.AddWithValue("@custID", customerID)
-                    cmd2.Parameters.AddWithValue("@prio", customerAssignCounter.Priority)
-                    cmd2.Parameters.AddWithValue("@nextNum", nextNum)
-                    cmd2.Parameters.AddWithValue("@payment", customerAssignCounter.PaymentMethod)
-                    cmd2.Parameters.AddWithValue("@note", If(Not IsNothing(customerAssignCounter.Notes), customerAssignCounter.Notes, DBNull.Value))
-                    cmd2.Parameters.AddWithValue("@ntdept", If(Not IsNothing(customerAssignCounter.NoteDepartment), customerAssignCounter.NoteDepartment, DBNull.Value))
-                    cmd2.Parameters.AddWithValue("@ntsect", If(Not IsNothing(customerAssignCounter.NoteSection), customerAssignCounter.NoteSection, DBNull.Value))
-                    If excecuteCommand(cmd2) Then
-                        Dim numlen As Integer = nextNum.ToString.Length
-                        If numlen = 1 Then
-                            Return customerAssignCounter.Counter.CounterPrefix + "-00" + nextNum.ToString
-                        ElseIf numlen = 2 Then
-                            Return customerAssignCounter.Counter.CounterPrefix + "-0" + nextNum.ToString
-                        Else
-                            Return customerAssignCounter.Counter.CounterPrefix + "-" + nextNum.ToString
+                    Dim xcmd As New SqlCommand
+                    xcmd.CommandText = "select a.server_id, a.fullname, a.prc, b.[Day], b.Availability, b.ScheduleStatus
+                                        from wmmcqms.server a LEFT OUTER JOIN wmmcqms.serverschedule b on a.server_id = b.ServerID
+                                        LEFT JOIN wmmcqms.serverassigncounter c on a.server_id = c.server_id
+                                        WHERE a.accountType = 1 AND b.[Day] = @day AND c.counter_id = @CounterID
+                                        ORDER BY a.fullname ASC"
+                    xcmd.Parameters.AddWithValue("@CounterID", customerAssignCounter.Counter.Counter_ID)
+                    xcmd.Parameters.AddWithValue("@day", Now.ToString("dddd").ToUpper)
+                    Dim sched = fetchData(xcmd).Tables(0)
+                    If sched.Rows.Count <= 0 Then
+                        Dim cmd2 As New SqlCommand
+                        cmd2.CommandText = "INSERT INTO [wmmcqms].[customerassigncounter] (counter_id, customer_id, priority, queuenumber, paymentmethod, notes, notedepartment, notesection) VALUES (@countrID,@custID,@prio,@nextNum,@payment,@note,@ntdept,@ntsect);"
+                        cmd2.Parameters.AddWithValue("@countrID", customerAssignCounter.Counter.Counter_ID)
+                        cmd2.Parameters.AddWithValue("@custID", customerAssignCounter.Customer.Customer_ID)
+                        cmd2.Parameters.AddWithValue("@prio", 0)
+                        cmd2.Parameters.AddWithValue("@nextNum", nextNum)
+                        cmd2.Parameters.AddWithValue("@payment", customerAssignCounter.PaymentMethod)
+                        cmd2.Parameters.AddWithValue("@note", If(Not IsNothing(customerAssignCounter.Notes), customerAssignCounter.Notes, DBNull.Value))
+                        cmd2.Parameters.AddWithValue("@ntdept", If(Not IsNothing(customerAssignCounter.NoteDepartment), customerAssignCounter.NoteDepartment, DBNull.Value))
+                        cmd2.Parameters.AddWithValue("@ntsect", If(Not IsNothing(customerAssignCounter.NoteSection), customerAssignCounter.NoteSection, DBNull.Value))
+                        If excecuteCommand(cmd2) Then
+                            Dim numlen As Integer = nextNum.ToString.Length
+                            If numlen = 1 Then
+                                Return customerAssignCounter.Counter.CounterPrefix + "-00" + nextNum.ToString
+                            ElseIf numlen = 2 Then
+                                Return customerAssignCounter.Counter.CounterPrefix + "-0" + nextNum.ToString
+                            Else
+                                Return customerAssignCounter.Counter.CounterPrefix + "-" + nextNum.ToString
+                            End If
                         End If
                     End If
+                    If sched.Rows.Count > 0 Then
+                        For Each rw As DataRow In sched.Rows
+                            Dim FromTo = rw.Item("Availability").ToString.Split(New String() {"-"}, StringSplitOptions.RemoveEmptyEntries)
+                            Dim time As Date
+                            Dim st = Date.TryParse(FromTo(0).Trim(), time)
+                            If st = True Then
+                                Dim cmd2 As New SqlCommand
+                                cmd2.CommandText = "INSERT INTO [wmmcqms].[customerassigncounter] (counter_id, customer_id, datetimequeued, priority, queuenumber, paymentmethod, notes, notedepartment, notesection) VALUES (@countrID,@custID,@datetimequeued,@prio,@nextNum,@payment,@note,@ntdept,@ntsect);"
+                                cmd2.Parameters.AddWithValue("@countrID", customerAssignCounter.Counter.Counter_ID)
+                                cmd2.Parameters.AddWithValue("@custID", customerAssignCounter.Customer.Customer_ID)
+                                cmd2.Parameters.AddWithValue("@datetimequeued", Convert.ToDateTime(Now.ToString("yyyy-MM-dd") & " " & time.ToString("HH:mm:ss")).AddMinutes(-15))
+                                cmd2.Parameters.AddWithValue("@prio", 0)
+                                cmd2.Parameters.AddWithValue("@nextNum", nextNum)
+                                cmd2.Parameters.AddWithValue("@payment", customerAssignCounter.PaymentMethod)
+                                cmd2.Parameters.AddWithValue("@note", If(Not IsNothing(customerAssignCounter.Notes), customerAssignCounter.Notes, DBNull.Value))
+                                cmd2.Parameters.AddWithValue("@ntdept", If(Not IsNothing(customerAssignCounter.NoteDepartment), customerAssignCounter.NoteDepartment, DBNull.Value))
+                                cmd2.Parameters.AddWithValue("@ntsect", If(Not IsNothing(customerAssignCounter.NoteSection), customerAssignCounter.NoteSection, DBNull.Value))
+                                If excecuteCommand(cmd2) Then
+                                    Dim numlen As Integer = nextNum.ToString.Length
+                                    If numlen = 1 Then
+                                        Return customerAssignCounter.Counter.CounterPrefix + "-00" + nextNum.ToString
+                                    ElseIf numlen = 2 Then
+                                        Return customerAssignCounter.Counter.CounterPrefix + "-0" + nextNum.ToString
+                                    Else
+                                        Return customerAssignCounter.Counter.CounterPrefix + "-" + nextNum.ToString
+                                    End If
+                                End If
+                            Else
+                                Dim cmd2 As New SqlCommand
+                                cmd2.CommandText = "INSERT INTO [wmmcqms].[customerassigncounter] (counter_id, customer_id, priority, queuenumber, paymentmethod, notes, notedepartment, notesection) VALUES (@countrID,@custID,@prio,@nextNum,@payment,@note,@ntdept,@ntsect);"
+                                cmd2.Parameters.AddWithValue("@countrID", customerAssignCounter.Counter.Counter_ID)
+                                cmd2.Parameters.AddWithValue("@custID", customerAssignCounter.Customer.Customer_ID)
+                                cmd2.Parameters.AddWithValue("@prio", 0)
+                                cmd2.Parameters.AddWithValue("@nextNum", nextNum)
+                                cmd2.Parameters.AddWithValue("@payment", customerAssignCounter.PaymentMethod)
+                                cmd2.Parameters.AddWithValue("@note", If(Not IsNothing(customerAssignCounter.Notes), customerAssignCounter.Notes, DBNull.Value))
+                                cmd2.Parameters.AddWithValue("@ntdept", If(Not IsNothing(customerAssignCounter.NoteDepartment), customerAssignCounter.NoteDepartment, DBNull.Value))
+                                cmd2.Parameters.AddWithValue("@ntsect", If(Not IsNothing(customerAssignCounter.NoteSection), customerAssignCounter.NoteSection, DBNull.Value))
+                                If excecuteCommand(cmd2) Then
+                                    Dim numlen As Integer = nextNum.ToString.Length
+                                    If numlen = 1 Then
+                                        Return customerAssignCounter.Counter.CounterPrefix + "-00" + nextNum.ToString
+                                    ElseIf numlen = 2 Then
+                                        Return customerAssignCounter.Counter.CounterPrefix + "-0" + nextNum.ToString
+                                    Else
+                                        Return customerAssignCounter.Counter.CounterPrefix + "-" + nextNum.ToString
+                                    End If
+                                End If
+                            End If
+                        Next
+                    End If
+                    'Dim cmd3 As New SqlCommand
+                    'cmd3.CommandText = "SELECT ISNULL(MAX(queuenumber) + 1,101) as nextNum FROM wmmcqms.customerassigncounter where CONVERT(DATE,datetimequeued) = convert(DATE,GETDATE()) and counter_id = @ID"
+                    'cmd3.Parameters.AddWithValue("@ID", customerAssignCounter.Counter.Counter_ID)
+                    'Dim nextNum As Long = fetchData(cmd3).Tables(0).Rows(0).Item("nextNum")
+                    'Dim cmd2 As New SqlCommand
+                    'cmd2.CommandText = "INSERT INTO [wmmcqms].[customerassigncounter] (counter_id, customer_id, priority, queuenumber, paymentmethod, notes, notedepartment, notesection) VALUES (@countrID,@custID,@prio,@nextNum,@payment,@note,@ntdept,@ntsect);"
+                    'cmd2.Parameters.AddWithValue("@countrID", customerAssignCounter.Counter.Counter_ID)
+                    'cmd2.Parameters.AddWithValue("@custID", customerID)
+                    'cmd2.Parameters.AddWithValue("@prio", customerAssignCounter.Priority)
+                    'cmd2.Parameters.AddWithValue("@nextNum", nextNum)
+                    'cmd2.Parameters.AddWithValue("@payment", customerAssignCounter.PaymentMethod)
+                    'cmd2.Parameters.AddWithValue("@note", If(Not IsNothing(customerAssignCounter.Notes), customerAssignCounter.Notes, DBNull.Value))
+                    'cmd2.Parameters.AddWithValue("@ntdept", If(Not IsNothing(customerAssignCounter.NoteDepartment), customerAssignCounter.NoteDepartment, DBNull.Value))
+                    'cmd2.Parameters.AddWithValue("@ntsect", If(Not IsNothing(customerAssignCounter.NoteSection), customerAssignCounter.NoteSection, DBNull.Value))
+                    'If excecuteCommand(cmd2) Then
+                    '    Dim numlen As Integer = nextNum.ToString.Length
+                    '    If numlen = 1 Then
+                    '        Return customerAssignCounter.Counter.CounterPrefix + "-00" + nextNum.ToString
+                    '    ElseIf numlen = 2 Then
+                    '        Return customerAssignCounter.Counter.CounterPrefix + "-0" + nextNum.ToString
+                    '    Else
+                    '        Return customerAssignCounter.Counter.CounterPrefix + "-" + nextNum.ToString
+                    '    End If
+                    'End If
                 End If
             End If
             Return Nothing
@@ -1737,25 +1823,87 @@ Public Class CustomerAssignCounterController
             cmdNextNumber.Parameters.AddWithValue("@ID", forTransferPatient.Counter.Counter_ID)
             Dim nextNum As Long = fetchData(cmdNextNumber).Tables(0).Rows(0).Item("nextNum")
             Dim cmd As New SqlCommand
-            Dim cmd2 As New SqlCommand
-            cmd2.CommandText = "INSERT INTO [wmmcqms].[customerassigncounter] (counter_id, customer_id, priority, queuenumber, paymentmethod, notes, notedepartment, notesection) VALUES (@countrID,@custID,@prio,@nextNum,@payment,@note,@ntdept,@ntsect);"
-            cmd2.Parameters.AddWithValue("@countrID", forTransferPatient.Counter.Counter_ID)
-            cmd2.Parameters.AddWithValue("@custID", forTransferPatient.Customer.Customer_ID)
-            cmd2.Parameters.AddWithValue("@prio", 0)
-            cmd2.Parameters.AddWithValue("@nextNum", nextNum)
-            cmd2.Parameters.AddWithValue("@payment", forTransferPatient.PaymentMethod)
-            cmd2.Parameters.AddWithValue("@note", If(Not IsNothing(forTransferPatient.Notes), forTransferPatient.Notes, DBNull.Value))
-            cmd2.Parameters.AddWithValue("@ntdept", If(Not IsNothing(forTransferPatient.NoteDepartment), forTransferPatient.NoteDepartment, DBNull.Value))
-            cmd2.Parameters.AddWithValue("@ntsect", If(Not IsNothing(forTransferPatient.NoteSection), forTransferPatient.NoteSection, DBNull.Value))
-            If excecuteCommand(cmd2) Then
-                Dim numlen As Integer = nextNum.ToString.Length
-                If numlen = 1 Then
-                    Return forTransferPatient.Counter.CounterPrefix + "-00" + nextNum.ToString
-                ElseIf numlen = 2 Then
-                    Return forTransferPatient.Counter.CounterPrefix + "-0" + nextNum.ToString
-                Else
-                    Return forTransferPatient.Counter.CounterPrefix + "-" + nextNum.ToString
+            Dim xcmd As New SqlCommand
+            xcmd.CommandText = "select a.server_id, a.fullname, a.prc, b.[Day], b.Availability, b.ScheduleStatus
+                                from wmmcqms.server a LEFT OUTER JOIN wmmcqms.serverschedule b on a.server_id = b.ServerID
+                                LEFT JOIN wmmcqms.serverassigncounter c on a.server_id = c.server_id
+                                WHERE a.accountType = 1 AND b.[Day] = @day AND c.counter_id = @CounterID
+                                ORDER BY a.fullname ASC"
+            xcmd.Parameters.AddWithValue("@CounterID", forTransferPatient.Counter.Counter_ID)
+            xcmd.Parameters.AddWithValue("@day", Now.ToString("dddd").ToUpper)
+            Dim sched = fetchData(xcmd).Tables(0)
+            If sched.Rows.Count <= 0 Then
+                Dim cmd2 As New SqlCommand
+                cmd2.CommandText = "INSERT INTO [wmmcqms].[customerassigncounter] (counter_id, customer_id, priority, queuenumber, paymentmethod, notes, notedepartment, notesection) VALUES (@countrID,@custID,@prio,@nextNum,@payment,@note,@ntdept,@ntsect);"
+                cmd2.Parameters.AddWithValue("@countrID", forTransferPatient.Counter.Counter_ID)
+                cmd2.Parameters.AddWithValue("@custID", forTransferPatient.Customer.Customer_ID)
+                cmd2.Parameters.AddWithValue("@prio", 0)
+                cmd2.Parameters.AddWithValue("@nextNum", nextNum)
+                cmd2.Parameters.AddWithValue("@payment", forTransferPatient.PaymentMethod)
+                cmd2.Parameters.AddWithValue("@note", If(Not IsNothing(forTransferPatient.Notes), forTransferPatient.Notes, DBNull.Value))
+                cmd2.Parameters.AddWithValue("@ntdept", If(Not IsNothing(forTransferPatient.NoteDepartment), forTransferPatient.NoteDepartment, DBNull.Value))
+                cmd2.Parameters.AddWithValue("@ntsect", If(Not IsNothing(forTransferPatient.NoteSection), forTransferPatient.NoteSection, DBNull.Value))
+                If excecuteCommand(cmd2) Then
+                    Dim numlen As Integer = nextNum.ToString.Length
+                    If numlen = 1 Then
+                        Return forTransferPatient.Counter.CounterPrefix + "-00" + nextNum.ToString
+                    ElseIf numlen = 2 Then
+                        Return forTransferPatient.Counter.CounterPrefix + "-0" + nextNum.ToString
+                    Else
+                        Return forTransferPatient.Counter.CounterPrefix + "-" + nextNum.ToString
+                    End If
                 End If
+            End If
+            If sched.Rows.Count > 0 Then
+                For Each rw As DataRow In sched.Rows
+                    Dim FromTo = rw.Item("Availability").ToString.Split(New String() {"-"}, StringSplitOptions.RemoveEmptyEntries)
+                    Dim time As Date
+                    Dim st = Date.TryParse(FromTo(0).Trim(), time)
+                    If st = True Then
+                        Dim cmd2 As New SqlCommand
+                        cmd2.CommandText = "INSERT INTO [wmmcqms].[customerassigncounter] (counter_id, customer_id, datetimequeued, priority, queuenumber, paymentmethod, notes, notedepartment, notesection) VALUES (@countrID,@custID,@datetimequeued,@prio,@nextNum,@payment,@note,@ntdept,@ntsect);"
+                        cmd2.Parameters.AddWithValue("@countrID", forTransferPatient.Counter.Counter_ID)
+                        cmd2.Parameters.AddWithValue("@custID", forTransferPatient.Customer.Customer_ID)
+                        cmd2.Parameters.AddWithValue("@datetimequeued", Convert.ToDateTime(Now.ToString("yyyy-MM-dd") & " " & time.ToString("HH:mm:ss")).AddMinutes(-15))
+                        cmd2.Parameters.AddWithValue("@prio", 0)
+                        cmd2.Parameters.AddWithValue("@nextNum", nextNum)
+                        cmd2.Parameters.AddWithValue("@payment", forTransferPatient.PaymentMethod)
+                        cmd2.Parameters.AddWithValue("@note", If(Not IsNothing(forTransferPatient.Notes), forTransferPatient.Notes, DBNull.Value))
+                        cmd2.Parameters.AddWithValue("@ntdept", If(Not IsNothing(forTransferPatient.NoteDepartment), forTransferPatient.NoteDepartment, DBNull.Value))
+                        cmd2.Parameters.AddWithValue("@ntsect", If(Not IsNothing(forTransferPatient.NoteSection), forTransferPatient.NoteSection, DBNull.Value))
+                        If excecuteCommand(cmd2) Then
+                            Dim numlen As Integer = nextNum.ToString.Length
+                            If numlen = 1 Then
+                                Return forTransferPatient.Counter.CounterPrefix + "-00" + nextNum.ToString
+                            ElseIf numlen = 2 Then
+                                Return forTransferPatient.Counter.CounterPrefix + "-0" + nextNum.ToString
+                            Else
+                                Return forTransferPatient.Counter.CounterPrefix + "-" + nextNum.ToString
+                            End If
+                        End If
+                    Else
+                        Dim cmd2 As New SqlCommand
+                        cmd2.CommandText = "INSERT INTO [wmmcqms].[customerassigncounter] (counter_id, customer_id, priority, queuenumber, paymentmethod, notes, notedepartment, notesection) VALUES (@countrID,@custID,@prio,@nextNum,@payment,@note,@ntdept,@ntsect);"
+                        cmd2.Parameters.AddWithValue("@countrID", forTransferPatient.Counter.Counter_ID)
+                        cmd2.Parameters.AddWithValue("@custID", forTransferPatient.Customer.Customer_ID)
+                        cmd2.Parameters.AddWithValue("@prio", 0)
+                        cmd2.Parameters.AddWithValue("@nextNum", nextNum)
+                        cmd2.Parameters.AddWithValue("@payment", forTransferPatient.PaymentMethod)
+                        cmd2.Parameters.AddWithValue("@note", If(Not IsNothing(forTransferPatient.Notes), forTransferPatient.Notes, DBNull.Value))
+                        cmd2.Parameters.AddWithValue("@ntdept", If(Not IsNothing(forTransferPatient.NoteDepartment), forTransferPatient.NoteDepartment, DBNull.Value))
+                        cmd2.Parameters.AddWithValue("@ntsect", If(Not IsNothing(forTransferPatient.NoteSection), forTransferPatient.NoteSection, DBNull.Value))
+                        If excecuteCommand(cmd2) Then
+                            Dim numlen As Integer = nextNum.ToString.Length
+                            If numlen = 1 Then
+                                Return forTransferPatient.Counter.CounterPrefix + "-00" + nextNum.ToString
+                            ElseIf numlen = 2 Then
+                                Return forTransferPatient.Counter.CounterPrefix + "-0" + nextNum.ToString
+                            Else
+                                Return forTransferPatient.Counter.CounterPrefix + "-" + nextNum.ToString
+                            End If
+                        End If
+                    End If
+                Next
             End If
             Return Nothing
         Catch ex As Exception
