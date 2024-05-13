@@ -1,5 +1,4 @@
-﻿Imports System.Data
-Imports System.Data.SqlClient
+﻿Imports System.Data.SqlClient
 Public Class CounterController
 
     Public Function NewDoctorClinic(doctorClinic As ServerAssignCounter) As Boolean
@@ -1019,10 +1018,16 @@ Public Class CounterController
     Public Function GetAllPCCClinicQueuingCounters() As List(Of ServerAssignCounter)
         Try
             Dim cmd As New SqlCommand
-            cmd.CommandText = "SELECT *, (SELECT count([serverassigncounter_id]) FROM [wmmcqms].[servertransaction] WHERE serverassigncounter_id = a.serverassigncounter_ID and datetimelogout is null and CONVERT(DATE,datetimelogin) = CONVERT(DATE,GETDATE())) as Logged
-                               FROM [wmmcqms].[serverassigncounter] as a 
-                               JOIN [wmmcqms].[server] as b on a.server_id = b.server_id and b.accountType = 1 
-                               JOIN [wmmcqms].[counter] as c on a.counter_id = c.counter_id and c.counterType = 2 ORDER BY b.fullname ASC"
+            cmd.CommandText = "SELECT *, (SELECT count([serverassigncounter_id])
+                                FROM [wmmcqms].[servertransaction]
+                                WHERE serverassigncounter_id = a.serverassigncounter_ID and datetimelogout is null and CONVERT(DATE,datetimelogin) = CONVERT(DATE,GETDATE())) as Logged
+                                FROM [wmmcqms].[serverassigncounter] as a
+                                JOIN [wmmcqms].[server] as b on a.server_id = b.server_id and b.accountType = 1
+                                JOIN [wmmcqms].[counter] as c on a.counter_id = c.counter_id and c.counterType = 2
+                                --JOIN [wmmcqms].serverschedule d on a.server_id = d.ServerID
+                                --WHERE (d.Availability <> '' and d.Availability IS NOT NULL) and d.[Day] = @day
+                                ORDER BY b.fullname ASC"
+            cmd.Parameters.AddWithValue("@day", Now.ToString("dddd"))
             Dim data As DataTable = fetchData(cmd).Tables(0)
 
             If Not IsNothing(data) Then
