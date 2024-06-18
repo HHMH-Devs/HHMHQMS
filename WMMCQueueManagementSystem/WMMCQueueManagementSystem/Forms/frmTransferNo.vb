@@ -201,7 +201,7 @@
                             Dim patientName As String = transferedCustomerAssignCounter.Customer.FullName
                             Dim counter As String = ("PLEASE GO TO " & transferedCustomerAssignCounter.Counter.ServiceDescription).Trim.ToUpper
                             Dim notes As String = ("PLEASE WAIT FOR YOUR NUMBER TO BE CALLED. THANK YOU").Trim.ToUpper
-                            Dim frm As New frmNoGenerated(generatedNumber, patientName, counter, notes)
+                            Dim frm As New frmNoGenerated(generatedNumber, patientName, counter, notes, transferedCustomerAssignCounter.Customer.FK_emdPatients)
                             frm.ShowDialog()
                             If transferLimit > 0 Then
                                 If MessageBox.Show("Do you want to another transfer of " + Me.CustomerAssignCounter.ProcessedQueueNumber + "? [YES: Select Another Counter to Transfer] [NO: Close Transfer]", "Transfer Another", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = DialogResult.Yes Then
@@ -277,7 +277,7 @@
                                     counter = "PLEASE GO TO CASHIER 1"
                                 End If
                                 Dim notes As String = ("PLEASE WAIT FOR YOUR NUMBER TO BE CALLED. THANK YOU").Trim.ToUpper
-                                Dim frm As New frmNoGenerated(generatedNumber, patientName, counter, notes)
+                                Dim frm As New frmNoGenerated(generatedNumber, patientName, counter, notes, transferedCustomerAssignCounter.Customer.FK_emdPatients)
                                 frm.ShowDialog(Me)
                                 If transferLimit > 0 Then
                                     If MessageBox.Show("Do you want to another transfer of " + Me.CustomerAssignCounter.ProcessedQueueNumber + "? [YES: Select Another Counter to Transfer] [NO: Close Transfer]", "Transfer Another", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = DialogResult.Yes Then

@@ -370,6 +370,7 @@ PrintNormalNumber:
                             .Add(generatedNumber.Trim.ToUpper, customerAssignCounter.Customer.FullName.Trim.ToUpper, ("THIS IS YOUR NUMBER FOR " & customerAssignCounter.Counter.ServiceDescription).Trim.ToUpper, ("PLEASE WAIT FOR YOUR NUMBER TO BE CALLED. THANK YOU").Trim.ToUpper)
                         End With
                         reportDocs.SetDataSource(dt)
+                        reportDocs.SetParameterValue("FK_emdPatients", String.Format("{0}", customerAssignCounter.Customer.FK_emdPatients))
                         printProgress.Value = 60
                         progressText.Text = "PRINTING NUMBER..."
                         reportDocs.PrintToPrinter(1, False, 0, 0)

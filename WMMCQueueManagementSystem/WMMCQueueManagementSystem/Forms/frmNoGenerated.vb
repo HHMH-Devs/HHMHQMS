@@ -1,15 +1,21 @@
-﻿Public Class frmNoGenerated
+﻿Imports System.Drawing.Imaging
+Imports System.IO
+Imports Spire.Barcode
+
+Public Class frmNoGenerated
     Private _ticketNumber As String = ""
     Private _patientName As String = ""
     Private _counterName As String = ""
     Private _notes As String = ""
+    Private _fk_emdPatients As String = ""
 
-    Sub New(ticketNumber As String, patientName As String, counterName As String, notes As String)
+    Sub New(ticketNumber As String, patientName As String, counterName As String, notes As String, fkemdpat As String)
         InitializeComponent()
         _ticketNumber = ticketNumber
         _patientName = patientName
         _counterName = counterName
         _notes = notes
+        _fk_emdPatients = fkemdpat
     End Sub
 
 
@@ -27,13 +33,30 @@
                 Dim reportDocs As New ticketNoReport
                 Dim dt As New DataTable
                 With dt.Columns
-                    .Add("ticketNo")
-                    .Add("patName")
-                    .Add("counter")
-                    .Add("note")
+                    .Add("ticketNo", GetType(String))
+                    .Add("patName", GetType(String))
+                    .Add("counter", GetType(String))
+                    .Add("note", GetType(String))
+                    .Add("Barcode", GetType(Byte()))
                 End With
-                dt.Rows.Add(_ticketNumber, _patientName, _counterName, _notes)
+
+                Dim bs As New BarcodeSettings With {
+                    .Type = BarCodeType.Code128,
+                    .Data = "A" & _fk_emdPatients & "A",
+                    .AutoResize = True,
+                    .ShowText = False
+                }
+
+                Dim bg = New BarCodeGenerator(bs)
+                Dim image = bg.GenerateImage()
+                Using ms As New MemoryStream
+                    image.Save(ms, ImageFormat.Png)
+                    Dim imageData = ms.ToArray
+                    dt.Rows.Add(_ticketNumber, _patientName, _counterName, _notes, imageData)
+                End Using
+
                 reportDocs.SetDataSource(dt)
+                reportDocs.SetParameterValue("FK_emdPatients", String.Format("{0}", _fk_emdPatients))
                 reportDocs.PrintToPrinter(1, False, 0, 0)
                 reportDocs.Close()
                 Me.Close()
