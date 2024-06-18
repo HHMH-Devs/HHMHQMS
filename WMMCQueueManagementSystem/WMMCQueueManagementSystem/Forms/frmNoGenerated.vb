@@ -42,9 +42,12 @@ Public Class frmNoGenerated
 
                 Dim bs As New BarcodeSettings With {
                     .Type = BarCodeType.Code128,
-                    .Data = "A" & _fk_emdPatients & "A",
+                    .Data = _fk_emdPatients,
                     .AutoResize = True,
-                    .ShowText = False
+                    .CodabarStartChar = CodabarChar.A,
+                    .CodabarStopChar = CodabarChar.A,
+                    .ShowText = False,
+                    .ShowStartCharAndStopChar = False
                 }
 
                 Dim bg = New BarCodeGenerator(bs)
@@ -56,7 +59,6 @@ Public Class frmNoGenerated
                 End Using
 
                 reportDocs.SetDataSource(dt)
-                reportDocs.SetParameterValue("FK_emdPatients", String.Format("{0}", _fk_emdPatients))
                 reportDocs.PrintToPrinter(1, False, 0, 0)
                 reportDocs.Close()
                 Me.Close()

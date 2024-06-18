@@ -1,4 +1,8 @@
-﻿Public Class frmHomeMainCounterForTouch
+﻿Imports System.Drawing.Imaging
+Imports System.IO
+Imports Spire.Barcode
+
+Public Class frmHomeMainCounterForTouch
     Private _loggedServer As Server
     Private _listOfSelectionCounter As List(Of Counter)
     Private _listOfMabClinics As List(Of ServerAssignCounter)
@@ -361,16 +365,31 @@ PrintNormalNumber:
                         Dim reportDocs As New ticketNoReport
                         Dim dt As New DataTable
                         With dt.Columns
-                            .Add("ticketNo")
-                            .Add("patName")
-                            .Add("counter")
-                            .Add("note")
+                            .Add("ticketNo", GetType(String))
+                            .Add("patName", GetType(String))
+                            .Add("counter", GetType(String))
+                            .Add("note", GetType(String))
+                            .Add("Barcode", GetType(Byte()))
                         End With
-                        With dt.Rows
-                            .Add(generatedNumber.Trim.ToUpper, customerAssignCounter.Customer.FullName.Trim.ToUpper, ("THIS IS YOUR NUMBER FOR " & customerAssignCounter.Counter.ServiceDescription).Trim.ToUpper, ("PLEASE WAIT FOR YOUR NUMBER TO BE CALLED. THANK YOU").Trim.ToUpper)
-                        End With
+                        Dim bs As New BarcodeSettings With {
+                            .Type = BarCodeType.Code128,
+                            .Data = customerAssignCounter.Customer.FK_emdPatients,
+                            .CodabarStartChar = CodabarChar.A,
+                            .CodabarStopChar = CodabarChar.A,
+                            .AutoResize = True,
+                            .ShowText = False,
+                            .ShowStartCharAndStopChar = False
+                        }
+                        Dim bg = New BarCodeGenerator(bs)
+                        Dim image = bg.GenerateImage()
+                        Using ms As New MemoryStream
+                            image.Save(ms, ImageFormat.Png)
+                            Dim imageData = ms.ToArray
+                            With dt.Rows
+                                .Add(generatedNumber.Trim.ToUpper, customerAssignCounter.Customer.FullName.Trim.ToUpper, ("PLEASE GO TO " & customerAssignCounter.Counter.ServiceDescription).Trim.ToUpper, ("PLEASE WAIT FOR YOUR NUMBER TO BE CALLED. THANK YOU").Trim.ToUpper, imageData)
+                            End With
+                        End Using
                         reportDocs.SetDataSource(dt)
-                        reportDocs.SetParameterValue("FK_emdPatients", String.Format("{0}", customerAssignCounter.Customer.FK_emdPatients))
                         printProgress.Value = 60
                         progressText.Text = "PRINTING NUMBER..."
                         reportDocs.PrintToPrinter(1, False, 0, 0)
