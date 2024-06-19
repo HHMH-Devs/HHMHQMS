@@ -52,12 +52,9 @@ Public Class frmNoGenerated
 
                 Dim bg = New BarCodeGenerator(bs)
                 Dim image = bg.GenerateImage()
-                Using ms As New MemoryStream
-                    image.Save(ms, ImageFormat.Png)
-                    Dim imageData = ms.ToArray
-                    dt.Rows.Add(_ticketNumber, _patientName, _counterName, _notes, imageData)
-                End Using
+                Dim imageData = ToByteArray(image)
 
+                dt.Rows.Add(_ticketNumber, _patientName, _counterName, _notes, imageData)
                 reportDocs.SetDataSource(dt)
                 reportDocs.PrintToPrinter(1, False, 0, 0)
                 reportDocs.Close()
@@ -68,4 +65,11 @@ Public Class frmNoGenerated
             End Try
         End If
     End Sub
+
+    Private Function ToByteArray(img As Image) As Byte()
+        Using ms As New MemoryStream
+            img.Save(ms, ImageFormat.Png)
+            Return ms.ToArray()
+        End Using
+    End Function
 End Class

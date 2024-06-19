@@ -13,4 +13,8 @@
     Public WitnessSignature As Image
     Public EmployeeSignature As Image
     Public ConsentDate As Date
+    Public DateOfBirth As Date
+    Public Age As Integer
+    Public Gender As String
+    Public CivilStatus As String
 End Class

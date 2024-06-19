@@ -63,6 +63,10 @@ Public Class frmGenerateConsent
             .WitnessSignature = Me.tmpOPD_WitnessSignature
             .EmployeeSignature = Me.tmpOPD_WitnessSignature
             .ConsentDate = Now
+            .DateOfBirth = patientInfo.BirthDate
+            .Gender = patientInfo.Sex
+            .Age = GetCurrentAge(patientInfo.BirthDate)
+            .CivilStatus = IIf(String.IsNullOrEmpty(patientInfo.CivilStatus), "Single", patientInfo.CivilStatus)
         End With
         tmpOPDConsent = opdConsentFields
         fillUpOutpatientConsentForm(tmpOPDConsent)
@@ -94,7 +98,7 @@ Public Class frmGenerateConsent
                     Dim imgb As Byte() = DirectCast(converter.ConvertTo(consentFields.WitnessSignature, GetType(Byte())), Byte())
                     Dim instance As Image = Image.GetInstance(imgb)
                     instance.ScalePercent(40.0!, 20.0!)
-                    instance.SetAbsolutePosition(40.0!, 110.0!)
+                    instance.SetAbsolutePosition(40.0!, 240.0!)
                     overContent.AddImage(instance)
                 End If
             ElseIf Not Information.IsNothing(consentFields.PatientSignature) Then
@@ -102,7 +106,7 @@ Public Class frmGenerateConsent
                 Dim imgb As Byte() = DirectCast(converter2.ConvertTo(consentFields.PatientSignature, GetType(Byte())), Byte())
                 Dim instance As Image = Image.GetInstance(imgb)
                 instance.ScalePercent(40.0!, 20.0!)
-                instance.SetAbsolutePosition(40.0!, 110.0!)
+                instance.SetAbsolutePosition(40.0!, 240.0!)
                 overContent.AddImage(instance)
             End If
             If Not Information.IsNothing(consentFields.EmployeeSignature) Then
@@ -113,13 +117,19 @@ Public Class frmGenerateConsent
                 instance.SetAbsolutePosition(370.0!, 110.0!)
                 overContent.AddImage(instance)
             End If
-            acroFields.SetField("txtv1witnessName", If((consentFields.WitnessName.Trim.Length > 0), consentFields.WitnessName, consentFields.PatientName1))
-            acroFields.SetField("txtv1witnessNRelationship", If((consentFields.WitnessName.Trim.Length > 0), consentFields.PatientRelationship, "SELF CONSENT"))
-            acroFields.SetField("txtv1PatientName", consentFields.PatientName1)
+            acroFields.SetField("PatientPrintedName", If((consentFields.WitnessName.Trim.Length > 0), consentFields.WitnessName, consentFields.PatientName1))
+            acroFields.SetField("RelToPat", If((consentFields.WitnessName.Trim.Length > 0), consentFields.PatientRelationship, "SELF CONSENT"))
+            acroFields.SetField("PatientName", consentFields.PatientName1)
             acroFields.SetField("txtv1WitnessOrPatient", If((consentFields.WitnessName.Trim.Length > 0), consentFields.WitnessName, consentFields.PatientName1))
-            acroFields.SetField("txtv1DateSigned1", consentFields.ConsentDate)
+            acroFields.SetField("Date", consentFields.ConsentDate)
             acroFields.SetField("txtv1EmployeeName", consentFields.EmployeeName)
-            acroFields.SetField("txtv1DateSigned2", consentFields.ConsentDate)
+            acroFields.SetField("Date", consentFields.ConsentDate)
+            acroFields.SetField("DateOfBirth", consentFields.DateOfBirth)
+            acroFields.SetField("ContactNo", consentFields.MobileNo)
+            acroFields.SetField("PatientAge", consentFields.Age)
+            acroFields.SetField("PatientAddress", consentFields.PatientAddress)
+            acroFields.SetField("Gender", consentFields.Gender)
+            acroFields.SetField("PatientCivilStatus", consentFields.CivilStatus)
             stamper.FormFlattening = False
             stamper.Close()
             Dim reader2 As New PdfReader(Me.pdfFile2)
@@ -172,6 +182,13 @@ Public Class frmGenerateConsent
         End Try
 
     End Sub
+
+    Public Function GetCurrentAge(ByVal dob As Date) As Integer
+        Dim age As Integer
+        age = Today.Year - dob.Year
+        If (dob > Today.AddYears(-age)) Then age -= 1
+        Return age
+    End Function
 
     Private Sub frmGenerateConsent_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         pdfViewer2.Hide()
