@@ -83,6 +83,19 @@ Public Class CustomerController
         End Try
     End Function
 
+    Public Function GetPatID(id As Integer) As Integer
+        Try
+            Dim cmd As New SqlCommand
+            cmd.CommandText = "SELECT * from emdPatients where PK_emdPatients = @id"
+            cmd.Parameters.AddWithValue("@id", id)
+            Dim data = fetchData(cmd, WMMCQMSConfig.openDatabaseBizbox).Tables(0)
+            Return data.Rows(0).Item("patid")
+        Catch ex As Exception
+            MessageBox.Show(ex.ToString)
+            Return False
+        End Try
+    End Function
+
     Public Function NewCustomer(customer As Customer) As Boolean
         Try
             Dim cmd As New SqlCommand

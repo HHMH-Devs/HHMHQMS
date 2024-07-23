@@ -25,6 +25,7 @@ Partial Class frmCounterQueuingBoard_ClinicPCC
         Me.components = New System.ComponentModel.Container()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.TableLayoutPanel4 = New System.Windows.Forms.TableLayoutPanel()
+        Me.Label4 = New System.Windows.Forms.Label()
         Me.lblCounter12 = New System.Windows.Forms.Label()
         Me.lblCounter11 = New System.Windows.Forms.Label()
         Me.lblCounter10 = New System.Windows.Forms.Label()
@@ -33,6 +34,7 @@ Partial Class frmCounterQueuingBoard_ClinicPCC
         Me.lblCounter7 = New System.Windows.Forms.Label()
         Me.Label21 = New System.Windows.Forms.Label()
         Me.TableLayoutPanel3 = New System.Windows.Forms.TableLayoutPanel()
+        Me.Label3 = New System.Windows.Forms.Label()
         Me.lbserving6 = New System.Windows.Forms.Label()
         Me.lbserving5 = New System.Windows.Forms.Label()
         Me.lbserving4 = New System.Windows.Forms.Label()
@@ -42,6 +44,7 @@ Partial Class frmCounterQueuingBoard_ClinicPCC
         Me.Label14 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.lblCounter6 = New System.Windows.Forms.Label()
         Me.lblCounter5 = New System.Windows.Forms.Label()
         Me.lblCounter4 = New System.Windows.Forms.Label()
@@ -51,6 +54,7 @@ Partial Class frmCounterQueuingBoard_ClinicPCC
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.TableLayoutPanel5 = New System.Windows.Forms.TableLayoutPanel()
+        Me.Label5 = New System.Windows.Forms.Label()
         Me.lbserving12 = New System.Windows.Forms.Label()
         Me.lbserving11 = New System.Windows.Forms.Label()
         Me.lbserving10 = New System.Windows.Forms.Label()
@@ -62,10 +66,6 @@ Partial Class frmCounterQueuingBoard_ClinicPCC
         Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
         Me.pnlHighlightServing = New System.Windows.Forms.Panel()
         Me.lblHighlightServing = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.TableLayoutPanel4.SuspendLayout()
         Me.TableLayoutPanel3.SuspendLayout()
@@ -95,7 +95,7 @@ Partial Class frmCounterQueuingBoard_ClinicPCC
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
         Me.TableLayoutPanel1.RowCount = 1
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 914.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 941.0!))
         Me.TableLayoutPanel1.Size = New System.Drawing.Size(1366, 941)
         Me.TableLayoutPanel1.TabIndex = 43
         '
@@ -128,6 +128,21 @@ Partial Class frmCounterQueuingBoard_ClinicPCC
         Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.50328!))
         Me.TableLayoutPanel4.Size = New System.Drawing.Size(409, 941)
         Me.TableLayoutPanel4.TabIndex = 6
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label4.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Label4.Font = New System.Drawing.Font("Arial", 36.0!, System.Drawing.FontStyle.Bold)
+        Me.Label4.ForeColor = System.Drawing.Color.Green
+        Me.Label4.Location = New System.Drawing.Point(0, 819)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(0)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(409, 122)
+        Me.Label4.TabIndex = 11
+        Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblCounter12
         '
@@ -264,6 +279,21 @@ Partial Class frmCounterQueuingBoard_ClinicPCC
         Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.50328!))
         Me.TableLayoutPanel3.Size = New System.Drawing.Size(273, 941)
         Me.TableLayoutPanel3.TabIndex = 5
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label3.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Label3.Font = New System.Drawing.Font("Arial", 36.0!, System.Drawing.FontStyle.Bold)
+        Me.Label3.ForeColor = System.Drawing.Color.Green
+        Me.Label3.Location = New System.Drawing.Point(0, 819)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(0)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(273, 122)
+        Me.Label3.TabIndex = 11
+        Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lbserving6
         '
@@ -413,6 +443,21 @@ Partial Class frmCounterQueuingBoard_ClinicPCC
         Me.TableLayoutPanel2.Size = New System.Drawing.Size(409, 941)
         Me.TableLayoutPanel2.TabIndex = 0
         '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Label2.Font = New System.Drawing.Font("Arial", 36.0!, System.Drawing.FontStyle.Bold)
+        Me.Label2.ForeColor = System.Drawing.Color.Green
+        Me.Label2.Location = New System.Drawing.Point(0, 819)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(0)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(409, 122)
+        Me.Label2.TabIndex = 11
+        Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'lblCounter6
         '
         Me.lblCounter6.AutoSize = True
@@ -561,6 +606,21 @@ Partial Class frmCounterQueuingBoard_ClinicPCC
         Me.TableLayoutPanel5.Size = New System.Drawing.Size(275, 941)
         Me.TableLayoutPanel5.TabIndex = 1
         '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Label5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label5.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Label5.Font = New System.Drawing.Font("Arial", 36.0!, System.Drawing.FontStyle.Bold)
+        Me.Label5.ForeColor = System.Drawing.Color.Green
+        Me.Label5.Location = New System.Drawing.Point(0, 819)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(0)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(275, 122)
+        Me.Label5.TabIndex = 11
+        Me.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'lbserving12
         '
         Me.lbserving12.AutoSize = True
@@ -701,66 +761,6 @@ Partial Class frmCounterQueuingBoard_ClinicPCC
         Me.lblHighlightServing.TabIndex = 47
         Me.lblHighlightServing.Text = "COUNTER NUMBER"
         Me.lblHighlightServing.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Label2.Font = New System.Drawing.Font("Arial", 36.0!, System.Drawing.FontStyle.Bold)
-        Me.Label2.ForeColor = System.Drawing.Color.Green
-        Me.Label2.Location = New System.Drawing.Point(0, 819)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(0)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(409, 122)
-        Me.Label2.TabIndex = 11
-        Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Label3.Font = New System.Drawing.Font("Arial", 36.0!, System.Drawing.FontStyle.Bold)
-        Me.Label3.ForeColor = System.Drawing.Color.Green
-        Me.Label3.Location = New System.Drawing.Point(0, 819)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(0)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(273, 122)
-        Me.Label3.TabIndex = 11
-        Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label4.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Label4.Font = New System.Drawing.Font("Arial", 36.0!, System.Drawing.FontStyle.Bold)
-        Me.Label4.ForeColor = System.Drawing.Color.Green
-        Me.Label4.Location = New System.Drawing.Point(0, 819)
-        Me.Label4.Margin = New System.Windows.Forms.Padding(0)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(409, 122)
-        Me.Label4.TabIndex = 11
-        Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label5.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Label5.Font = New System.Drawing.Font("Arial", 36.0!, System.Drawing.FontStyle.Bold)
-        Me.Label5.ForeColor = System.Drawing.Color.Green
-        Me.Label5.Location = New System.Drawing.Point(0, 819)
-        Me.Label5.Margin = New System.Windows.Forms.Padding(0)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(275, 122)
-        Me.Label5.TabIndex = 11
-        Me.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'frmCounterQueuingBoard_ClinicPCC
         '

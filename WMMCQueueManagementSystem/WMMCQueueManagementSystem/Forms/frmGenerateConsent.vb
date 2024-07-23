@@ -289,6 +289,11 @@ Public Class frmGenerateConsent
         consentFields.PatientSignature = Me.tmpOPD_PatientSignature
         consentFields.WitnessSignature = Me.tmpOPD_WitnessSignature
         consentFields.EmployeeSignature = Me.tmpOPD_EmployeeSignature
+        consentFields.DateOfBirth = Me.tmpOPDConsent.DateOfBirth
+        consentFields.Gender = Me.tmpOPDConsent.Gender
+        consentFields.Age = Me.tmpOPDConsent.Age
+        consentFields.CivilStatus = Me.tmpOPDConsent.CivilStatus
+        consentFields.MobileNo = Me.tmpOPDConsent.MobileNo
         consentFields.ConsentDate = DateAndTime.Now
         Me.tmpOPDConsent = consentFields
         Me.fillUpOutpatientConsentForm(consentFields)

@@ -40,9 +40,12 @@ Public Class frmNoGenerated
                     .Add("Barcode", GetType(Byte()))
                 End With
 
+                Dim customer = New CustomerController
+                Dim id = customer.GetPatID(_fk_emdPatients)
+
                 Dim bs As New BarcodeSettings With {
                     .Type = BarCodeType.Code128,
-                    .Data = _fk_emdPatients,
+                    .Data = id,
                     .AutoResize = True,
                     .CodabarStartChar = CodabarChar.A,
                     .CodabarStopChar = CodabarChar.A,

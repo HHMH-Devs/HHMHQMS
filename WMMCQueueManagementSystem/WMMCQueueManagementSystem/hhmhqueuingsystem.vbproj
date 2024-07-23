@@ -38,7 +38,7 @@
     <MinimumRequiredVersion>3.0.0.1</MinimumRequiredVersion>
     <WebPage>publish.htm</WebPage>
     <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
-    <ApplicationRevision>21</ApplicationRevision>
+    <ApplicationRevision>23</ApplicationRevision>
     <ApplicationVersion>3.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -180,6 +180,7 @@
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Management" />
+    <Reference Include="System.Net.Http" />
     <Reference Include="System.Speech" />
     <Reference Include="System.Transactions" />
     <Reference Include="System.Web" />
@@ -226,6 +227,7 @@
     <Compile Include="Controllers\ServerAssignCounterController.vb" />
     <Compile Include="Controllers\ServerController.vb" />
     <Compile Include="Controllers\ServerTransactionController.vb" />
+    <Compile Include="Controllers\WifiVoucherController.vb" />
     <Compile Include="Forms\frmAdminVerification.Designer.vb">
       <DependentUpon>frmAdminVerification.vb</DependentUpon>
     </Compile>
@@ -703,6 +705,10 @@
     <Compile Include="Models\FollowUpConsultation.vb" />
     <Compile Include="Models\GetServingCustomerOfServer.vb" />
     <Compile Include="Models\HealthCheck.vb" />
+    <Compile Include="Models\HttpClientAccessToken.vb" />
+    <Compile Include="Models\HttpClientGeneratedVoucher.vb" />
+    <Compile Include="Models\HttpClientVoucherData.vb" />
+    <Compile Include="Models\HttpClientVoucherList.vb" />
     <Compile Include="Models\IPAddressModel.vb" />
     <Compile Include="Models\mghroomstatus.vb" />
     <Compile Include="Models\NurseNote.vb" />
@@ -818,6 +824,12 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ticketNoReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\WifiVoucher.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WifiVoucher.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Sub Forms\CustomerItem.Designer.vb">
@@ -1222,6 +1234,10 @@
     <EmbeddedResource Include="Reports\ticketNoReport.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>ticketNoReport.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\WifiVoucher.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>WifiVoucher.vb</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Sub Forms\CustomerItem.resx">
       <DependentUpon>CustomerItem.vb</DependentUpon>

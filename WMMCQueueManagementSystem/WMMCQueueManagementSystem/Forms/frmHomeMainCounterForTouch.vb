@@ -343,10 +343,13 @@ PrintNormalNumber:
                 progressText.Text = "GENERATING NUMBER, PLEASE WAIT..."
                 printProgress.Value = 10
                 pnlProgress.Show()
-                Dim customerAssignCounter As New CustomerAssignCounter
-                customerAssignCounter.Priority = 0
-                customerAssignCounter.ForHelee = 0
-                customerAssignCounter.Counter = selectedCounter
+
+                Dim customerAssignCounter As New CustomerAssignCounter With {
+                    .Priority = 0,
+                    .ForHelee = 0,
+                    .Counter = selectedCounter
+                }
+
                 customerAssignCounter.Customer.FullName = (customerInfo.Lastname & " " & customerInfo.FirstName & " " & customerInfo.Middlename).Trim
                 customerAssignCounter.Customer.FK_emdPatients = customerInfo.FK_emdPatients
                 customerAssignCounter.Customer.PhoneNumber = customerInfo.PhoneNumber
@@ -371,9 +374,13 @@ PrintNormalNumber:
                             .Add("note", GetType(String))
                             .Add("Barcode", GetType(Byte()))
                         End With
+
+                        Dim customer = New CustomerController
+                        Dim ID = customer.GetPatID(customerAssignCounter.Customer.FK_emdPatients)
+
                         Dim bs As New BarcodeSettings With {
                             .Type = BarCodeType.Code128,
-                            .Data = customerAssignCounter.Customer.FK_emdPatients,
+                            .Data = ID,
                             .CodabarStartChar = CodabarChar.A,
                             .CodabarStopChar = CodabarChar.A,
                             .AutoResize = True,
@@ -749,6 +756,7 @@ PrintNormalNumber:
         End If
         getAllCounters()
         Timer1.Start()
+        HttpLogin.ConfigureAwait(False)
     End Sub
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
@@ -1042,6 +1050,7 @@ PrintNormalNumber:
                     QueueToScreeningOnly(customerInfo)
                 End If
             End If
+#Region "Unused"
             '            If lstCustomCounter.SelectedIndices(0) = 0 Then 'Healee
             '                If Not IsNothing(HealeeCounter) Then
             '                    Dim selectedCounter As Counter = HealeeCounter
@@ -1458,6 +1467,7 @@ PrintNormalNumber:
             '                    End If
             '                End If
             '            End If
+#End Region
         End If
     End Sub
 
@@ -1887,4 +1897,14 @@ PrintNormalNumber:
     Private Sub lstFetchCounter_SelectedIndexChanged(sender As Object, e As EventArgs) Handles lstFetchCounter.SelectedIndexChanged
 
     End Sub
+
+    Private Async Function HttpLogin() As Task
+        Dim vouchercontroller As New WifiVoucherController()
+        If String.IsNullOrEmpty(accessToken) Then
+            Dim res = Await vouchercontroller.GetAccessToken()
+            accessToken = res.Access_Token
+        Else
+            Await vouchercontroller.RefreshAccessToken()
+        End If
+    End Function
 End Class

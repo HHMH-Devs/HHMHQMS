@@ -211,9 +211,9 @@ Partial Class frmCounterQueuingBoardSelectedCountersStandalone
         Me.lblHighlightServing.BackColor = System.Drawing.Color.LimeGreen
         Me.lblHighlightServing.Font = New System.Drawing.Font("Arial", 72.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblHighlightServing.ForeColor = System.Drawing.Color.White
-        Me.lblHighlightServing.Location = New System.Drawing.Point(357, 383)
+        Me.lblHighlightServing.Location = New System.Drawing.Point(275, 301)
         Me.lblHighlightServing.Name = "lblHighlightServing"
-        Me.lblHighlightServing.Size = New System.Drawing.Size(721, 294)
+        Me.lblHighlightServing.Size = New System.Drawing.Size(885, 458)
         Me.lblHighlightServing.TabIndex = 0
         Me.lblHighlightServing.Text = "Counter Number"
         Me.lblHighlightServing.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
