@@ -15,8 +15,8 @@ Public Class frmCounterQueuingBoardSelectedCountersStandalone
     Private timer1 As New Timer
     Private timer2 As New Timer
 
-    Private Sub TableLayoutPanel2_SizeChanged(sender As Object, e As EventArgs) Handles TableLayoutPanel2.SizeChanged
-        TableLayoutPanel2.Width = Me.Width / 2
+    Private Sub TableLayoutPanel2_SizeChanged(sender As Object, e As EventArgs)
+        ''TableLayoutPanel2.Width = Me.Width / 2
     End Sub
 
     Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs)
@@ -44,6 +44,7 @@ Public Class frmCounterQueuingBoardSelectedCountersStandalone
 
     Private Sub timer1_Tick()
         lblHighlightServing.Hide()
+        lblHighlightServing.SendToBack()
         timer1.Stop()
         timer2.Stop()
     End Sub
@@ -68,6 +69,7 @@ Public Class frmCounterQueuingBoardSelectedCountersStandalone
             queuingSpeaker.SpeakAsyncCancelAll()
             My.Computer.Audio.Play(My.Resources.beep, AudioPlayMode.WaitToComplete)
             queuingSpeaker.SpeakAsync(str)
+            lblHighlightServing.BringToFront()
             lblHighlightServing.Text = highlightNumber.Trim.ToUpper
             lblHighlightServing.Show()
             timer1.Start()
@@ -334,7 +336,7 @@ Public Class frmCounterQueuingBoardSelectedCountersStandalone
 
                 lbserving7.ForeColor = Color.DimGray
                 lblCounter7.Text = ""
-                lbserving7.Text = ""
+                lbserving17.Text = ""
                 id7 = 0
 
                 lbserving8.ForeColor = Color.DimGray
@@ -352,81 +354,75 @@ Public Class frmCounterQueuingBoardSelectedCountersStandalone
                 lbserving10.Text = ""
                 id10 = 0
 
-                lbserving10.ForeColor = Color.DimGray
-                lblCounter10.Text = ""
-                lbserving10.Text = ""
-                id10 = 0
-
                 lbserving11.ForeColor = Color.DimGray
                 lblCounter11.Text = ""
-                lbserving12.Text = ""
-                id11 = 0
+                lbserving11.Text = ""
+                id10 = 0
 
                 lbserving12.ForeColor = Color.DimGray
                 lblCounter12.Text = ""
                 lbserving12.Text = ""
-                id12 = 0
+                id11 = 0
 
                 lbserving13.ForeColor = Color.DimGray
                 lblCounter13.Text = ""
                 lbserving13.Text = ""
-                id13 = 0
+                id12 = 0
 
                 lbserving14.ForeColor = Color.DimGray
                 lblCounter14.Text = ""
                 lbserving14.Text = ""
-                id14 = 0
+                id13 = 0
 
                 lbserving15.ForeColor = Color.DimGray
                 lblCounter15.Text = ""
                 lbserving15.Text = ""
-                id15 = 0
+                id14 = 0
 
                 lbserving16.ForeColor = Color.DimGray
                 lblCounter16.Text = ""
                 lbserving16.Text = ""
-                id16 = 0
+                id15 = 0
 
                 lbserving17.ForeColor = Color.DimGray
                 lblCounter17.Text = ""
                 lbserving17.Text = ""
-                id17 = 0
+                id16 = 0
 
                 lbserving18.ForeColor = Color.DimGray
                 lblCounter18.Text = ""
                 lbserving18.Text = ""
-                id18 = 0
+                id17 = 0
 
-                lbserving19.ForeColor = Color.DimGray
-                lblCounter19.Text = ""
-                lbserving19.Text = ""
-                id19 = 0
+                'lbserving19.ForeColor = Color.DimGray
+                'lblCounter19.Text = ""
+                'lbserving19.Text = ""
+                'id18 = 0
 
-                lbserving20.ForeColor = Color.DimGray
-                lblCounter20.Text = ""
-                lbserving20.Text = ""
-                id20 = 0
+                'lbserving20.ForeColor = Color.DimGray
+                'lblCounter20.Text = ""
+                'lbserving20.Text = ""
+                'id19 = 0
 
-                lbserving21.ForeColor = Color.DimGray
-                lblCounter21.Text = ""
-                lbserving21.Text = ""
-                id21 = 0
+                'lbserving21.ForeColor = Color.DimGray
+                'lblCounter21.Text = ""
+                'lbserving21.Text = ""
+                'id20 = 0
 
-                lbserving22.ForeColor = Color.DimGray
-                lblCounter22.Text = ""
-                lbserving22.Text = ""
-                id22 = 0
+                'lbserving22.ForeColor = Color.DimGray
+                'lblCounter22.Text = ""
+                'lbserving22.Text = ""
+                'id21 = 0
 
-                lbserving23.ForeColor = Color.DimGray
-                lblCounter23.Text = ""
-                lbserving23.Text = ""
-                id23 = 0
+                'lbserving23.ForeColor = Color.DimGray
+                'lblCounter23.Text = ""
+                'lbserving23.Text = ""
+                'id22 = 0
 
-                lbserving24.ForeColor = Color.DimGray
-                lblCounter24.Text = ""
-                lbserving24.Text = ""
-                id24 = 0
-
+                'lbserving24.ForeColor = Color.DimGray
+                'lblCounter24.Text = ""
+                'lbserving24.Text = ""
+                'id23 = 0
                 GoTo SKIP
             End If
             If tmpServingCustomerOfServers.Count > 1 Then
@@ -472,7 +468,7 @@ Public Class frmCounterQueuingBoardSelectedCountersStandalone
 
                 lbserving7.ForeColor = Color.DimGray
                 lblCounter7.Text = ""
-                lbserving7.Text = ""
+                lbserving17.Text = ""
                 id7 = 0
 
                 lbserving8.ForeColor = Color.DimGray
@@ -492,73 +488,73 @@ Public Class frmCounterQueuingBoardSelectedCountersStandalone
 
                 lbserving11.ForeColor = Color.DimGray
                 lblCounter11.Text = ""
-                lbserving12.Text = ""
-                id11 = 0
+                lbserving11.Text = ""
+                id10 = 0
 
                 lbserving12.ForeColor = Color.DimGray
                 lblCounter12.Text = ""
                 lbserving12.Text = ""
-                id12 = 0
+                id11 = 0
 
                 lbserving13.ForeColor = Color.DimGray
                 lblCounter13.Text = ""
                 lbserving13.Text = ""
-                id13 = 0
+                id12 = 0
 
                 lbserving14.ForeColor = Color.DimGray
                 lblCounter14.Text = ""
                 lbserving14.Text = ""
-                id14 = 0
+                id13 = 0
 
                 lbserving15.ForeColor = Color.DimGray
                 lblCounter15.Text = ""
                 lbserving15.Text = ""
-                id15 = 0
+                id14 = 0
 
                 lbserving16.ForeColor = Color.DimGray
                 lblCounter16.Text = ""
                 lbserving16.Text = ""
-                id16 = 0
+                id15 = 0
 
                 lbserving17.ForeColor = Color.DimGray
                 lblCounter17.Text = ""
                 lbserving17.Text = ""
-                id17 = 0
+                id16 = 0
 
                 lbserving18.ForeColor = Color.DimGray
                 lblCounter18.Text = ""
                 lbserving18.Text = ""
-                id18 = 0
+                id17 = 0
 
-                lbserving19.ForeColor = Color.DimGray
-                lblCounter19.Text = ""
-                lbserving19.Text = ""
-                id19 = 0
+                'lbserving19.ForeColor = Color.DimGray
+                'lblCounter19.Text = ""
+                'lbserving19.Text = ""
+                'id18 = 0
 
-                lbserving20.ForeColor = Color.DimGray
-                lblCounter20.Text = ""
-                lbserving20.Text = ""
-                id20 = 0
+                'lbserving20.ForeColor = Color.DimGray
+                'lblCounter20.Text = ""
+                'lbserving20.Text = ""
+                'id19 = 0
 
-                lbserving21.ForeColor = Color.DimGray
-                lblCounter21.Text = ""
-                lbserving21.Text = ""
-                id21 = 0
+                'lbserving21.ForeColor = Color.DimGray
+                'lblCounter21.Text = ""
+                'lbserving21.Text = ""
+                'id20 = 0
 
-                lbserving22.ForeColor = Color.DimGray
-                lblCounter22.Text = ""
-                lbserving22.Text = ""
-                id22 = 0
+                'lbserving22.ForeColor = Color.DimGray
+                'lblCounter22.Text = ""
+                'lbserving22.Text = ""
+                'id21 = 0
 
-                lbserving23.ForeColor = Color.DimGray
-                lblCounter23.Text = ""
-                lbserving23.Text = ""
-                id23 = 0
+                'lbserving23.ForeColor = Color.DimGray
+                'lblCounter23.Text = ""
+                'lbserving23.Text = ""
+                'id22 = 0
 
-                lbserving24.ForeColor = Color.DimGray
-                lblCounter24.Text = ""
-                lbserving24.Text = ""
-                id24 = 0
+                'lbserving24.ForeColor = Color.DimGray
+                'lblCounter24.Text = ""
+                'lbserving24.Text = ""
+                'id23 = 0
 
                 GoTo SKIP
             End If
@@ -601,7 +597,7 @@ Public Class frmCounterQueuingBoardSelectedCountersStandalone
 
                 lbserving7.ForeColor = Color.DimGray
                 lblCounter7.Text = ""
-                lbserving7.Text = ""
+                lbserving17.Text = ""
                 id7 = 0
 
                 lbserving8.ForeColor = Color.DimGray
@@ -621,73 +617,73 @@ Public Class frmCounterQueuingBoardSelectedCountersStandalone
 
                 lbserving11.ForeColor = Color.DimGray
                 lblCounter11.Text = ""
-                lbserving12.Text = ""
-                id11 = 0
+                lbserving11.Text = ""
+                id10 = 0
 
                 lbserving12.ForeColor = Color.DimGray
                 lblCounter12.Text = ""
                 lbserving12.Text = ""
-                id12 = 0
+                id11 = 0
 
                 lbserving13.ForeColor = Color.DimGray
                 lblCounter13.Text = ""
                 lbserving13.Text = ""
-                id13 = 0
+                id12 = 0
 
                 lbserving14.ForeColor = Color.DimGray
                 lblCounter14.Text = ""
                 lbserving14.Text = ""
-                id14 = 0
+                id13 = 0
 
                 lbserving15.ForeColor = Color.DimGray
                 lblCounter15.Text = ""
                 lbserving15.Text = ""
-                id15 = 0
+                id14 = 0
 
                 lbserving16.ForeColor = Color.DimGray
                 lblCounter16.Text = ""
                 lbserving16.Text = ""
-                id16 = 0
+                id15 = 0
 
                 lbserving17.ForeColor = Color.DimGray
                 lblCounter17.Text = ""
                 lbserving17.Text = ""
-                id17 = 0
+                id16 = 0
 
                 lbserving18.ForeColor = Color.DimGray
                 lblCounter18.Text = ""
                 lbserving18.Text = ""
-                id18 = 0
+                id17 = 0
 
-                lbserving19.ForeColor = Color.DimGray
-                lblCounter19.Text = ""
-                lbserving19.Text = ""
-                id19 = 0
+                'lbserving19.ForeColor = Color.DimGray
+                'lblCounter19.Text = ""
+                'lbserving19.Text = ""
+                'id18 = 0
 
-                lbserving20.ForeColor = Color.DimGray
-                lblCounter20.Text = ""
-                lbserving20.Text = ""
-                id20 = 0
+                'lbserving20.ForeColor = Color.DimGray
+                'lblCounter20.Text = ""
+                'lbserving20.Text = ""
+                'id19 = 0
 
-                lbserving21.ForeColor = Color.DimGray
-                lblCounter21.Text = ""
-                lbserving21.Text = ""
-                id21 = 0
+                'lbserving21.ForeColor = Color.DimGray
+                'lblCounter21.Text = ""
+                'lbserving21.Text = ""
+                'id20 = 0
 
-                lbserving22.ForeColor = Color.DimGray
-                lblCounter22.Text = ""
-                lbserving22.Text = ""
-                id22 = 0
+                'lbserving22.ForeColor = Color.DimGray
+                'lblCounter22.Text = ""
+                'lbserving22.Text = ""
+                'id21 = 0
 
-                lbserving23.ForeColor = Color.DimGray
-                lblCounter23.Text = ""
-                lbserving23.Text = ""
-                id23 = 0
+                'lbserving23.ForeColor = Color.DimGray
+                'lblCounter23.Text = ""
+                'lbserving23.Text = ""
+                'id22 = 0
 
-                lbserving24.ForeColor = Color.DimGray
-                lblCounter24.Text = ""
-                lbserving24.Text = ""
-                id24 = 0
+                'lbserving24.ForeColor = Color.DimGray
+                'lblCounter24.Text = ""
+                'lbserving24.Text = ""
+                'id23 = 0
 
                 GoTo SKIP
             End If
@@ -724,7 +720,7 @@ Public Class frmCounterQueuingBoardSelectedCountersStandalone
 
                 lbserving7.ForeColor = Color.DimGray
                 lblCounter7.Text = ""
-                lbserving7.Text = ""
+                lbserving17.Text = ""
                 id7 = 0
 
                 lbserving8.ForeColor = Color.DimGray
@@ -744,73 +740,73 @@ Public Class frmCounterQueuingBoardSelectedCountersStandalone
 
                 lbserving11.ForeColor = Color.DimGray
                 lblCounter11.Text = ""
-                lbserving12.Text = ""
-                id11 = 0
+                lbserving11.Text = ""
+                id10 = 0
 
                 lbserving12.ForeColor = Color.DimGray
                 lblCounter12.Text = ""
                 lbserving12.Text = ""
-                id12 = 0
+                id11 = 0
 
                 lbserving13.ForeColor = Color.DimGray
                 lblCounter13.Text = ""
                 lbserving13.Text = ""
-                id13 = 0
+                id12 = 0
 
                 lbserving14.ForeColor = Color.DimGray
                 lblCounter14.Text = ""
                 lbserving14.Text = ""
-                id14 = 0
+                id13 = 0
 
                 lbserving15.ForeColor = Color.DimGray
                 lblCounter15.Text = ""
                 lbserving15.Text = ""
-                id15 = 0
+                id14 = 0
 
                 lbserving16.ForeColor = Color.DimGray
                 lblCounter16.Text = ""
                 lbserving16.Text = ""
-                id16 = 0
+                id15 = 0
 
                 lbserving17.ForeColor = Color.DimGray
                 lblCounter17.Text = ""
                 lbserving17.Text = ""
-                id17 = 0
+                id16 = 0
 
                 lbserving18.ForeColor = Color.DimGray
                 lblCounter18.Text = ""
                 lbserving18.Text = ""
-                id18 = 0
+                id17 = 0
 
-                lbserving19.ForeColor = Color.DimGray
-                lblCounter19.Text = ""
-                lbserving19.Text = ""
-                id19 = 0
+                'lbserving19.ForeColor = Color.DimGray
+                'lblCounter19.Text = ""
+                'lbserving19.Text = ""
+                'id18 = 0
 
-                lbserving20.ForeColor = Color.DimGray
-                lblCounter20.Text = ""
-                lbserving20.Text = ""
-                id20 = 0
+                'lbserving20.ForeColor = Color.DimGray
+                'lblCounter20.Text = ""
+                'lbserving20.Text = ""
+                'id19 = 0
 
-                lbserving21.ForeColor = Color.DimGray
-                lblCounter21.Text = ""
-                lbserving21.Text = ""
-                id21 = 0
+                'lbserving21.ForeColor = Color.DimGray
+                'lblCounter21.Text = ""
+                'lbserving21.Text = ""
+                'id20 = 0
 
-                lbserving22.ForeColor = Color.DimGray
-                lblCounter22.Text = ""
-                lbserving22.Text = ""
-                id22 = 0
+                'lbserving22.ForeColor = Color.DimGray
+                'lblCounter22.Text = ""
+                'lbserving22.Text = ""
+                'id21 = 0
 
-                lbserving23.ForeColor = Color.DimGray
-                lblCounter23.Text = ""
-                lbserving23.Text = ""
-                id23 = 0
+                'lbserving23.ForeColor = Color.DimGray
+                'lblCounter23.Text = ""
+                'lbserving23.Text = ""
+                'id22 = 0
 
-                lbserving24.ForeColor = Color.DimGray
-                lblCounter24.Text = ""
-                lbserving24.Text = ""
-                id24 = 0
+                'lbserving24.ForeColor = Color.DimGray
+                'lblCounter24.Text = ""
+                'lbserving24.Text = ""
+                'id23 = 0
 
                 GoTo SKIP
             End If
@@ -842,7 +838,7 @@ Public Class frmCounterQueuingBoardSelectedCountersStandalone
 
                 lbserving7.ForeColor = Color.DimGray
                 lblCounter7.Text = ""
-                lbserving7.Text = ""
+                lbserving17.Text = ""
                 id7 = 0
 
                 lbserving8.ForeColor = Color.DimGray
@@ -862,73 +858,73 @@ Public Class frmCounterQueuingBoardSelectedCountersStandalone
 
                 lbserving11.ForeColor = Color.DimGray
                 lblCounter11.Text = ""
-                lbserving12.Text = ""
-                id11 = 0
+                lbserving11.Text = ""
+                id10 = 0
 
                 lbserving12.ForeColor = Color.DimGray
                 lblCounter12.Text = ""
                 lbserving12.Text = ""
-                id12 = 0
+                id11 = 0
 
                 lbserving13.ForeColor = Color.DimGray
                 lblCounter13.Text = ""
                 lbserving13.Text = ""
-                id13 = 0
+                id12 = 0
 
                 lbserving14.ForeColor = Color.DimGray
                 lblCounter14.Text = ""
                 lbserving14.Text = ""
-                id14 = 0
+                id13 = 0
 
                 lbserving15.ForeColor = Color.DimGray
                 lblCounter15.Text = ""
                 lbserving15.Text = ""
-                id15 = 0
+                id14 = 0
 
                 lbserving16.ForeColor = Color.DimGray
                 lblCounter16.Text = ""
                 lbserving16.Text = ""
-                id16 = 0
+                id15 = 0
 
                 lbserving17.ForeColor = Color.DimGray
                 lblCounter17.Text = ""
                 lbserving17.Text = ""
-                id17 = 0
+                id16 = 0
 
                 lbserving18.ForeColor = Color.DimGray
                 lblCounter18.Text = ""
                 lbserving18.Text = ""
-                id18 = 0
+                id17 = 0
 
-                lbserving19.ForeColor = Color.DimGray
-                lblCounter19.Text = ""
-                lbserving19.Text = ""
-                id19 = 0
+                'lbserving19.ForeColor = Color.DimGray
+                'lblCounter19.Text = ""
+                'lbserving19.Text = ""
+                'id18 = 0
 
-                lbserving20.ForeColor = Color.DimGray
-                lblCounter20.Text = ""
-                lbserving20.Text = ""
-                id20 = 0
+                'lbserving20.ForeColor = Color.DimGray
+                'lblCounter20.Text = ""
+                'lbserving20.Text = ""
+                'id19 = 0
 
-                lbserving21.ForeColor = Color.DimGray
-                lblCounter21.Text = ""
-                lbserving21.Text = ""
-                id21 = 0
+                'lbserving21.ForeColor = Color.DimGray
+                'lblCounter21.Text = ""
+                'lbserving21.Text = ""
+                'id20 = 0
 
-                lbserving22.ForeColor = Color.DimGray
-                lblCounter22.Text = ""
-                lbserving22.Text = ""
-                id22 = 0
+                'lbserving22.ForeColor = Color.DimGray
+                'lblCounter22.Text = ""
+                'lbserving22.Text = ""
+                'id21 = 0
 
-                lbserving23.ForeColor = Color.DimGray
-                lblCounter23.Text = ""
-                lbserving23.Text = ""
-                id23 = 0
+                'lbserving23.ForeColor = Color.DimGray
+                'lblCounter23.Text = ""
+                'lbserving23.Text = ""
+                'id22 = 0
 
-                lbserving24.ForeColor = Color.DimGray
-                lblCounter24.Text = ""
-                lbserving24.Text = ""
-                id24 = 0
+                'lbserving24.ForeColor = Color.DimGray
+                'lblCounter24.Text = ""
+                'lbserving24.Text = ""
+                'id23 = 0
 
                 GoTo SKIP
             End If
@@ -955,7 +951,7 @@ Public Class frmCounterQueuingBoardSelectedCountersStandalone
 
                 lbserving7.ForeColor = Color.DimGray
                 lblCounter7.Text = ""
-                lbserving7.Text = ""
+                lbserving17.Text = ""
                 id7 = 0
 
                 lbserving8.ForeColor = Color.DimGray
@@ -975,73 +971,73 @@ Public Class frmCounterQueuingBoardSelectedCountersStandalone
 
                 lbserving11.ForeColor = Color.DimGray
                 lblCounter11.Text = ""
-                lbserving12.Text = ""
-                id11 = 0
+                lbserving11.Text = ""
+                id10 = 0
 
                 lbserving12.ForeColor = Color.DimGray
                 lblCounter12.Text = ""
                 lbserving12.Text = ""
-                id12 = 0
+                id11 = 0
 
                 lbserving13.ForeColor = Color.DimGray
                 lblCounter13.Text = ""
                 lbserving13.Text = ""
-                id13 = 0
+                id12 = 0
 
                 lbserving14.ForeColor = Color.DimGray
                 lblCounter14.Text = ""
                 lbserving14.Text = ""
-                id14 = 0
+                id13 = 0
 
                 lbserving15.ForeColor = Color.DimGray
                 lblCounter15.Text = ""
                 lbserving15.Text = ""
-                id15 = 0
+                id14 = 0
 
                 lbserving16.ForeColor = Color.DimGray
                 lblCounter16.Text = ""
                 lbserving16.Text = ""
-                id16 = 0
+                id15 = 0
 
                 lbserving17.ForeColor = Color.DimGray
                 lblCounter17.Text = ""
                 lbserving17.Text = ""
-                id17 = 0
+                id16 = 0
 
                 lbserving18.ForeColor = Color.DimGray
                 lblCounter18.Text = ""
                 lbserving18.Text = ""
-                id18 = 0
+                id17 = 0
 
-                lbserving19.ForeColor = Color.DimGray
-                lblCounter19.Text = ""
-                lbserving19.Text = ""
-                id19 = 0
+                'lbserving19.ForeColor = Color.DimGray
+                'lblCounter19.Text = ""
+                'lbserving19.Text = ""
+                'id18 = 0
 
-                lbserving20.ForeColor = Color.DimGray
-                lblCounter20.Text = ""
-                lbserving20.Text = ""
-                id20 = 0
+                'lbserving20.ForeColor = Color.DimGray
+                'lblCounter20.Text = ""
+                'lbserving20.Text = ""
+                'id19 = 0
 
-                lbserving21.ForeColor = Color.DimGray
-                lblCounter21.Text = ""
-                lbserving21.Text = ""
-                id21 = 0
+                'lbserving21.ForeColor = Color.DimGray
+                'lblCounter21.Text = ""
+                'lbserving21.Text = ""
+                'id20 = 0
 
-                lbserving22.ForeColor = Color.DimGray
-                lblCounter22.Text = ""
-                lbserving22.Text = ""
-                id22 = 0
+                'lbserving22.ForeColor = Color.DimGray
+                'lblCounter22.Text = ""
+                'lbserving22.Text = ""
+                'id21 = 0
 
-                lbserving23.ForeColor = Color.DimGray
-                lblCounter23.Text = ""
-                lbserving23.Text = ""
-                id23 = 0
+                'lbserving23.ForeColor = Color.DimGray
+                'lblCounter23.Text = ""
+                'lbserving23.Text = ""
+                'id22 = 0
 
-                lbserving24.ForeColor = Color.DimGray
-                lblCounter24.Text = ""
-                lbserving24.Text = ""
-                id24 = 0
+                'lbserving24.ForeColor = Color.DimGray
+                'lblCounter24.Text = ""
+                'lbserving24.Text = ""
+                'id23 = 0
 
                 GoTo SKIP
             End If
@@ -1063,7 +1059,7 @@ Public Class frmCounterQueuingBoardSelectedCountersStandalone
             Else
                 lbserving7.ForeColor = Color.DimGray
                 lblCounter7.Text = ""
-                lbserving7.Text = ""
+                lbserving17.Text = ""
                 id7 = 0
 
                 lbserving8.ForeColor = Color.DimGray
@@ -1083,73 +1079,73 @@ Public Class frmCounterQueuingBoardSelectedCountersStandalone
 
                 lbserving11.ForeColor = Color.DimGray
                 lblCounter11.Text = ""
-                lbserving12.Text = ""
-                id11 = 0
+                lbserving11.Text = ""
+                id10 = 0
 
                 lbserving12.ForeColor = Color.DimGray
                 lblCounter12.Text = ""
                 lbserving12.Text = ""
-                id12 = 0
+                id11 = 0
 
                 lbserving13.ForeColor = Color.DimGray
                 lblCounter13.Text = ""
                 lbserving13.Text = ""
-                id13 = 0
+                id12 = 0
 
                 lbserving14.ForeColor = Color.DimGray
                 lblCounter14.Text = ""
                 lbserving14.Text = ""
-                id14 = 0
+                id13 = 0
 
                 lbserving15.ForeColor = Color.DimGray
                 lblCounter15.Text = ""
                 lbserving15.Text = ""
-                id15 = 0
+                id14 = 0
 
                 lbserving16.ForeColor = Color.DimGray
                 lblCounter16.Text = ""
                 lbserving16.Text = ""
-                id16 = 0
+                id15 = 0
 
                 lbserving17.ForeColor = Color.DimGray
                 lblCounter17.Text = ""
                 lbserving17.Text = ""
-                id17 = 0
+                id16 = 0
 
                 lbserving18.ForeColor = Color.DimGray
                 lblCounter18.Text = ""
                 lbserving18.Text = ""
-                id18 = 0
+                id17 = 0
 
-                lbserving19.ForeColor = Color.DimGray
-                lblCounter19.Text = ""
-                lbserving19.Text = ""
-                id19 = 0
+                'lbserving19.ForeColor = Color.DimGray
+                'lblCounter19.Text = ""
+                'lbserving19.Text = ""
+                'id18 = 0
 
-                lbserving20.ForeColor = Color.DimGray
-                lblCounter20.Text = ""
-                lbserving20.Text = ""
-                id20 = 0
+                'lbserving20.ForeColor = Color.DimGray
+                'lblCounter20.Text = ""
+                'lbserving20.Text = ""
+                'id19 = 0
 
-                lbserving21.ForeColor = Color.DimGray
-                lblCounter21.Text = ""
-                lbserving21.Text = ""
-                id21 = 0
+                'lbserving21.ForeColor = Color.DimGray
+                'lblCounter21.Text = ""
+                'lbserving21.Text = ""
+                'id20 = 0
 
-                lbserving22.ForeColor = Color.DimGray
-                lblCounter22.Text = ""
-                lbserving22.Text = ""
-                id22 = 0
+                'lbserving22.ForeColor = Color.DimGray
+                'lblCounter22.Text = ""
+                'lbserving22.Text = ""
+                'id21 = 0
 
-                lbserving23.ForeColor = Color.DimGray
-                lblCounter23.Text = ""
-                lbserving23.Text = ""
-                id23 = 0
+                'lbserving23.ForeColor = Color.DimGray
+                'lblCounter23.Text = ""
+                'lbserving23.Text = ""
+                'id22 = 0
 
-                lbserving24.ForeColor = Color.DimGray
-                lblCounter24.Text = ""
-                lbserving24.Text = ""
-                id24 = 0
+                'lbserving24.ForeColor = Color.DimGray
+                'lblCounter24.Text = ""
+                'lbserving24.Text = ""
+                'id23 = 0
 
                 GoTo SKIP
             End If
@@ -1186,74 +1182,73 @@ Public Class frmCounterQueuingBoardSelectedCountersStandalone
 
                 lbserving11.ForeColor = Color.DimGray
                 lblCounter11.Text = ""
-                lbserving12.Text = ""
-                id11 = 0
+                lbserving11.Text = ""
+                id10 = 0
 
                 lbserving12.ForeColor = Color.DimGray
                 lblCounter12.Text = ""
                 lbserving12.Text = ""
-                id12 = 0
+                id11 = 0
 
                 lbserving13.ForeColor = Color.DimGray
                 lblCounter13.Text = ""
                 lbserving13.Text = ""
-                id13 = 0
+                id12 = 0
 
                 lbserving14.ForeColor = Color.DimGray
                 lblCounter14.Text = ""
                 lbserving14.Text = ""
-                id14 = 0
+                id13 = 0
 
                 lbserving15.ForeColor = Color.DimGray
                 lblCounter15.Text = ""
                 lbserving15.Text = ""
-                id15 = 0
+                id14 = 0
 
                 lbserving16.ForeColor = Color.DimGray
                 lblCounter16.Text = ""
                 lbserving16.Text = ""
-                id16 = 0
+                id15 = 0
 
                 lbserving17.ForeColor = Color.DimGray
                 lblCounter17.Text = ""
                 lbserving17.Text = ""
-                id17 = 0
+                id16 = 0
 
                 lbserving18.ForeColor = Color.DimGray
                 lblCounter18.Text = ""
                 lbserving18.Text = ""
-                id18 = 0
+                id17 = 0
 
-                lbserving19.ForeColor = Color.DimGray
-                lblCounter19.Text = ""
-                lbserving19.Text = ""
-                id19 = 0
+                'lbserving19.ForeColor = Color.DimGray
+                'lblCounter19.Text = ""
+                'lbserving19.Text = ""
+                'id18 = 0
 
-                lbserving20.ForeColor = Color.DimGray
-                lblCounter20.Text = ""
-                lbserving20.Text = ""
-                id20 = 0
+                'lbserving20.ForeColor = Color.DimGray
+                'lblCounter20.Text = ""
+                'lbserving20.Text = ""
+                'id19 = 0
 
-                lbserving21.ForeColor = Color.DimGray
-                lblCounter21.Text = ""
-                lbserving21.Text = ""
-                id21 = 0
+                'lbserving21.ForeColor = Color.DimGray
+                'lblCounter21.Text = ""
+                'lbserving21.Text = ""
+                'id20 = 0
 
-                lbserving22.ForeColor = Color.DimGray
-                lblCounter22.Text = ""
-                lbserving22.Text = ""
-                id22 = 0
+                'lbserving22.ForeColor = Color.DimGray
+                'lblCounter22.Text = ""
+                'lbserving22.Text = ""
+                'id21 = 0
 
-                lbserving23.ForeColor = Color.DimGray
-                lblCounter23.Text = ""
-                lbserving23.Text = ""
-                id23 = 0
+                'lbserving23.ForeColor = Color.DimGray
+                'lblCounter23.Text = ""
+                'lbserving23.Text = ""
+                'id22 = 0
 
-                lbserving24.ForeColor = Color.DimGray
-                lblCounter24.Text = ""
-                lbserving24.Text = ""
-                id24 = 0
-
+                'lbserving24.ForeColor = Color.DimGray
+                'lblCounter24.Text = ""
+                'lbserving24.Text = ""
+                'id23 = 0
                 GoTo SKIP
             End If
             If tmpServingCustomerOfServers.Count > 8 Then
@@ -1284,73 +1279,73 @@ Public Class frmCounterQueuingBoardSelectedCountersStandalone
 
                 lbserving11.ForeColor = Color.DimGray
                 lblCounter11.Text = ""
-                lbserving12.Text = ""
-                id11 = 0
+                lbserving11.Text = ""
+                id10 = 0
 
                 lbserving12.ForeColor = Color.DimGray
                 lblCounter12.Text = ""
                 lbserving12.Text = ""
-                id12 = 0
+                id11 = 0
 
                 lbserving13.ForeColor = Color.DimGray
                 lblCounter13.Text = ""
                 lbserving13.Text = ""
-                id13 = 0
+                id12 = 0
 
                 lbserving14.ForeColor = Color.DimGray
                 lblCounter14.Text = ""
                 lbserving14.Text = ""
-                id14 = 0
+                id13 = 0
 
                 lbserving15.ForeColor = Color.DimGray
                 lblCounter15.Text = ""
                 lbserving15.Text = ""
-                id15 = 0
+                id14 = 0
 
                 lbserving16.ForeColor = Color.DimGray
                 lblCounter16.Text = ""
                 lbserving16.Text = ""
-                id16 = 0
+                id15 = 0
 
                 lbserving17.ForeColor = Color.DimGray
                 lblCounter17.Text = ""
                 lbserving17.Text = ""
-                id17 = 0
+                id16 = 0
 
                 lbserving18.ForeColor = Color.DimGray
                 lblCounter18.Text = ""
                 lbserving18.Text = ""
-                id18 = 0
+                id17 = 0
 
-                lbserving19.ForeColor = Color.DimGray
-                lblCounter19.Text = ""
-                lbserving19.Text = ""
-                id19 = 0
+                'lbserving19.ForeColor = Color.DimGray
+                'lblCounter19.Text = ""
+                'lbserving19.Text = ""
+                'id18 = 0
 
-                lbserving20.ForeColor = Color.DimGray
-                lblCounter20.Text = ""
-                lbserving20.Text = ""
-                id20 = 0
+                'lbserving20.ForeColor = Color.DimGray
+                'lblCounter20.Text = ""
+                'lbserving20.Text = ""
+                'id19 = 0
 
-                lbserving21.ForeColor = Color.DimGray
-                lblCounter21.Text = ""
-                lbserving21.Text = ""
-                id21 = 0
+                'lbserving21.ForeColor = Color.DimGray
+                'lblCounter21.Text = ""
+                'lbserving21.Text = ""
+                'id20 = 0
 
-                lbserving22.ForeColor = Color.DimGray
-                lblCounter22.Text = ""
-                lbserving22.Text = ""
-                id22 = 0
+                'lbserving22.ForeColor = Color.DimGray
+                'lblCounter22.Text = ""
+                'lbserving22.Text = ""
+                'id21 = 0
 
-                lbserving23.ForeColor = Color.DimGray
-                lblCounter23.Text = ""
-                lbserving23.Text = ""
-                id23 = 0
+                'lbserving23.ForeColor = Color.DimGray
+                'lblCounter23.Text = ""
+                'lbserving23.Text = ""
+                'id22 = 0
 
-                lbserving24.ForeColor = Color.DimGray
-                lblCounter24.Text = ""
-                lbserving24.Text = ""
-                id24 = 0
+                'lbserving24.ForeColor = Color.DimGray
+                'lblCounter24.Text = ""
+                'lbserving24.Text = ""
+                'id23 = 0
 
                 GoTo SKIP
             End If
@@ -1377,73 +1372,73 @@ Public Class frmCounterQueuingBoardSelectedCountersStandalone
 
                 lbserving11.ForeColor = Color.DimGray
                 lblCounter11.Text = ""
-                lbserving12.Text = ""
-                id11 = 0
+                lbserving11.Text = ""
+                id10 = 0
 
                 lbserving12.ForeColor = Color.DimGray
                 lblCounter12.Text = ""
                 lbserving12.Text = ""
-                id12 = 0
+                id11 = 0
 
                 lbserving13.ForeColor = Color.DimGray
                 lblCounter13.Text = ""
                 lbserving13.Text = ""
-                id13 = 0
+                id12 = 0
 
                 lbserving14.ForeColor = Color.DimGray
                 lblCounter14.Text = ""
                 lbserving14.Text = ""
-                id14 = 0
+                id13 = 0
 
                 lbserving15.ForeColor = Color.DimGray
                 lblCounter15.Text = ""
                 lbserving15.Text = ""
-                id15 = 0
+                id14 = 0
 
                 lbserving16.ForeColor = Color.DimGray
                 lblCounter16.Text = ""
                 lbserving16.Text = ""
-                id16 = 0
+                id15 = 0
 
                 lbserving17.ForeColor = Color.DimGray
                 lblCounter17.Text = ""
                 lbserving17.Text = ""
-                id17 = 0
+                id16 = 0
 
                 lbserving18.ForeColor = Color.DimGray
                 lblCounter18.Text = ""
                 lbserving18.Text = ""
-                id18 = 0
+                id17 = 0
 
-                lbserving19.ForeColor = Color.DimGray
-                lblCounter19.Text = ""
-                lbserving19.Text = ""
-                id19 = 0
+                'lbserving19.ForeColor = Color.DimGray
+                'lblCounter19.Text = ""
+                'lbserving19.Text = ""
+                'id18 = 0
 
-                lbserving20.ForeColor = Color.DimGray
-                lblCounter20.Text = ""
-                lbserving20.Text = ""
-                id20 = 0
+                'lbserving20.ForeColor = Color.DimGray
+                'lblCounter20.Text = ""
+                'lbserving20.Text = ""
+                'id19 = 0
 
-                lbserving21.ForeColor = Color.DimGray
-                lblCounter21.Text = ""
-                lbserving21.Text = ""
-                id21 = 0
+                'lbserving21.ForeColor = Color.DimGray
+                'lblCounter21.Text = ""
+                'lbserving21.Text = ""
+                'id20 = 0
 
-                lbserving22.ForeColor = Color.DimGray
-                lblCounter22.Text = ""
-                lbserving22.Text = ""
-                id22 = 0
+                'lbserving22.ForeColor = Color.DimGray
+                'lblCounter22.Text = ""
+                'lbserving22.Text = ""
+                'id21 = 0
 
-                lbserving23.ForeColor = Color.DimGray
-                lblCounter23.Text = ""
-                lbserving23.Text = ""
-                id23 = 0
+                'lbserving23.ForeColor = Color.DimGray
+                'lblCounter23.Text = ""
+                'lbserving23.Text = ""
+                'id22 = 0
 
-                lbserving24.ForeColor = Color.DimGray
-                lblCounter24.Text = ""
-                lbserving24.Text = ""
-                id24 = 0
+                'lbserving24.ForeColor = Color.DimGray
+                'lblCounter24.Text = ""
+                'lbserving24.Text = ""
+                'id23 = 0
                 GoTo SKIP
             End If
             If tmpServingCustomerOfServers.Count > 10 Then
@@ -1466,72 +1461,72 @@ Public Class frmCounterQueuingBoardSelectedCountersStandalone
                 lbserving11.ForeColor = Color.DimGray
                 lblCounter11.Text = ""
                 lbserving11.Text = ""
-                id11 = 0
+                id10 = 0
 
                 lbserving12.ForeColor = Color.DimGray
                 lblCounter12.Text = ""
                 lbserving12.Text = ""
-                id12 = 0
+                id11 = 0
 
                 lbserving13.ForeColor = Color.DimGray
                 lblCounter13.Text = ""
                 lbserving13.Text = ""
-                id13 = 0
+                id12 = 0
 
                 lbserving14.ForeColor = Color.DimGray
                 lblCounter14.Text = ""
                 lbserving14.Text = ""
-                id14 = 0
+                id13 = 0
 
                 lbserving15.ForeColor = Color.DimGray
                 lblCounter15.Text = ""
                 lbserving15.Text = ""
-                id15 = 0
+                id14 = 0
 
                 lbserving16.ForeColor = Color.DimGray
                 lblCounter16.Text = ""
                 lbserving16.Text = ""
-                id16 = 0
+                id15 = 0
 
                 lbserving17.ForeColor = Color.DimGray
                 lblCounter17.Text = ""
                 lbserving17.Text = ""
-                id17 = 0
+                id16 = 0
 
                 lbserving18.ForeColor = Color.DimGray
                 lblCounter18.Text = ""
                 lbserving18.Text = ""
-                id18 = 0
+                id17 = 0
 
-                lbserving19.ForeColor = Color.DimGray
-                lblCounter19.Text = ""
-                lbserving19.Text = ""
-                id19 = 0
+                'lbserving19.ForeColor = Color.DimGray
+                'lblCounter19.Text = ""
+                'lbserving19.Text = ""
+                'id18 = 0
 
-                lbserving20.ForeColor = Color.DimGray
-                lblCounter20.Text = ""
-                lbserving20.Text = ""
-                id20 = 0
+                'lbserving20.ForeColor = Color.DimGray
+                'lblCounter20.Text = ""
+                'lbserving20.Text = ""
+                'id19 = 0
 
-                lbserving21.ForeColor = Color.DimGray
-                lblCounter21.Text = ""
-                lbserving21.Text = ""
-                id21 = 0
+                'lbserving21.ForeColor = Color.DimGray
+                'lblCounter21.Text = ""
+                'lbserving21.Text = ""
+                'id20 = 0
 
-                lbserving22.ForeColor = Color.DimGray
-                lblCounter22.Text = ""
-                lbserving22.Text = ""
-                id22 = 0
+                'lbserving22.ForeColor = Color.DimGray
+                'lblCounter22.Text = ""
+                'lbserving22.Text = ""
+                'id21 = 0
 
-                lbserving23.ForeColor = Color.DimGray
-                lblCounter23.Text = ""
-                lbserving23.Text = ""
-                id23 = 0
+                'lbserving23.ForeColor = Color.DimGray
+                'lblCounter23.Text = ""
+                'lbserving23.Text = ""
+                'id22 = 0
 
-                lbserving24.ForeColor = Color.DimGray
-                lblCounter24.Text = ""
-                lbserving24.Text = ""
-                id24 = 0
+                'lbserving24.ForeColor = Color.DimGray
+                'lblCounter24.Text = ""
+                'lbserving24.Text = ""
+                'id23 = 0
                 GoTo SKIP
             End If
             If tmpServingCustomerOfServers.Count > 11 Then
@@ -1553,67 +1548,67 @@ Public Class frmCounterQueuingBoardSelectedCountersStandalone
                 lbserving12.ForeColor = Color.DimGray
                 lblCounter12.Text = ""
                 lbserving12.Text = ""
-                id12 = 0
+                id11 = 0
 
                 lbserving13.ForeColor = Color.DimGray
                 lblCounter13.Text = ""
                 lbserving13.Text = ""
-                id13 = 0
+                id12 = 0
 
                 lbserving14.ForeColor = Color.DimGray
                 lblCounter14.Text = ""
                 lbserving14.Text = ""
-                id14 = 0
+                id13 = 0
 
                 lbserving15.ForeColor = Color.DimGray
                 lblCounter15.Text = ""
                 lbserving15.Text = ""
-                id15 = 0
+                id14 = 0
 
                 lbserving16.ForeColor = Color.DimGray
                 lblCounter16.Text = ""
                 lbserving16.Text = ""
-                id16 = 0
+                id15 = 0
 
                 lbserving17.ForeColor = Color.DimGray
                 lblCounter17.Text = ""
                 lbserving17.Text = ""
-                id17 = 0
+                id16 = 0
 
                 lbserving18.ForeColor = Color.DimGray
                 lblCounter18.Text = ""
                 lbserving18.Text = ""
-                id18 = 0
+                id17 = 0
 
-                lbserving19.ForeColor = Color.DimGray
-                lblCounter19.Text = ""
-                lbserving19.Text = ""
-                id19 = 0
+                'lbserving19.ForeColor = Color.DimGray
+                'lblCounter19.Text = ""
+                'lbserving19.Text = ""
+                'id18 = 0
 
-                lbserving20.ForeColor = Color.DimGray
-                lblCounter20.Text = ""
-                lbserving20.Text = ""
-                id20 = 0
+                'lbserving20.ForeColor = Color.DimGray
+                'lblCounter20.Text = ""
+                'lbserving20.Text = ""
+                'id19 = 0
 
-                lbserving21.ForeColor = Color.DimGray
-                lblCounter21.Text = ""
-                lbserving21.Text = ""
-                id21 = 0
+                'lbserving21.ForeColor = Color.DimGray
+                'lblCounter21.Text = ""
+                'lbserving21.Text = ""
+                'id20 = 0
 
-                lbserving22.ForeColor = Color.DimGray
-                lblCounter22.Text = ""
-                lbserving22.Text = ""
-                id22 = 0
+                'lbserving22.ForeColor = Color.DimGray
+                'lblCounter22.Text = ""
+                'lbserving22.Text = ""
+                'id21 = 0
 
-                lbserving23.ForeColor = Color.DimGray
-                lblCounter23.Text = ""
-                lbserving23.Text = ""
-                id23 = 0
+                'lbserving23.ForeColor = Color.DimGray
+                'lblCounter23.Text = ""
+                'lbserving23.Text = ""
+                'id22 = 0
 
-                lbserving24.ForeColor = Color.DimGray
-                lblCounter24.Text = ""
-                lbserving24.Text = ""
-                id24 = 0
+                'lbserving24.ForeColor = Color.DimGray
+                'lblCounter24.Text = ""
+                'lbserving24.Text = ""
+                'id23 = 0
                 GoTo SKIP
             End If
             If tmpServingCustomerOfServers.Count > 12 Then
@@ -1635,62 +1630,62 @@ Public Class frmCounterQueuingBoardSelectedCountersStandalone
                 lbserving13.ForeColor = Color.DimGray
                 lblCounter13.Text = ""
                 lbserving13.Text = ""
-                id13 = 0
+                id12 = 0
 
                 lbserving14.ForeColor = Color.DimGray
                 lblCounter14.Text = ""
                 lbserving14.Text = ""
-                id14 = 0
+                id13 = 0
 
                 lbserving15.ForeColor = Color.DimGray
                 lblCounter15.Text = ""
                 lbserving15.Text = ""
-                id15 = 0
+                id14 = 0
 
                 lbserving16.ForeColor = Color.DimGray
                 lblCounter16.Text = ""
                 lbserving16.Text = ""
-                id16 = 0
+                id15 = 0
 
                 lbserving17.ForeColor = Color.DimGray
                 lblCounter17.Text = ""
                 lbserving17.Text = ""
-                id17 = 0
+                id16 = 0
 
                 lbserving18.ForeColor = Color.DimGray
                 lblCounter18.Text = ""
                 lbserving18.Text = ""
-                id18 = 0
+                id17 = 0
 
-                lbserving19.ForeColor = Color.DimGray
-                lblCounter19.Text = ""
-                lbserving19.Text = ""
-                id19 = 0
+                'lbserving19.ForeColor = Color.DimGray
+                'lblCounter19.Text = ""
+                'lbserving19.Text = ""
+                'id18 = 0
 
-                lbserving20.ForeColor = Color.DimGray
-                lblCounter20.Text = ""
-                lbserving20.Text = ""
-                id20 = 0
+                'lbserving20.ForeColor = Color.DimGray
+                'lblCounter20.Text = ""
+                'lbserving20.Text = ""
+                'id19 = 0
 
-                lbserving21.ForeColor = Color.DimGray
-                lblCounter21.Text = ""
-                lbserving21.Text = ""
-                id21 = 0
+                'lbserving21.ForeColor = Color.DimGray
+                'lblCounter21.Text = ""
+                'lbserving21.Text = ""
+                'id20 = 0
 
-                lbserving22.ForeColor = Color.DimGray
-                lblCounter22.Text = ""
-                lbserving22.Text = ""
-                id22 = 0
+                'lbserving22.ForeColor = Color.DimGray
+                'lblCounter22.Text = ""
+                'lbserving22.Text = ""
+                'id21 = 0
 
-                lbserving23.ForeColor = Color.DimGray
-                lblCounter23.Text = ""
-                lbserving23.Text = ""
-                id23 = 0
+                'lbserving23.ForeColor = Color.DimGray
+                'lblCounter23.Text = ""
+                'lbserving23.Text = ""
+                'id22 = 0
 
-                lbserving24.ForeColor = Color.DimGray
-                lblCounter24.Text = ""
-                lbserving24.Text = ""
-                id24 = 0
+                'lbserving24.ForeColor = Color.DimGray
+                'lblCounter24.Text = ""
+                'lbserving24.Text = ""
+                'id23 = 0
                 GoTo SKIP
             End If
             If tmpServingCustomerOfServers.Count > 13 Then
@@ -1712,57 +1707,57 @@ Public Class frmCounterQueuingBoardSelectedCountersStandalone
                 lbserving14.ForeColor = Color.DimGray
                 lblCounter14.Text = ""
                 lbserving14.Text = ""
-                id14 = 0
+                id13 = 0
 
                 lbserving15.ForeColor = Color.DimGray
                 lblCounter15.Text = ""
                 lbserving15.Text = ""
-                id15 = 0
+                id14 = 0
 
                 lbserving16.ForeColor = Color.DimGray
                 lblCounter16.Text = ""
                 lbserving16.Text = ""
-                id16 = 0
+                id15 = 0
 
                 lbserving17.ForeColor = Color.DimGray
                 lblCounter17.Text = ""
                 lbserving17.Text = ""
-                id17 = 0
+                id16 = 0
 
                 lbserving18.ForeColor = Color.DimGray
                 lblCounter18.Text = ""
                 lbserving18.Text = ""
-                id18 = 0
+                id17 = 0
 
-                lbserving19.ForeColor = Color.DimGray
-                lblCounter19.Text = ""
-                lbserving19.Text = ""
-                id19 = 0
+                'lbserving19.ForeColor = Color.DimGray
+                'lblCounter19.Text = ""
+                'lbserving19.Text = ""
+                'id18 = 0
 
-                lbserving20.ForeColor = Color.DimGray
-                lblCounter20.Text = ""
-                lbserving20.Text = ""
-                id20 = 0
+                'lbserving20.ForeColor = Color.DimGray
+                'lblCounter20.Text = ""
+                'lbserving20.Text = ""
+                'id19 = 0
 
-                lbserving21.ForeColor = Color.DimGray
-                lblCounter21.Text = ""
-                lbserving21.Text = ""
-                id21 = 0
+                'lbserving21.ForeColor = Color.DimGray
+                'lblCounter21.Text = ""
+                'lbserving21.Text = ""
+                'id20 = 0
 
-                lbserving22.ForeColor = Color.DimGray
-                lblCounter22.Text = ""
-                lbserving22.Text = ""
-                id22 = 0
+                'lbserving22.ForeColor = Color.DimGray
+                'lblCounter22.Text = ""
+                'lbserving22.Text = ""
+                'id21 = 0
 
-                lbserving23.ForeColor = Color.DimGray
-                lblCounter23.Text = ""
-                lbserving23.Text = ""
-                id23 = 0
+                'lbserving23.ForeColor = Color.DimGray
+                'lblCounter23.Text = ""
+                'lbserving23.Text = ""
+                'id22 = 0
 
-                lbserving24.ForeColor = Color.DimGray
-                lblCounter24.Text = ""
-                lbserving24.Text = ""
-                id24 = 0
+                'lbserving24.ForeColor = Color.DimGray
+                'lblCounter24.Text = ""
+                'lbserving24.Text = ""
+                'id23 = 0
                 GoTo SKIP
             End If
             If tmpServingCustomerOfServers.Count > 14 Then
@@ -1784,52 +1779,52 @@ Public Class frmCounterQueuingBoardSelectedCountersStandalone
                 lbserving15.ForeColor = Color.DimGray
                 lblCounter15.Text = ""
                 lbserving15.Text = ""
-                id15 = 0
+                id14 = 0
 
                 lbserving16.ForeColor = Color.DimGray
                 lblCounter16.Text = ""
                 lbserving16.Text = ""
-                id16 = 0
+                id15 = 0
 
                 lbserving17.ForeColor = Color.DimGray
                 lblCounter17.Text = ""
                 lbserving17.Text = ""
-                id17 = 0
+                id16 = 0
 
                 lbserving18.ForeColor = Color.DimGray
                 lblCounter18.Text = ""
                 lbserving18.Text = ""
-                id18 = 0
+                id17 = 0
 
-                lbserving19.ForeColor = Color.DimGray
-                lblCounter19.Text = ""
-                lbserving19.Text = ""
-                id19 = 0
+                'lbserving19.ForeColor = Color.DimGray
+                'lblCounter19.Text = ""
+                'lbserving19.Text = ""
+                'id18 = 0
 
-                lbserving20.ForeColor = Color.DimGray
-                lblCounter20.Text = ""
-                lbserving20.Text = ""
-                id20 = 0
+                'lbserving20.ForeColor = Color.DimGray
+                'lblCounter20.Text = ""
+                'lbserving20.Text = ""
+                'id19 = 0
 
-                lbserving21.ForeColor = Color.DimGray
-                lblCounter21.Text = ""
-                lbserving21.Text = ""
-                id21 = 0
+                'lbserving21.ForeColor = Color.DimGray
+                'lblCounter21.Text = ""
+                'lbserving21.Text = ""
+                'id20 = 0
 
-                lbserving22.ForeColor = Color.DimGray
-                lblCounter22.Text = ""
-                lbserving22.Text = ""
-                id22 = 0
+                'lbserving22.ForeColor = Color.DimGray
+                'lblCounter22.Text = ""
+                'lbserving22.Text = ""
+                'id21 = 0
 
-                lbserving23.ForeColor = Color.DimGray
-                lblCounter23.Text = ""
-                lbserving23.Text = ""
-                id23 = 0
+                'lbserving23.ForeColor = Color.DimGray
+                'lblCounter23.Text = ""
+                'lbserving23.Text = ""
+                'id22 = 0
 
-                lbserving24.ForeColor = Color.DimGray
-                lblCounter24.Text = ""
-                lbserving24.Text = ""
-                id24 = 0
+                'lbserving24.ForeColor = Color.DimGray
+                'lblCounter24.Text = ""
+                'lbserving24.Text = ""
+                'id23 = 0
                 GoTo SKIP
             End If
             If tmpServingCustomerOfServers.Count > 15 Then
@@ -1851,47 +1846,47 @@ Public Class frmCounterQueuingBoardSelectedCountersStandalone
                 lbserving16.ForeColor = Color.DimGray
                 lblCounter16.Text = ""
                 lbserving16.Text = ""
-                id16 = 0
+                id15 = 0
 
                 lbserving17.ForeColor = Color.DimGray
                 lblCounter17.Text = ""
                 lbserving17.Text = ""
-                id17 = 0
+                id16 = 0
 
                 lbserving18.ForeColor = Color.DimGray
                 lblCounter18.Text = ""
                 lbserving18.Text = ""
-                id18 = 0
+                id17 = 0
 
-                lbserving19.ForeColor = Color.DimGray
-                lblCounter19.Text = ""
-                lbserving19.Text = ""
-                id19 = 0
+                'lbserving19.ForeColor = Color.DimGray
+                'lblCounter19.Text = ""
+                'lbserving19.Text = ""
+                'id18 = 0
 
-                lbserving20.ForeColor = Color.DimGray
-                lblCounter20.Text = ""
-                lbserving20.Text = ""
-                id20 = 0
+                'lbserving20.ForeColor = Color.DimGray
+                'lblCounter20.Text = ""
+                'lbserving20.Text = ""
+                'id19 = 0
 
-                lbserving21.ForeColor = Color.DimGray
-                lblCounter21.Text = ""
-                lbserving21.Text = ""
-                id21 = 0
+                'lbserving21.ForeColor = Color.DimGray
+                'lblCounter21.Text = ""
+                'lbserving21.Text = ""
+                'id20 = 0
 
-                lbserving22.ForeColor = Color.DimGray
-                lblCounter22.Text = ""
-                lbserving22.Text = ""
-                id22 = 0
+                'lbserving22.ForeColor = Color.DimGray
+                'lblCounter22.Text = ""
+                'lbserving22.Text = ""
+                'id21 = 0
 
-                lbserving23.ForeColor = Color.DimGray
-                lblCounter23.Text = ""
-                lbserving23.Text = ""
-                id23 = 0
+                'lbserving23.ForeColor = Color.DimGray
+                'lblCounter23.Text = ""
+                'lbserving23.Text = ""
+                'id22 = 0
 
-                lbserving24.ForeColor = Color.DimGray
-                lblCounter24.Text = ""
-                lbserving24.Text = ""
-                id24 = 0
+                'lbserving24.ForeColor = Color.DimGray
+                'lblCounter24.Text = ""
+                'lbserving24.Text = ""
+                'id23 = 0
                 GoTo SKIP
             End If
             If tmpServingCustomerOfServers.Count > 16 Then
@@ -1914,42 +1909,42 @@ Public Class frmCounterQueuingBoardSelectedCountersStandalone
                 lbserving17.ForeColor = Color.DimGray
                 lblCounter17.Text = ""
                 lbserving17.Text = ""
-                id17 = 0
+                id16 = 0
 
                 lbserving18.ForeColor = Color.DimGray
                 lblCounter18.Text = ""
                 lbserving18.Text = ""
-                id18 = 0
+                id17 = 0
 
-                lbserving19.ForeColor = Color.DimGray
-                lblCounter19.Text = ""
-                lbserving19.Text = ""
-                id19 = 0
+                'lbserving19.ForeColor = Color.DimGray
+                'lblCounter19.Text = ""
+                'lbserving19.Text = ""
+                'id18 = 0
 
-                lbserving20.ForeColor = Color.DimGray
-                lblCounter20.Text = ""
-                lbserving20.Text = ""
-                id20 = 0
+                'lbserving20.ForeColor = Color.DimGray
+                'lblCounter20.Text = ""
+                'lbserving20.Text = ""
+                'id19 = 0
 
-                lbserving21.ForeColor = Color.DimGray
-                lblCounter21.Text = ""
-                lbserving21.Text = ""
-                id21 = 0
+                'lbserving21.ForeColor = Color.DimGray
+                'lblCounter21.Text = ""
+                'lbserving21.Text = ""
+                'id20 = 0
 
-                lbserving22.ForeColor = Color.DimGray
-                lblCounter22.Text = ""
-                lbserving22.Text = ""
-                id22 = 0
+                'lbserving22.ForeColor = Color.DimGray
+                'lblCounter22.Text = ""
+                'lbserving22.Text = ""
+                'id21 = 0
 
-                lbserving23.ForeColor = Color.DimGray
-                lblCounter23.Text = ""
-                lbserving23.Text = ""
-                id23 = 0
+                'lbserving23.ForeColor = Color.DimGray
+                'lblCounter23.Text = ""
+                'lbserving23.Text = ""
+                'id22 = 0
 
-                lbserving24.ForeColor = Color.DimGray
-                lblCounter24.Text = ""
-                lbserving24.Text = ""
-                id24 = 0
+                'lbserving24.ForeColor = Color.DimGray
+                'lblCounter24.Text = ""
+                'lbserving24.Text = ""
+                'id23 = 0
                 GoTo SKIP
             End If
             If tmpServingCustomerOfServers.Count > 17 Then
@@ -1971,246 +1966,246 @@ Public Class frmCounterQueuingBoardSelectedCountersStandalone
                 lbserving18.ForeColor = Color.DimGray
                 lblCounter18.Text = ""
                 lbserving18.Text = ""
-                id18 = 0
+                id17 = 0
 
-                lbserving19.ForeColor = Color.DimGray
-                lblCounter19.Text = ""
-                lbserving19.Text = ""
-                id19 = 0
+                'lbserving19.ForeColor = Color.DimGray
+                'lblCounter19.Text = ""
+                'lbserving19.Text = ""
+                'id18 = 0
 
-                lbserving20.ForeColor = Color.DimGray
-                lblCounter20.Text = ""
-                lbserving20.Text = ""
-                id20 = 0
+                'lbserving20.ForeColor = Color.DimGray
+                'lblCounter20.Text = ""
+                'lbserving20.Text = ""
+                'id19 = 0
 
-                lbserving21.ForeColor = Color.DimGray
-                lblCounter21.Text = ""
-                lbserving21.Text = ""
-                id21 = 0
+                'lbserving21.ForeColor = Color.DimGray
+                'lblCounter21.Text = ""
+                'lbserving21.Text = ""
+                'id20 = 0
 
-                lbserving22.ForeColor = Color.DimGray
-                lblCounter22.Text = ""
-                lbserving22.Text = ""
-                id22 = 0
+                'lbserving22.ForeColor = Color.DimGray
+                'lblCounter22.Text = ""
+                'lbserving22.Text = ""
+                'id21 = 0
 
-                lbserving23.ForeColor = Color.DimGray
-                lblCounter23.Text = ""
-                lbserving23.Text = ""
-                id23 = 0
+                'lbserving23.ForeColor = Color.DimGray
+                'lblCounter23.Text = ""
+                'lbserving23.Text = ""
+                'id22 = 0
 
-                lbserving24.ForeColor = Color.DimGray
-                lblCounter24.Text = ""
-                lbserving24.Text = ""
-                id24 = 0
+                'lbserving24.ForeColor = Color.DimGray
+                'lblCounter24.Text = ""
+                'lbserving24.Text = ""
+                'id23 = 0
                 GoTo SKIP
             End If
-            If tmpServingCustomerOfServers.Count > 18 Then
-                lblCounter19.Text = If(Not IsNothing(tmpServingCustomerOfServers(18).serverTransaction), tmpServingCustomerOfServers(18).serverTransaction.CounterName, "")
-                If Not id19 = tmpServingCustomerOfServers(18).serverTransaction.ServerTransaction_ID Then
-                    lbserving19.Text = ""
-                End If
-                id19 = tmpServingCustomerOfServers(18).serverTransaction.ServerTransaction_ID
-                If Not IsNothing(tmpServingCustomerOfServers(18).customerAssigncounter) Then
-                    lbserving19.Text = tmpServingCustomerOfServers(18).customerAssigncounter.ProcessedQueueNumber
-                    If tmpServingCustomerOfServers(18).customerAssigncounter.Priority > 0 Then
-                        lbserving19.ForeColor = Color.IndianRed
-                    Else
-                        lbserving19.ForeColor = Color.FromArgb(13, 52, 145)
-                    End If
-                    CheckIfServingChange(tmpServingCustomerOfServers(18))
-                End If
-            Else
-                lbserving19.ForeColor = Color.DimGray
-                lblCounter19.Text = ""
-                lbserving19.Text = ""
-                id19 = 0
+            'If tmpServingCustomerOfServers.Count > 18 Then
+            '    lblCounter14.Text = If(Not IsNothing(tmpServingCustomerOfServers(18).serverTransaction), tmpServingCustomerOfServers(18).serverTransaction.CounterName, "")
+            '    If Not id19 = tmpServingCustomerOfServers(18).serverTransaction.ServerTransaction_ID Then
+            '        lbserving14.Text = ""
+            '    End If
+            '    id19 = tmpServingCustomerOfServers(18).serverTransaction.ServerTransaction_ID
+            '    If Not IsNothing(tmpServingCustomerOfServers(18).customerAssigncounter) Then
+            '        lbserving14.Text = tmpServingCustomerOfServers(18).customerAssigncounter.ProcessedQueueNumber
+            '        If tmpServingCustomerOfServers(18).customerAssigncounter.Priority > 0 Then
+            '            lbserving14.ForeColor = Color.IndianRed
+            '        Else
+            '            lbserving14.ForeColor = Color.FromArgb(13, 52, 145)
+            '        End If
+            '        CheckIfServingChange(tmpServingCustomerOfServers(18))
+            '    End If
+            'Else
+            '    lbserving19.ForeColor = Color.DimGray
+            '    lblCounter19.Text = ""
+            '    lbserving19.Text = ""
+            '    id18 = 0
 
-                lbserving20.ForeColor = Color.DimGray
-                lblCounter20.Text = ""
-                lbserving20.Text = ""
-                id20 = 0
+            '    lbserving20.ForeColor = Color.DimGray
+            '    lblCounter20.Text = ""
+            '    lbserving20.Text = ""
+            '    id19 = 0
 
-                lbserving21.ForeColor = Color.DimGray
-                lblCounter21.Text = ""
-                lbserving21.Text = ""
-                id21 = 0
+            '    lbserving21.ForeColor = Color.DimGray
+            '    lblCounter21.Text = ""
+            '    lbserving21.Text = ""
+            '    id20 = 0
 
-                lbserving22.ForeColor = Color.DimGray
-                lblCounter22.Text = ""
-                lbserving22.Text = ""
-                id22 = 0
+            '    lbserving22.ForeColor = Color.DimGray
+            '    lblCounter22.Text = ""
+            '    lbserving22.Text = ""
+            '    id21 = 0
 
-                lbserving23.ForeColor = Color.DimGray
-                lblCounter23.Text = ""
-                lbserving23.Text = ""
-                id23 = 0
+            '    lbserving23.ForeColor = Color.DimGray
+            '    lblCounter23.Text = ""
+            '    lbserving23.Text = ""
+            '    id22 = 0
 
-                lbserving24.ForeColor = Color.DimGray
-                lblCounter24.Text = ""
-                lbserving24.Text = ""
-                id24 = 0
-                GoTo SKIP
-            End If
-            If tmpServingCustomerOfServers.Count > 19 Then
-                lblCounter20.Text = If(Not IsNothing(tmpServingCustomerOfServers(19).serverTransaction), tmpServingCustomerOfServers(19).serverTransaction.CounterName, "")
-                If Not id20 = tmpServingCustomerOfServers(19).serverTransaction.ServerTransaction_ID Then
-                    lbserving20.Text = ""
-                End If
-                id20 = tmpServingCustomerOfServers(19).serverTransaction.ServerTransaction_ID
-                If Not IsNothing(tmpServingCustomerOfServers(19).customerAssigncounter) Then
-                    lbserving20.Text = tmpServingCustomerOfServers(19).customerAssigncounter.ProcessedQueueNumber
-                    If tmpServingCustomerOfServers(19).customerAssigncounter.Priority > 0 Then
-                        lbserving20.ForeColor = Color.IndianRed
-                    Else
-                        lbserving20.ForeColor = Color.FromArgb(13, 52, 145)
-                    End If
-                    CheckIfServingChange(tmpServingCustomerOfServers(19))
-                End If
-            Else
-                lbserving20.ForeColor = Color.DimGray
-                lblCounter20.Text = ""
-                lbserving20.Text = ""
-                id20 = 0
+            '    lbserving24.ForeColor = Color.DimGray
+            '    lblCounter24.Text = ""
+            '    lbserving24.Text = ""
+            '    id23 = 0
+            '    GoTo SKIP
+            'End If
+            'If tmpServingCustomerOfServers.Count > 19 Then
+            '    lblCounter16.Text = If(Not IsNothing(tmpServingCustomerOfServers(19).serverTransaction), tmpServingCustomerOfServers(19).serverTransaction.CounterName, "")
+            '    If Not id20 = tmpServingCustomerOfServers(19).serverTransaction.ServerTransaction_ID Then
+            '        lbserving16.Text = ""
+            '    End If
+            '    id20 = tmpServingCustomerOfServers(19).serverTransaction.ServerTransaction_ID
+            '    If Not IsNothing(tmpServingCustomerOfServers(19).customerAssigncounter) Then
+            '        lbserving16.Text = tmpServingCustomerOfServers(19).customerAssigncounter.ProcessedQueueNumber
+            '        If tmpServingCustomerOfServers(19).customerAssigncounter.Priority > 0 Then
+            '            lbserving16.ForeColor = Color.IndianRed
+            '        Else
+            '            lbserving16.ForeColor = Color.FromArgb(13, 52, 145)
+            '        End If
+            '        CheckIfServingChange(tmpServingCustomerOfServers(19))
+            '    End If
+            'Else
+            '    lbserving20.ForeColor = Color.DimGray
+            '    lblCounter20.Text = ""
+            '    lbserving20.Text = ""
+            '    id19 = 0
 
-                lbserving21.ForeColor = Color.DimGray
-                lblCounter21.Text = ""
-                lbserving21.Text = ""
-                id21 = 0
+            '    lbserving21.ForeColor = Color.DimGray
+            '    lblCounter21.Text = ""
+            '    lbserving21.Text = ""
+            '    id20 = 0
 
-                lbserving22.ForeColor = Color.DimGray
-                lblCounter22.Text = ""
-                lbserving22.Text = ""
-                id22 = 0
+            '    lbserving22.ForeColor = Color.DimGray
+            '    lblCounter22.Text = ""
+            '    lbserving22.Text = ""
+            '    id21 = 0
 
-                lbserving23.ForeColor = Color.DimGray
-                lblCounter23.Text = ""
-                lbserving23.Text = ""
-                id23 = 0
+            '    lbserving23.ForeColor = Color.DimGray
+            '    lblCounter23.Text = ""
+            '    lbserving23.Text = ""
+            '    id22 = 0
 
-                lbserving24.ForeColor = Color.DimGray
-                lblCounter24.Text = ""
-                lbserving24.Text = ""
-                id24 = 0
-                GoTo SKIP
-            End If
-            If tmpServingCustomerOfServers.Count > 20 Then
-                lblCounter21.Text = If(Not IsNothing(tmpServingCustomerOfServers(20).serverTransaction), tmpServingCustomerOfServers(20).serverTransaction.CounterName, "")
-                If Not id21 = tmpServingCustomerOfServers(20).serverTransaction.ServerTransaction_ID Then
-                    lbserving21.Text = ""
-                End If
-                id21 = tmpServingCustomerOfServers(20).serverTransaction.ServerTransaction_ID
-                If Not IsNothing(tmpServingCustomerOfServers(20).customerAssigncounter) Then
-                    lbserving21.Text = tmpServingCustomerOfServers(20).customerAssigncounter.ProcessedQueueNumber
-                    If tmpServingCustomerOfServers(20).customerAssigncounter.Priority > 0 Then
-                        lbserving21.ForeColor = Color.IndianRed
-                    Else
-                        lbserving21.ForeColor = Color.FromArgb(13, 52, 145)
-                    End If
-                    CheckIfServingChange(tmpServingCustomerOfServers(20))
-                End If
-            Else
-                lbserving21.ForeColor = Color.DimGray
-                lblCounter21.Text = ""
-                lbserving21.Text = ""
-                id21 = 0
+            '    lbserving24.ForeColor = Color.DimGray
+            '    lblCounter24.Text = ""
+            '    lbserving24.Text = ""
+            '    id23 = 0
+            '    GoTo SKIP
+            'End If
+            'If tmpServingCustomerOfServers.Count > 20 Then
+            '    lblCounter18.Text = If(Not IsNothing(tmpServingCustomerOfServers(20).serverTransaction), tmpServingCustomerOfServers(20).serverTransaction.CounterName, "")
+            '    If Not id21 = tmpServingCustomerOfServers(20).serverTransaction.ServerTransaction_ID Then
+            '        lbserving18.Text = ""
+            '    End If
+            '    id21 = tmpServingCustomerOfServers(20).serverTransaction.ServerTransaction_ID
+            '    If Not IsNothing(tmpServingCustomerOfServers(20).customerAssigncounter) Then
+            '        lbserving18.Text = tmpServingCustomerOfServers(20).customerAssigncounter.ProcessedQueueNumber
+            '        If tmpServingCustomerOfServers(20).customerAssigncounter.Priority > 0 Then
+            '            lbserving18.ForeColor = Color.IndianRed
+            '        Else
+            '            lbserving18.ForeColor = Color.FromArgb(13, 52, 145)
+            '        End If
+            '        CheckIfServingChange(tmpServingCustomerOfServers(20))
+            '    End If
+            'Else
+            '    lbserving21.ForeColor = Color.DimGray
+            '    lblCounter21.Text = ""
+            '    lbserving21.Text = ""
+            '    id20 = 0
 
-                lbserving22.ForeColor = Color.DimGray
-                lblCounter22.Text = ""
-                lbserving22.Text = ""
-                id22 = 0
+            '    lbserving22.ForeColor = Color.DimGray
+            '    lblCounter22.Text = ""
+            '    lbserving22.Text = ""
+            '    id21 = 0
 
-                lbserving23.ForeColor = Color.DimGray
-                lblCounter23.Text = ""
-                lbserving23.Text = ""
-                id23 = 0
+            '    lbserving23.ForeColor = Color.DimGray
+            '    lblCounter23.Text = ""
+            '    lbserving23.Text = ""
+            '    id22 = 0
 
-                lbserving24.ForeColor = Color.DimGray
-                lblCounter24.Text = ""
-                lbserving24.Text = ""
-                id24 = 0
-                GoTo SKIP
-            End If
-            If tmpServingCustomerOfServers.Count > 21 Then
-                lblCounter22.Text = If(Not IsNothing(tmpServingCustomerOfServers(21).serverTransaction), tmpServingCustomerOfServers(21).serverTransaction.CounterName, "")
-                If Not id22 = tmpServingCustomerOfServers(21).serverTransaction.ServerTransaction_ID Then
-                    lbserving22.Text = ""
-                End If
-                id22 = tmpServingCustomerOfServers(21).serverTransaction.ServerTransaction_ID
-                If Not IsNothing(tmpServingCustomerOfServers(21).customerAssigncounter) Then
-                    lbserving22.Text = tmpServingCustomerOfServers(21).customerAssigncounter.ProcessedQueueNumber
-                    If tmpServingCustomerOfServers(21).customerAssigncounter.Priority > 0 Then
-                        lbserving22.ForeColor = Color.IndianRed
-                    Else
-                        lbserving22.ForeColor = Color.FromArgb(13, 52, 145)
-                    End If
-                    CheckIfServingChange(tmpServingCustomerOfServers(21))
-                End If
-            Else
-                lbserving22.ForeColor = Color.DimGray
-                lblCounter22.Text = ""
-                lbserving22.Text = ""
-                id22 = 0
+            '    lbserving24.ForeColor = Color.DimGray
+            '    lblCounter24.Text = ""
+            '    lbserving24.Text = ""
+            '    id23 = 0
+            '    GoTo SKIP
+            'End If
+            'If tmpServingCustomerOfServers.Count > 21 Then
+            '    lblCounter20.Text = If(Not IsNothing(tmpServingCustomerOfServers(21).serverTransaction), tmpServingCustomerOfServers(21).serverTransaction.CounterName, "")
+            '    If Not id22 = tmpServingCustomerOfServers(21).serverTransaction.ServerTransaction_ID Then
+            '        lbserving20.Text = ""
+            '    End If
+            '    id22 = tmpServingCustomerOfServers(21).serverTransaction.ServerTransaction_ID
+            '    If Not IsNothing(tmpServingCustomerOfServers(21).customerAssigncounter) Then
+            '        lbserving20.Text = tmpServingCustomerOfServers(21).customerAssigncounter.ProcessedQueueNumber
+            '        If tmpServingCustomerOfServers(21).customerAssigncounter.Priority > 0 Then
+            '            lbserving20.ForeColor = Color.IndianRed
+            '        Else
+            '            lbserving20.ForeColor = Color.FromArgb(13, 52, 145)
+            '        End If
+            '        CheckIfServingChange(tmpServingCustomerOfServers(21))
+            '    End If
+            'Else
+            '    lbserving22.ForeColor = Color.DimGray
+            '    lblCounter22.Text = ""
+            '    lbserving22.Text = ""
+            '    id21 = 0
 
-                lbserving23.ForeColor = Color.DimGray
-                lblCounter23.Text = ""
-                lbserving23.Text = ""
-                id23 = 0
+            '    lbserving23.ForeColor = Color.DimGray
+            '    lblCounter23.Text = ""
+            '    lbserving23.Text = ""
+            '    id22 = 0
 
-                lbserving24.ForeColor = Color.DimGray
-                lblCounter24.Text = ""
-                lbserving24.Text = ""
-                id24 = 0
-                GoTo SKIP
-            End If
-            If tmpServingCustomerOfServers.Count > 22 Then
-                lblCounter23.Text = If(Not IsNothing(tmpServingCustomerOfServers(22).serverTransaction), tmpServingCustomerOfServers(22).serverTransaction.CounterName, "")
-                If Not id23 = tmpServingCustomerOfServers(22).serverTransaction.ServerTransaction_ID Then
-                    lbserving23.Text = ""
-                End If
-                id23 = tmpServingCustomerOfServers(22).serverTransaction.ServerTransaction_ID
-                If Not IsNothing(tmpServingCustomerOfServers(22).customerAssigncounter) Then
-                    lbserving23.Text = tmpServingCustomerOfServers(22).customerAssigncounter.ProcessedQueueNumber
-                    If tmpServingCustomerOfServers(22).customerAssigncounter.Priority > 0 Then
-                        lbserving23.ForeColor = Color.IndianRed
-                    Else
-                        lbserving23.ForeColor = Color.FromArgb(13, 52, 145)
-                    End If
-                    CheckIfServingChange(tmpServingCustomerOfServers(22))
-                End If
-            Else
-                lbserving23.ForeColor = Color.DimGray
-                lblCounter23.Text = ""
-                lbserving23.Text = ""
-                id23 = 0
+            '    lbserving24.ForeColor = Color.DimGray
+            '    lblCounter24.Text = ""
+            '    lbserving24.Text = ""
+            '    id23 = 0
+            '    GoTo SKIP
+            'End If
+            'If tmpServingCustomerOfServers.Count > 22 Then
+            '    lblCounter22.Text = If(Not IsNothing(tmpServingCustomerOfServers(22).serverTransaction), tmpServingCustomerOfServers(22).serverTransaction.CounterName, "")
+            '    If Not id23 = tmpServingCustomerOfServers(22).serverTransaction.ServerTransaction_ID Then
+            '        lbserving22.Text = ""
+            '    End If
+            '    id23 = tmpServingCustomerOfServers(22).serverTransaction.ServerTransaction_ID
+            '    If Not IsNothing(tmpServingCustomerOfServers(22).customerAssigncounter) Then
+            '        lbserving22.Text = tmpServingCustomerOfServers(22).customerAssigncounter.ProcessedQueueNumber
+            '        If tmpServingCustomerOfServers(22).customerAssigncounter.Priority > 0 Then
+            '            lbserving22.ForeColor = Color.IndianRed
+            '        Else
+            '            lbserving22.ForeColor = Color.FromArgb(13, 52, 145)
+            '        End If
+            '        CheckIfServingChange(tmpServingCustomerOfServers(22))
+            '    End If
+            'Else
+            '    lbserving23.ForeColor = Color.DimGray
+            '    lblCounter23.Text = ""
+            '    lbserving23.Text = ""
+            '    id22 = 0
 
-                lbserving24.ForeColor = Color.DimGray
-                lblCounter24.Text = ""
-                lbserving24.Text = ""
-                id24 = 0
-                GoTo SKIP
-            End If
-            If tmpServingCustomerOfServers.Count > 23 Then
-                lblCounter24.Text = If(Not IsNothing(tmpServingCustomerOfServers(23).serverTransaction), tmpServingCustomerOfServers(23).serverTransaction.CounterName, "")
-                If Not id24 = tmpServingCustomerOfServers(23).serverTransaction.ServerTransaction_ID Then
-                    lbserving24.Text = ""
-                End If
-                id24 = tmpServingCustomerOfServers(23).serverTransaction.ServerTransaction_ID
-                If Not IsNothing(tmpServingCustomerOfServers(23).customerAssigncounter) Then
-                    lbserving24.Text = tmpServingCustomerOfServers(23).customerAssigncounter.ProcessedQueueNumber
-                    If tmpServingCustomerOfServers(23).customerAssigncounter.Priority > 0 Then
-                        lbserving24.ForeColor = Color.IndianRed
-                    Else
-                        lbserving24.ForeColor = Color.FromArgb(13, 52, 145)
-                    End If
-                    CheckIfServingChange(tmpServingCustomerOfServers(23))
-                End If
-            Else
-                lbserving24.ForeColor = Color.DimGray
-                lblCounter24.Text = ""
-                lbserving24.Text = ""
-                id24 = 0
-                GoTo SKIP
-            End If
+            '    lbserving24.ForeColor = Color.DimGray
+            '    lblCounter24.Text = ""
+            '    lbserving24.Text = ""
+            '    id23 = 0
+            '    GoTo SKIP
+            'End If
+            'If tmpServingCustomerOfServers.Count > 23 Then
+            '    lblCounter24.Text = If(Not IsNothing(tmpServingCustomerOfServers(23).serverTransaction), tmpServingCustomerOfServers(23).serverTransaction.CounterName, "")
+            '    If Not id24 = tmpServingCustomerOfServers(23).serverTransaction.ServerTransaction_ID Then
+            '        lbserving24.Text = ""
+            '    End If
+            '    id24 = tmpServingCustomerOfServers(23).serverTransaction.ServerTransaction_ID
+            '    If Not IsNothing(tmpServingCustomerOfServers(23).customerAssigncounter) Then
+            '        lbserving24.Text = tmpServingCustomerOfServers(23).customerAssigncounter.ProcessedQueueNumber
+            '        If tmpServingCustomerOfServers(23).customerAssigncounter.Priority > 0 Then
+            '            lbserving24.ForeColor = Color.IndianRed
+            '        Else
+            '            lbserving24.ForeColor = Color.FromArgb(13, 52, 145)
+            '        End If
+            '        CheckIfServingChange(tmpServingCustomerOfServers(23))
+            '    End If
+            'Else
+            '    lbserving24.ForeColor = Color.DimGray
+            '    lblCounter24.Text = ""
+            '    lbserving24.Text = ""
+            '    id24 = 0
+            '    GoTo SKIP
+            'End If
         End If
 SKIP:
         counter1 = If(lbserving1.Text.ToLower <> "", lbserving1.Text, "")
@@ -2231,12 +2226,12 @@ SKIP:
         counter16 = If(lbserving16.Text.ToLower <> "", lbserving16.Text, "")
         counter17 = If(lbserving17.Text.ToLower <> "", lbserving17.Text, "")
         counter18 = If(lbserving18.Text.ToLower <> "", lbserving18.Text, "")
-        counter19 = If(lbserving19.Text.ToLower <> "", lbserving19.Text, "")
-        counter20 = If(lbserving20.Text.ToLower <> "", lbserving20.Text, "")
-        counter21 = If(lbserving21.Text.ToLower <> "", lbserving21.Text, "")
-        counter22 = If(lbserving22.Text.ToLower <> "", lbserving22.Text, "")
-        counter23 = If(lbserving23.Text.ToLower <> "", lbserving23.Text, "")
-        counter24 = If(lbserving24.Text.ToLower <> "", lbserving24.Text, "")
+        'counter19 = If(lbserving14.Text.ToLower <> "", lbserving14.Text, "")
+        'counter20 = If(lbserving16.Text.ToLower <> "", lbserving16.Text, "")
+        'counter21 = If(lbserving18.Text.ToLower <> "", lbserving18.Text, "")
+        'counter22 = If(lbserving20.Text.ToLower <> "", lbserving20.Text, "")
+        'counter23 = If(lbserving22.Text.ToLower <> "", lbserving22.Text, "")
+        'counter24 = If(lbserving24.Text.ToLower <> "", lbserving24.Text, "")
 
 
         If callString.Count > 0 Then
@@ -2247,7 +2242,7 @@ SKIP:
 
     Private Sub frmCounterQueuingBoardSelectedCountersStandalone_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         If Not IsNothing(Me.Counters) Then
-            TableLayoutPanel2.Width = Me.Width / 2
+            ''TableLayoutPanel2.Width = Me.Width / 2
             SetPagingConfig()
             txtclock.Text = TimeOfDay.ToString("hh:mm:ss tt")
             SetCounters()
@@ -2267,8 +2262,10 @@ SKIP:
         If e.KeyCode = Keys.F11 Then
             If Me.WindowState = FormWindowState.Maximized Then
                 Me.WindowState = FormWindowState.Normal
+                Me.FormBorderStyle = FormBorderStyle.FixedDialog
             Else
                 Me.WindowState = FormWindowState.Maximized
+                Me.FormBorderStyle = FormBorderStyle.None
             End If
         ElseIf e.KeyCode = Keys.F12 Then
             browseVideo()
