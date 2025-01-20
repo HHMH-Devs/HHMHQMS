@@ -138,7 +138,7 @@ Partial Class frmTransferNo
         '
         Me.ToolStripLabel2.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
         Me.ToolStripLabel2.Name = "ToolStripLabel2"
-        Me.ToolStripLabel2.Size = New System.Drawing.Size(111, 22)
+        Me.ToolStripLabel2.Size = New System.Drawing.Size(112, 22)
         Me.ToolStripLabel2.Text = "Remaining Transfer:"
         '
         'pnlDoctors
@@ -146,12 +146,12 @@ Partial Class frmTransferNo
         Me.pnlDoctors.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.pnlDoctors.Controls.Add(Me.dgvDoctorsList)
         Me.pnlDoctors.Controls.Add(Me.txtFindDoctor)
         Me.pnlDoctors.Controls.Add(Me.Label1)
         Me.pnlDoctors.Controls.Add(Me.Label6)
         Me.pnlDoctors.Controls.Add(Me.cbAvailabilityOfClinic)
         Me.pnlDoctors.Controls.Add(Me.Button1)
-        Me.pnlDoctors.Controls.Add(Me.dgvDoctorsList)
         Me.pnlDoctors.Location = New System.Drawing.Point(12, 98)
         Me.pnlDoctors.Name = "pnlDoctors"
         Me.pnlDoctors.Size = New System.Drawing.Size(831, 449)
@@ -175,7 +175,7 @@ Partial Class frmTransferNo
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(66, Byte), Integer))
         Me.Label1.Location = New System.Drawing.Point(8, 16)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(78, 16)
+        Me.Label1.Size = New System.Drawing.Size(77, 16)
         Me.Label1.TabIndex = 61
         Me.Label1.Text = "AVAILABILITY"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -189,7 +189,7 @@ Partial Class frmTransferNo
         Me.Label6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(66, Byte), Integer))
         Me.Label6.Location = New System.Drawing.Point(467, 16)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(95, 16)
+        Me.Label6.Size = New System.Drawing.Size(94, 16)
         Me.Label6.TabIndex = 60
         Me.Label6.Text = "FIND PHYSICIAN"
         Me.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft

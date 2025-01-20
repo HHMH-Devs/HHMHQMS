@@ -38,7 +38,7 @@
     <MinimumRequiredVersion>3.0.0.1</MinimumRequiredVersion>
     <WebPage>publish.htm</WebPage>
     <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
-    <ApplicationRevision>23</ApplicationRevision>
+    <ApplicationRevision>25</ApplicationRevision>
     <ApplicationVersion>3.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -466,6 +466,12 @@
       <DependentUpon>frmTransfer-Clinic.vb</DependentUpon>
     </Compile>
     <Compile Include="Forms\frmTransfer-Clinic.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmTransferClinicOption.Designer.vb">
+      <DependentUpon>frmTransferClinicOption.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmTransferClinicOption.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\frmViewPicture.Designer.vb">
@@ -1179,6 +1185,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmTransfer-Clinic.resx">
       <DependentUpon>frmTransfer-Clinic.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmTransferClinicOption.resx">
+      <DependentUpon>frmTransferClinicOption.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmTransferNo.resx">
       <DependentUpon>frmTransferNo.vb</DependentUpon>

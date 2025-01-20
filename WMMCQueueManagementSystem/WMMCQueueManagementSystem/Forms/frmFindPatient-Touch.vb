@@ -5,7 +5,7 @@
     Private _selectedDay As Integer = 0
     Private _selectedYear As Integer = 0
     Private selectedBday As Nullable(Of Date) = Nothing
-    Dim longMonth() As String = {"JANUARY", "FEBUARY", "MARCH", "APRIL", "MAY", "JUNE", "JULY", "AUGUST", "SEPTEMBER", "OCTOBER", "nOVEMBER", "DECEMBER"}
+    Dim longMonth() As String = {"JANUARY", "FEBUARY", "MARCH", "APRIL", "MAY", "JUNE", "JULY", "AUGUST", "SEPTEMBER", "OCTOBER", "NOVEMBER", "DECEMBER"}
     Sub New()
         ' This call is required by the designer.
         InitializeComponent()

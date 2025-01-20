@@ -23,34 +23,34 @@ Partial Class frmServiceCounter_Clinic
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmServiceCounter_Clinic))
-        Dim DataGridViewCellStyle29 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle30 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle31 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle32 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle36 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle37 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle38 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle39 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle40 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle41 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle42 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle43 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle44 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle45 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle46 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle47 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle48 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle49 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle50 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle33 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle34 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle35 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle51 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle52 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle53 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle54 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle55 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle56 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle11 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle12 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle13 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle14 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle15 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle16 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle17 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle18 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle19 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle20 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle21 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle22 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle23 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle24 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle25 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle26 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle27 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle28 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
         Me.lblLoggedDoctor_Name = New System.Windows.Forms.ToolStripLabel()
         Me.ToolStripDropDownButton1 = New System.Windows.Forms.ToolStripDropDownButton()
@@ -124,8 +124,80 @@ Partial Class frmServiceCounter_Clinic
         Me.btnStartCompleteConsultation = New System.Windows.Forms.Button()
         Me.MainTabControl = New System.Windows.Forms.TabControl()
         Me.tbPatient_Information = New System.Windows.Forms.TabPage()
+        Me.pnlConsultation_Blocker1 = New System.Windows.Forms.Panel()
+        Me.Label21 = New System.Windows.Forms.Label()
         Me.btnEditPatientInfo = New System.Windows.Forms.Button()
         Me.pbProfilePicture = New System.Windows.Forms.PictureBox()
+        Me.tbPatientData = New System.Windows.Forms.TabControl()
+        Me.tpConsultation = New System.Windows.Forms.TabPage()
+        Me.FlowLayoutPanel2 = New System.Windows.Forms.FlowLayoutPanel()
+        Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.lblPhysicianNursingAttendantConsultDate = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Panel5 = New System.Windows.Forms.Panel()
+        Me.lblConsultationType = New System.Windows.Forms.Label()
+        Me.Label15 = New System.Windows.Forms.Label()
+        Me.GroupBox5 = New System.Windows.Forms.GroupBox()
+        Me.lblSymptoms = New System.Windows.Forms.Label()
+        Me.Label31 = New System.Windows.Forms.Label()
+        Me.Label32 = New System.Windows.Forms.Label()
+        Me.lblAllergies = New System.Windows.Forms.Label()
+        Me.lbO2 = New System.Windows.Forms.Label()
+        Me.Label17 = New System.Windows.Forms.Label()
+        Me.lbRR = New System.Windows.Forms.Label()
+        Me.lbPR = New System.Windows.Forms.Label()
+        Me.lbTemp = New System.Windows.Forms.Label()
+        Me.lbBP = New System.Windows.Forms.Label()
+        Me.lblHeight = New System.Windows.Forms.Label()
+        Me.lblWeight = New System.Windows.Forms.Label()
+        Me.Label36 = New System.Windows.Forms.Label()
+        Me.Label37 = New System.Windows.Forms.Label()
+        Me.Label38 = New System.Windows.Forms.Label()
+        Me.Label42 = New System.Windows.Forms.Label()
+        Me.Label44 = New System.Windows.Forms.Label()
+        Me.Label45 = New System.Windows.Forms.Label()
+        Me.GroupBox7 = New System.Windows.Forms.GroupBox()
+        Me.lblChiefComplaint = New System.Windows.Forms.Label()
+        Me.GroupBox8 = New System.Windows.Forms.GroupBox()
+        Me.lblHistoryOfPresentIllness = New System.Windows.Forms.Label()
+        Me.TabPage13 = New System.Windows.Forms.TabPage()
+        Me.FlowLayoutPanel1 = New System.Windows.Forms.FlowLayoutPanel()
+        Me.GroupBox4 = New System.Windows.Forms.GroupBox()
+        Me.lblPertinentPhysicalExam = New System.Windows.Forms.Label()
+        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.lblWorkingDiagnosis = New System.Windows.Forms.Label()
+        Me.GroupBox25 = New System.Windows.Forms.GroupBox()
+        Me.lbFinalDiagnosis = New System.Windows.Forms.Label()
+        Me.GroupBox6 = New System.Windows.Forms.GroupBox()
+        Me.txtImpression = New System.Windows.Forms.Label()
+        Me.GroupBox20 = New System.Windows.Forms.GroupBox()
+        Me.lbTreatment = New System.Windows.Forms.Label()
+        Me.TabPage4 = New System.Windows.Forms.TabPage()
+        Me.GroupBox24 = New System.Windows.Forms.GroupBox()
+        Me.Panel23 = New System.Windows.Forms.Panel()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Label22 = New System.Windows.Forms.Label()
+        Me.btnFetchRequisitionFromBizbox = New System.Windows.Forms.Button()
+        Me.dgvBizboxRequisitions = New System.Windows.Forms.DataGridView()
+        Me.dgvDiagnosticRequestItems_ID = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn10 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn27 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn28 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.tpBizboxDiagnostics = New System.Windows.Forms.TabPage()
+        Me.GroupBox15 = New System.Windows.Forms.GroupBox()
+        Me.dgvDoctorsOrderPlans = New System.Windows.Forms.DataGridView()
+        Me.DataGridViewTextBoxColumn18 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn26 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.tpRx = New System.Windows.Forms.TabPage()
+        Me.GroupBox9 = New System.Windows.Forms.GroupBox()
+        Me.dgvSickLeave = New System.Windows.Forms.DataGridView()
+        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn9 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.lblRefNo = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -220,6 +292,7 @@ Partial Class frmServiceCounter_Clinic
         Me.consultationHIstory_Date = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.tbPatient_Results = New System.Windows.Forms.TabPage()
         Me.pnlConsultation_Blocker3 = New System.Windows.Forms.Panel()
+        Me.Label28 = New System.Windows.Forms.Label()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.dgvBizboxResults = New System.Windows.Forms.DataGridView()
         Me.resultDiagnosticID = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -239,79 +312,6 @@ Partial Class frmServiceCounter_Clinic
         Me.btnViewRX = New System.Windows.Forms.Button()
         Me.btnClosePatientChart = New System.Windows.Forms.Button()
         Me.btnViewConsent = New System.Windows.Forms.Button()
-        Me.tpRx = New System.Windows.Forms.TabPage()
-        Me.GroupBox9 = New System.Windows.Forms.GroupBox()
-        Me.dgvSickLeave = New System.Windows.Forms.DataGridView()
-        Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn9 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.tpBizboxDiagnostics = New System.Windows.Forms.TabPage()
-        Me.GroupBox15 = New System.Windows.Forms.GroupBox()
-        Me.dgvDoctorsOrderPlans = New System.Windows.Forms.DataGridView()
-        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn26 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn18 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.TabPage4 = New System.Windows.Forms.TabPage()
-        Me.GroupBox24 = New System.Windows.Forms.GroupBox()
-        Me.dgvBizboxRequisitions = New System.Windows.Forms.DataGridView()
-        Me.DataGridViewTextBoxColumn28 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn27 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn10 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.dgvDiagnosticRequestItems_ID = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Panel23 = New System.Windows.Forms.Panel()
-        Me.btnFetchRequisitionFromBizbox = New System.Windows.Forms.Button()
-        Me.Label22 = New System.Windows.Forms.Label()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.TabPage13 = New System.Windows.Forms.TabPage()
-        Me.FlowLayoutPanel1 = New System.Windows.Forms.FlowLayoutPanel()
-        Me.GroupBox20 = New System.Windows.Forms.GroupBox()
-        Me.lbTreatment = New System.Windows.Forms.Label()
-        Me.GroupBox6 = New System.Windows.Forms.GroupBox()
-        Me.txtImpression = New System.Windows.Forms.Label()
-        Me.GroupBox25 = New System.Windows.Forms.GroupBox()
-        Me.lbFinalDiagnosis = New System.Windows.Forms.Label()
-        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
-        Me.lblWorkingDiagnosis = New System.Windows.Forms.Label()
-        Me.GroupBox4 = New System.Windows.Forms.GroupBox()
-        Me.lblPertinentPhysicalExam = New System.Windows.Forms.Label()
-        Me.tpConsultation = New System.Windows.Forms.TabPage()
-        Me.FlowLayoutPanel2 = New System.Windows.Forms.FlowLayoutPanel()
-        Me.GroupBox8 = New System.Windows.Forms.GroupBox()
-        Me.lblHistoryOfPresentIllness = New System.Windows.Forms.Label()
-        Me.GroupBox7 = New System.Windows.Forms.GroupBox()
-        Me.lblChiefComplaint = New System.Windows.Forms.Label()
-        Me.GroupBox5 = New System.Windows.Forms.GroupBox()
-        Me.Label45 = New System.Windows.Forms.Label()
-        Me.Label44 = New System.Windows.Forms.Label()
-        Me.Label42 = New System.Windows.Forms.Label()
-        Me.Label38 = New System.Windows.Forms.Label()
-        Me.Label37 = New System.Windows.Forms.Label()
-        Me.Label36 = New System.Windows.Forms.Label()
-        Me.lblWeight = New System.Windows.Forms.Label()
-        Me.lblHeight = New System.Windows.Forms.Label()
-        Me.lbBP = New System.Windows.Forms.Label()
-        Me.lbTemp = New System.Windows.Forms.Label()
-        Me.lbPR = New System.Windows.Forms.Label()
-        Me.lbRR = New System.Windows.Forms.Label()
-        Me.Label17 = New System.Windows.Forms.Label()
-        Me.lbO2 = New System.Windows.Forms.Label()
-        Me.lblAllergies = New System.Windows.Forms.Label()
-        Me.Label32 = New System.Windows.Forms.Label()
-        Me.Label31 = New System.Windows.Forms.Label()
-        Me.lblSymptoms = New System.Windows.Forms.Label()
-        Me.Panel5 = New System.Windows.Forms.Panel()
-        Me.Label15 = New System.Windows.Forms.Label()
-        Me.lblConsultationType = New System.Windows.Forms.Label()
-        Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.lblPhysicianNursingAttendantConsultDate = New System.Windows.Forms.Label()
-        Me.tbPatientData = New System.Windows.Forms.TabControl()
-        Me.Label21 = New System.Windows.Forms.Label()
-        Me.pnlConsultation_Blocker1 = New System.Windows.Forms.Panel()
-        Me.Label28 = New System.Windows.Forms.Label()
         Me.ToolStrip1.SuspendLayout()
         CType(Me.dgvDiagnosticResults, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
@@ -319,7 +319,34 @@ Partial Class frmServiceCounter_Clinic
         Me.gbSelectedPatient_Actions.SuspendLayout()
         Me.MainTabControl.SuspendLayout()
         Me.tbPatient_Information.SuspendLayout()
+        Me.pnlConsultation_Blocker1.SuspendLayout()
         CType(Me.pbProfilePicture, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.tbPatientData.SuspendLayout()
+        Me.tpConsultation.SuspendLayout()
+        Me.FlowLayoutPanel2.SuspendLayout()
+        Me.Panel3.SuspendLayout()
+        Me.Panel5.SuspendLayout()
+        Me.GroupBox5.SuspendLayout()
+        Me.GroupBox7.SuspendLayout()
+        Me.GroupBox8.SuspendLayout()
+        Me.TabPage13.SuspendLayout()
+        Me.FlowLayoutPanel1.SuspendLayout()
+        Me.GroupBox4.SuspendLayout()
+        Me.GroupBox3.SuspendLayout()
+        Me.GroupBox25.SuspendLayout()
+        Me.GroupBox6.SuspendLayout()
+        Me.GroupBox20.SuspendLayout()
+        Me.TabPage4.SuspendLayout()
+        Me.GroupBox24.SuspendLayout()
+        Me.Panel23.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dgvBizboxRequisitions, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.tpBizboxDiagnostics.SuspendLayout()
+        Me.GroupBox15.SuspendLayout()
+        CType(Me.dgvDoctorsOrderPlans, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.tpRx.SuspendLayout()
+        Me.GroupBox9.SuspendLayout()
+        CType(Me.dgvSickLeave, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel4.SuspendLayout()
         Me.Panel12.SuspendLayout()
         Me.Panel11.SuspendLayout()
@@ -357,33 +384,6 @@ Partial Class frmServiceCounter_Clinic
         Me.GroupBox1.SuspendLayout()
         CType(Me.pbRefreshList, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.pnlPatientCharts.SuspendLayout()
-        Me.tpRx.SuspendLayout()
-        Me.GroupBox9.SuspendLayout()
-        CType(Me.dgvSickLeave, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.tpBizboxDiagnostics.SuspendLayout()
-        Me.GroupBox15.SuspendLayout()
-        CType(Me.dgvDoctorsOrderPlans, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.TabPage4.SuspendLayout()
-        Me.GroupBox24.SuspendLayout()
-        CType(Me.dgvBizboxRequisitions, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel23.SuspendLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.TabPage13.SuspendLayout()
-        Me.FlowLayoutPanel1.SuspendLayout()
-        Me.GroupBox20.SuspendLayout()
-        Me.GroupBox6.SuspendLayout()
-        Me.GroupBox25.SuspendLayout()
-        Me.GroupBox3.SuspendLayout()
-        Me.GroupBox4.SuspendLayout()
-        Me.tpConsultation.SuspendLayout()
-        Me.FlowLayoutPanel2.SuspendLayout()
-        Me.GroupBox8.SuspendLayout()
-        Me.GroupBox7.SuspendLayout()
-        Me.GroupBox5.SuspendLayout()
-        Me.Panel5.SuspendLayout()
-        Me.Panel3.SuspendLayout()
-        Me.tbPatientData.SuspendLayout()
-        Me.pnlConsultation_Blocker1.SuspendLayout()
         Me.SuspendLayout()
         '
         'ToolStrip1
@@ -447,42 +447,42 @@ Partial Class frmServiceCounter_Clinic
         Me.dgvDiagnosticResults.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.dgvDiagnosticResults.BackgroundColor = System.Drawing.Color.White
         Me.dgvDiagnosticResults.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
-        DataGridViewCellStyle29.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle29.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle29.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Bold)
-        DataGridViewCellStyle29.ForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle29.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle29.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle29.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgvDiagnosticResults.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle29
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Bold)
+        DataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvDiagnosticResults.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
         Me.dgvDiagnosticResults.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvDiagnosticResults.Cursor = System.Windows.Forms.Cursors.Hand
-        DataGridViewCellStyle30.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle30.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle30.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Bold)
-        DataGridViewCellStyle30.ForeColor = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(66, Byte), Integer))
-        DataGridViewCellStyle30.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle30.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle30.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.dgvDiagnosticResults.DefaultCellStyle = DataGridViewCellStyle30
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Bold)
+        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(66, Byte), Integer))
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgvDiagnosticResults.DefaultCellStyle = DataGridViewCellStyle2
         Me.dgvDiagnosticResults.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.dgvDiagnosticResults.Location = New System.Drawing.Point(3, 48)
         Me.dgvDiagnosticResults.MultiSelect = False
         Me.dgvDiagnosticResults.Name = "dgvDiagnosticResults"
         Me.dgvDiagnosticResults.ReadOnly = True
         Me.dgvDiagnosticResults.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken
-        DataGridViewCellStyle31.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle31.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle31.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Bold)
-        DataGridViewCellStyle31.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle31.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle31.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle31.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgvDiagnosticResults.RowHeadersDefaultCellStyle = DataGridViewCellStyle31
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Bold)
+        DataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvDiagnosticResults.RowHeadersDefaultCellStyle = DataGridViewCellStyle3
         Me.dgvDiagnosticResults.RowHeadersVisible = False
-        DataGridViewCellStyle32.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle32.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Bold)
-        Me.dgvDiagnosticResults.RowsDefaultCellStyle = DataGridViewCellStyle32
+        DataGridViewCellStyle4.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle4.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.dgvDiagnosticResults.RowsDefaultCellStyle = DataGridViewCellStyle4
         Me.dgvDiagnosticResults.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.dgvDiagnosticResults.Size = New System.Drawing.Size(708, 143)
         Me.dgvDiagnosticResults.TabIndex = 36
@@ -1254,6 +1254,31 @@ Partial Class frmServiceCounter_Clinic
         Me.tbPatient_Information.TabIndex = 0
         Me.tbPatient_Information.Text = "PATIENT INFORMATION"
         '
+        'pnlConsultation_Blocker1
+        '
+        Me.pnlConsultation_Blocker1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.pnlConsultation_Blocker1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.pnlConsultation_Blocker1.Controls.Add(Me.Label21)
+        Me.pnlConsultation_Blocker1.Location = New System.Drawing.Point(3, 142)
+        Me.pnlConsultation_Blocker1.Name = "pnlConsultation_Blocker1"
+        Me.pnlConsultation_Blocker1.Size = New System.Drawing.Size(1013, 405)
+        Me.pnlConsultation_Blocker1.TabIndex = 62
+        '
+        'Label21
+        '
+        Me.Label21.BackColor = System.Drawing.Color.White
+        Me.Label21.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Label21.Font = New System.Drawing.Font("Arial", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label21.ForeColor = System.Drawing.Color.Gray
+        Me.Label21.Location = New System.Drawing.Point(0, 0)
+        Me.Label21.Name = "Label21"
+        Me.Label21.Size = New System.Drawing.Size(1011, 403)
+        Me.Label21.TabIndex = 31
+        Me.Label21.Text = "CONSULTATION NOT YET STARTED"
+        Me.Label21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'btnEditPatientInfo
         '
         Me.btnEditPatientInfo.Anchor = System.Windows.Forms.AnchorStyles.Left
@@ -1284,6 +1309,909 @@ Partial Class frmServiceCounter_Clinic
         Me.pbProfilePicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.pbProfilePicture.TabIndex = 46
         Me.pbProfilePicture.TabStop = False
+        '
+        'tbPatientData
+        '
+        Me.tbPatientData.Controls.Add(Me.tpConsultation)
+        Me.tbPatientData.Controls.Add(Me.TabPage13)
+        Me.tbPatientData.Controls.Add(Me.TabPage4)
+        Me.tbPatientData.Controls.Add(Me.tpBizboxDiagnostics)
+        Me.tbPatientData.Controls.Add(Me.tpRx)
+        Me.tbPatientData.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbPatientData.Location = New System.Drawing.Point(6, 146)
+        Me.tbPatientData.Name = "tbPatientData"
+        Me.tbPatientData.SelectedIndex = 0
+        Me.tbPatientData.Size = New System.Drawing.Size(1008, 401)
+        Me.tbPatientData.TabIndex = 35
+        '
+        'tpConsultation
+        '
+        Me.tpConsultation.BackColor = System.Drawing.Color.White
+        Me.tpConsultation.Controls.Add(Me.FlowLayoutPanel2)
+        Me.tpConsultation.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tpConsultation.Location = New System.Drawing.Point(4, 24)
+        Me.tpConsultation.Name = "tpConsultation"
+        Me.tpConsultation.Padding = New System.Windows.Forms.Padding(3)
+        Me.tpConsultation.Size = New System.Drawing.Size(1000, 373)
+        Me.tpConsultation.TabIndex = 1
+        Me.tpConsultation.Text = "CONSULTATION DETAIL"
+        '
+        'FlowLayoutPanel2
+        '
+        Me.FlowLayoutPanel2.AutoScroll = True
+        Me.FlowLayoutPanel2.BackColor = System.Drawing.Color.White
+        Me.FlowLayoutPanel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.FlowLayoutPanel2.Controls.Add(Me.Panel3)
+        Me.FlowLayoutPanel2.Controls.Add(Me.Panel5)
+        Me.FlowLayoutPanel2.Controls.Add(Me.GroupBox5)
+        Me.FlowLayoutPanel2.Controls.Add(Me.GroupBox7)
+        Me.FlowLayoutPanel2.Controls.Add(Me.GroupBox8)
+        Me.FlowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.FlowLayoutPanel2.Location = New System.Drawing.Point(3, 3)
+        Me.FlowLayoutPanel2.Name = "FlowLayoutPanel2"
+        Me.FlowLayoutPanel2.Size = New System.Drawing.Size(994, 367)
+        Me.FlowLayoutPanel2.TabIndex = 59
+        '
+        'Panel3
+        '
+        Me.Panel3.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel3.Controls.Add(Me.lblPhysicianNursingAttendantConsultDate)
+        Me.Panel3.Controls.Add(Me.Label6)
+        Me.Panel3.Location = New System.Drawing.Point(3, 3)
+        Me.Panel3.Name = "Panel3"
+        Me.Panel3.Size = New System.Drawing.Size(480, 78)
+        Me.Panel3.TabIndex = 31
+        '
+        'lblPhysicianNursingAttendantConsultDate
+        '
+        Me.lblPhysicianNursingAttendantConsultDate.BackColor = System.Drawing.Color.White
+        Me.lblPhysicianNursingAttendantConsultDate.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.lblPhysicianNursingAttendantConsultDate.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.lblPhysicianNursingAttendantConsultDate.ForeColor = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.lblPhysicianNursingAttendantConsultDate.Location = New System.Drawing.Point(157, 0)
+        Me.lblPhysicianNursingAttendantConsultDate.Name = "lblPhysicianNursingAttendantConsultDate"
+        Me.lblPhysicianNursingAttendantConsultDate.Size = New System.Drawing.Size(321, 76)
+        Me.lblPhysicianNursingAttendantConsultDate.TabIndex = 30
+        Me.lblPhysicianNursingAttendantConsultDate.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label6
+        '
+        Me.Label6.BackColor = System.Drawing.Color.White
+        Me.Label6.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label6.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.Label6.Location = New System.Drawing.Point(0, 0)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(157, 76)
+        Me.Label6.TabIndex = 29
+        Me.Label6.Text = "ATTENDING PHYSICIAN: " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "CONSULTATION START: " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "CONSULTATION END: " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "CONSULTATION DAT" &
+    "E: "
+        Me.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'Panel5
+        '
+        Me.Panel5.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel5.Controls.Add(Me.lblConsultationType)
+        Me.Panel5.Controls.Add(Me.Label15)
+        Me.Panel5.Location = New System.Drawing.Point(489, 3)
+        Me.Panel5.Name = "Panel5"
+        Me.Panel5.Size = New System.Drawing.Size(480, 78)
+        Me.Panel5.TabIndex = 32
+        '
+        'lblConsultationType
+        '
+        Me.lblConsultationType.BackColor = System.Drawing.Color.White
+        Me.lblConsultationType.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.lblConsultationType.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.lblConsultationType.ForeColor = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.lblConsultationType.Location = New System.Drawing.Point(131, 0)
+        Me.lblConsultationType.Name = "lblConsultationType"
+        Me.lblConsultationType.Size = New System.Drawing.Size(347, 76)
+        Me.lblConsultationType.TabIndex = 30
+        Me.lblConsultationType.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label15
+        '
+        Me.Label15.BackColor = System.Drawing.Color.White
+        Me.Label15.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label15.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label15.ForeColor = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.Label15.Location = New System.Drawing.Point(0, 0)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(131, 76)
+        Me.Label15.TabIndex = 29
+        Me.Label15.Text = "REGISTRY DATE: " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "DOLE EMPLOYEE ID: " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "DOLE REF NO.: " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "DOLE STATUS: "
+        Me.Label15.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'GroupBox5
+        '
+        Me.GroupBox5.BackColor = System.Drawing.Color.White
+        Me.GroupBox5.Controls.Add(Me.lblSymptoms)
+        Me.GroupBox5.Controls.Add(Me.Label31)
+        Me.GroupBox5.Controls.Add(Me.Label32)
+        Me.GroupBox5.Controls.Add(Me.lblAllergies)
+        Me.GroupBox5.Controls.Add(Me.lbO2)
+        Me.GroupBox5.Controls.Add(Me.Label17)
+        Me.GroupBox5.Controls.Add(Me.lbRR)
+        Me.GroupBox5.Controls.Add(Me.lbPR)
+        Me.GroupBox5.Controls.Add(Me.lbTemp)
+        Me.GroupBox5.Controls.Add(Me.lbBP)
+        Me.GroupBox5.Controls.Add(Me.lblHeight)
+        Me.GroupBox5.Controls.Add(Me.lblWeight)
+        Me.GroupBox5.Controls.Add(Me.Label36)
+        Me.GroupBox5.Controls.Add(Me.Label37)
+        Me.GroupBox5.Controls.Add(Me.Label38)
+        Me.GroupBox5.Controls.Add(Me.Label42)
+        Me.GroupBox5.Controls.Add(Me.Label44)
+        Me.GroupBox5.Controls.Add(Me.Label45)
+        Me.GroupBox5.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.GroupBox5.Location = New System.Drawing.Point(3, 87)
+        Me.GroupBox5.Name = "GroupBox5"
+        Me.GroupBox5.Size = New System.Drawing.Size(966, 187)
+        Me.GroupBox5.TabIndex = 102
+        Me.GroupBox5.TabStop = False
+        Me.GroupBox5.Text = "VITAL SIGNS"
+        '
+        'lblSymptoms
+        '
+        Me.lblSymptoms.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.lblSymptoms.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblSymptoms.ForeColor = System.Drawing.Color.Black
+        Me.lblSymptoms.Location = New System.Drawing.Point(102, 125)
+        Me.lblSymptoms.Name = "lblSymptoms"
+        Me.lblSymptoms.Size = New System.Drawing.Size(418, 45)
+        Me.lblSymptoms.TabIndex = 71
+        '
+        'Label31
+        '
+        Me.Label31.Anchor = System.Windows.Forms.AnchorStyles.Left
+        Me.Label31.BackColor = System.Drawing.Color.White
+        Me.Label31.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label31.ForeColor = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.Label31.Location = New System.Drawing.Point(6, 122)
+        Me.Label31.Name = "Label31"
+        Me.Label31.Size = New System.Drawing.Size(90, 50)
+        Me.Label31.TabIndex = 70
+        Me.Label31.Text = "SIGN AND SYMPTOMS"
+        Me.Label31.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label32
+        '
+        Me.Label32.Anchor = System.Windows.Forms.AnchorStyles.Left
+        Me.Label32.AutoSize = True
+        Me.Label32.BackColor = System.Drawing.Color.White
+        Me.Label32.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label32.ForeColor = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.Label32.Location = New System.Drawing.Point(7, 57)
+        Me.Label32.Name = "Label32"
+        Me.Label32.Size = New System.Drawing.Size(79, 16)
+        Me.Label32.TabIndex = 69
+        Me.Label32.Text = "ALLERGIES"
+        Me.Label32.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'lblAllergies
+        '
+        Me.lblAllergies.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.lblAllergies.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblAllergies.ForeColor = System.Drawing.Color.Black
+        Me.lblAllergies.Location = New System.Drawing.Point(102, 55)
+        Me.lblAllergies.Name = "lblAllergies"
+        Me.lblAllergies.Size = New System.Drawing.Size(418, 61)
+        Me.lblAllergies.TabIndex = 68
+        '
+        'lbO2
+        '
+        Me.lbO2.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.lbO2.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbO2.ForeColor = System.Drawing.Color.Black
+        Me.lbO2.Location = New System.Drawing.Point(714, 144)
+        Me.lbO2.Name = "lbO2"
+        Me.lbO2.Size = New System.Drawing.Size(226, 24)
+        Me.lbO2.TabIndex = 66
+        Me.lbO2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label17
+        '
+        Me.Label17.AutoSize = True
+        Me.Label17.BackColor = System.Drawing.Color.White
+        Me.Label17.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label17.ForeColor = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.Label17.Location = New System.Drawing.Point(569, 148)
+        Me.Label17.Name = "Label17"
+        Me.Label17.Size = New System.Drawing.Size(61, 16)
+        Me.Label17.TabIndex = 65
+        Me.Label17.Text = "OXYGEN"
+        Me.Label17.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'lbRR
+        '
+        Me.lbRR.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.lbRR.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbRR.ForeColor = System.Drawing.Color.Black
+        Me.lbRR.Location = New System.Drawing.Point(714, 83)
+        Me.lbRR.Name = "lbRR"
+        Me.lbRR.Size = New System.Drawing.Size(226, 24)
+        Me.lbRR.TabIndex = 64
+        Me.lbRR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lbPR
+        '
+        Me.lbPR.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.lbPR.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbPR.ForeColor = System.Drawing.Color.Black
+        Me.lbPR.Location = New System.Drawing.Point(714, 52)
+        Me.lbPR.Name = "lbPR"
+        Me.lbPR.Size = New System.Drawing.Size(226, 24)
+        Me.lbPR.TabIndex = 63
+        Me.lbPR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lbTemp
+        '
+        Me.lbTemp.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.lbTemp.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbTemp.ForeColor = System.Drawing.Color.Black
+        Me.lbTemp.Location = New System.Drawing.Point(714, 113)
+        Me.lbTemp.Name = "lbTemp"
+        Me.lbTemp.Size = New System.Drawing.Size(226, 24)
+        Me.lbTemp.TabIndex = 62
+        Me.lbTemp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lbBP
+        '
+        Me.lbBP.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.lbBP.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbBP.ForeColor = System.Drawing.Color.Black
+        Me.lbBP.Location = New System.Drawing.Point(714, 22)
+        Me.lbBP.Name = "lbBP"
+        Me.lbBP.Size = New System.Drawing.Size(226, 24)
+        Me.lbBP.TabIndex = 61
+        Me.lbBP.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblHeight
+        '
+        Me.lblHeight.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.lblHeight.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblHeight.ForeColor = System.Drawing.Color.Black
+        Me.lblHeight.Location = New System.Drawing.Point(103, 24)
+        Me.lblHeight.Name = "lblHeight"
+        Me.lblHeight.Size = New System.Drawing.Size(159, 24)
+        Me.lblHeight.TabIndex = 60
+        Me.lblHeight.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblWeight
+        '
+        Me.lblWeight.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.lblWeight.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblWeight.ForeColor = System.Drawing.Color.Black
+        Me.lblWeight.Location = New System.Drawing.Point(362, 25)
+        Me.lblWeight.Name = "lblWeight"
+        Me.lblWeight.Size = New System.Drawing.Size(159, 24)
+        Me.lblWeight.TabIndex = 59
+        Me.lblWeight.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label36
+        '
+        Me.Label36.AutoSize = True
+        Me.Label36.BackColor = System.Drawing.Color.White
+        Me.Label36.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label36.ForeColor = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.Label36.Location = New System.Drawing.Point(569, 87)
+        Me.Label36.Name = "Label36"
+        Me.Label36.Size = New System.Drawing.Size(135, 16)
+        Me.Label36.TabIndex = 58
+        Me.Label36.Text = "RESPIRATORY RATE"
+        Me.Label36.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label37
+        '
+        Me.Label37.AutoSize = True
+        Me.Label37.BackColor = System.Drawing.Color.White
+        Me.Label37.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label37.ForeColor = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.Label37.Location = New System.Drawing.Point(569, 56)
+        Me.Label37.Name = "Label37"
+        Me.Label37.Size = New System.Drawing.Size(87, 16)
+        Me.Label37.TabIndex = 57
+        Me.Label37.Text = "PULSE RATE"
+        Me.Label37.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label38
+        '
+        Me.Label38.AutoSize = True
+        Me.Label38.BackColor = System.Drawing.Color.White
+        Me.Label38.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label38.ForeColor = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.Label38.Location = New System.Drawing.Point(569, 117)
+        Me.Label38.Name = "Label38"
+        Me.Label38.Size = New System.Drawing.Size(103, 16)
+        Me.Label38.TabIndex = 56
+        Me.Label38.Text = "TEMPERATURE"
+        Me.Label38.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label42
+        '
+        Me.Label42.AutoSize = True
+        Me.Label42.BackColor = System.Drawing.Color.White
+        Me.Label42.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label42.ForeColor = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.Label42.Location = New System.Drawing.Point(569, 26)
+        Me.Label42.Name = "Label42"
+        Me.Label42.Size = New System.Drawing.Size(128, 16)
+        Me.Label42.TabIndex = 55
+        Me.Label42.Text = "BLOOD PRESSURE"
+        Me.Label42.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label44
+        '
+        Me.Label44.AutoSize = True
+        Me.Label44.BackColor = System.Drawing.Color.White
+        Me.Label44.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label44.ForeColor = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.Label44.Location = New System.Drawing.Point(7, 29)
+        Me.Label44.Name = "Label44"
+        Me.Label44.Size = New System.Drawing.Size(54, 16)
+        Me.Label44.TabIndex = 54
+        Me.Label44.Text = "HEIGHT"
+        Me.Label44.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label45
+        '
+        Me.Label45.AutoSize = True
+        Me.Label45.BackColor = System.Drawing.Color.White
+        Me.Label45.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label45.ForeColor = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.Label45.Location = New System.Drawing.Point(288, 29)
+        Me.Label45.Name = "Label45"
+        Me.Label45.Size = New System.Drawing.Size(58, 16)
+        Me.Label45.TabIndex = 53
+        Me.Label45.Text = "WEIGHT"
+        Me.Label45.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'GroupBox7
+        '
+        Me.GroupBox7.BackColor = System.Drawing.Color.White
+        Me.GroupBox7.Controls.Add(Me.lblChiefComplaint)
+        Me.GroupBox7.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.GroupBox7.Location = New System.Drawing.Point(3, 280)
+        Me.GroupBox7.Name = "GroupBox7"
+        Me.GroupBox7.Size = New System.Drawing.Size(480, 155)
+        Me.GroupBox7.TabIndex = 129
+        Me.GroupBox7.TabStop = False
+        Me.GroupBox7.Text = "CHIEF COMPLAINT"
+        '
+        'lblChiefComplaint
+        '
+        Me.lblChiefComplaint.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.lblChiefComplaint.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.lblChiefComplaint.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblChiefComplaint.ForeColor = System.Drawing.Color.Black
+        Me.lblChiefComplaint.Location = New System.Drawing.Point(3, 18)
+        Me.lblChiefComplaint.Name = "lblChiefComplaint"
+        Me.lblChiefComplaint.Padding = New System.Windows.Forms.Padding(5)
+        Me.lblChiefComplaint.Size = New System.Drawing.Size(474, 134)
+        Me.lblChiefComplaint.TabIndex = 47
+        '
+        'GroupBox8
+        '
+        Me.GroupBox8.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.GroupBox8.BackColor = System.Drawing.Color.White
+        Me.GroupBox8.Controls.Add(Me.lblHistoryOfPresentIllness)
+        Me.GroupBox8.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.GroupBox8.Location = New System.Drawing.Point(489, 280)
+        Me.GroupBox8.Name = "GroupBox8"
+        Me.GroupBox8.Size = New System.Drawing.Size(480, 155)
+        Me.GroupBox8.TabIndex = 130
+        Me.GroupBox8.TabStop = False
+        Me.GroupBox8.Text = "HISTORY OF PRESENT ILLNESS"
+        '
+        'lblHistoryOfPresentIllness
+        '
+        Me.lblHistoryOfPresentIllness.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.lblHistoryOfPresentIllness.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.lblHistoryOfPresentIllness.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblHistoryOfPresentIllness.ForeColor = System.Drawing.Color.Black
+        Me.lblHistoryOfPresentIllness.Location = New System.Drawing.Point(3, 18)
+        Me.lblHistoryOfPresentIllness.Name = "lblHistoryOfPresentIllness"
+        Me.lblHistoryOfPresentIllness.Size = New System.Drawing.Size(474, 134)
+        Me.lblHistoryOfPresentIllness.TabIndex = 72
+        '
+        'TabPage13
+        '
+        Me.TabPage13.BackColor = System.Drawing.Color.White
+        Me.TabPage13.Controls.Add(Me.FlowLayoutPanel1)
+        Me.TabPage13.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.TabPage13.Location = New System.Drawing.Point(4, 24)
+        Me.TabPage13.Name = "TabPage13"
+        Me.TabPage13.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage13.Size = New System.Drawing.Size(1000, 373)
+        Me.TabPage13.TabIndex = 10
+        Me.TabPage13.Text = "DIAGNOSIS AND TREATMENT"
+        '
+        'FlowLayoutPanel1
+        '
+        Me.FlowLayoutPanel1.AutoScroll = True
+        Me.FlowLayoutPanel1.BackColor = System.Drawing.Color.White
+        Me.FlowLayoutPanel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.FlowLayoutPanel1.Controls.Add(Me.GroupBox4)
+        Me.FlowLayoutPanel1.Controls.Add(Me.GroupBox3)
+        Me.FlowLayoutPanel1.Controls.Add(Me.GroupBox25)
+        Me.FlowLayoutPanel1.Controls.Add(Me.GroupBox6)
+        Me.FlowLayoutPanel1.Controls.Add(Me.GroupBox20)
+        Me.FlowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.FlowLayoutPanel1.Location = New System.Drawing.Point(3, 3)
+        Me.FlowLayoutPanel1.Name = "FlowLayoutPanel1"
+        Me.FlowLayoutPanel1.Size = New System.Drawing.Size(994, 367)
+        Me.FlowLayoutPanel1.TabIndex = 58
+        '
+        'GroupBox4
+        '
+        Me.GroupBox4.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.GroupBox4.BackColor = System.Drawing.Color.White
+        Me.GroupBox4.Controls.Add(Me.lblPertinentPhysicalExam)
+        Me.GroupBox4.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.GroupBox4.Location = New System.Drawing.Point(3, 3)
+        Me.GroupBox4.Name = "GroupBox4"
+        Me.GroupBox4.Size = New System.Drawing.Size(478, 114)
+        Me.GroupBox4.TabIndex = 63
+        Me.GroupBox4.TabStop = False
+        Me.GroupBox4.Text = "PERTINENT PHYSICAL EXAM"
+        '
+        'lblPertinentPhysicalExam
+        '
+        Me.lblPertinentPhysicalExam.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.lblPertinentPhysicalExam.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.lblPertinentPhysicalExam.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPertinentPhysicalExam.ForeColor = System.Drawing.Color.Black
+        Me.lblPertinentPhysicalExam.Location = New System.Drawing.Point(3, 18)
+        Me.lblPertinentPhysicalExam.Name = "lblPertinentPhysicalExam"
+        Me.lblPertinentPhysicalExam.Padding = New System.Windows.Forms.Padding(5)
+        Me.lblPertinentPhysicalExam.Size = New System.Drawing.Size(472, 93)
+        Me.lblPertinentPhysicalExam.TabIndex = 48
+        '
+        'GroupBox3
+        '
+        Me.GroupBox3.BackColor = System.Drawing.Color.White
+        Me.GroupBox3.Controls.Add(Me.lblWorkingDiagnosis)
+        Me.GroupBox3.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.GroupBox3.Location = New System.Drawing.Point(487, 3)
+        Me.GroupBox3.Name = "GroupBox3"
+        Me.GroupBox3.Size = New System.Drawing.Size(490, 114)
+        Me.GroupBox3.TabIndex = 62
+        Me.GroupBox3.TabStop = False
+        Me.GroupBox3.Text = "WORKING DIAGNOSIS"
+        '
+        'lblWorkingDiagnosis
+        '
+        Me.lblWorkingDiagnosis.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.lblWorkingDiagnosis.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.lblWorkingDiagnosis.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblWorkingDiagnosis.ForeColor = System.Drawing.Color.Black
+        Me.lblWorkingDiagnosis.Location = New System.Drawing.Point(3, 18)
+        Me.lblWorkingDiagnosis.Name = "lblWorkingDiagnosis"
+        Me.lblWorkingDiagnosis.Padding = New System.Windows.Forms.Padding(5)
+        Me.lblWorkingDiagnosis.Size = New System.Drawing.Size(484, 93)
+        Me.lblWorkingDiagnosis.TabIndex = 48
+        '
+        'GroupBox25
+        '
+        Me.GroupBox25.BackColor = System.Drawing.Color.White
+        Me.GroupBox25.Controls.Add(Me.lbFinalDiagnosis)
+        Me.GroupBox25.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox25.ForeColor = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.GroupBox25.Location = New System.Drawing.Point(3, 123)
+        Me.GroupBox25.Name = "GroupBox25"
+        Me.GroupBox25.Size = New System.Drawing.Size(974, 114)
+        Me.GroupBox25.TabIndex = 67
+        Me.GroupBox25.TabStop = False
+        Me.GroupBox25.Text = "FINAL DIAGNOSIS"
+        '
+        'lbFinalDiagnosis
+        '
+        Me.lbFinalDiagnosis.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.lbFinalDiagnosis.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.lbFinalDiagnosis.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbFinalDiagnosis.ForeColor = System.Drawing.Color.Black
+        Me.lbFinalDiagnosis.Location = New System.Drawing.Point(3, 18)
+        Me.lbFinalDiagnosis.Name = "lbFinalDiagnosis"
+        Me.lbFinalDiagnosis.Padding = New System.Windows.Forms.Padding(5)
+        Me.lbFinalDiagnosis.Size = New System.Drawing.Size(968, 93)
+        Me.lbFinalDiagnosis.TabIndex = 48
+        '
+        'GroupBox6
+        '
+        Me.GroupBox6.BackColor = System.Drawing.Color.White
+        Me.GroupBox6.Controls.Add(Me.txtImpression)
+        Me.GroupBox6.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.GroupBox6.Location = New System.Drawing.Point(3, 243)
+        Me.GroupBox6.Name = "GroupBox6"
+        Me.GroupBox6.Size = New System.Drawing.Size(478, 114)
+        Me.GroupBox6.TabIndex = 68
+        Me.GroupBox6.TabStop = False
+        Me.GroupBox6.Text = "IMPRESSION"
+        '
+        'txtImpression
+        '
+        Me.txtImpression.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.txtImpression.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.txtImpression.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtImpression.ForeColor = System.Drawing.Color.Black
+        Me.txtImpression.Location = New System.Drawing.Point(3, 18)
+        Me.txtImpression.Name = "txtImpression"
+        Me.txtImpression.Padding = New System.Windows.Forms.Padding(5)
+        Me.txtImpression.Size = New System.Drawing.Size(472, 93)
+        Me.txtImpression.TabIndex = 48
+        '
+        'GroupBox20
+        '
+        Me.GroupBox20.BackColor = System.Drawing.Color.White
+        Me.GroupBox20.Controls.Add(Me.lbTreatment)
+        Me.GroupBox20.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox20.ForeColor = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.GroupBox20.Location = New System.Drawing.Point(487, 243)
+        Me.GroupBox20.Name = "GroupBox20"
+        Me.GroupBox20.Size = New System.Drawing.Size(490, 114)
+        Me.GroupBox20.TabIndex = 69
+        Me.GroupBox20.TabStop = False
+        Me.GroupBox20.Text = "TREATMENT"
+        '
+        'lbTreatment
+        '
+        Me.lbTreatment.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.lbTreatment.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.lbTreatment.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbTreatment.ForeColor = System.Drawing.Color.Black
+        Me.lbTreatment.Location = New System.Drawing.Point(3, 18)
+        Me.lbTreatment.Name = "lbTreatment"
+        Me.lbTreatment.Padding = New System.Windows.Forms.Padding(5)
+        Me.lbTreatment.Size = New System.Drawing.Size(484, 93)
+        Me.lbTreatment.TabIndex = 48
+        '
+        'TabPage4
+        '
+        Me.TabPage4.Controls.Add(Me.GroupBox24)
+        Me.TabPage4.Location = New System.Drawing.Point(4, 24)
+        Me.TabPage4.Name = "TabPage4"
+        Me.TabPage4.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage4.Size = New System.Drawing.Size(1000, 373)
+        Me.TabPage4.TabIndex = 11
+        Me.TabPage4.Text = "BIZBOX REQUISITIONS"
+        Me.TabPage4.UseVisualStyleBackColor = True
+        '
+        'GroupBox24
+        '
+        Me.GroupBox24.BackColor = System.Drawing.Color.White
+        Me.GroupBox24.Controls.Add(Me.Panel23)
+        Me.GroupBox24.Controls.Add(Me.dgvBizboxRequisitions)
+        Me.GroupBox24.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.GroupBox24.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox24.ForeColor = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.GroupBox24.Location = New System.Drawing.Point(3, 3)
+        Me.GroupBox24.Name = "GroupBox24"
+        Me.GroupBox24.Size = New System.Drawing.Size(994, 367)
+        Me.GroupBox24.TabIndex = 101
+        Me.GroupBox24.TabStop = False
+        Me.GroupBox24.Text = "BIZBOX DIAGNOSTIC REQUESTS AND REQUISITIONS"
+        '
+        'Panel23
+        '
+        Me.Panel23.Controls.Add(Me.PictureBox1)
+        Me.Panel23.Controls.Add(Me.Label22)
+        Me.Panel23.Controls.Add(Me.btnFetchRequisitionFromBizbox)
+        Me.Panel23.Location = New System.Drawing.Point(7, 19)
+        Me.Panel23.Name = "Panel23"
+        Me.Panel23.Size = New System.Drawing.Size(974, 38)
+        Me.Panel23.TabIndex = 100
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(83, 4)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(31, 30)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 60
+        Me.PictureBox1.TabStop = False
+        '
+        'Label22
+        '
+        Me.Label22.BackColor = System.Drawing.Color.White
+        Me.Label22.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Label22.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label22.ForeColor = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.Label22.Location = New System.Drawing.Point(0, 0)
+        Me.Label22.Name = "Label22"
+        Me.Label22.Size = New System.Drawing.Size(651, 38)
+        Me.Label22.TabIndex = 58
+        Me.Label22.Text = "Click ""FETCH REQUISITION FROM BIZBOX"" after you entered all requisitions from biz" &
+    "box"
+        Me.Label22.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'btnFetchRequisitionFromBizbox
+        '
+        Me.btnFetchRequisitionFromBizbox.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnFetchRequisitionFromBizbox.BackColor = System.Drawing.Color.LimeGreen
+        Me.btnFetchRequisitionFromBizbox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.btnFetchRequisitionFromBizbox.FlatAppearance.BorderSize = 0
+        Me.btnFetchRequisitionFromBizbox.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnFetchRequisitionFromBizbox.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnFetchRequisitionFromBizbox.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.btnFetchRequisitionFromBizbox.ImageAlign = System.Drawing.ContentAlignment.BottomLeft
+        Me.btnFetchRequisitionFromBizbox.Location = New System.Drawing.Point(690, 4)
+        Me.btnFetchRequisitionFromBizbox.Name = "btnFetchRequisitionFromBizbox"
+        Me.btnFetchRequisitionFromBizbox.Size = New System.Drawing.Size(280, 30)
+        Me.btnFetchRequisitionFromBizbox.TabIndex = 57
+        Me.btnFetchRequisitionFromBizbox.Text = "FETCH REQUISITION FROM BIZBOX"
+        Me.btnFetchRequisitionFromBizbox.UseVisualStyleBackColor = False
+        '
+        'dgvBizboxRequisitions
+        '
+        Me.dgvBizboxRequisitions.AllowUserToAddRows = False
+        Me.dgvBizboxRequisitions.AllowUserToDeleteRows = False
+        Me.dgvBizboxRequisitions.AllowUserToResizeRows = False
+        Me.dgvBizboxRequisitions.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.dgvBizboxRequisitions.BackgroundColor = System.Drawing.Color.Honeydew
+        Me.dgvBizboxRequisitions.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
+        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle5.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle5.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(66, Byte), Integer))
+        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvBizboxRequisitions.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle5
+        Me.dgvBizboxRequisitions.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvBizboxRequisitions.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.dgvDiagnosticRequestItems_ID, Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn10, Me.DataGridViewTextBoxColumn27, Me.DataGridViewTextBoxColumn28})
+        Me.dgvBizboxRequisitions.Cursor = System.Windows.Forms.Cursors.Hand
+        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle6.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(66, Byte), Integer))
+        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.PaleGreen
+        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgvBizboxRequisitions.DefaultCellStyle = DataGridViewCellStyle6
+        Me.dgvBizboxRequisitions.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.dgvBizboxRequisitions.Location = New System.Drawing.Point(3, 63)
+        Me.dgvBizboxRequisitions.MultiSelect = False
+        Me.dgvBizboxRequisitions.Name = "dgvBizboxRequisitions"
+        Me.dgvBizboxRequisitions.ReadOnly = True
+        Me.dgvBizboxRequisitions.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken
+        Me.dgvBizboxRequisitions.RowHeadersVisible = False
+        DataGridViewCellStyle7.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle7.Font = New System.Drawing.Font("Arial Narrow", 9.75!)
+        Me.dgvBizboxRequisitions.RowsDefaultCellStyle = DataGridViewCellStyle7
+        Me.dgvBizboxRequisitions.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.dgvBizboxRequisitions.Size = New System.Drawing.Size(988, 301)
+        Me.dgvBizboxRequisitions.TabIndex = 101
+        '
+        'dgvDiagnosticRequestItems_ID
+        '
+        Me.dgvDiagnosticRequestItems_ID.HeaderText = "ID"
+        Me.dgvDiagnosticRequestItems_ID.Name = "dgvDiagnosticRequestItems_ID"
+        Me.dgvDiagnosticRequestItems_ID.ReadOnly = True
+        Me.dgvDiagnosticRequestItems_ID.Visible = False
+        '
+        'DataGridViewTextBoxColumn1
+        '
+        Me.DataGridViewTextBoxColumn1.HeaderText = "ITEMS"
+        Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
+        Me.DataGridViewTextBoxColumn1.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn10
+        '
+        Me.DataGridViewTextBoxColumn10.HeaderText = "DEPARTMENT"
+        Me.DataGridViewTextBoxColumn10.Name = "DataGridViewTextBoxColumn10"
+        Me.DataGridViewTextBoxColumn10.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn27
+        '
+        Me.DataGridViewTextBoxColumn27.HeaderText = "PRICE"
+        Me.DataGridViewTextBoxColumn27.Name = "DataGridViewTextBoxColumn27"
+        Me.DataGridViewTextBoxColumn27.ReadOnly = True
+        '
+        'DataGridViewTextBoxColumn28
+        '
+        Me.DataGridViewTextBoxColumn28.HeaderText = "QTY"
+        Me.DataGridViewTextBoxColumn28.Name = "DataGridViewTextBoxColumn28"
+        Me.DataGridViewTextBoxColumn28.ReadOnly = True
+        '
+        'tpBizboxDiagnostics
+        '
+        Me.tpBizboxDiagnostics.BackColor = System.Drawing.Color.White
+        Me.tpBizboxDiagnostics.Controls.Add(Me.GroupBox15)
+        Me.tpBizboxDiagnostics.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.tpBizboxDiagnostics.Location = New System.Drawing.Point(4, 24)
+        Me.tpBizboxDiagnostics.Name = "tpBizboxDiagnostics"
+        Me.tpBizboxDiagnostics.Padding = New System.Windows.Forms.Padding(3)
+        Me.tpBizboxDiagnostics.Size = New System.Drawing.Size(1000, 373)
+        Me.tpBizboxDiagnostics.TabIndex = 9
+        Me.tpBizboxDiagnostics.Text = "DOCTOR'S ORDER AND PLAN"
+        '
+        'GroupBox15
+        '
+        Me.GroupBox15.BackColor = System.Drawing.Color.White
+        Me.GroupBox15.Controls.Add(Me.dgvDoctorsOrderPlans)
+        Me.GroupBox15.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.GroupBox15.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox15.ForeColor = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.GroupBox15.Location = New System.Drawing.Point(3, 3)
+        Me.GroupBox15.Name = "GroupBox15"
+        Me.GroupBox15.Size = New System.Drawing.Size(994, 367)
+        Me.GroupBox15.TabIndex = 65
+        Me.GroupBox15.TabStop = False
+        Me.GroupBox15.Text = "DOCTORS ORDER / PLAN"
+        '
+        'dgvDoctorsOrderPlans
+        '
+        Me.dgvDoctorsOrderPlans.AllowUserToAddRows = False
+        Me.dgvDoctorsOrderPlans.AllowUserToDeleteRows = False
+        Me.dgvDoctorsOrderPlans.AllowUserToResizeRows = False
+        Me.dgvDoctorsOrderPlans.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.dgvDoctorsOrderPlans.BackgroundColor = System.Drawing.Color.Honeydew
+        Me.dgvDoctorsOrderPlans.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
+        DataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle8.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle8.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(66, Byte), Integer))
+        DataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvDoctorsOrderPlans.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle8
+        Me.dgvDoctorsOrderPlans.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvDoctorsOrderPlans.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn18, Me.DataGridViewTextBoxColumn26, Me.Column1, Me.Column2})
+        Me.dgvDoctorsOrderPlans.Cursor = System.Windows.Forms.Cursors.Hand
+        DataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle9.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(66, Byte), Integer))
+        DataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.PaleGreen
+        DataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgvDoctorsOrderPlans.DefaultCellStyle = DataGridViewCellStyle9
+        Me.dgvDoctorsOrderPlans.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.dgvDoctorsOrderPlans.Location = New System.Drawing.Point(3, 18)
+        Me.dgvDoctorsOrderPlans.MultiSelect = False
+        Me.dgvDoctorsOrderPlans.Name = "dgvDoctorsOrderPlans"
+        Me.dgvDoctorsOrderPlans.ReadOnly = True
+        Me.dgvDoctorsOrderPlans.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken
+        Me.dgvDoctorsOrderPlans.RowHeadersVisible = False
+        DataGridViewCellStyle10.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle10.Font = New System.Drawing.Font("Arial Narrow", 9.75!)
+        Me.dgvDoctorsOrderPlans.RowsDefaultCellStyle = DataGridViewCellStyle10
+        Me.dgvDoctorsOrderPlans.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.dgvDoctorsOrderPlans.Size = New System.Drawing.Size(988, 346)
+        Me.dgvDoctorsOrderPlans.TabIndex = 103
+        '
+        'DataGridViewTextBoxColumn18
+        '
+        Me.DataGridViewTextBoxColumn18.HeaderText = "ID"
+        Me.DataGridViewTextBoxColumn18.Name = "DataGridViewTextBoxColumn18"
+        Me.DataGridViewTextBoxColumn18.ReadOnly = True
+        Me.DataGridViewTextBoxColumn18.Visible = False
+        '
+        'DataGridViewTextBoxColumn26
+        '
+        Me.DataGridViewTextBoxColumn26.FillWeight = 50.0!
+        Me.DataGridViewTextBoxColumn26.HeaderText = "GROUP"
+        Me.DataGridViewTextBoxColumn26.Name = "DataGridViewTextBoxColumn26"
+        Me.DataGridViewTextBoxColumn26.ReadOnly = True
+        '
+        'Column1
+        '
+        Me.Column1.FillWeight = 50.0!
+        Me.Column1.HeaderText = "ABREV"
+        Me.Column1.Name = "Column1"
+        Me.Column1.ReadOnly = True
+        '
+        'Column2
+        '
+        Me.Column2.HeaderText = "DESCRIPTION"
+        Me.Column2.Name = "Column2"
+        Me.Column2.ReadOnly = True
+        '
+        'tpRx
+        '
+        Me.tpRx.BackColor = System.Drawing.Color.White
+        Me.tpRx.Controls.Add(Me.GroupBox9)
+        Me.tpRx.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.tpRx.Location = New System.Drawing.Point(4, 24)
+        Me.tpRx.Name = "tpRx"
+        Me.tpRx.Padding = New System.Windows.Forms.Padding(3)
+        Me.tpRx.Size = New System.Drawing.Size(1000, 373)
+        Me.tpRx.TabIndex = 7
+        Me.tpRx.Text = "SICK LEAVE"
+        '
+        'GroupBox9
+        '
+        Me.GroupBox9.BackColor = System.Drawing.Color.White
+        Me.GroupBox9.Controls.Add(Me.dgvSickLeave)
+        Me.GroupBox9.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.GroupBox9.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox9.ForeColor = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.GroupBox9.Location = New System.Drawing.Point(3, 3)
+        Me.GroupBox9.Name = "GroupBox9"
+        Me.GroupBox9.Size = New System.Drawing.Size(994, 367)
+        Me.GroupBox9.TabIndex = 64
+        Me.GroupBox9.TabStop = False
+        Me.GroupBox9.Text = "SICK LEAVES"
+        '
+        'dgvSickLeave
+        '
+        Me.dgvSickLeave.AllowUserToAddRows = False
+        Me.dgvSickLeave.AllowUserToDeleteRows = False
+        Me.dgvSickLeave.AllowUserToResizeRows = False
+        Me.dgvSickLeave.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.dgvSickLeave.BackgroundColor = System.Drawing.Color.Honeydew
+        Me.dgvSickLeave.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
+        DataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle11.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle11.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle11.ForeColor = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(66, Byte), Integer))
+        DataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvSickLeave.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle11
+        Me.dgvSickLeave.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvSickLeave.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn9, Me.Column3, Me.Column4})
+        Me.dgvSickLeave.Cursor = System.Windows.Forms.Cursors.Hand
+        DataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle12.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle12.ForeColor = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(66, Byte), Integer))
+        DataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.PaleGreen
+        DataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgvSickLeave.DefaultCellStyle = DataGridViewCellStyle12
+        Me.dgvSickLeave.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.dgvSickLeave.Location = New System.Drawing.Point(3, 18)
+        Me.dgvSickLeave.MultiSelect = False
+        Me.dgvSickLeave.Name = "dgvSickLeave"
+        Me.dgvSickLeave.ReadOnly = True
+        Me.dgvSickLeave.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken
+        Me.dgvSickLeave.RowHeadersVisible = False
+        DataGridViewCellStyle13.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle13.Font = New System.Drawing.Font("Arial Narrow", 9.75!)
+        Me.dgvSickLeave.RowsDefaultCellStyle = DataGridViewCellStyle13
+        Me.dgvSickLeave.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.dgvSickLeave.Size = New System.Drawing.Size(988, 346)
+        Me.dgvSickLeave.TabIndex = 103
+        '
+        'DataGridViewTextBoxColumn2
+        '
+        Me.DataGridViewTextBoxColumn2.HeaderText = "ID"
+        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
+        Me.DataGridViewTextBoxColumn2.ReadOnly = True
+        Me.DataGridViewTextBoxColumn2.Visible = False
+        '
+        'DataGridViewTextBoxColumn9
+        '
+        Me.DataGridViewTextBoxColumn9.HeaderText = "START DATE"
+        Me.DataGridViewTextBoxColumn9.Name = "DataGridViewTextBoxColumn9"
+        Me.DataGridViewTextBoxColumn9.ReadOnly = True
+        '
+        'Column3
+        '
+        Me.Column3.HeaderText = "END DATE"
+        Me.Column3.Name = "Column3"
+        Me.Column3.ReadOnly = True
+        '
+        'Column4
+        '
+        Me.Column4.HeaderText = "DAYS OF LEAVE"
+        Me.Column4.Name = "Column4"
+        Me.Column4.ReadOnly = True
         '
         'Panel4
         '
@@ -2197,25 +3125,25 @@ Partial Class frmServiceCounter_Clinic
         Me.dgvConsultationHistory_BizboxRequisitions.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.dgvConsultationHistory_BizboxRequisitions.BackgroundColor = System.Drawing.Color.Honeydew
         Me.dgvConsultationHistory_BizboxRequisitions.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
-        DataGridViewCellStyle36.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle36.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle36.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle36.ForeColor = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(66, Byte), Integer))
-        DataGridViewCellStyle36.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle36.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle36.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgvConsultationHistory_BizboxRequisitions.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle36
+        DataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle14.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle14.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle14.ForeColor = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(66, Byte), Integer))
+        DataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvConsultationHistory_BizboxRequisitions.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle14
         Me.dgvConsultationHistory_BizboxRequisitions.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvConsultationHistory_BizboxRequisitions.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn11, Me.DataGridViewTextBoxColumn12, Me.DataGridViewTextBoxColumn13, Me.Column5, Me.DataGridViewTextBoxColumn14, Me.DataGridViewTextBoxColumn17})
         Me.dgvConsultationHistory_BizboxRequisitions.Cursor = System.Windows.Forms.Cursors.Hand
-        DataGridViewCellStyle37.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle37.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle37.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle37.ForeColor = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(66, Byte), Integer))
-        DataGridViewCellStyle37.SelectionBackColor = System.Drawing.Color.PaleGreen
-        DataGridViewCellStyle37.SelectionForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle37.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.dgvConsultationHistory_BizboxRequisitions.DefaultCellStyle = DataGridViewCellStyle37
+        DataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle15.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle15.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle15.ForeColor = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(66, Byte), Integer))
+        DataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.PaleGreen
+        DataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgvConsultationHistory_BizboxRequisitions.DefaultCellStyle = DataGridViewCellStyle15
         Me.dgvConsultationHistory_BizboxRequisitions.Dock = System.Windows.Forms.DockStyle.Fill
         Me.dgvConsultationHistory_BizboxRequisitions.Location = New System.Drawing.Point(3, 18)
         Me.dgvConsultationHistory_BizboxRequisitions.MultiSelect = False
@@ -2223,9 +3151,9 @@ Partial Class frmServiceCounter_Clinic
         Me.dgvConsultationHistory_BizboxRequisitions.ReadOnly = True
         Me.dgvConsultationHistory_BizboxRequisitions.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken
         Me.dgvConsultationHistory_BizboxRequisitions.RowHeadersVisible = False
-        DataGridViewCellStyle38.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle38.Font = New System.Drawing.Font("Arial Narrow", 9.75!)
-        Me.dgvConsultationHistory_BizboxRequisitions.RowsDefaultCellStyle = DataGridViewCellStyle38
+        DataGridViewCellStyle16.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle16.Font = New System.Drawing.Font("Arial Narrow", 9.75!)
+        Me.dgvConsultationHistory_BizboxRequisitions.RowsDefaultCellStyle = DataGridViewCellStyle16
         Me.dgvConsultationHistory_BizboxRequisitions.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.dgvConsultationHistory_BizboxRequisitions.Size = New System.Drawing.Size(846, 440)
         Me.dgvConsultationHistory_BizboxRequisitions.TabIndex = 101
@@ -2300,25 +3228,25 @@ Partial Class frmServiceCounter_Clinic
         Me.dgvConsultationHistory_DoctorsOrderPlans.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.dgvConsultationHistory_DoctorsOrderPlans.BackgroundColor = System.Drawing.Color.Honeydew
         Me.dgvConsultationHistory_DoctorsOrderPlans.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
-        DataGridViewCellStyle39.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle39.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle39.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle39.ForeColor = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(66, Byte), Integer))
-        DataGridViewCellStyle39.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle39.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle39.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgvConsultationHistory_DoctorsOrderPlans.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle39
+        DataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle17.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle17.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle17.ForeColor = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(66, Byte), Integer))
+        DataGridViewCellStyle17.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvConsultationHistory_DoctorsOrderPlans.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle17
         Me.dgvConsultationHistory_DoctorsOrderPlans.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvConsultationHistory_DoctorsOrderPlans.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn7, Me.DataGridViewTextBoxColumn8, Me.DataGridViewTextBoxColumn15, Me.DataGridViewTextBoxColumn16})
         Me.dgvConsultationHistory_DoctorsOrderPlans.Cursor = System.Windows.Forms.Cursors.Hand
-        DataGridViewCellStyle40.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle40.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle40.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle40.ForeColor = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(66, Byte), Integer))
-        DataGridViewCellStyle40.SelectionBackColor = System.Drawing.Color.PaleGreen
-        DataGridViewCellStyle40.SelectionForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle40.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.dgvConsultationHistory_DoctorsOrderPlans.DefaultCellStyle = DataGridViewCellStyle40
+        DataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle18.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle18.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle18.ForeColor = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(66, Byte), Integer))
+        DataGridViewCellStyle18.SelectionBackColor = System.Drawing.Color.PaleGreen
+        DataGridViewCellStyle18.SelectionForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgvConsultationHistory_DoctorsOrderPlans.DefaultCellStyle = DataGridViewCellStyle18
         Me.dgvConsultationHistory_DoctorsOrderPlans.Dock = System.Windows.Forms.DockStyle.Fill
         Me.dgvConsultationHistory_DoctorsOrderPlans.Location = New System.Drawing.Point(3, 18)
         Me.dgvConsultationHistory_DoctorsOrderPlans.MultiSelect = False
@@ -2326,9 +3254,9 @@ Partial Class frmServiceCounter_Clinic
         Me.dgvConsultationHistory_DoctorsOrderPlans.ReadOnly = True
         Me.dgvConsultationHistory_DoctorsOrderPlans.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken
         Me.dgvConsultationHistory_DoctorsOrderPlans.RowHeadersVisible = False
-        DataGridViewCellStyle41.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle41.Font = New System.Drawing.Font("Arial Narrow", 9.75!)
-        Me.dgvConsultationHistory_DoctorsOrderPlans.RowsDefaultCellStyle = DataGridViewCellStyle41
+        DataGridViewCellStyle19.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle19.Font = New System.Drawing.Font("Arial Narrow", 9.75!)
+        Me.dgvConsultationHistory_DoctorsOrderPlans.RowsDefaultCellStyle = DataGridViewCellStyle19
         Me.dgvConsultationHistory_DoctorsOrderPlans.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.dgvConsultationHistory_DoctorsOrderPlans.Size = New System.Drawing.Size(846, 440)
         Me.dgvConsultationHistory_DoctorsOrderPlans.TabIndex = 104
@@ -2393,25 +3321,25 @@ Partial Class frmServiceCounter_Clinic
         Me.dgvConsultationHistory_SickLeave.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.dgvConsultationHistory_SickLeave.BackgroundColor = System.Drawing.Color.Honeydew
         Me.dgvConsultationHistory_SickLeave.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
-        DataGridViewCellStyle42.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle42.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle42.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle42.ForeColor = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(66, Byte), Integer))
-        DataGridViewCellStyle42.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle42.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle42.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgvConsultationHistory_SickLeave.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle42
+        DataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle20.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle20.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle20.ForeColor = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(66, Byte), Integer))
+        DataGridViewCellStyle20.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle20.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle20.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvConsultationHistory_SickLeave.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle20
         Me.dgvConsultationHistory_SickLeave.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvConsultationHistory_SickLeave.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6})
         Me.dgvConsultationHistory_SickLeave.Cursor = System.Windows.Forms.Cursors.Hand
-        DataGridViewCellStyle43.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle43.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle43.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle43.ForeColor = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(66, Byte), Integer))
-        DataGridViewCellStyle43.SelectionBackColor = System.Drawing.Color.PaleGreen
-        DataGridViewCellStyle43.SelectionForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle43.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.dgvConsultationHistory_SickLeave.DefaultCellStyle = DataGridViewCellStyle43
+        DataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle21.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle21.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle21.ForeColor = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(66, Byte), Integer))
+        DataGridViewCellStyle21.SelectionBackColor = System.Drawing.Color.PaleGreen
+        DataGridViewCellStyle21.SelectionForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle21.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgvConsultationHistory_SickLeave.DefaultCellStyle = DataGridViewCellStyle21
         Me.dgvConsultationHistory_SickLeave.Dock = System.Windows.Forms.DockStyle.Fill
         Me.dgvConsultationHistory_SickLeave.Location = New System.Drawing.Point(3, 18)
         Me.dgvConsultationHistory_SickLeave.MultiSelect = False
@@ -2419,9 +3347,9 @@ Partial Class frmServiceCounter_Clinic
         Me.dgvConsultationHistory_SickLeave.ReadOnly = True
         Me.dgvConsultationHistory_SickLeave.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken
         Me.dgvConsultationHistory_SickLeave.RowHeadersVisible = False
-        DataGridViewCellStyle44.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle44.Font = New System.Drawing.Font("Arial Narrow", 9.75!)
-        Me.dgvConsultationHistory_SickLeave.RowsDefaultCellStyle = DataGridViewCellStyle44
+        DataGridViewCellStyle22.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle22.Font = New System.Drawing.Font("Arial Narrow", 9.75!)
+        Me.dgvConsultationHistory_SickLeave.RowsDefaultCellStyle = DataGridViewCellStyle22
         Me.dgvConsultationHistory_SickLeave.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.dgvConsultationHistory_SickLeave.Size = New System.Drawing.Size(846, 440)
         Me.dgvConsultationHistory_SickLeave.TabIndex = 103
@@ -2461,34 +3389,34 @@ Partial Class frmServiceCounter_Clinic
         Me.dgvMedicalHistory_ConsultationList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.dgvMedicalHistory_ConsultationList.BackgroundColor = System.Drawing.Color.Honeydew
         Me.dgvMedicalHistory_ConsultationList.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
-        DataGridViewCellStyle45.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle45.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle45.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Bold)
-        DataGridViewCellStyle45.ForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle45.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle45.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle45.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgvMedicalHistory_ConsultationList.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle45
+        DataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle23.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle23.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Bold)
+        DataGridViewCellStyle23.ForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle23.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle23.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle23.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvMedicalHistory_ConsultationList.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle23
         Me.dgvMedicalHistory_ConsultationList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvMedicalHistory_ConsultationList.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.consultationHIstory_ID, Me.consultationHIstory_Date})
         Me.dgvMedicalHistory_ConsultationList.Cursor = System.Windows.Forms.Cursors.Hand
-        DataGridViewCellStyle46.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle46.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle46.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Bold)
-        DataGridViewCellStyle46.ForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle46.SelectionBackColor = System.Drawing.Color.PaleGreen
-        DataGridViewCellStyle46.SelectionForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle46.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.dgvMedicalHistory_ConsultationList.DefaultCellStyle = DataGridViewCellStyle46
+        DataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle24.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle24.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Bold)
+        DataGridViewCellStyle24.ForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle24.SelectionBackColor = System.Drawing.Color.PaleGreen
+        DataGridViewCellStyle24.SelectionForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle24.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgvMedicalHistory_ConsultationList.DefaultCellStyle = DataGridViewCellStyle24
         Me.dgvMedicalHistory_ConsultationList.Location = New System.Drawing.Point(3, 52)
         Me.dgvMedicalHistory_ConsultationList.MultiSelect = False
         Me.dgvMedicalHistory_ConsultationList.Name = "dgvMedicalHistory_ConsultationList"
         Me.dgvMedicalHistory_ConsultationList.ReadOnly = True
         Me.dgvMedicalHistory_ConsultationList.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken
         Me.dgvMedicalHistory_ConsultationList.RowHeadersVisible = False
-        DataGridViewCellStyle47.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle47.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Bold)
-        Me.dgvMedicalHistory_ConsultationList.RowsDefaultCellStyle = DataGridViewCellStyle47
+        DataGridViewCellStyle25.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle25.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Bold)
+        Me.dgvMedicalHistory_ConsultationList.RowsDefaultCellStyle = DataGridViewCellStyle25
         Me.dgvMedicalHistory_ConsultationList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.dgvMedicalHistory_ConsultationList.Size = New System.Drawing.Size(144, 495)
         Me.dgvMedicalHistory_ConsultationList.TabIndex = 37
@@ -2531,6 +3459,19 @@ Partial Class frmServiceCounter_Clinic
         Me.pnlConsultation_Blocker3.Size = New System.Drawing.Size(1014, 544)
         Me.pnlConsultation_Blocker3.TabIndex = 47
         '
+        'Label28
+        '
+        Me.Label28.BackColor = System.Drawing.Color.White
+        Me.Label28.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Label28.Font = New System.Drawing.Font("Arial", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label28.ForeColor = System.Drawing.Color.Gray
+        Me.Label28.Location = New System.Drawing.Point(0, 0)
+        Me.Label28.Name = "Label28"
+        Me.Label28.Size = New System.Drawing.Size(1012, 542)
+        Me.Label28.TabIndex = 31
+        Me.Label28.Text = "CONSULTATION NOT YET STARTED"
+        Me.Label28.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'Button3
         '
         Me.Button3.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
@@ -2559,34 +3500,34 @@ Partial Class frmServiceCounter_Clinic
         Me.dgvBizboxResults.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.dgvBizboxResults.BackgroundColor = System.Drawing.Color.Honeydew
         Me.dgvBizboxResults.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
-        DataGridViewCellStyle48.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle48.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle48.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Bold)
-        DataGridViewCellStyle48.ForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle48.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle48.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle48.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgvBizboxResults.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle48
+        DataGridViewCellStyle26.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle26.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle26.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Bold)
+        DataGridViewCellStyle26.ForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle26.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle26.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle26.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvBizboxResults.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle26
         Me.dgvBizboxResults.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvBizboxResults.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.resultDiagnosticID, Me.resultDiagnostics, Me.resultDiagnosticDescription, Me.resultDiagnosticResult, Me.resultDiagnosticLink, Me.resultDiagnosticExamDate, Me.resultDiagnosticResultDate})
         Me.dgvBizboxResults.Cursor = System.Windows.Forms.Cursors.Hand
-        DataGridViewCellStyle49.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle49.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle49.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Bold)
-        DataGridViewCellStyle49.ForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle49.SelectionBackColor = System.Drawing.Color.PaleGreen
-        DataGridViewCellStyle49.SelectionForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle49.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.dgvBizboxResults.DefaultCellStyle = DataGridViewCellStyle49
+        DataGridViewCellStyle27.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle27.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle27.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Bold)
+        DataGridViewCellStyle27.ForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle27.SelectionBackColor = System.Drawing.Color.PaleGreen
+        DataGridViewCellStyle27.SelectionForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle27.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgvBizboxResults.DefaultCellStyle = DataGridViewCellStyle27
         Me.dgvBizboxResults.Location = New System.Drawing.Point(8, 42)
         Me.dgvBizboxResults.MultiSelect = False
         Me.dgvBizboxResults.Name = "dgvBizboxResults"
         Me.dgvBizboxResults.ReadOnly = True
         Me.dgvBizboxResults.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken
         Me.dgvBizboxResults.RowHeadersVisible = False
-        DataGridViewCellStyle50.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle50.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.dgvBizboxResults.RowsDefaultCellStyle = DataGridViewCellStyle50
+        DataGridViewCellStyle28.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle28.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dgvBizboxResults.RowsDefaultCellStyle = DataGridViewCellStyle28
         Me.dgvBizboxResults.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.dgvBizboxResults.Size = New System.Drawing.Size(1005, 502)
         Me.dgvBizboxResults.TabIndex = 37
@@ -2804,947 +3745,6 @@ Partial Class frmServiceCounter_Clinic
         Me.btnViewConsent.Text = "PREVIEW CONSENT"
         Me.btnViewConsent.UseVisualStyleBackColor = False
         '
-        'tpRx
-        '
-        Me.tpRx.BackColor = System.Drawing.Color.White
-        Me.tpRx.Controls.Add(Me.GroupBox9)
-        Me.tpRx.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold)
-        Me.tpRx.Location = New System.Drawing.Point(4, 24)
-        Me.tpRx.Name = "tpRx"
-        Me.tpRx.Padding = New System.Windows.Forms.Padding(3)
-        Me.tpRx.Size = New System.Drawing.Size(1000, 373)
-        Me.tpRx.TabIndex = 7
-        Me.tpRx.Text = "SICK LEAVE"
-        '
-        'GroupBox9
-        '
-        Me.GroupBox9.BackColor = System.Drawing.Color.White
-        Me.GroupBox9.Controls.Add(Me.dgvSickLeave)
-        Me.GroupBox9.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.GroupBox9.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox9.ForeColor = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.GroupBox9.Location = New System.Drawing.Point(3, 3)
-        Me.GroupBox9.Name = "GroupBox9"
-        Me.GroupBox9.Size = New System.Drawing.Size(994, 367)
-        Me.GroupBox9.TabIndex = 64
-        Me.GroupBox9.TabStop = False
-        Me.GroupBox9.Text = "SICK LEAVES"
-        '
-        'dgvSickLeave
-        '
-        Me.dgvSickLeave.AllowUserToAddRows = False
-        Me.dgvSickLeave.AllowUserToDeleteRows = False
-        Me.dgvSickLeave.AllowUserToResizeRows = False
-        Me.dgvSickLeave.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
-        Me.dgvSickLeave.BackgroundColor = System.Drawing.Color.Honeydew
-        Me.dgvSickLeave.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
-        DataGridViewCellStyle33.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle33.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle33.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle33.ForeColor = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(66, Byte), Integer))
-        DataGridViewCellStyle33.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle33.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle33.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgvSickLeave.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle33
-        Me.dgvSickLeave.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvSickLeave.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn9, Me.Column3, Me.Column4})
-        Me.dgvSickLeave.Cursor = System.Windows.Forms.Cursors.Hand
-        DataGridViewCellStyle34.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle34.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle34.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle34.ForeColor = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(66, Byte), Integer))
-        DataGridViewCellStyle34.SelectionBackColor = System.Drawing.Color.PaleGreen
-        DataGridViewCellStyle34.SelectionForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle34.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.dgvSickLeave.DefaultCellStyle = DataGridViewCellStyle34
-        Me.dgvSickLeave.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.dgvSickLeave.Location = New System.Drawing.Point(3, 18)
-        Me.dgvSickLeave.MultiSelect = False
-        Me.dgvSickLeave.Name = "dgvSickLeave"
-        Me.dgvSickLeave.ReadOnly = True
-        Me.dgvSickLeave.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken
-        Me.dgvSickLeave.RowHeadersVisible = False
-        DataGridViewCellStyle35.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle35.Font = New System.Drawing.Font("Arial Narrow", 9.75!)
-        Me.dgvSickLeave.RowsDefaultCellStyle = DataGridViewCellStyle35
-        Me.dgvSickLeave.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgvSickLeave.Size = New System.Drawing.Size(988, 346)
-        Me.dgvSickLeave.TabIndex = 103
-        '
-        'Column4
-        '
-        Me.Column4.HeaderText = "DAYS OF LEAVE"
-        Me.Column4.Name = "Column4"
-        Me.Column4.ReadOnly = True
-        '
-        'Column3
-        '
-        Me.Column3.HeaderText = "END DATE"
-        Me.Column3.Name = "Column3"
-        Me.Column3.ReadOnly = True
-        '
-        'DataGridViewTextBoxColumn9
-        '
-        Me.DataGridViewTextBoxColumn9.HeaderText = "START DATE"
-        Me.DataGridViewTextBoxColumn9.Name = "DataGridViewTextBoxColumn9"
-        Me.DataGridViewTextBoxColumn9.ReadOnly = True
-        '
-        'DataGridViewTextBoxColumn2
-        '
-        Me.DataGridViewTextBoxColumn2.HeaderText = "ID"
-        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
-        Me.DataGridViewTextBoxColumn2.ReadOnly = True
-        Me.DataGridViewTextBoxColumn2.Visible = False
-        '
-        'tpBizboxDiagnostics
-        '
-        Me.tpBizboxDiagnostics.BackColor = System.Drawing.Color.White
-        Me.tpBizboxDiagnostics.Controls.Add(Me.GroupBox15)
-        Me.tpBizboxDiagnostics.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold)
-        Me.tpBizboxDiagnostics.Location = New System.Drawing.Point(4, 24)
-        Me.tpBizboxDiagnostics.Name = "tpBizboxDiagnostics"
-        Me.tpBizboxDiagnostics.Padding = New System.Windows.Forms.Padding(3)
-        Me.tpBizboxDiagnostics.Size = New System.Drawing.Size(1000, 373)
-        Me.tpBizboxDiagnostics.TabIndex = 9
-        Me.tpBizboxDiagnostics.Text = "DOCTOR'S ORDER AND PLAN"
-        '
-        'GroupBox15
-        '
-        Me.GroupBox15.BackColor = System.Drawing.Color.White
-        Me.GroupBox15.Controls.Add(Me.dgvDoctorsOrderPlans)
-        Me.GroupBox15.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.GroupBox15.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox15.ForeColor = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.GroupBox15.Location = New System.Drawing.Point(3, 3)
-        Me.GroupBox15.Name = "GroupBox15"
-        Me.GroupBox15.Size = New System.Drawing.Size(994, 367)
-        Me.GroupBox15.TabIndex = 65
-        Me.GroupBox15.TabStop = False
-        Me.GroupBox15.Text = "DOCTORS ORDER / PLAN"
-        '
-        'dgvDoctorsOrderPlans
-        '
-        Me.dgvDoctorsOrderPlans.AllowUserToAddRows = False
-        Me.dgvDoctorsOrderPlans.AllowUserToDeleteRows = False
-        Me.dgvDoctorsOrderPlans.AllowUserToResizeRows = False
-        Me.dgvDoctorsOrderPlans.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
-        Me.dgvDoctorsOrderPlans.BackgroundColor = System.Drawing.Color.Honeydew
-        Me.dgvDoctorsOrderPlans.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
-        DataGridViewCellStyle51.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle51.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle51.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle51.ForeColor = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(66, Byte), Integer))
-        DataGridViewCellStyle51.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle51.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle51.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgvDoctorsOrderPlans.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle51
-        Me.dgvDoctorsOrderPlans.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvDoctorsOrderPlans.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn18, Me.DataGridViewTextBoxColumn26, Me.Column1, Me.Column2})
-        Me.dgvDoctorsOrderPlans.Cursor = System.Windows.Forms.Cursors.Hand
-        DataGridViewCellStyle52.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle52.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle52.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle52.ForeColor = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(66, Byte), Integer))
-        DataGridViewCellStyle52.SelectionBackColor = System.Drawing.Color.PaleGreen
-        DataGridViewCellStyle52.SelectionForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle52.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.dgvDoctorsOrderPlans.DefaultCellStyle = DataGridViewCellStyle52
-        Me.dgvDoctorsOrderPlans.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.dgvDoctorsOrderPlans.Location = New System.Drawing.Point(3, 18)
-        Me.dgvDoctorsOrderPlans.MultiSelect = False
-        Me.dgvDoctorsOrderPlans.Name = "dgvDoctorsOrderPlans"
-        Me.dgvDoctorsOrderPlans.ReadOnly = True
-        Me.dgvDoctorsOrderPlans.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken
-        Me.dgvDoctorsOrderPlans.RowHeadersVisible = False
-        DataGridViewCellStyle53.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle53.Font = New System.Drawing.Font("Arial Narrow", 9.75!)
-        Me.dgvDoctorsOrderPlans.RowsDefaultCellStyle = DataGridViewCellStyle53
-        Me.dgvDoctorsOrderPlans.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgvDoctorsOrderPlans.Size = New System.Drawing.Size(988, 346)
-        Me.dgvDoctorsOrderPlans.TabIndex = 103
-        '
-        'Column2
-        '
-        Me.Column2.HeaderText = "DESCRIPTION"
-        Me.Column2.Name = "Column2"
-        Me.Column2.ReadOnly = True
-        '
-        'Column1
-        '
-        Me.Column1.FillWeight = 50.0!
-        Me.Column1.HeaderText = "ABREV"
-        Me.Column1.Name = "Column1"
-        Me.Column1.ReadOnly = True
-        '
-        'DataGridViewTextBoxColumn26
-        '
-        Me.DataGridViewTextBoxColumn26.FillWeight = 50.0!
-        Me.DataGridViewTextBoxColumn26.HeaderText = "GROUP"
-        Me.DataGridViewTextBoxColumn26.Name = "DataGridViewTextBoxColumn26"
-        Me.DataGridViewTextBoxColumn26.ReadOnly = True
-        '
-        'DataGridViewTextBoxColumn18
-        '
-        Me.DataGridViewTextBoxColumn18.HeaderText = "ID"
-        Me.DataGridViewTextBoxColumn18.Name = "DataGridViewTextBoxColumn18"
-        Me.DataGridViewTextBoxColumn18.ReadOnly = True
-        Me.DataGridViewTextBoxColumn18.Visible = False
-        '
-        'TabPage4
-        '
-        Me.TabPage4.Controls.Add(Me.GroupBox24)
-        Me.TabPage4.Location = New System.Drawing.Point(4, 24)
-        Me.TabPage4.Name = "TabPage4"
-        Me.TabPage4.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage4.Size = New System.Drawing.Size(1000, 373)
-        Me.TabPage4.TabIndex = 11
-        Me.TabPage4.Text = "BIZBOX REQUISITIONS"
-        Me.TabPage4.UseVisualStyleBackColor = True
-        '
-        'GroupBox24
-        '
-        Me.GroupBox24.BackColor = System.Drawing.Color.White
-        Me.GroupBox24.Controls.Add(Me.Panel23)
-        Me.GroupBox24.Controls.Add(Me.dgvBizboxRequisitions)
-        Me.GroupBox24.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.GroupBox24.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox24.ForeColor = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.GroupBox24.Location = New System.Drawing.Point(3, 3)
-        Me.GroupBox24.Name = "GroupBox24"
-        Me.GroupBox24.Size = New System.Drawing.Size(994, 367)
-        Me.GroupBox24.TabIndex = 101
-        Me.GroupBox24.TabStop = False
-        Me.GroupBox24.Text = "BIZBOX DIAGNOSTIC REQUESTS AND REQUISITIONS"
-        '
-        'dgvBizboxRequisitions
-        '
-        Me.dgvBizboxRequisitions.AllowUserToAddRows = False
-        Me.dgvBizboxRequisitions.AllowUserToDeleteRows = False
-        Me.dgvBizboxRequisitions.AllowUserToResizeRows = False
-        Me.dgvBizboxRequisitions.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
-        Me.dgvBizboxRequisitions.BackgroundColor = System.Drawing.Color.Honeydew
-        Me.dgvBizboxRequisitions.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
-        DataGridViewCellStyle54.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle54.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle54.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle54.ForeColor = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(66, Byte), Integer))
-        DataGridViewCellStyle54.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle54.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle54.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgvBizboxRequisitions.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle54
-        Me.dgvBizboxRequisitions.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvBizboxRequisitions.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.dgvDiagnosticRequestItems_ID, Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn10, Me.DataGridViewTextBoxColumn27, Me.DataGridViewTextBoxColumn28})
-        Me.dgvBizboxRequisitions.Cursor = System.Windows.Forms.Cursors.Hand
-        DataGridViewCellStyle55.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle55.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle55.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle55.ForeColor = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(66, Byte), Integer))
-        DataGridViewCellStyle55.SelectionBackColor = System.Drawing.Color.PaleGreen
-        DataGridViewCellStyle55.SelectionForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle55.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.dgvBizboxRequisitions.DefaultCellStyle = DataGridViewCellStyle55
-        Me.dgvBizboxRequisitions.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.dgvBizboxRequisitions.Location = New System.Drawing.Point(3, 63)
-        Me.dgvBizboxRequisitions.MultiSelect = False
-        Me.dgvBizboxRequisitions.Name = "dgvBizboxRequisitions"
-        Me.dgvBizboxRequisitions.ReadOnly = True
-        Me.dgvBizboxRequisitions.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken
-        Me.dgvBizboxRequisitions.RowHeadersVisible = False
-        DataGridViewCellStyle56.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle56.Font = New System.Drawing.Font("Arial Narrow", 9.75!)
-        Me.dgvBizboxRequisitions.RowsDefaultCellStyle = DataGridViewCellStyle56
-        Me.dgvBizboxRequisitions.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgvBizboxRequisitions.Size = New System.Drawing.Size(988, 301)
-        Me.dgvBizboxRequisitions.TabIndex = 101
-        '
-        'DataGridViewTextBoxColumn28
-        '
-        Me.DataGridViewTextBoxColumn28.HeaderText = "QTY"
-        Me.DataGridViewTextBoxColumn28.Name = "DataGridViewTextBoxColumn28"
-        Me.DataGridViewTextBoxColumn28.ReadOnly = True
-        '
-        'DataGridViewTextBoxColumn27
-        '
-        Me.DataGridViewTextBoxColumn27.HeaderText = "PRICE"
-        Me.DataGridViewTextBoxColumn27.Name = "DataGridViewTextBoxColumn27"
-        Me.DataGridViewTextBoxColumn27.ReadOnly = True
-        '
-        'DataGridViewTextBoxColumn10
-        '
-        Me.DataGridViewTextBoxColumn10.HeaderText = "DEPARTMENT"
-        Me.DataGridViewTextBoxColumn10.Name = "DataGridViewTextBoxColumn10"
-        Me.DataGridViewTextBoxColumn10.ReadOnly = True
-        '
-        'DataGridViewTextBoxColumn1
-        '
-        Me.DataGridViewTextBoxColumn1.HeaderText = "ITEMS"
-        Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
-        Me.DataGridViewTextBoxColumn1.ReadOnly = True
-        '
-        'dgvDiagnosticRequestItems_ID
-        '
-        Me.dgvDiagnosticRequestItems_ID.HeaderText = "ID"
-        Me.dgvDiagnosticRequestItems_ID.Name = "dgvDiagnosticRequestItems_ID"
-        Me.dgvDiagnosticRequestItems_ID.ReadOnly = True
-        Me.dgvDiagnosticRequestItems_ID.Visible = False
-        '
-        'Panel23
-        '
-        Me.Panel23.Controls.Add(Me.PictureBox1)
-        Me.Panel23.Controls.Add(Me.Label22)
-        Me.Panel23.Controls.Add(Me.btnFetchRequisitionFromBizbox)
-        Me.Panel23.Location = New System.Drawing.Point(7, 19)
-        Me.Panel23.Name = "Panel23"
-        Me.Panel23.Size = New System.Drawing.Size(974, 38)
-        Me.Panel23.TabIndex = 100
-        '
-        'btnFetchRequisitionFromBizbox
-        '
-        Me.btnFetchRequisitionFromBizbox.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnFetchRequisitionFromBizbox.BackColor = System.Drawing.Color.LimeGreen
-        Me.btnFetchRequisitionFromBizbox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.btnFetchRequisitionFromBizbox.FlatAppearance.BorderSize = 0
-        Me.btnFetchRequisitionFromBizbox.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnFetchRequisitionFromBizbox.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnFetchRequisitionFromBizbox.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.btnFetchRequisitionFromBizbox.ImageAlign = System.Drawing.ContentAlignment.BottomLeft
-        Me.btnFetchRequisitionFromBizbox.Location = New System.Drawing.Point(690, 4)
-        Me.btnFetchRequisitionFromBizbox.Name = "btnFetchRequisitionFromBizbox"
-        Me.btnFetchRequisitionFromBizbox.Size = New System.Drawing.Size(280, 30)
-        Me.btnFetchRequisitionFromBizbox.TabIndex = 57
-        Me.btnFetchRequisitionFromBizbox.Text = "FETCH REQUISITION FROM BIZBOX"
-        Me.btnFetchRequisitionFromBizbox.UseVisualStyleBackColor = False
-        '
-        'Label22
-        '
-        Me.Label22.BackColor = System.Drawing.Color.White
-        Me.Label22.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Label22.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label22.ForeColor = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.Label22.Location = New System.Drawing.Point(0, 0)
-        Me.Label22.Name = "Label22"
-        Me.Label22.Size = New System.Drawing.Size(651, 38)
-        Me.Label22.TabIndex = 58
-        Me.Label22.Text = "Click ""FETCH REQUISITION FROM BIZBOX"" after you entered all requisitions from biz" &
-    "box"
-        Me.Label22.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(83, 4)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(31, 30)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 60
-        Me.PictureBox1.TabStop = False
-        '
-        'TabPage13
-        '
-        Me.TabPage13.BackColor = System.Drawing.Color.White
-        Me.TabPage13.Controls.Add(Me.FlowLayoutPanel1)
-        Me.TabPage13.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold)
-        Me.TabPage13.Location = New System.Drawing.Point(4, 24)
-        Me.TabPage13.Name = "TabPage13"
-        Me.TabPage13.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage13.Size = New System.Drawing.Size(1000, 373)
-        Me.TabPage13.TabIndex = 10
-        Me.TabPage13.Text = "DIAGNOSIS AND TREATMENT"
-        '
-        'FlowLayoutPanel1
-        '
-        Me.FlowLayoutPanel1.AutoScroll = True
-        Me.FlowLayoutPanel1.BackColor = System.Drawing.Color.White
-        Me.FlowLayoutPanel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.FlowLayoutPanel1.Controls.Add(Me.GroupBox4)
-        Me.FlowLayoutPanel1.Controls.Add(Me.GroupBox3)
-        Me.FlowLayoutPanel1.Controls.Add(Me.GroupBox25)
-        Me.FlowLayoutPanel1.Controls.Add(Me.GroupBox6)
-        Me.FlowLayoutPanel1.Controls.Add(Me.GroupBox20)
-        Me.FlowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.FlowLayoutPanel1.Location = New System.Drawing.Point(3, 3)
-        Me.FlowLayoutPanel1.Name = "FlowLayoutPanel1"
-        Me.FlowLayoutPanel1.Size = New System.Drawing.Size(994, 367)
-        Me.FlowLayoutPanel1.TabIndex = 58
-        '
-        'GroupBox20
-        '
-        Me.GroupBox20.BackColor = System.Drawing.Color.White
-        Me.GroupBox20.Controls.Add(Me.lbTreatment)
-        Me.GroupBox20.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox20.ForeColor = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.GroupBox20.Location = New System.Drawing.Point(487, 243)
-        Me.GroupBox20.Name = "GroupBox20"
-        Me.GroupBox20.Size = New System.Drawing.Size(490, 114)
-        Me.GroupBox20.TabIndex = 69
-        Me.GroupBox20.TabStop = False
-        Me.GroupBox20.Text = "TREATMENT"
-        '
-        'lbTreatment
-        '
-        Me.lbTreatment.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.lbTreatment.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.lbTreatment.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbTreatment.ForeColor = System.Drawing.Color.Black
-        Me.lbTreatment.Location = New System.Drawing.Point(3, 18)
-        Me.lbTreatment.Name = "lbTreatment"
-        Me.lbTreatment.Padding = New System.Windows.Forms.Padding(5)
-        Me.lbTreatment.Size = New System.Drawing.Size(484, 93)
-        Me.lbTreatment.TabIndex = 48
-        '
-        'GroupBox6
-        '
-        Me.GroupBox6.BackColor = System.Drawing.Color.White
-        Me.GroupBox6.Controls.Add(Me.txtImpression)
-        Me.GroupBox6.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.GroupBox6.Location = New System.Drawing.Point(3, 243)
-        Me.GroupBox6.Name = "GroupBox6"
-        Me.GroupBox6.Size = New System.Drawing.Size(478, 114)
-        Me.GroupBox6.TabIndex = 68
-        Me.GroupBox6.TabStop = False
-        Me.GroupBox6.Text = "IMPRESSION"
-        '
-        'txtImpression
-        '
-        Me.txtImpression.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.txtImpression.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.txtImpression.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtImpression.ForeColor = System.Drawing.Color.Black
-        Me.txtImpression.Location = New System.Drawing.Point(3, 18)
-        Me.txtImpression.Name = "txtImpression"
-        Me.txtImpression.Padding = New System.Windows.Forms.Padding(5)
-        Me.txtImpression.Size = New System.Drawing.Size(472, 93)
-        Me.txtImpression.TabIndex = 48
-        '
-        'GroupBox25
-        '
-        Me.GroupBox25.BackColor = System.Drawing.Color.White
-        Me.GroupBox25.Controls.Add(Me.lbFinalDiagnosis)
-        Me.GroupBox25.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox25.ForeColor = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.GroupBox25.Location = New System.Drawing.Point(3, 123)
-        Me.GroupBox25.Name = "GroupBox25"
-        Me.GroupBox25.Size = New System.Drawing.Size(974, 114)
-        Me.GroupBox25.TabIndex = 67
-        Me.GroupBox25.TabStop = False
-        Me.GroupBox25.Text = "FINAL DIAGNOSIS"
-        '
-        'lbFinalDiagnosis
-        '
-        Me.lbFinalDiagnosis.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.lbFinalDiagnosis.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.lbFinalDiagnosis.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbFinalDiagnosis.ForeColor = System.Drawing.Color.Black
-        Me.lbFinalDiagnosis.Location = New System.Drawing.Point(3, 18)
-        Me.lbFinalDiagnosis.Name = "lbFinalDiagnosis"
-        Me.lbFinalDiagnosis.Padding = New System.Windows.Forms.Padding(5)
-        Me.lbFinalDiagnosis.Size = New System.Drawing.Size(968, 93)
-        Me.lbFinalDiagnosis.TabIndex = 48
-        '
-        'GroupBox3
-        '
-        Me.GroupBox3.BackColor = System.Drawing.Color.White
-        Me.GroupBox3.Controls.Add(Me.lblWorkingDiagnosis)
-        Me.GroupBox3.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.GroupBox3.Location = New System.Drawing.Point(487, 3)
-        Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(490, 114)
-        Me.GroupBox3.TabIndex = 62
-        Me.GroupBox3.TabStop = False
-        Me.GroupBox3.Text = "WORKING DIAGNOSIS"
-        '
-        'lblWorkingDiagnosis
-        '
-        Me.lblWorkingDiagnosis.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.lblWorkingDiagnosis.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.lblWorkingDiagnosis.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblWorkingDiagnosis.ForeColor = System.Drawing.Color.Black
-        Me.lblWorkingDiagnosis.Location = New System.Drawing.Point(3, 18)
-        Me.lblWorkingDiagnosis.Name = "lblWorkingDiagnosis"
-        Me.lblWorkingDiagnosis.Padding = New System.Windows.Forms.Padding(5)
-        Me.lblWorkingDiagnosis.Size = New System.Drawing.Size(484, 93)
-        Me.lblWorkingDiagnosis.TabIndex = 48
-        '
-        'GroupBox4
-        '
-        Me.GroupBox4.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.GroupBox4.BackColor = System.Drawing.Color.White
-        Me.GroupBox4.Controls.Add(Me.lblPertinentPhysicalExam)
-        Me.GroupBox4.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.GroupBox4.Location = New System.Drawing.Point(3, 3)
-        Me.GroupBox4.Name = "GroupBox4"
-        Me.GroupBox4.Size = New System.Drawing.Size(478, 114)
-        Me.GroupBox4.TabIndex = 63
-        Me.GroupBox4.TabStop = False
-        Me.GroupBox4.Text = "PERTINENT PHYSICAL EXAM"
-        '
-        'lblPertinentPhysicalExam
-        '
-        Me.lblPertinentPhysicalExam.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.lblPertinentPhysicalExam.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.lblPertinentPhysicalExam.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPertinentPhysicalExam.ForeColor = System.Drawing.Color.Black
-        Me.lblPertinentPhysicalExam.Location = New System.Drawing.Point(3, 18)
-        Me.lblPertinentPhysicalExam.Name = "lblPertinentPhysicalExam"
-        Me.lblPertinentPhysicalExam.Padding = New System.Windows.Forms.Padding(5)
-        Me.lblPertinentPhysicalExam.Size = New System.Drawing.Size(472, 93)
-        Me.lblPertinentPhysicalExam.TabIndex = 48
-        '
-        'tpConsultation
-        '
-        Me.tpConsultation.BackColor = System.Drawing.Color.White
-        Me.tpConsultation.Controls.Add(Me.FlowLayoutPanel2)
-        Me.tpConsultation.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tpConsultation.Location = New System.Drawing.Point(4, 24)
-        Me.tpConsultation.Name = "tpConsultation"
-        Me.tpConsultation.Padding = New System.Windows.Forms.Padding(3)
-        Me.tpConsultation.Size = New System.Drawing.Size(1000, 373)
-        Me.tpConsultation.TabIndex = 1
-        Me.tpConsultation.Text = "CONSULTATION DETAIL"
-        '
-        'FlowLayoutPanel2
-        '
-        Me.FlowLayoutPanel2.AutoScroll = True
-        Me.FlowLayoutPanel2.BackColor = System.Drawing.Color.White
-        Me.FlowLayoutPanel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.FlowLayoutPanel2.Controls.Add(Me.Panel3)
-        Me.FlowLayoutPanel2.Controls.Add(Me.Panel5)
-        Me.FlowLayoutPanel2.Controls.Add(Me.GroupBox5)
-        Me.FlowLayoutPanel2.Controls.Add(Me.GroupBox7)
-        Me.FlowLayoutPanel2.Controls.Add(Me.GroupBox8)
-        Me.FlowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.FlowLayoutPanel2.Location = New System.Drawing.Point(3, 3)
-        Me.FlowLayoutPanel2.Name = "FlowLayoutPanel2"
-        Me.FlowLayoutPanel2.Size = New System.Drawing.Size(994, 367)
-        Me.FlowLayoutPanel2.TabIndex = 59
-        '
-        'GroupBox8
-        '
-        Me.GroupBox8.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.GroupBox8.BackColor = System.Drawing.Color.White
-        Me.GroupBox8.Controls.Add(Me.lblHistoryOfPresentIllness)
-        Me.GroupBox8.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.GroupBox8.Location = New System.Drawing.Point(489, 280)
-        Me.GroupBox8.Name = "GroupBox8"
-        Me.GroupBox8.Size = New System.Drawing.Size(480, 155)
-        Me.GroupBox8.TabIndex = 130
-        Me.GroupBox8.TabStop = False
-        Me.GroupBox8.Text = "HISTORY OF PRESENT ILLNESS"
-        '
-        'lblHistoryOfPresentIllness
-        '
-        Me.lblHistoryOfPresentIllness.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.lblHistoryOfPresentIllness.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.lblHistoryOfPresentIllness.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblHistoryOfPresentIllness.ForeColor = System.Drawing.Color.Black
-        Me.lblHistoryOfPresentIllness.Location = New System.Drawing.Point(3, 18)
-        Me.lblHistoryOfPresentIllness.Name = "lblHistoryOfPresentIllness"
-        Me.lblHistoryOfPresentIllness.Size = New System.Drawing.Size(474, 134)
-        Me.lblHistoryOfPresentIllness.TabIndex = 72
-        '
-        'GroupBox7
-        '
-        Me.GroupBox7.BackColor = System.Drawing.Color.White
-        Me.GroupBox7.Controls.Add(Me.lblChiefComplaint)
-        Me.GroupBox7.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.GroupBox7.Location = New System.Drawing.Point(3, 280)
-        Me.GroupBox7.Name = "GroupBox7"
-        Me.GroupBox7.Size = New System.Drawing.Size(480, 155)
-        Me.GroupBox7.TabIndex = 129
-        Me.GroupBox7.TabStop = False
-        Me.GroupBox7.Text = "CHIEF COMPLAINT"
-        '
-        'lblChiefComplaint
-        '
-        Me.lblChiefComplaint.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.lblChiefComplaint.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.lblChiefComplaint.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblChiefComplaint.ForeColor = System.Drawing.Color.Black
-        Me.lblChiefComplaint.Location = New System.Drawing.Point(3, 18)
-        Me.lblChiefComplaint.Name = "lblChiefComplaint"
-        Me.lblChiefComplaint.Padding = New System.Windows.Forms.Padding(5)
-        Me.lblChiefComplaint.Size = New System.Drawing.Size(474, 134)
-        Me.lblChiefComplaint.TabIndex = 47
-        '
-        'GroupBox5
-        '
-        Me.GroupBox5.BackColor = System.Drawing.Color.White
-        Me.GroupBox5.Controls.Add(Me.lblSymptoms)
-        Me.GroupBox5.Controls.Add(Me.Label31)
-        Me.GroupBox5.Controls.Add(Me.Label32)
-        Me.GroupBox5.Controls.Add(Me.lblAllergies)
-        Me.GroupBox5.Controls.Add(Me.lbO2)
-        Me.GroupBox5.Controls.Add(Me.Label17)
-        Me.GroupBox5.Controls.Add(Me.lbRR)
-        Me.GroupBox5.Controls.Add(Me.lbPR)
-        Me.GroupBox5.Controls.Add(Me.lbTemp)
-        Me.GroupBox5.Controls.Add(Me.lbBP)
-        Me.GroupBox5.Controls.Add(Me.lblHeight)
-        Me.GroupBox5.Controls.Add(Me.lblWeight)
-        Me.GroupBox5.Controls.Add(Me.Label36)
-        Me.GroupBox5.Controls.Add(Me.Label37)
-        Me.GroupBox5.Controls.Add(Me.Label38)
-        Me.GroupBox5.Controls.Add(Me.Label42)
-        Me.GroupBox5.Controls.Add(Me.Label44)
-        Me.GroupBox5.Controls.Add(Me.Label45)
-        Me.GroupBox5.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.GroupBox5.Location = New System.Drawing.Point(3, 87)
-        Me.GroupBox5.Name = "GroupBox5"
-        Me.GroupBox5.Size = New System.Drawing.Size(966, 187)
-        Me.GroupBox5.TabIndex = 102
-        Me.GroupBox5.TabStop = False
-        Me.GroupBox5.Text = "VITAL SIGNS"
-        '
-        'Label45
-        '
-        Me.Label45.AutoSize = True
-        Me.Label45.BackColor = System.Drawing.Color.White
-        Me.Label45.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label45.ForeColor = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.Label45.Location = New System.Drawing.Point(288, 29)
-        Me.Label45.Name = "Label45"
-        Me.Label45.Size = New System.Drawing.Size(58, 16)
-        Me.Label45.TabIndex = 53
-        Me.Label45.Text = "WEIGHT"
-        Me.Label45.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'Label44
-        '
-        Me.Label44.AutoSize = True
-        Me.Label44.BackColor = System.Drawing.Color.White
-        Me.Label44.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label44.ForeColor = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.Label44.Location = New System.Drawing.Point(7, 29)
-        Me.Label44.Name = "Label44"
-        Me.Label44.Size = New System.Drawing.Size(54, 16)
-        Me.Label44.TabIndex = 54
-        Me.Label44.Text = "HEIGHT"
-        Me.Label44.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'Label42
-        '
-        Me.Label42.AutoSize = True
-        Me.Label42.BackColor = System.Drawing.Color.White
-        Me.Label42.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label42.ForeColor = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.Label42.Location = New System.Drawing.Point(569, 26)
-        Me.Label42.Name = "Label42"
-        Me.Label42.Size = New System.Drawing.Size(128, 16)
-        Me.Label42.TabIndex = 55
-        Me.Label42.Text = "BLOOD PRESSURE"
-        Me.Label42.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'Label38
-        '
-        Me.Label38.AutoSize = True
-        Me.Label38.BackColor = System.Drawing.Color.White
-        Me.Label38.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label38.ForeColor = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.Label38.Location = New System.Drawing.Point(569, 117)
-        Me.Label38.Name = "Label38"
-        Me.Label38.Size = New System.Drawing.Size(103, 16)
-        Me.Label38.TabIndex = 56
-        Me.Label38.Text = "TEMPERATURE"
-        Me.Label38.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'Label37
-        '
-        Me.Label37.AutoSize = True
-        Me.Label37.BackColor = System.Drawing.Color.White
-        Me.Label37.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label37.ForeColor = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.Label37.Location = New System.Drawing.Point(569, 56)
-        Me.Label37.Name = "Label37"
-        Me.Label37.Size = New System.Drawing.Size(87, 16)
-        Me.Label37.TabIndex = 57
-        Me.Label37.Text = "PULSE RATE"
-        Me.Label37.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'Label36
-        '
-        Me.Label36.AutoSize = True
-        Me.Label36.BackColor = System.Drawing.Color.White
-        Me.Label36.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label36.ForeColor = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.Label36.Location = New System.Drawing.Point(569, 87)
-        Me.Label36.Name = "Label36"
-        Me.Label36.Size = New System.Drawing.Size(135, 16)
-        Me.Label36.TabIndex = 58
-        Me.Label36.Text = "RESPIRATORY RATE"
-        Me.Label36.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'lblWeight
-        '
-        Me.lblWeight.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.lblWeight.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblWeight.ForeColor = System.Drawing.Color.Black
-        Me.lblWeight.Location = New System.Drawing.Point(362, 25)
-        Me.lblWeight.Name = "lblWeight"
-        Me.lblWeight.Size = New System.Drawing.Size(159, 24)
-        Me.lblWeight.TabIndex = 59
-        Me.lblWeight.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblHeight
-        '
-        Me.lblHeight.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.lblHeight.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblHeight.ForeColor = System.Drawing.Color.Black
-        Me.lblHeight.Location = New System.Drawing.Point(103, 24)
-        Me.lblHeight.Name = "lblHeight"
-        Me.lblHeight.Size = New System.Drawing.Size(159, 24)
-        Me.lblHeight.TabIndex = 60
-        Me.lblHeight.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lbBP
-        '
-        Me.lbBP.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.lbBP.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbBP.ForeColor = System.Drawing.Color.Black
-        Me.lbBP.Location = New System.Drawing.Point(714, 22)
-        Me.lbBP.Name = "lbBP"
-        Me.lbBP.Size = New System.Drawing.Size(226, 24)
-        Me.lbBP.TabIndex = 61
-        Me.lbBP.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lbTemp
-        '
-        Me.lbTemp.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.lbTemp.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbTemp.ForeColor = System.Drawing.Color.Black
-        Me.lbTemp.Location = New System.Drawing.Point(714, 113)
-        Me.lbTemp.Name = "lbTemp"
-        Me.lbTemp.Size = New System.Drawing.Size(226, 24)
-        Me.lbTemp.TabIndex = 62
-        Me.lbTemp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lbPR
-        '
-        Me.lbPR.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.lbPR.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbPR.ForeColor = System.Drawing.Color.Black
-        Me.lbPR.Location = New System.Drawing.Point(714, 52)
-        Me.lbPR.Name = "lbPR"
-        Me.lbPR.Size = New System.Drawing.Size(226, 24)
-        Me.lbPR.TabIndex = 63
-        Me.lbPR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lbRR
-        '
-        Me.lbRR.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.lbRR.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbRR.ForeColor = System.Drawing.Color.Black
-        Me.lbRR.Location = New System.Drawing.Point(714, 83)
-        Me.lbRR.Name = "lbRR"
-        Me.lbRR.Size = New System.Drawing.Size(226, 24)
-        Me.lbRR.TabIndex = 64
-        Me.lbRR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Label17
-        '
-        Me.Label17.AutoSize = True
-        Me.Label17.BackColor = System.Drawing.Color.White
-        Me.Label17.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label17.ForeColor = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.Label17.Location = New System.Drawing.Point(569, 148)
-        Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(61, 16)
-        Me.Label17.TabIndex = 65
-        Me.Label17.Text = "OXYGEN"
-        Me.Label17.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'lbO2
-        '
-        Me.lbO2.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.lbO2.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbO2.ForeColor = System.Drawing.Color.Black
-        Me.lbO2.Location = New System.Drawing.Point(714, 144)
-        Me.lbO2.Name = "lbO2"
-        Me.lbO2.Size = New System.Drawing.Size(226, 24)
-        Me.lbO2.TabIndex = 66
-        Me.lbO2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'lblAllergies
-        '
-        Me.lblAllergies.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.lblAllergies.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblAllergies.ForeColor = System.Drawing.Color.Black
-        Me.lblAllergies.Location = New System.Drawing.Point(102, 55)
-        Me.lblAllergies.Name = "lblAllergies"
-        Me.lblAllergies.Size = New System.Drawing.Size(418, 61)
-        Me.lblAllergies.TabIndex = 68
-        '
-        'Label32
-        '
-        Me.Label32.Anchor = System.Windows.Forms.AnchorStyles.Left
-        Me.Label32.AutoSize = True
-        Me.Label32.BackColor = System.Drawing.Color.White
-        Me.Label32.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label32.ForeColor = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.Label32.Location = New System.Drawing.Point(7, 57)
-        Me.Label32.Name = "Label32"
-        Me.Label32.Size = New System.Drawing.Size(79, 16)
-        Me.Label32.TabIndex = 69
-        Me.Label32.Text = "ALLERGIES"
-        Me.Label32.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'Label31
-        '
-        Me.Label31.Anchor = System.Windows.Forms.AnchorStyles.Left
-        Me.Label31.BackColor = System.Drawing.Color.White
-        Me.Label31.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label31.ForeColor = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.Label31.Location = New System.Drawing.Point(6, 122)
-        Me.Label31.Name = "Label31"
-        Me.Label31.Size = New System.Drawing.Size(90, 50)
-        Me.Label31.TabIndex = 70
-        Me.Label31.Text = "SIGN AND SYMPTOMS"
-        Me.Label31.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'lblSymptoms
-        '
-        Me.lblSymptoms.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.lblSymptoms.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblSymptoms.ForeColor = System.Drawing.Color.Black
-        Me.lblSymptoms.Location = New System.Drawing.Point(102, 125)
-        Me.lblSymptoms.Name = "lblSymptoms"
-        Me.lblSymptoms.Size = New System.Drawing.Size(418, 45)
-        Me.lblSymptoms.TabIndex = 71
-        '
-        'Panel5
-        '
-        Me.Panel5.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel5.Controls.Add(Me.lblConsultationType)
-        Me.Panel5.Controls.Add(Me.Label15)
-        Me.Panel5.Location = New System.Drawing.Point(489, 3)
-        Me.Panel5.Name = "Panel5"
-        Me.Panel5.Size = New System.Drawing.Size(480, 78)
-        Me.Panel5.TabIndex = 32
-        '
-        'Label15
-        '
-        Me.Label15.BackColor = System.Drawing.Color.White
-        Me.Label15.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Label15.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label15.ForeColor = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.Label15.Location = New System.Drawing.Point(0, 0)
-        Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(131, 76)
-        Me.Label15.TabIndex = 29
-        Me.Label15.Text = "REGISTRY DATE: " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "DOLE EMPLOYEE ID: " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "DOLE REF NO.: " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "DOLE STATUS: "
-        Me.Label15.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'lblConsultationType
-        '
-        Me.lblConsultationType.BackColor = System.Drawing.Color.White
-        Me.lblConsultationType.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.lblConsultationType.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold)
-        Me.lblConsultationType.ForeColor = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.lblConsultationType.Location = New System.Drawing.Point(131, 0)
-        Me.lblConsultationType.Name = "lblConsultationType"
-        Me.lblConsultationType.Size = New System.Drawing.Size(347, 76)
-        Me.lblConsultationType.TabIndex = 30
-        Me.lblConsultationType.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'Panel3
-        '
-        Me.Panel3.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel3.Controls.Add(Me.lblPhysicianNursingAttendantConsultDate)
-        Me.Panel3.Controls.Add(Me.Label6)
-        Me.Panel3.Location = New System.Drawing.Point(3, 3)
-        Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(480, 78)
-        Me.Panel3.TabIndex = 31
-        '
-        'Label6
-        '
-        Me.Label6.BackColor = System.Drawing.Color.White
-        Me.Label6.Dock = System.Windows.Forms.DockStyle.Left
-        Me.Label6.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.Label6.Location = New System.Drawing.Point(0, 0)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(157, 76)
-        Me.Label6.TabIndex = 29
-        Me.Label6.Text = "ATTENDING PHYSICIAN: " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "CONSULTATION START: " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "CONSULTATION END: " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "CONSULTATION DAT" &
-    "E: "
-        Me.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'lblPhysicianNursingAttendantConsultDate
-        '
-        Me.lblPhysicianNursingAttendantConsultDate.BackColor = System.Drawing.Color.White
-        Me.lblPhysicianNursingAttendantConsultDate.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.lblPhysicianNursingAttendantConsultDate.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold)
-        Me.lblPhysicianNursingAttendantConsultDate.ForeColor = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.lblPhysicianNursingAttendantConsultDate.Location = New System.Drawing.Point(157, 0)
-        Me.lblPhysicianNursingAttendantConsultDate.Name = "lblPhysicianNursingAttendantConsultDate"
-        Me.lblPhysicianNursingAttendantConsultDate.Size = New System.Drawing.Size(321, 76)
-        Me.lblPhysicianNursingAttendantConsultDate.TabIndex = 30
-        Me.lblPhysicianNursingAttendantConsultDate.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'tbPatientData
-        '
-        Me.tbPatientData.Controls.Add(Me.tpConsultation)
-        Me.tbPatientData.Controls.Add(Me.TabPage13)
-        Me.tbPatientData.Controls.Add(Me.TabPage4)
-        Me.tbPatientData.Controls.Add(Me.tpBizboxDiagnostics)
-        Me.tbPatientData.Controls.Add(Me.tpRx)
-        Me.tbPatientData.Font = New System.Drawing.Font("Arial", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbPatientData.Location = New System.Drawing.Point(6, 146)
-        Me.tbPatientData.Name = "tbPatientData"
-        Me.tbPatientData.SelectedIndex = 0
-        Me.tbPatientData.Size = New System.Drawing.Size(1008, 401)
-        Me.tbPatientData.TabIndex = 35
-        '
-        'Label21
-        '
-        Me.Label21.BackColor = System.Drawing.Color.White
-        Me.Label21.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Label21.Font = New System.Drawing.Font("Arial", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label21.ForeColor = System.Drawing.Color.Gray
-        Me.Label21.Location = New System.Drawing.Point(0, 0)
-        Me.Label21.Name = "Label21"
-        Me.Label21.Size = New System.Drawing.Size(1011, 403)
-        Me.Label21.TabIndex = 31
-        Me.Label21.Text = "CONSULTATION NOT YET STARTED"
-        Me.Label21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'pnlConsultation_Blocker1
-        '
-        Me.pnlConsultation_Blocker1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.pnlConsultation_Blocker1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.pnlConsultation_Blocker1.Controls.Add(Me.Label21)
-        Me.pnlConsultation_Blocker1.Location = New System.Drawing.Point(3, 142)
-        Me.pnlConsultation_Blocker1.Name = "pnlConsultation_Blocker1"
-        Me.pnlConsultation_Blocker1.Size = New System.Drawing.Size(1013, 405)
-        Me.pnlConsultation_Blocker1.TabIndex = 62
-        '
-        'Label28
-        '
-        Me.Label28.BackColor = System.Drawing.Color.White
-        Me.Label28.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Label28.Font = New System.Drawing.Font("Arial", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label28.ForeColor = System.Drawing.Color.Gray
-        Me.Label28.Location = New System.Drawing.Point(0, 0)
-        Me.Label28.Name = "Label28"
-        Me.Label28.Size = New System.Drawing.Size(1012, 542)
-        Me.Label28.TabIndex = 31
-        Me.Label28.Text = "CONSULTATION NOT YET STARTED"
-        Me.Label28.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
         'frmServiceCounter_Clinic
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -3769,7 +3769,35 @@ Partial Class frmServiceCounter_Clinic
         Me.gbSelectedPatient_Actions.ResumeLayout(False)
         Me.MainTabControl.ResumeLayout(False)
         Me.tbPatient_Information.ResumeLayout(False)
+        Me.pnlConsultation_Blocker1.ResumeLayout(False)
         CType(Me.pbProfilePicture, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.tbPatientData.ResumeLayout(False)
+        Me.tpConsultation.ResumeLayout(False)
+        Me.FlowLayoutPanel2.ResumeLayout(False)
+        Me.Panel3.ResumeLayout(False)
+        Me.Panel5.ResumeLayout(False)
+        Me.GroupBox5.ResumeLayout(False)
+        Me.GroupBox5.PerformLayout()
+        Me.GroupBox7.ResumeLayout(False)
+        Me.GroupBox8.ResumeLayout(False)
+        Me.TabPage13.ResumeLayout(False)
+        Me.FlowLayoutPanel1.ResumeLayout(False)
+        Me.GroupBox4.ResumeLayout(False)
+        Me.GroupBox3.ResumeLayout(False)
+        Me.GroupBox25.ResumeLayout(False)
+        Me.GroupBox6.ResumeLayout(False)
+        Me.GroupBox20.ResumeLayout(False)
+        Me.TabPage4.ResumeLayout(False)
+        Me.GroupBox24.ResumeLayout(False)
+        Me.Panel23.ResumeLayout(False)
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgvBizboxRequisitions, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.tpBizboxDiagnostics.ResumeLayout(False)
+        Me.GroupBox15.ResumeLayout(False)
+        CType(Me.dgvDoctorsOrderPlans, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.tpRx.ResumeLayout(False)
+        Me.GroupBox9.ResumeLayout(False)
+        CType(Me.dgvSickLeave, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel4.ResumeLayout(False)
         Me.Panel12.ResumeLayout(False)
         Me.Panel11.ResumeLayout(False)
@@ -3808,34 +3836,6 @@ Partial Class frmServiceCounter_Clinic
         Me.GroupBox1.ResumeLayout(False)
         CType(Me.pbRefreshList, System.ComponentModel.ISupportInitialize).EndInit()
         Me.pnlPatientCharts.ResumeLayout(False)
-        Me.tpRx.ResumeLayout(False)
-        Me.GroupBox9.ResumeLayout(False)
-        CType(Me.dgvSickLeave, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.tpBizboxDiagnostics.ResumeLayout(False)
-        Me.GroupBox15.ResumeLayout(False)
-        CType(Me.dgvDoctorsOrderPlans, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.TabPage4.ResumeLayout(False)
-        Me.GroupBox24.ResumeLayout(False)
-        CType(Me.dgvBizboxRequisitions, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel23.ResumeLayout(False)
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.TabPage13.ResumeLayout(False)
-        Me.FlowLayoutPanel1.ResumeLayout(False)
-        Me.GroupBox20.ResumeLayout(False)
-        Me.GroupBox6.ResumeLayout(False)
-        Me.GroupBox25.ResumeLayout(False)
-        Me.GroupBox3.ResumeLayout(False)
-        Me.GroupBox4.ResumeLayout(False)
-        Me.tpConsultation.ResumeLayout(False)
-        Me.FlowLayoutPanel2.ResumeLayout(False)
-        Me.GroupBox8.ResumeLayout(False)
-        Me.GroupBox7.ResumeLayout(False)
-        Me.GroupBox5.ResumeLayout(False)
-        Me.GroupBox5.PerformLayout()
-        Me.Panel5.ResumeLayout(False)
-        Me.Panel3.ResumeLayout(False)
-        Me.tbPatientData.ResumeLayout(False)
-        Me.pnlConsultation_Blocker1.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

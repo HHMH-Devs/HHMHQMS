@@ -1,6 +1,6 @@
-﻿Imports FLSIGCTLLib
+﻿Imports System.IO
 Imports FlSigCaptLib
-Imports System.IO
+Imports FLSIGCTLLib
 
 Public Class frmSignaturePad
     Dim pointX As Single = 0
