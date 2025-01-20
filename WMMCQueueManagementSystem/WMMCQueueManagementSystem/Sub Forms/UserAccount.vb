@@ -152,4 +152,8 @@
     Private Sub btnManageCounter_Click(sender As Object, e As EventArgs) Handles btnManageCounter.Click
         ManageCounters()
     End Sub
+
+    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
+
+    End Sub
 End Class

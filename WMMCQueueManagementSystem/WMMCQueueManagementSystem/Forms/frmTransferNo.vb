@@ -194,26 +194,56 @@
                             transferedCustomerAssignCounter.NoteDepartment = Nothing
                             transferedCustomerAssignCounter.NoteSection = Nothing
                         End If
-                        Dim generatedNumber As String = customerAssignCounterController.TransferCustomerGenerateQueueNumber(transferedCustomerAssignCounter)
-                        If Not IsNothing(generatedNumber) Or generatedNumber.Trim <> "" Then
-                            transferLimit -= 1
-                            lblAllowedTranser.Text = transferLimit
-                            Dim patientName As String = transferedCustomerAssignCounter.Customer.FullName
-                            Dim counter As String = ("PLEASE GO TO " & transferedCustomerAssignCounter.Counter.ServiceDescription).Trim.ToUpper
-                            Dim notes As String = ("PLEASE WAIT FOR YOUR NUMBER TO BE CALLED. THANK YOU").Trim.ToUpper
-                            Dim frm As New frmNoGenerated(generatedNumber, patientName, counter, notes)
-                            frm.ShowDialog()
-                            If transferLimit > 0 Then
-                                If MessageBox.Show("Do you want to another transfer of " + Me.CustomerAssignCounter.ProcessedQueueNumber + "? [YES: Select Another Counter to Transfer] [NO: Close Transfer]", "Transfer Another", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = DialogResult.Yes Then
-                                    transferedCtr = True
+
+                        Dim transferToClinicOption = New frmTransferClinicOption
+                        transferToClinicOption.ShowDialog()
+
+                        If transferToClinicOption.DialogResult = DialogResult.Yes Then
+                            If transferToClinicOption.isTranferHold = 0 Then
+                                Dim generatedNumber As String = customerAssignCounterController.TransferCustomerGenerateQueueNumber(transferedCustomerAssignCounter)
+                                If Not IsNothing(generatedNumber) Or generatedNumber.Trim <> "" Then
+                                    transferLimit -= 1
+                                    lblAllowedTranser.Text = transferLimit
+                                    Dim patientName As String = transferedCustomerAssignCounter.Customer.FullName
+                                    Dim counter As String = ("PLEASE GO TO " & transferedCustomerAssignCounter.Counter.ServiceDescription).Trim.ToUpper
+                                    Dim notes As String = ("PLEASE WAIT FOR YOUR NUMBER TO BE CALLED. THANK YOU").Trim.ToUpper
+                                    Dim frm As New frmNoGenerated(generatedNumber, patientName, counter, notes, transferedCustomerAssignCounter.Customer.FK_emdPatients)
+                                    frm.ShowDialog()
+                                    If transferLimit > 0 Then
+                                        If MessageBox.Show("Do you want to another transfer of " + Me.CustomerAssignCounter.ProcessedQueueNumber + "? [YES: Select Another Counter to Transfer] [NO: Close Transfer]", "Transfer Another", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = DialogResult.Yes Then
+                                            transferedCtr = True
+                                        Else
+                                            Me.DialogResult = DialogResult.Yes
+                                        End If
+                                    Else
+                                        Me.DialogResult = DialogResult.Yes
+                                    End If
+                                Else
+                                    MessageBox.Show("Something went on the process. Please try again", "Transfer error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                                End If
+                            End If
+                        Else
+                            Dim generatedNumber As String = customerAssignCounterController.TransferCustomerGenerateQueueNumber(transferedCustomerAssignCounter, 1)
+                            If Not IsNothing(generatedNumber) Or generatedNumber.Trim <> "" Then
+                                transferLimit -= 1
+                                lblAllowedTranser.Text = transferLimit
+                                Dim patientName As String = transferedCustomerAssignCounter.Customer.FullName
+                                Dim counter As String = ("PLEASE GO TO " & transferedCustomerAssignCounter.Counter.ServiceDescription).Trim.ToUpper
+                                Dim notes As String = ("PLEASE WAIT FOR YOUR NUMBER TO BE CALLED. THANK YOU").Trim.ToUpper
+                                Dim frm As New frmNoGenerated(generatedNumber, patientName, counter, notes, transferedCustomerAssignCounter.Customer.FK_emdPatients)
+                                frm.ShowDialog()
+                                If transferLimit > 0 Then
+                                    If MessageBox.Show("Do you want to another transfer of " + Me.CustomerAssignCounter.ProcessedQueueNumber + "? [YES: Select Another Counter to Transfer] [NO: Close Transfer]", "Transfer Another", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = DialogResult.Yes Then
+                                        transferedCtr = True
+                                    Else
+                                        Me.DialogResult = DialogResult.Yes
+                                    End If
                                 Else
                                     Me.DialogResult = DialogResult.Yes
                                 End If
                             Else
-                                Me.DialogResult = DialogResult.Yes
+                                MessageBox.Show("Something went on the process. Please try again", "Transfer error", MessageBoxButtons.OK, MessageBoxIcon.Error)
                             End If
-                        Else
-                            MessageBox.Show("Something went on the process. Please try again", "Transfer error", MessageBoxButtons.OK, MessageBoxIcon.Error)
                         End If
                     End If
                 End If
@@ -277,7 +307,7 @@
                                     counter = "PLEASE GO TO CASHIER 1"
                                 End If
                                 Dim notes As String = ("PLEASE WAIT FOR YOUR NUMBER TO BE CALLED. THANK YOU").Trim.ToUpper
-                                Dim frm As New frmNoGenerated(generatedNumber, patientName, counter, notes)
+                                Dim frm As New frmNoGenerated(generatedNumber, patientName, counter, notes, transferedCustomerAssignCounter.Customer.FK_emdPatients)
                                 frm.ShowDialog(Me)
                                 If transferLimit > 0 Then
                                     If MessageBox.Show("Do you want to another transfer of " + Me.CustomerAssignCounter.ProcessedQueueNumber + "? [YES: Select Another Counter to Transfer] [NO: Close Transfer]", "Transfer Another", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = DialogResult.Yes Then

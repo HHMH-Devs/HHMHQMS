@@ -1,5 +1,4 @@
-﻿Imports System.Data
-Imports System.Data.SqlClient
+﻿Imports System.Data.SqlClient
 Public Class CustomerConsultationController
     Public Function GetBizboxCustomerConsultations(ByVal infoID As Long, ByVal fkEmdPatient As Long) As List(Of Bizbox_Consultation)
         Dim list As List(Of Bizbox_Consultation)
@@ -190,7 +189,7 @@ Public Class CustomerConsultationController
             cmd.Parameters.AddWithValue("@ID", patient.ServedCustomer_ID)
             Dim data As DataTable = WMMCQMSConfig.fetchData(cmd).Tables(0)
             If Not Information.IsNothing(data) Then
-                If Not (data.Rows.Count > 0) Then
+                If (data.Rows.Count <= 0) Then
                     Dim cmd2 As New SqlCommand With {
                         .CommandText = "SELECT * FROM [bizbox_consultation] WHERE isServed = 0 AND [consultation_id] = (SELECT MAX([consultation_id]) FROM [bizbox_consultation] as f WHERE f.isServed = 0 AND CONVERT(DATE, f.datecreated) = CONVERT(DATE, GETDATE()) AND [info_id] = @ID)"
                     }
@@ -540,7 +539,7 @@ Public Class CustomerConsultationController
     End Function
 
     Public Function GetCertainPatientBizboxConsultation2(ByVal conID As Long, ByVal rodID As Long) As Bizbox_Consultation
-         Try
+        Try
             Dim cmd As New SqlCommand With {
                 .CommandText = "SELECT  
                                     a.consultation_id as 'a_consultation_id',a.datecreated as 'a_datecreated',a.datemodified as 'a_datemodified',a.opdconsent1 as 'a_opdconsent1',a.opdconsent2 as 'a_opdconsent2',a.isServed as 'a_isServed',a.forinitialconsult_serverassigncounter_ID as 'a_forinitialconsult_serverassigncounter_ID',a.FK_psPatRegisters as 'a_FK_psPatRegisters',a.FK_emdPatients as 'a_FK_emdPatients',a.info_id as 'a_info_id',a.servertransaction_id as 'a_servertransaction_id',a.servedcustomer_id as 'a_servedcustomer_id',

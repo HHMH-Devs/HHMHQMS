@@ -292,7 +292,7 @@ Public Class frmServiceCounter
             Else
                 fullName = (customer.CustomerInfo.Lastname & ", " & customer.CustomerInfo.FirstName & " " & customer.CustomerInfo.Middlename).Trim.ToUpper
             End If
-            Dim frm As New frmNoGenerated(ticketNumber, fullName, counterName, notes)
+            Dim frm As New frmNoGenerated(ticketNumber, fullName, counterName, notes, customer.FK_emdPatients)
             frm.ShowDialog()
         End If
     End Sub
@@ -840,7 +840,7 @@ Public Class frmServiceCounter
                 Dim generatedNumber As String = customerAssignCounterController.NewCustomerGenerateQueueNumber(customerAssignCounter)
                 If Not IsNothing(generatedNumber) Then
                     GetQueueList()
-                    Dim frm As New frmNoGenerated(generatedNumber, "", "", "")
+                    Dim frm As New frmNoGenerated(generatedNumber, "", "", "", customerAssignCounter.Customer.FK_emdPatients)
                     frm.ShowDialog(Me)
                 Else
                     MessageBox.Show("There was some error on the process. Please try again", "Error Generating Number", MessageBoxButtons.OK, MessageBoxIcon.Error)
@@ -1626,7 +1626,7 @@ showBoard:
                     counter = "PLEASE GO TO CASHIER 1"
                 End If
                 Dim notes As String = ("PLEASE WAIT FOR YOUR NUMBER TO BE CALLED. THANK YOU").Trim.ToUpper
-                Dim frm As New frmNoGenerated(generatedNumber, patientName, counter, notes)
+                Dim frm As New frmNoGenerated(generatedNumber, patientName, counter, notes, customerAssignCounter.Customer.FK_emdPatients)
                 frm.ShowDialog()
             Else
                 MessageBox.Show("There was some error on the process. Please try again", "Error Generating Number", MessageBoxButtons.OK, MessageBoxIcon.Error)
@@ -3211,7 +3211,7 @@ showBoard:
                                             Else
                                                 patientName = patient.CustomerInfo.Lastname.ToUpper & ", " & patient.CustomerInfo.FirstName.ToUpper & " " & patient.CustomerInfo.Middlename.ToUpper
                                             End If
-                                            Dim frmGenerated As New frmNoGenerated(queueNumber, patientName, counter, notes)
+                                            Dim frmGenerated As New frmNoGenerated(queueNumber, patientName, counter, notes, patient.FK_emdPatients)
                                             frmGenerated.ShowDialog()
                                             Me.forBizboxConsultation = Nothing
                                             Me.GetServingCustomerPCCInfo()

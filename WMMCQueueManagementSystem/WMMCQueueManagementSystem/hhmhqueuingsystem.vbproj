@@ -38,7 +38,7 @@
     <MinimumRequiredVersion>3.0.0.1</MinimumRequiredVersion>
     <WebPage>publish.htm</WebPage>
     <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
-    <ApplicationRevision>14</ApplicationRevision>
+    <ApplicationRevision>25</ApplicationRevision>
     <ApplicationVersion>3.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -180,6 +180,7 @@
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Management" />
+    <Reference Include="System.Net.Http" />
     <Reference Include="System.Speech" />
     <Reference Include="System.Transactions" />
     <Reference Include="System.Web" />
@@ -226,6 +227,7 @@
     <Compile Include="Controllers\ServerAssignCounterController.vb" />
     <Compile Include="Controllers\ServerController.vb" />
     <Compile Include="Controllers\ServerTransactionController.vb" />
+    <Compile Include="Controllers\WifiVoucherController.vb" />
     <Compile Include="Forms\frmAdminVerification.Designer.vb">
       <DependentUpon>frmAdminVerification.vb</DependentUpon>
     </Compile>
@@ -364,6 +366,12 @@
     <Compile Include="Forms\frmHomeCounterSolo.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Forms\frmManageClinicHours.Designer.vb">
+      <DependentUpon>frmManageClinicHours.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmManageClinicHours.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\frmManageDoctorsClinic.Designer.vb">
       <DependentUpon>frmManageDoctorsClinic.vb</DependentUpon>
     </Compile>
@@ -458,6 +466,12 @@
       <DependentUpon>frmTransfer-Clinic.vb</DependentUpon>
     </Compile>
     <Compile Include="Forms\frmTransfer-Clinic.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmTransferClinicOption.Designer.vb">
+      <DependentUpon>frmTransferClinicOption.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmTransferClinicOption.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\frmViewPicture.Designer.vb">
@@ -689,6 +703,7 @@
     <Compile Include="Models\CustomerQueuedSummary.vb" />
     <Compile Include="Models\DetailModel.vb" />
     <Compile Include="Models\Diagnostics.vb" />
+    <Compile Include="Models\DoctorSchedule.vb" />
     <Compile Include="Models\DoctorsPrescription.vb" />
     <Compile Include="Models\DoctorSummary.vb" />
     <Compile Include="Models\ERDoctorsOrder.vb" />
@@ -696,6 +711,10 @@
     <Compile Include="Models\FollowUpConsultation.vb" />
     <Compile Include="Models\GetServingCustomerOfServer.vb" />
     <Compile Include="Models\HealthCheck.vb" />
+    <Compile Include="Models\HttpClientAccessToken.vb" />
+    <Compile Include="Models\HttpClientGeneratedVoucher.vb" />
+    <Compile Include="Models\HttpClientVoucherData.vb" />
+    <Compile Include="Models\HttpClientVoucherList.vb" />
     <Compile Include="Models\IPAddressModel.vb" />
     <Compile Include="Models\mghroomstatus.vb" />
     <Compile Include="Models\NurseNote.vb" />
@@ -811,6 +830,12 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ticketNoReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\WifiVoucher.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WifiVoucher.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Sub Forms\CustomerItem.Designer.vb">
@@ -1019,6 +1044,9 @@
     <EmbeddedResource Include="Forms\frmHomeCounterSolo.resx">
       <DependentUpon>frmHomeCounterSolo.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmManageClinicHours.resx">
+      <DependentUpon>frmManageClinicHours.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmManageDoctorsClinic.resx">
       <DependentUpon>frmManageDoctorsClinic.vb</DependentUpon>
     </EmbeddedResource>
@@ -1158,6 +1186,9 @@
     <EmbeddedResource Include="Forms\frmTransfer-Clinic.resx">
       <DependentUpon>frmTransfer-Clinic.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmTransferClinicOption.resx">
+      <DependentUpon>frmTransferClinicOption.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmTransferNo.resx">
       <DependentUpon>frmTransferNo.vb</DependentUpon>
     </EmbeddedResource>
@@ -1212,6 +1243,10 @@
     <EmbeddedResource Include="Reports\ticketNoReport.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>ticketNoReport.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\WifiVoucher.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>WifiVoucher.vb</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Sub Forms\CustomerItem.resx">
       <DependentUpon>CustomerItem.vb</DependentUpon>
@@ -1441,6 +1476,9 @@
     </PackageReference>
     <PackageReference Include="EPPlus">
       <Version>6.2.1</Version>
+    </PackageReference>
+    <PackageReference Include="FreeSpire.Barcode">
+      <Version>6.6.0</Version>
     </PackageReference>
     <PackageReference Include="FreeSpire.PDFViewer">
       <Version>4.1.0</Version>

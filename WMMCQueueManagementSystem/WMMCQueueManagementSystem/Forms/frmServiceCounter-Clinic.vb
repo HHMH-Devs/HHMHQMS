@@ -480,6 +480,13 @@
             End If
             Me.dgvConsultationHistory_SickLeave.Rows.Clear()
             If Not Information.IsNothing(bizboxRegistration.SickLeaves) Then
+                Me.dgvSickLeave.Rows.Clear()
+                Dim leave1 As Bizbox_ConsultationSickLeave
+                For Each leave1 In bizboxRegistration.SickLeaves
+                    Dim values As Object() = New Object() {leave1.ID, Strings.Format(leave1.StartDate, "MMM dd, yyyy @ h:mm tt"), Strings.Format(leave1.EndDate, "MMM dd, yyyy @ h:mm tt"), leave1.ComputedDays}
+                    Me.dgvSickLeave.Rows.Add(values)
+                    Me.dgvSickLeave.Rows((Me.dgvSickLeave.Rows.Count - 1)).Height = 30
+                Next
                 Dim leave As Bizbox_ConsultationSickLeave
                 For Each leave In bizboxRegistration.SickLeaves
                     Me.dgvConsultationHistory_SickLeave.Rows.Add(leave.ID, Strings.Format(leave.StartDate, "MMM dd, yyyy @ h:mm tt"), Strings.Format(leave.EndDate, "MMM dd, yyyy @ h:mm tt"), leave.ComputedDays)
@@ -753,7 +760,7 @@
                             Else
                                 patientName = String.Concat(customer.CustomerInfo.Lastname.ToUpper, ", ", customer.CustomerInfo.FirstName.ToUpper, " ", customer.CustomerInfo.Middlename.ToUpper)
                             End If
-                            Dim frm As New frmNoGenerated(ticketNumber, patientName, counterName, notes)
+                            Dim frm As New frmNoGenerated(ticketNumber, patientName, counterName, notes, customer.FK_emdPatients)
                             frm.ShowDialog()
                         End If
                         If (Not Information.IsNothing(anlrRadQueueNumber) AndAlso (anlrRadQueueNumber.Trim.Length > 0)) Then
@@ -769,7 +776,7 @@
                             Else
                                 patientName = String.Concat(customer.CustomerInfo.Lastname.ToUpper, ", ", customer.CustomerInfo.FirstName.ToUpper, " ", customer.CustomerInfo.Middlename.ToUpper)
                             End If
-                            Dim frm As New frmNoGenerated(ticketNumber, patientName, counterName, notes)
+                            Dim frm As New frmNoGenerated(ticketNumber, patientName, counterName, notes, customer.FK_emdPatients)
                             frm.ShowDialog()
                         End If
                         If (Not Information.IsNothing(dxQueueNumber) AndAlso (dxQueueNumber.Trim.Length > 0)) Then
@@ -785,7 +792,7 @@
                             Else
                                 patientName = String.Concat(customer.CustomerInfo.Lastname.ToUpper, ", ", customer.CustomerInfo.FirstName.ToUpper, " ", customer.CustomerInfo.Middlename.ToUpper)
                             End If
-                            Dim frm As New frmNoGenerated(ticketNumber, patientName, counterName, notes)
+                            Dim frm As New frmNoGenerated(ticketNumber, patientName, counterName, notes, customer.FK_emdPatients)
                             frm.ShowDialog()
                         End If
                     ElseIf frmIsDOle.DialogResult = DialogResult.No Then 'None Dole requires Payment Method
@@ -827,7 +834,7 @@
                                         Else
                                             patientName = patient.CustomerInfo.Lastname.ToUpper & ", " & patient.CustomerInfo.FirstName.ToUpper & " " & patient.CustomerInfo.Middlename.ToUpper
                                         End If
-                                        Dim frmGenerated As New frmNoGenerated(queueNumber, patientName, counter, notes)
+                                        Dim frmGenerated As New frmNoGenerated(queueNumber, patientName, counter, notes, patient.FK_emdPatients)
                                         frmGenerated.ShowDialog()
                                     End If
                                 End If
@@ -848,7 +855,7 @@
                         Else
                             patientName = String.Concat(customer.CustomerInfo.Lastname.ToUpper, ", ", customer.CustomerInfo.FirstName.ToUpper, " ", customer.CustomerInfo.Middlename.ToUpper)
                         End If
-                        Dim frm As New frmNoGenerated(ticketNumber, patientName, counterName, notes)
+                        Dim frm As New frmNoGenerated(ticketNumber, patientName, counterName, notes, customer.FK_emdPatients)
                         frm.ShowDialog()
                     End If
                     Me.pnlConsultation_Blocker1.Show()
@@ -892,7 +899,7 @@
                             Else
                                 patientName = String.Concat(customer.CustomerInfo.Lastname.ToUpper, ", ", customer.CustomerInfo.FirstName.ToUpper, " ", customer.CustomerInfo.Middlename.ToUpper)
                             End If
-                            Dim frm As New frmNoGenerated(ticketNumber, patientName, counterName, notes)
+                            Dim frm As New frmNoGenerated(ticketNumber, patientName, counterName, notes, customer.FK_emdPatients)
                             frm.ShowDialog()
                         End If
                         If (Not Information.IsNothing(anlrRadQueueNumber) AndAlso (anlrRadQueueNumber.Trim.Length > 0)) Then
@@ -908,7 +915,7 @@
                             Else
                                 patientName = String.Concat(customer.CustomerInfo.Lastname.ToUpper, ", ", customer.CustomerInfo.FirstName.ToUpper, " ", customer.CustomerInfo.Middlename.ToUpper)
                             End If
-                            Dim frm As New frmNoGenerated(ticketNumber, patientName, counterName, notes)
+                            Dim frm As New frmNoGenerated(ticketNumber, patientName, counterName, notes, customer.FK_emdPatients)
                             frm.ShowDialog()
                         End If
                         If (Not Information.IsNothing(dxQueueNumber) AndAlso (dxQueueNumber.Trim.Length > 0)) Then
@@ -924,7 +931,7 @@
                             Else
                                 patientName = String.Concat(customer.CustomerInfo.Lastname.ToUpper, ", ", customer.CustomerInfo.FirstName.ToUpper, " ", customer.CustomerInfo.Middlename.ToUpper)
                             End If
-                            Dim frm As New frmNoGenerated(ticketNumber, patientName, counterName, notes)
+                            Dim frm As New frmNoGenerated(ticketNumber, patientName, counterName, notes, customer.FK_emdPatients)
                             frm.ShowDialog()
                         End If
                     ElseIf frmIsDOle.DialogResult = DialogResult.No Then 'None Dole requires Payment Method
@@ -966,7 +973,7 @@
                                         Else
                                             patientName = patient.CustomerInfo.Lastname.ToUpper & ", " & patient.CustomerInfo.FirstName.ToUpper & " " & patient.CustomerInfo.Middlename.ToUpper
                                         End If
-                                        Dim frmGenerated As New frmNoGenerated(queueNumber, patientName, counter, notes)
+                                        Dim frmGenerated As New frmNoGenerated(queueNumber, patientName, counter, notes, patient.FK_emdPatients)
                                         frmGenerated.ShowDialog()
                                     End If
                                 End If
@@ -987,7 +994,7 @@
                         Else
                             patientName = String.Concat(customer.CustomerInfo.Lastname.ToUpper, ", ", customer.CustomerInfo.FirstName.ToUpper, " ", customer.CustomerInfo.Middlename.ToUpper)
                         End If
-                        Dim frm As New frmNoGenerated(ticketNumber, patientName, counterName, notes)
+                        Dim frm As New frmNoGenerated(ticketNumber, patientName, counterName, notes, customer.FK_emdPatients)
                         frm.ShowDialog()
                     End If
                     Me.pnlConsultation_Blocker1.Show()
@@ -1190,7 +1197,7 @@
                     counter = "PLEASE GO TO CASHIER 1"
                 End If
                 Dim notes As String = "THIS IS YOUR APPOINTMENT NUMBER FOR CLINIC OF DR." & LoggedServer.ServerAssignCounter.Server.LastName
-                Dim frm As New frmNoGenerated(generatedNumber, patientName, counter, notes)
+                Dim frm As New frmNoGenerated(generatedNumber, patientName, counter, notes, customerInfo.FK_emdPatients)
                 frm.ShowDialog()
             Else
                 MessageBox.Show("There was some error on the process. Please try again", "Error Generating Number", MessageBoxButtons.OK, MessageBoxIcon.Error)

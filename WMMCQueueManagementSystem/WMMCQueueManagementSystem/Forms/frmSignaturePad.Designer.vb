@@ -245,11 +245,11 @@ Partial Class frmSignaturePad
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Honeydew
         Me.ClientSize = New System.Drawing.Size(463, 372)
-        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.pnlInputDeviceSelector)
-        Me.Controls.Add(Me.pnlWacomSignaturePad)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.pnlMouseSignaturePad)
         Me.Controls.Add(Me.Panel1)
+        Me.Controls.Add(Me.pnlWacomSignaturePad)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.KeyPreview = True
         Me.Name = "frmSignaturePad"

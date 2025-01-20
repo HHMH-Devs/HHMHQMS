@@ -135,6 +135,51 @@ Public Class frmCounterQueuingBoard_ClinicPCC
                 callString = callString & tmpServingCustomerOfServers.customerAssigncounter.ProcessedQueueNumber & ", "
                 highlightNumber = tmpServingCustomerOfServers.customerAssigncounter.ProcessedQueueNumber
             End If
+        ElseIf id13 = tmpServingCustomerOfServers.serverTransaction.ServerTransaction_ID Then
+            If counter13.ToLower <> tmpServingCustomerOfServers.customerAssigncounter.ProcessedQueueNumber.ToLower Then
+                callString = callString & tmpServingCustomerOfServers.customerAssigncounter.ProcessedQueueNumber & ", "
+                highlightNumber = tmpServingCustomerOfServers.customerAssigncounter.ProcessedQueueNumber
+            End If
+        ElseIf id14 = tmpServingCustomerOfServers.serverTransaction.ServerTransaction_ID Then
+            If counter14.ToLower <> tmpServingCustomerOfServers.customerAssigncounter.ProcessedQueueNumber.ToLower Then
+                callString = callString & tmpServingCustomerOfServers.customerAssigncounter.ProcessedQueueNumber & ", "
+                highlightNumber = tmpServingCustomerOfServers.customerAssigncounter.ProcessedQueueNumber
+            End If
+        ElseIf id15 = tmpServingCustomerOfServers.serverTransaction.ServerTransaction_ID Then
+            If counter15.ToLower <> tmpServingCustomerOfServers.customerAssigncounter.ProcessedQueueNumber.ToLower Then
+                callString = callString & tmpServingCustomerOfServers.customerAssigncounter.ProcessedQueueNumber & ", "
+                highlightNumber = tmpServingCustomerOfServers.customerAssigncounter.ProcessedQueueNumber
+            End If
+        ElseIf id16 = tmpServingCustomerOfServers.serverTransaction.ServerTransaction_ID Then
+            If counter16.ToLower <> tmpServingCustomerOfServers.customerAssigncounter.ProcessedQueueNumber.ToLower Then
+                callString = callString & tmpServingCustomerOfServers.customerAssigncounter.ProcessedQueueNumber & ", "
+                highlightNumber = tmpServingCustomerOfServers.customerAssigncounter.ProcessedQueueNumber
+            End If
+        ElseIf id17 = tmpServingCustomerOfServers.serverTransaction.ServerTransaction_ID Then
+            If counter17.ToLower <> tmpServingCustomerOfServers.customerAssigncounter.ProcessedQueueNumber.ToLower Then
+                callString = callString & tmpServingCustomerOfServers.customerAssigncounter.ProcessedQueueNumber & ", "
+                highlightNumber = tmpServingCustomerOfServers.customerAssigncounter.ProcessedQueueNumber
+            End If
+        ElseIf id18 = tmpServingCustomerOfServers.serverTransaction.ServerTransaction_ID Then
+            If counter18.ToLower <> tmpServingCustomerOfServers.customerAssigncounter.ProcessedQueueNumber.ToLower Then
+                callString = callString & tmpServingCustomerOfServers.customerAssigncounter.ProcessedQueueNumber & ", "
+                highlightNumber = tmpServingCustomerOfServers.customerAssigncounter.ProcessedQueueNumber
+            End If
+        ElseIf id18 = tmpServingCustomerOfServers.serverTransaction.ServerTransaction_ID Then
+            If counter18.ToLower <> tmpServingCustomerOfServers.customerAssigncounter.ProcessedQueueNumber.ToLower Then
+                callString = callString & tmpServingCustomerOfServers.customerAssigncounter.ProcessedQueueNumber & ", "
+                highlightNumber = tmpServingCustomerOfServers.customerAssigncounter.ProcessedQueueNumber
+            End If
+        ElseIf id19 = tmpServingCustomerOfServers.serverTransaction.ServerTransaction_ID Then
+            If counter19.ToLower <> tmpServingCustomerOfServers.customerAssigncounter.ProcessedQueueNumber.ToLower Then
+                callString = callString & tmpServingCustomerOfServers.customerAssigncounter.ProcessedQueueNumber & ", "
+                highlightNumber = tmpServingCustomerOfServers.customerAssigncounter.ProcessedQueueNumber
+            End If
+        ElseIf id20 = tmpServingCustomerOfServers.serverTransaction.ServerTransaction_ID Then
+            If counter20.ToLower <> tmpServingCustomerOfServers.customerAssigncounter.ProcessedQueueNumber.ToLower Then
+                callString = callString & tmpServingCustomerOfServers.customerAssigncounter.ProcessedQueueNumber & ", "
+                highlightNumber = tmpServingCustomerOfServers.customerAssigncounter.ProcessedQueueNumber
+            End If
         End If
     End Sub
 
@@ -217,6 +262,45 @@ Public Class frmCounterQueuingBoard_ClinicPCC
                 lblCounter12.Text = ""
                 lbserving12.Text = ""
                 id12 = 0
+
+                lblCounter13.Text = ""
+                lbserving13.Text = ""
+                id13 = 0
+
+
+                lblCounter14.Text = ""
+                lbserving14.Text = ""
+                id14 = 0
+
+
+                lblCounter15.Text = ""
+                lbserving15.Text = ""
+                id15 = 0
+
+
+                lblCounter16.Text = ""
+                lbserving16.Text = ""
+                id16 = 0
+
+                lblCounter17.Text = ""
+                lbserving17.Text = ""
+                id17 = 0
+
+
+                lblCounter18.Text = ""
+                lbserving18.Text = ""
+                id18 = 0
+
+
+                lblCounter19.Text = ""
+                lbserving19.Text = ""
+                id19 = 0
+
+
+                lblCounter20.Text = ""
+                lbserving20.Text = ""
+                id20 = 0
+
                 GoTo SKIP
             End If
             If tmpServingCustomerOfServers.Count > 1 Then
@@ -290,6 +374,44 @@ Public Class frmCounterQueuingBoard_ClinicPCC
                 lblCounter12.Text = ""
                 lbserving12.Text = ""
                 id12 = 0
+
+                lblCounter13.Text = ""
+                lbserving13.Text = ""
+                id13 = 0
+
+
+                lblCounter14.Text = ""
+                lbserving14.Text = ""
+                id14 = 0
+
+
+                lblCounter15.Text = ""
+                lbserving15.Text = ""
+                id15 = 0
+
+
+                lblCounter16.Text = ""
+                lbserving16.Text = ""
+                id16 = 0
+
+                lblCounter17.Text = ""
+                lbserving17.Text = ""
+                id17 = 0
+
+
+                lblCounter18.Text = ""
+                lbserving18.Text = ""
+                id18 = 0
+
+
+                lblCounter19.Text = ""
+                lbserving19.Text = ""
+                id19 = 0
+
+
+                lblCounter20.Text = ""
+                lbserving20.Text = ""
+                id20 = 0
                 GoTo SKIP
             End If
             If tmpServingCustomerOfServers.Count > 2 Then
@@ -359,6 +481,44 @@ Public Class frmCounterQueuingBoard_ClinicPCC
                 lblCounter12.Text = ""
                 lbserving12.Text = ""
                 id12 = 0
+
+                lblCounter13.Text = ""
+                lbserving13.Text = ""
+                id13 = 0
+
+
+                lblCounter14.Text = ""
+                lbserving14.Text = ""
+                id14 = 0
+
+
+                lblCounter15.Text = ""
+                lbserving15.Text = ""
+                id15 = 0
+
+
+                lblCounter16.Text = ""
+                lbserving16.Text = ""
+                id16 = 0
+
+                lblCounter17.Text = ""
+                lbserving17.Text = ""
+                id17 = 0
+
+
+                lblCounter18.Text = ""
+                lbserving18.Text = ""
+                id18 = 0
+
+
+                lblCounter19.Text = ""
+                lbserving19.Text = ""
+                id19 = 0
+
+
+                lblCounter20.Text = ""
+                lbserving20.Text = ""
+                id20 = 0
                 GoTo SKIP
             End If
             If tmpServingCustomerOfServers.Count > 3 Then
@@ -379,7 +539,6 @@ Public Class frmCounterQueuingBoard_ClinicPCC
                     End If
                 End If
             Else
-
                 lblCounter4.Text = ""
                 lbserving4.Text = ""
                 id4 = 0
@@ -423,6 +582,44 @@ Public Class frmCounterQueuingBoard_ClinicPCC
                 lblCounter12.Text = ""
                 lbserving12.Text = ""
                 id12 = 0
+
+                lblCounter13.Text = ""
+                lbserving13.Text = ""
+                id13 = 0
+
+
+                lblCounter14.Text = ""
+                lbserving14.Text = ""
+                id14 = 0
+
+
+                lblCounter15.Text = ""
+                lbserving15.Text = ""
+                id15 = 0
+
+
+                lblCounter16.Text = ""
+                lbserving16.Text = ""
+                id16 = 0
+
+                lblCounter17.Text = ""
+                lbserving17.Text = ""
+                id17 = 0
+
+
+                lblCounter18.Text = ""
+                lbserving18.Text = ""
+                id18 = 0
+
+
+                lblCounter19.Text = ""
+                lbserving19.Text = ""
+                id19 = 0
+
+
+                lblCounter20.Text = ""
+                lbserving20.Text = ""
+                id20 = 0
                 GoTo SKIP
             End If
             If tmpServingCustomerOfServers.Count > 4 Then
@@ -482,6 +679,44 @@ Public Class frmCounterQueuingBoard_ClinicPCC
                 lblCounter12.Text = ""
                 lbserving12.Text = ""
                 id12 = 0
+
+                lblCounter13.Text = ""
+                lbserving13.Text = ""
+                id13 = 0
+
+
+                lblCounter14.Text = ""
+                lbserving14.Text = ""
+                id14 = 0
+
+
+                lblCounter15.Text = ""
+                lbserving15.Text = ""
+                id15 = 0
+
+
+                lblCounter16.Text = ""
+                lbserving16.Text = ""
+                id16 = 0
+
+                lblCounter17.Text = ""
+                lbserving17.Text = ""
+                id17 = 0
+
+
+                lblCounter18.Text = ""
+                lbserving18.Text = ""
+                id18 = 0
+
+
+                lblCounter19.Text = ""
+                lbserving19.Text = ""
+                id19 = 0
+
+
+                lblCounter20.Text = ""
+                lbserving20.Text = ""
+                id20 = 0
                 GoTo SKIP
             End If
             If tmpServingCustomerOfServers.Count > 5 Then
@@ -502,7 +737,6 @@ Public Class frmCounterQueuingBoard_ClinicPCC
                     End If
                 End If
             Else
-
                 lblCounter6.Text = ""
                 lbserving6.Text = ""
                 id6 = 0
@@ -536,6 +770,44 @@ Public Class frmCounterQueuingBoard_ClinicPCC
                 lblCounter12.Text = ""
                 lbserving12.Text = ""
                 id12 = 0
+
+                lblCounter13.Text = ""
+                lbserving13.Text = ""
+                id13 = 0
+
+
+                lblCounter14.Text = ""
+                lbserving14.Text = ""
+                id14 = 0
+
+
+                lblCounter15.Text = ""
+                lbserving15.Text = ""
+                id15 = 0
+
+
+                lblCounter16.Text = ""
+                lbserving16.Text = ""
+                id16 = 0
+
+                lblCounter17.Text = ""
+                lbserving17.Text = ""
+                id17 = 0
+
+
+                lblCounter18.Text = ""
+                lbserving18.Text = ""
+                id18 = 0
+
+
+                lblCounter19.Text = ""
+                lbserving19.Text = ""
+                id19 = 0
+
+
+                lblCounter20.Text = ""
+                lbserving20.Text = ""
+                id20 = 0
                 GoTo SKIP
             End If
             If tmpServingCustomerOfServers.Count > 6 Then
@@ -556,7 +828,6 @@ Public Class frmCounterQueuingBoard_ClinicPCC
                     End If
                 End If
             Else
-
                 lblCounter7.Text = ""
                 lbserving7.Text = ""
                 id7 = 0
@@ -585,6 +856,44 @@ Public Class frmCounterQueuingBoard_ClinicPCC
                 lblCounter12.Text = ""
                 lbserving12.Text = ""
                 id12 = 0
+
+                lblCounter13.Text = ""
+                lbserving13.Text = ""
+                id13 = 0
+
+
+                lblCounter14.Text = ""
+                lbserving14.Text = ""
+                id14 = 0
+
+
+                lblCounter15.Text = ""
+                lbserving15.Text = ""
+                id15 = 0
+
+
+                lblCounter16.Text = ""
+                lbserving16.Text = ""
+                id16 = 0
+
+                lblCounter17.Text = ""
+                lbserving17.Text = ""
+                id17 = 0
+
+
+                lblCounter18.Text = ""
+                lbserving18.Text = ""
+                id18 = 0
+
+
+                lblCounter19.Text = ""
+                lbserving19.Text = ""
+                id19 = 0
+
+
+                lblCounter20.Text = ""
+                lbserving20.Text = ""
+                id20 = 0
                 GoTo SKIP
             End If
             If tmpServingCustomerOfServers.Count > 7 Then
@@ -605,7 +914,6 @@ Public Class frmCounterQueuingBoard_ClinicPCC
                     End If
                 End If
             Else
-
                 lblCounter8.Text = ""
                 lbserving8.Text = ""
                 id8 = 0
@@ -629,6 +937,44 @@ Public Class frmCounterQueuingBoard_ClinicPCC
                 lblCounter12.Text = ""
                 lbserving12.Text = ""
                 id12 = 0
+
+                lblCounter13.Text = ""
+                lbserving13.Text = ""
+                id13 = 0
+
+
+                lblCounter14.Text = ""
+                lbserving14.Text = ""
+                id14 = 0
+
+
+                lblCounter15.Text = ""
+                lbserving15.Text = ""
+                id15 = 0
+
+
+                lblCounter16.Text = ""
+                lbserving16.Text = ""
+                id16 = 0
+
+                lblCounter17.Text = ""
+                lbserving17.Text = ""
+                id17 = 0
+
+
+                lblCounter18.Text = ""
+                lbserving18.Text = ""
+                id18 = 0
+
+
+                lblCounter19.Text = ""
+                lbserving19.Text = ""
+                id19 = 0
+
+
+                lblCounter20.Text = ""
+                lbserving20.Text = ""
+                id20 = 0
                 GoTo SKIP
             End If
             If tmpServingCustomerOfServers.Count > 8 Then
@@ -649,7 +995,6 @@ Public Class frmCounterQueuingBoard_ClinicPCC
                     End If
                 End If
             Else
-
                 lblCounter9.Text = ""
                 lbserving9.Text = ""
                 id9 = 0
@@ -668,6 +1013,44 @@ Public Class frmCounterQueuingBoard_ClinicPCC
                 lblCounter12.Text = ""
                 lbserving12.Text = ""
                 id12 = 0
+
+                lblCounter13.Text = ""
+                lbserving13.Text = ""
+                id13 = 0
+
+
+                lblCounter14.Text = ""
+                lbserving14.Text = ""
+                id14 = 0
+
+
+                lblCounter15.Text = ""
+                lbserving15.Text = ""
+                id15 = 0
+
+
+                lblCounter16.Text = ""
+                lbserving16.Text = ""
+                id16 = 0
+
+                lblCounter17.Text = ""
+                lbserving17.Text = ""
+                id17 = 0
+
+
+                lblCounter18.Text = ""
+                lbserving18.Text = ""
+                id18 = 0
+
+
+                lblCounter19.Text = ""
+                lbserving19.Text = ""
+                id19 = 0
+
+
+                lblCounter20.Text = ""
+                lbserving20.Text = ""
+                id20 = 0
                 GoTo SKIP
             End If
             If tmpServingCustomerOfServers.Count > 9 Then
@@ -688,7 +1071,6 @@ Public Class frmCounterQueuingBoard_ClinicPCC
                     End If
                 End If
             Else
-
                 lblCounter10.Text = ""
                 lbserving10.Text = ""
                 id10 = 0
@@ -702,6 +1084,44 @@ Public Class frmCounterQueuingBoard_ClinicPCC
                 lblCounter12.Text = ""
                 lbserving12.Text = ""
                 id12 = 0
+
+                lblCounter13.Text = ""
+                lbserving13.Text = ""
+                id13 = 0
+
+
+                lblCounter14.Text = ""
+                lbserving14.Text = ""
+                id14 = 0
+
+
+                lblCounter15.Text = ""
+                lbserving15.Text = ""
+                id15 = 0
+
+
+                lblCounter16.Text = ""
+                lbserving16.Text = ""
+                id16 = 0
+
+                lblCounter17.Text = ""
+                lbserving17.Text = ""
+                id17 = 0
+
+
+                lblCounter18.Text = ""
+                lbserving18.Text = ""
+                id18 = 0
+
+
+                lblCounter19.Text = ""
+                lbserving19.Text = ""
+                id19 = 0
+
+
+                lblCounter20.Text = ""
+                lbserving20.Text = ""
+                id20 = 0
                 GoTo SKIP
             End If
             If tmpServingCustomerOfServers.Count > 10 Then
@@ -722,20 +1142,58 @@ Public Class frmCounterQueuingBoard_ClinicPCC
                     End If
                 End If
             Else
-
                 lblCounter11.Text = ""
                 lbserving11.Text = ""
                 id11 = 0
 
+
                 lblCounter12.Text = ""
                 lbserving12.Text = ""
                 id12 = 0
+
+                lblCounter13.Text = ""
+                lbserving13.Text = ""
+                id13 = 0
+
+
+                lblCounter14.Text = ""
+                lbserving14.Text = ""
+                id14 = 0
+
+
+                lblCounter15.Text = ""
+                lbserving15.Text = ""
+                id15 = 0
+
+
+                lblCounter16.Text = ""
+                lbserving16.Text = ""
+                id16 = 0
+
+                lblCounter17.Text = ""
+                lbserving17.Text = ""
+                id17 = 0
+
+
+                lblCounter18.Text = ""
+                lbserving18.Text = ""
+                id18 = 0
+
+
+                lblCounter19.Text = ""
+                lbserving19.Text = ""
+                id19 = 0
+
+
+                lblCounter20.Text = ""
+                lbserving20.Text = ""
+                id20 = 0
                 GoTo SKIP
             End If
             If tmpServingCustomerOfServers.Count > 11 Then
                 lblCounter12.Text = If(Not IsNothing(tmpServingCustomerOfServers(11).serverTransaction), tmpServingCustomerOfServers(11).serverTransaction.CounterName, "")
                 If Not id12 = tmpServingCustomerOfServers(11).serverTransaction.ServerTransaction_ID Then
-                    lbserving12.Text = tmpServingCustomerOfServers(11).TemporaryQueueNumber
+                    lbserving12.Text = tmpServingCustomerOfServers(1).TemporaryQueueNumber
                 End If
                 id12 = tmpServingCustomerOfServers(11).serverTransaction.ServerTransaction_ID
                 If Not IsNothing(tmpServingCustomerOfServers(11).customerAssigncounter) Then
@@ -753,6 +1211,364 @@ Public Class frmCounterQueuingBoard_ClinicPCC
                 lblCounter12.Text = ""
                 lbserving12.Text = ""
                 id12 = 0
+
+                lblCounter13.Text = ""
+                lbserving13.Text = ""
+                id13 = 0
+
+
+                lblCounter14.Text = ""
+                lbserving14.Text = ""
+                id14 = 0
+
+
+                lblCounter15.Text = ""
+                lbserving15.Text = ""
+                id15 = 0
+
+
+                lblCounter16.Text = ""
+                lbserving16.Text = ""
+                id16 = 0
+
+                lblCounter17.Text = ""
+                lbserving17.Text = ""
+                id17 = 0
+
+
+                lblCounter18.Text = ""
+                lbserving18.Text = ""
+                id18 = 0
+
+
+                lblCounter19.Text = ""
+                lbserving19.Text = ""
+                id19 = 0
+
+
+                lblCounter20.Text = ""
+                lbserving20.Text = ""
+                id20 = 0
+                GoTo SKIP
+            End If
+            If tmpServingCustomerOfServers.Count > 12 Then
+                lblCounter13.Text = If(Not IsNothing(tmpServingCustomerOfServers(12).serverTransaction), tmpServingCustomerOfServers(12).serverTransaction.CounterName, "")
+                If Not id13 = tmpServingCustomerOfServers(12).serverTransaction.ServerTransaction_ID Then
+                    lbserving13.Text = tmpServingCustomerOfServers(12).TemporaryQueueNumber
+                End If
+                id13 = tmpServingCustomerOfServers(12).serverTransaction.ServerTransaction_ID
+                If Not IsNothing(tmpServingCustomerOfServers(12).customerAssigncounter) Then
+                    If Not tmpServingCustomerOfServers(12).customerAssigncounter.Priority = 2 Then
+                        lbserving13.Text = tmpServingCustomerOfServers(12).customerAssigncounter.ProcessedQueueNumber
+                        If tmpServingCustomerOfServers(12).customerAssigncounter.Priority > 0 Then
+                            lbserving13.ForeColor = Color.IndianRed
+                        Else
+                            lbserving13.ForeColor = Color.LimeGreen
+                        End If
+                        CheckIfServingChange(tmpServingCustomerOfServers(12))
+                    End If
+                End If
+            Else
+                lblCounter13.Text = ""
+                lbserving13.Text = ""
+                id13 = 0
+
+
+                lblCounter14.Text = ""
+                lbserving14.Text = ""
+                id14 = 0
+
+
+                lblCounter15.Text = ""
+                lbserving15.Text = ""
+                id15 = 0
+
+
+                lblCounter16.Text = ""
+                lbserving16.Text = ""
+                id16 = 0
+
+                lblCounter17.Text = ""
+                lbserving17.Text = ""
+                id17 = 0
+
+
+                lblCounter18.Text = ""
+                lbserving18.Text = ""
+                id18 = 0
+
+
+                lblCounter19.Text = ""
+                lbserving19.Text = ""
+                id19 = 0
+
+
+                lblCounter20.Text = ""
+                lbserving20.Text = ""
+                id20 = 0
+                GoTo SKIP
+            End If
+            If tmpServingCustomerOfServers.Count > 13 Then
+                lblCounter14.Text = If(Not IsNothing(tmpServingCustomerOfServers(13).serverTransaction), tmpServingCustomerOfServers(13).serverTransaction.CounterName, "")
+                If Not id14 = tmpServingCustomerOfServers(13).serverTransaction.ServerTransaction_ID Then
+                    lbserving14.Text = tmpServingCustomerOfServers(13).TemporaryQueueNumber
+                End If
+                id14 = tmpServingCustomerOfServers(13).serverTransaction.ServerTransaction_ID
+                If Not IsNothing(tmpServingCustomerOfServers(13).customerAssigncounter) Then
+                    If Not tmpServingCustomerOfServers(13).customerAssigncounter.Priority = 2 Then
+                        lbserving14.Text = tmpServingCustomerOfServers(13).customerAssigncounter.ProcessedQueueNumber
+                        If tmpServingCustomerOfServers(13).customerAssigncounter.Priority > 0 Then
+                            lbserving14.ForeColor = Color.IndianRed
+                        Else
+                            lbserving14.ForeColor = Color.LimeGreen
+                        End If
+                        CheckIfServingChange(tmpServingCustomerOfServers(13))
+                    End If
+                End If
+            Else
+                lblCounter14.Text = ""
+                lbserving14.Text = ""
+                id14 = 0
+
+
+                lblCounter15.Text = ""
+                lbserving15.Text = ""
+                id15 = 0
+
+
+                lblCounter16.Text = ""
+                lbserving16.Text = ""
+                id16 = 0
+
+                lblCounter17.Text = ""
+                lbserving17.Text = ""
+                id17 = 0
+
+
+                lblCounter18.Text = ""
+                lbserving18.Text = ""
+                id18 = 0
+
+
+                lblCounter19.Text = ""
+                lbserving19.Text = ""
+                id19 = 0
+
+
+                lblCounter20.Text = ""
+                lbserving20.Text = ""
+                id20 = 0
+                GoTo SKIP
+            End If
+            If tmpServingCustomerOfServers.Count > 14 Then
+                lblCounter15.Text = If(Not IsNothing(tmpServingCustomerOfServers(14).serverTransaction), tmpServingCustomerOfServers(14).serverTransaction.CounterName, "")
+                If Not id15 = tmpServingCustomerOfServers(14).serverTransaction.ServerTransaction_ID Then
+                    lbserving15.Text = tmpServingCustomerOfServers(14).TemporaryQueueNumber
+                End If
+                id15 = tmpServingCustomerOfServers(14).serverTransaction.ServerTransaction_ID
+                If Not IsNothing(tmpServingCustomerOfServers(14).customerAssigncounter) Then
+                    If Not tmpServingCustomerOfServers(14).customerAssigncounter.Priority = 2 Then
+                        lbserving15.Text = tmpServingCustomerOfServers(14).customerAssigncounter.ProcessedQueueNumber
+                        If tmpServingCustomerOfServers(14).customerAssigncounter.Priority > 0 Then
+                            lbserving15.ForeColor = Color.IndianRed
+                        Else
+                            lbserving15.ForeColor = Color.LimeGreen
+                        End If
+                        CheckIfServingChange(tmpServingCustomerOfServers(14))
+                    End If
+                End If
+            Else
+                lblCounter15.Text = ""
+                lbserving15.Text = ""
+                id15 = 0
+
+
+                lblCounter16.Text = ""
+                lbserving16.Text = ""
+                id16 = 0
+
+                lblCounter17.Text = ""
+                lbserving17.Text = ""
+                id17 = 0
+
+
+                lblCounter18.Text = ""
+                lbserving18.Text = ""
+                id18 = 0
+
+
+                lblCounter19.Text = ""
+                lbserving19.Text = ""
+                id19 = 0
+
+
+                lblCounter20.Text = ""
+                lbserving20.Text = ""
+                id20 = 0
+                GoTo SKIP
+            End If
+            If tmpServingCustomerOfServers.Count > 15 Then
+                lblCounter16.Text = If(Not IsNothing(tmpServingCustomerOfServers(15).serverTransaction), tmpServingCustomerOfServers(15).serverTransaction.CounterName, "")
+                If Not id16 = tmpServingCustomerOfServers(15).serverTransaction.ServerTransaction_ID Then
+                    lbserving16.Text = tmpServingCustomerOfServers(15).TemporaryQueueNumber
+                End If
+                id16 = tmpServingCustomerOfServers(15).serverTransaction.ServerTransaction_ID
+                If Not IsNothing(tmpServingCustomerOfServers(15).customerAssigncounter) Then
+                    If Not tmpServingCustomerOfServers(15).customerAssigncounter.Priority = 2 Then
+                        lbserving16.Text = tmpServingCustomerOfServers(15).customerAssigncounter.ProcessedQueueNumber
+                        If tmpServingCustomerOfServers(15).customerAssigncounter.Priority > 0 Then
+                            lbserving16.ForeColor = Color.IndianRed
+                        Else
+                            lbserving16.ForeColor = Color.LimeGreen
+                        End If
+                        CheckIfServingChange(tmpServingCustomerOfServers(15))
+                    End If
+                End If
+            Else
+                lblCounter16.Text = ""
+                lbserving16.Text = ""
+                id16 = 0
+
+                lblCounter17.Text = ""
+                lbserving17.Text = ""
+                id17 = 0
+
+
+                lblCounter18.Text = ""
+                lbserving18.Text = ""
+                id18 = 0
+
+
+                lblCounter19.Text = ""
+                lbserving19.Text = ""
+                id19 = 0
+
+
+                lblCounter20.Text = ""
+                lbserving20.Text = ""
+                id20 = 0
+                GoTo SKIP
+            End If
+            If tmpServingCustomerOfServers.Count > 16 Then
+                lblCounter17.Text = If(Not IsNothing(tmpServingCustomerOfServers(16).serverTransaction), tmpServingCustomerOfServers(16).serverTransaction.CounterName, "")
+                If Not id17 = tmpServingCustomerOfServers(16).serverTransaction.ServerTransaction_ID Then
+                    lbserving17.Text = tmpServingCustomerOfServers(16).TemporaryQueueNumber
+                End If
+                id17 = tmpServingCustomerOfServers(16).serverTransaction.ServerTransaction_ID
+                If Not IsNothing(tmpServingCustomerOfServers(16).customerAssigncounter) Then
+                    If Not tmpServingCustomerOfServers(16).customerAssigncounter.Priority = 2 Then
+                        lbserving17.Text = tmpServingCustomerOfServers(16).customerAssigncounter.ProcessedQueueNumber
+                        If tmpServingCustomerOfServers(16).customerAssigncounter.Priority > 0 Then
+                            lbserving17.ForeColor = Color.IndianRed
+                        Else
+                            lbserving17.ForeColor = Color.LimeGreen
+                        End If
+                        CheckIfServingChange(tmpServingCustomerOfServers(16))
+                    End If
+                End If
+            Else
+                lblCounter17.Text = ""
+                lbserving17.Text = ""
+                id17 = 0
+
+
+                lblCounter18.Text = ""
+                lbserving18.Text = ""
+                id18 = 0
+
+
+                lblCounter19.Text = ""
+                lbserving19.Text = ""
+                id19 = 0
+
+
+                lblCounter20.Text = ""
+                lbserving20.Text = ""
+                id20 = 0
+                GoTo SKIP
+            End If
+            If tmpServingCustomerOfServers.Count > 17 Then
+                lblCounter18.Text = If(Not IsNothing(tmpServingCustomerOfServers(17).serverTransaction), tmpServingCustomerOfServers(17).serverTransaction.CounterName, "")
+                If Not id18 = tmpServingCustomerOfServers(17).serverTransaction.ServerTransaction_ID Then
+                    lbserving18.Text = tmpServingCustomerOfServers(17).TemporaryQueueNumber
+                End If
+                id18 = tmpServingCustomerOfServers(17).serverTransaction.ServerTransaction_ID
+                If Not IsNothing(tmpServingCustomerOfServers(17).customerAssigncounter) Then
+                    If Not tmpServingCustomerOfServers(17).customerAssigncounter.Priority = 2 Then
+                        lbserving18.Text = tmpServingCustomerOfServers(17).customerAssigncounter.ProcessedQueueNumber
+                        If tmpServingCustomerOfServers(17).customerAssigncounter.Priority > 0 Then
+                            lbserving18.ForeColor = Color.IndianRed
+                        Else
+                            lbserving18.ForeColor = Color.LimeGreen
+                        End If
+                        CheckIfServingChange(tmpServingCustomerOfServers(17))
+                    End If
+                End If
+            Else
+                lblCounter18.Text = ""
+                lbserving18.Text = ""
+                id18 = 0
+
+
+                lblCounter19.Text = ""
+                lbserving19.Text = ""
+                id19 = 0
+
+
+                lblCounter20.Text = ""
+                lbserving20.Text = ""
+                id20 = 0
+                GoTo SKIP
+            End If
+            If tmpServingCustomerOfServers.Count > 18 Then
+                lblCounter19.Text = If(Not IsNothing(tmpServingCustomerOfServers(18).serverTransaction), tmpServingCustomerOfServers(18).serverTransaction.CounterName, "")
+                If Not id19 = tmpServingCustomerOfServers(18).serverTransaction.ServerTransaction_ID Then
+                    lbserving19.Text = tmpServingCustomerOfServers(18).TemporaryQueueNumber
+                End If
+                id19 = tmpServingCustomerOfServers(18).serverTransaction.ServerTransaction_ID
+                If Not IsNothing(tmpServingCustomerOfServers(18).customerAssigncounter) Then
+                    If Not tmpServingCustomerOfServers(18).customerAssigncounter.Priority = 2 Then
+                        lbserving19.Text = tmpServingCustomerOfServers(18).customerAssigncounter.ProcessedQueueNumber
+                        If tmpServingCustomerOfServers(18).customerAssigncounter.Priority > 0 Then
+                            lbserving19.ForeColor = Color.IndianRed
+                        Else
+                            lbserving19.ForeColor = Color.LimeGreen
+                        End If
+                        CheckIfServingChange(tmpServingCustomerOfServers(18))
+                    End If
+                End If
+            Else
+                lblCounter19.Text = ""
+                lbserving19.Text = ""
+                id19 = 0
+
+
+                lblCounter20.Text = ""
+                lbserving20.Text = ""
+                id20 = 0
+                GoTo SKIP
+            End If
+            If tmpServingCustomerOfServers.Count > 19 Then
+                lblCounter20.Text = If(Not IsNothing(tmpServingCustomerOfServers(19).serverTransaction), tmpServingCustomerOfServers(19).serverTransaction.CounterName, "")
+                If Not id20 = tmpServingCustomerOfServers(19).serverTransaction.ServerTransaction_ID Then
+                    lbserving20.Text = tmpServingCustomerOfServers(19).TemporaryQueueNumber
+                End If
+                id20 = tmpServingCustomerOfServers(19).serverTransaction.ServerTransaction_ID
+                If Not IsNothing(tmpServingCustomerOfServers(19).customerAssigncounter) Then
+                    If Not tmpServingCustomerOfServers(19).customerAssigncounter.Priority = 2 Then
+                        lbserving20.Text = tmpServingCustomerOfServers(19).customerAssigncounter.ProcessedQueueNumber
+                        If tmpServingCustomerOfServers(19).customerAssigncounter.Priority > 0 Then
+                            lbserving20.ForeColor = Color.IndianRed
+                        Else
+                            lbserving20.ForeColor = Color.LimeGreen
+                        End If
+                        CheckIfServingChange(tmpServingCustomerOfServers(19))
+                    End If
+                End If
+            Else
+                lblCounter20.Text = ""
+                lbserving20.Text = ""
+                id20 = 0
                 GoTo SKIP
             End If
         End If
@@ -769,6 +1585,15 @@ SKIP:
         counter10 = If(tmpServingCustomerOfServers.Count > 9, If(Not IsNothing(tmpServingCustomerOfServers(9).customerAssigncounter), tmpServingCustomerOfServers(9).customerAssigncounter.ProcessedQueueNumber, ""), "")
         counter11 = If(tmpServingCustomerOfServers.Count > 10, If(Not IsNothing(tmpServingCustomerOfServers(10).customerAssigncounter), tmpServingCustomerOfServers(10).customerAssigncounter.ProcessedQueueNumber, ""), "")
         counter12 = If(tmpServingCustomerOfServers.Count > 11, If(Not IsNothing(tmpServingCustomerOfServers(11).customerAssigncounter), tmpServingCustomerOfServers(11).customerAssigncounter.ProcessedQueueNumber, ""), "")
+        counter13 = If(tmpServingCustomerOfServers.Count > 12, If(Not IsNothing(tmpServingCustomerOfServers(12).customerAssigncounter), tmpServingCustomerOfServers(12).customerAssigncounter.ProcessedQueueNumber, ""), "")
+        counter14 = If(tmpServingCustomerOfServers.Count > 13, If(Not IsNothing(tmpServingCustomerOfServers(13).customerAssigncounter), tmpServingCustomerOfServers(13).customerAssigncounter.ProcessedQueueNumber, ""), "")
+        counter15 = If(tmpServingCustomerOfServers.Count > 14, If(Not IsNothing(tmpServingCustomerOfServers(14).customerAssigncounter), tmpServingCustomerOfServers(14).customerAssigncounter.ProcessedQueueNumber, ""), "")
+        counter16 = If(tmpServingCustomerOfServers.Count > 15, If(Not IsNothing(tmpServingCustomerOfServers(15).customerAssigncounter), tmpServingCustomerOfServers(15).customerAssigncounter.ProcessedQueueNumber, ""), "")
+        counter17 = If(tmpServingCustomerOfServers.Count > 16, If(Not IsNothing(tmpServingCustomerOfServers(16).customerAssigncounter), tmpServingCustomerOfServers(16).customerAssigncounter.ProcessedQueueNumber, ""), "")
+        counter18 = If(tmpServingCustomerOfServers.Count > 17, If(Not IsNothing(tmpServingCustomerOfServers(17).customerAssigncounter), tmpServingCustomerOfServers(17).customerAssigncounter.ProcessedQueueNumber, ""), "")
+        counter19 = If(tmpServingCustomerOfServers.Count > 18, If(Not IsNothing(tmpServingCustomerOfServers(18).customerAssigncounter), tmpServingCustomerOfServers(18).customerAssigncounter.ProcessedQueueNumber, ""), "")
+        counter20 = If(tmpServingCustomerOfServers.Count > 19, If(Not IsNothing(tmpServingCustomerOfServers(19).customerAssigncounter), tmpServingCustomerOfServers(19).customerAssigncounter.ProcessedQueueNumber, ""), "")
+
         If callString.Count > 0 Then
             CallNumber("Now Serving, Numbers, " & callString & " please proceed to your designated counters.")
             callString = ""

@@ -448,7 +448,7 @@ Partial Class frmManageServer
         Me.rbDoctor.AutoSize = True
         Me.rbDoctor.Location = New System.Drawing.Point(15, 59)
         Me.rbDoctor.Name = "rbDoctor"
-        Me.rbDoctor.Size = New System.Drawing.Size(130, 20)
+        Me.rbDoctor.Size = New System.Drawing.Size(129, 20)
         Me.rbDoctor.TabIndex = 3
         Me.rbDoctor.Text = "Doctor/Consultant"
         Me.rbDoctor.UseVisualStyleBackColor = True
@@ -459,7 +459,7 @@ Partial Class frmManageServer
         Me.rbPccAccount.Checked = True
         Me.rbPccAccount.Location = New System.Drawing.Point(15, 28)
         Me.rbPccAccount.Name = "rbPccAccount"
-        Me.rbPccAccount.Size = New System.Drawing.Size(148, 20)
+        Me.rbPccAccount.Size = New System.Drawing.Size(147, 20)
         Me.rbPccAccount.TabIndex = 0
         Me.rbPccAccount.TabStop = True
         Me.rbPccAccount.Text = "PCC Service Counter"

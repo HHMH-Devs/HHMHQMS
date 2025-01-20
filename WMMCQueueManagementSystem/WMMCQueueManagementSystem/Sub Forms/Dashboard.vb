@@ -9,6 +9,78 @@
 
     Private Sub Dashboard_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         lblThisPcCounterName.Text = SavedCounterName.ToUpper.Trim
+        LoadDoctorSchedules()
+    End Sub
+
+    Private Sub LoadDoctorSchedules()
+        Dim server = New ServerController()
+        Dim scheds = server.GetDoctorSchedule()
+        If scheds.Rows.Count > 0 Then
+            DoctorSheds_lv.BeginUpdate()
+            DoctorSheds_lv.Items.Clear()
+            For Each rw As DataRow In scheds.Rows
+                Dim dr = DoctorSheds_lv.Items.Find(rw.Item("prc"), False)
+                If dr.Length > 0 Then
+                    If Not IsDBNull(rw.Item("Day")) Then
+                        Select Case rw.Item("Day")
+                            Case "MONDAY"
+                                If Not IsDBNull(rw.Item("Availability")) Then
+                                    dr(0).SubItems.Add(rw.Item("Availability"))
+                                Else
+                                    dr(0).SubItems.Add("")
+                                End If
+                            Case "TUESDAY"
+                                If Not IsDBNull(rw.Item("Availability")) Then
+                                    dr(0).SubItems.Add(rw.Item("Availability"))
+                                Else
+                                    dr(0).SubItems.Add("")
+                                End If
+                            Case "WEDNESDAY"
+                                If Not IsDBNull(rw.Item("Availability")) Then
+                                    dr(0).SubItems.Add(rw.Item("Availability"))
+                                Else
+                                    dr(0).SubItems.Add("")
+                                End If
+                            Case "THURSDAY"
+                                If Not IsDBNull(rw.Item("Availability")) Then
+                                    dr(0).SubItems.Add(rw.Item("Availability"))
+                                Else
+                                    dr(0).SubItems.Add("")
+                                End If
+                            Case "FRIDAY"
+                                If Not IsDBNull(rw.Item("Availability")) Then
+                                    dr(0).SubItems.Add(rw.Item("Availability"))
+                                Else
+                                    dr(0).SubItems.Add("")
+                                End If
+                            Case "SATURDAY"
+                                If Not IsDBNull(rw.Item("Availability")) Then
+                                    dr(0).SubItems.Add(rw.Item("Availability"))
+                                Else
+                                    dr(0).SubItems.Add("")
+                                End If
+                            Case "SUNDAY"
+                                If Not IsDBNull(rw.Item("Availability")) Then
+                                    dr(0).SubItems.Add(rw.Item("Availability"))
+                                Else
+                                    dr(0).SubItems.Add("")
+                                End If
+                        End Select
+                    Else
+                        dr(0).SubItems.Add("")
+                    End If
+                Else
+                    Dim lvItem As ListViewItem = DoctorSheds_lv.Items.Add(rw.Item("fullname"))
+                    lvItem.Name = rw.Item("prc")
+                    If Not IsDBNull(rw.Item("Availability")) Then
+                        lvItem.SubItems.Add(rw.Item("Availability"))
+                    Else
+                        lvItem.SubItems.Add("")
+                    End If
+                End If
+            Next
+            DoctorSheds_lv.EndUpdate()
+        End If
     End Sub
 
     Private Sub btnShowCertainQueueBoard_Click(sender As Object, e As EventArgs) Handles btnShowQueueHistory.Click

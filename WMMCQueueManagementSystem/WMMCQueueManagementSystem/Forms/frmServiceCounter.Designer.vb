@@ -824,9 +824,9 @@ Partial Class frmServiceCounter
         Me.gbSelectedPatient_Actions.Controls.Add(Me.btnPatientHistory)
         Me.gbSelectedPatient_Actions.Controls.Add(Me.btnCancelQueueNumber)
         Me.gbSelectedPatient_Actions.Controls.Add(Me.btnReissueQueueNumber)
-        Me.gbSelectedPatient_Actions.Controls.Add(Me.btnTransafer)
         Me.gbSelectedPatient_Actions.Controls.Add(Me.btnSkipServingPatient)
         Me.gbSelectedPatient_Actions.Controls.Add(Me.btnStartCompleteServing)
+        Me.gbSelectedPatient_Actions.Controls.Add(Me.btnTransafer)
         Me.gbSelectedPatient_Actions.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.gbSelectedPatient_Actions.ForeColor = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(66, Byte), Integer))
         Me.gbSelectedPatient_Actions.Location = New System.Drawing.Point(346, 595)
@@ -1459,7 +1459,7 @@ Partial Class frmServiceCounter
         Me.pnlPrintForm.Controls.Add(Me.Button6)
         Me.pnlPrintForm.Controls.Add(Me.btnViewConsultationPrescription)
         Me.pnlPrintForm.Controls.Add(Me.btnViewConsultationConsent)
-        Me.pnlPrintForm.Location = New System.Drawing.Point(772, 7)
+        Me.pnlPrintForm.Location = New System.Drawing.Point(773, 7)
         Me.pnlPrintForm.Name = "pnlPrintForm"
         Me.pnlPrintForm.Size = New System.Drawing.Size(209, 104)
         Me.pnlPrintForm.TabIndex = 36
@@ -2831,7 +2831,7 @@ Partial Class frmServiceCounter
         DataGridViewCellStyle27.Font = New System.Drawing.Font("Arial Narrow", 9.75!)
         Me.dgvDiagnosticResults.RowsDefaultCellStyle = DataGridViewCellStyle27
         Me.dgvDiagnosticResults.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgvDiagnosticResults.Size = New System.Drawing.Size(961, 551)
+        Me.dgvDiagnosticResults.Size = New System.Drawing.Size(961, 557)
         Me.dgvDiagnosticResults.TabIndex = 46
         '
         'diagnosticID

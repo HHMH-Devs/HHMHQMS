@@ -45,7 +45,17 @@ Partial Class Dashboard
         Me.btnStatnaloneQueueBoard = New System.Windows.Forms.Button()
         Me.btnNormalQueueBoard = New System.Windows.Forms.Button()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
-        Me.Label2 = New System.Windows.Forms.Label()
+        Me.TabControl1 = New System.Windows.Forms.TabControl()
+        Me.TabPage1 = New System.Windows.Forms.TabPage()
+        Me.DoctorSheds_lv = New System.Windows.Forms.ListView()
+        Me.ColumnHeader1 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader2 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader3 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader4 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader5 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader6 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader7 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader8 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.lblThisPcCounterName = New System.Windows.Forms.Label()
         Me.Button2 = New System.Windows.Forms.Button()
@@ -60,6 +70,8 @@ Partial Class Dashboard
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox3.SuspendLayout()
+        Me.TabControl1.SuspendLayout()
+        Me.TabPage1.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -362,27 +374,87 @@ Partial Class Dashboard
         'GroupBox3
         '
         Me.GroupBox3.BackColor = System.Drawing.Color.Honeydew
-        Me.GroupBox3.Controls.Add(Me.Label2)
+        Me.GroupBox3.Controls.Add(Me.TabControl1)
         Me.GroupBox3.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox3.Location = New System.Drawing.Point(16, 99)
         Me.GroupBox3.Name = "GroupBox3"
         Me.GroupBox3.Size = New System.Drawing.Size(629, 450)
         Me.GroupBox3.TabIndex = 4
         Me.GroupBox3.TabStop = False
-        Me.GroupBox3.Text = "SUMMARY"
         '
-        'Label2
+        'TabControl1
         '
-        Me.Label2.BackColor = System.Drawing.Color.Transparent
-        Me.Label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 48.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.Color.Black
-        Me.Label2.Location = New System.Drawing.Point(6, 22)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(617, 420)
-        Me.Label2.TabIndex = 13
-        Me.Label2.Text = "UNDER CONSTRUCTION"
-        Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.TabControl1.Controls.Add(Me.TabPage1)
+        Me.TabControl1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.TabControl1.Location = New System.Drawing.Point(3, 22)
+        Me.TabControl1.Name = "TabControl1"
+        Me.TabControl1.SelectedIndex = 0
+        Me.TabControl1.Size = New System.Drawing.Size(623, 425)
+        Me.TabControl1.TabIndex = 0
+        '
+        'TabPage1
+        '
+        Me.TabPage1.Controls.Add(Me.DoctorSheds_lv)
+        Me.TabPage1.Location = New System.Drawing.Point(4, 29)
+        Me.TabPage1.Name = "TabPage1"
+        Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage1.Size = New System.Drawing.Size(615, 392)
+        Me.TabPage1.TabIndex = 0
+        Me.TabPage1.Text = "Doctors' Schedule"
+        Me.TabPage1.UseVisualStyleBackColor = True
+        '
+        'DoctorSheds_lv
+        '
+        Me.DoctorSheds_lv.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader1, Me.ColumnHeader2, Me.ColumnHeader3, Me.ColumnHeader4, Me.ColumnHeader5, Me.ColumnHeader6, Me.ColumnHeader7, Me.ColumnHeader8})
+        Me.DoctorSheds_lv.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.DoctorSheds_lv.FullRowSelect = True
+        Me.DoctorSheds_lv.HideSelection = False
+        Me.DoctorSheds_lv.Location = New System.Drawing.Point(3, 3)
+        Me.DoctorSheds_lv.Name = "DoctorSheds_lv"
+        Me.DoctorSheds_lv.Size = New System.Drawing.Size(609, 386)
+        Me.DoctorSheds_lv.TabIndex = 0
+        Me.DoctorSheds_lv.UseCompatibleStateImageBehavior = False
+        Me.DoctorSheds_lv.View = System.Windows.Forms.View.Details
+        '
+        'ColumnHeader1
+        '
+        Me.ColumnHeader1.Text = "Doctor's Name"
+        Me.ColumnHeader1.Width = 235
+        '
+        'ColumnHeader2
+        '
+        Me.ColumnHeader2.Text = "Moday"
+        Me.ColumnHeader2.Width = 174
+        '
+        'ColumnHeader3
+        '
+        Me.ColumnHeader3.Text = "Tuesday"
+        Me.ColumnHeader3.Width = 160
+        '
+        'ColumnHeader4
+        '
+        Me.ColumnHeader4.Text = "Wednesday"
+        Me.ColumnHeader4.Width = 184
+        '
+        'ColumnHeader5
+        '
+        Me.ColumnHeader5.Text = "Thursday"
+        Me.ColumnHeader5.Width = 146
+        '
+        'ColumnHeader6
+        '
+        Me.ColumnHeader6.Text = "Friday"
+        Me.ColumnHeader6.Width = 141
+        '
+        'ColumnHeader7
+        '
+        Me.ColumnHeader7.Text = "Saturday"
+        Me.ColumnHeader7.Width = 159
+        '
+        'ColumnHeader8
+        '
+        Me.ColumnHeader8.Text = "Sunday"
+        Me.ColumnHeader8.Width = 186
         '
         'GroupBox1
         '
@@ -463,6 +535,8 @@ Partial Class Dashboard
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox3.ResumeLayout(False)
+        Me.TabControl1.ResumeLayout(False)
+        Me.TabPage1.ResumeLayout(False)
         Me.GroupBox1.ResumeLayout(False)
         Me.ResumeLayout(False)
 
@@ -494,5 +568,15 @@ Partial Class Dashboard
     Friend WithEvents lblThisPcCounterName As Label
     Friend WithEvents Button4 As Button
     Friend WithEvents Button1 As Button
-    Friend WithEvents Label2 As Label
+    Friend WithEvents TabControl1 As TabControl
+    Friend WithEvents TabPage1 As TabPage
+    Friend WithEvents DoctorSheds_lv As ListView
+    Friend WithEvents ColumnHeader1 As ColumnHeader
+    Friend WithEvents ColumnHeader2 As ColumnHeader
+    Friend WithEvents ColumnHeader3 As ColumnHeader
+    Friend WithEvents ColumnHeader4 As ColumnHeader
+    Friend WithEvents ColumnHeader5 As ColumnHeader
+    Friend WithEvents ColumnHeader6 As ColumnHeader
+    Friend WithEvents ColumnHeader7 As ColumnHeader
+    Friend WithEvents ColumnHeader8 As ColumnHeader
 End Class

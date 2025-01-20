@@ -82,7 +82,7 @@ Partial Class frmSelectConsultant
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(66, Byte), Integer))
         Me.Label1.Location = New System.Drawing.Point(8, 16)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(78, 16)
+        Me.Label1.Size = New System.Drawing.Size(77, 16)
         Me.Label1.TabIndex = 61
         Me.Label1.Text = "AVAILABILITY"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -96,7 +96,7 @@ Partial Class frmSelectConsultant
         Me.Label6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(61, Byte), Integer), CType(CType(66, Byte), Integer))
         Me.Label6.Location = New System.Drawing.Point(455, 16)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(95, 16)
+        Me.Label6.Size = New System.Drawing.Size(94, 16)
         Me.Label6.TabIndex = 60
         Me.Label6.Text = "FIND PHYSICIAN"
         Me.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -142,7 +142,7 @@ Partial Class frmSelectConsultant
         DataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black
         DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
         Me.dgvDoctorsList.DefaultCellStyle = DataGridViewCellStyle2
-        Me.dgvDoctorsList.Location = New System.Drawing.Point(3, 44)
+        Me.dgvDoctorsList.Location = New System.Drawing.Point(4, 44)
         Me.dgvDoctorsList.Name = "dgvDoctorsList"
         Me.dgvDoctorsList.ReadOnly = True
         Me.dgvDoctorsList.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken

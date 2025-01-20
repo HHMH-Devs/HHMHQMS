@@ -16,7 +16,7 @@
     Public S2No As String
     Public SignatureLocation As String
     Public PhysicianID As String
-    Public AccountType As String
+    Public AccountType As Integer
     Public Username As String
     Public Pasaword As String
     Public CounterAssignNumber As Integer

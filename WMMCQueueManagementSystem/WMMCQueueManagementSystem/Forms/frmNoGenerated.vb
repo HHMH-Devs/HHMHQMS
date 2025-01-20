@@ -1,15 +1,21 @@
-﻿Public Class frmNoGenerated
+﻿Imports System.Drawing.Imaging
+Imports System.IO
+Imports Spire.Barcode
+
+Public Class frmNoGenerated
     Private _ticketNumber As String = ""
     Private _patientName As String = ""
     Private _counterName As String = ""
     Private _notes As String = ""
+    Private _fk_emdPatients As String = ""
 
-    Sub New(ticketNumber As String, patientName As String, counterName As String, notes As String)
+    Sub New(ticketNumber As String, patientName As String, counterName As String, notes As String, fkemdpat As String)
         InitializeComponent()
         _ticketNumber = ticketNumber
         _patientName = patientName
         _counterName = counterName
         _notes = notes
+        _fk_emdPatients = fkemdpat
     End Sub
 
 
@@ -27,12 +33,31 @@
                 Dim reportDocs As New ticketNoReport
                 Dim dt As New DataTable
                 With dt.Columns
-                    .Add("ticketNo")
-                    .Add("patName")
-                    .Add("counter")
-                    .Add("note")
+                    .Add("ticketNo", GetType(String))
+                    .Add("patName", GetType(String))
+                    .Add("counter", GetType(String))
+                    .Add("note", GetType(String))
+                    .Add("Barcode", GetType(Byte()))
                 End With
-                dt.Rows.Add(_ticketNumber, _patientName, _counterName, _notes)
+
+                Dim customer = New CustomerController
+                Dim id = customer.GetPatID(_fk_emdPatients)
+
+                Dim bs As New BarcodeSettings With {
+                    .Type = BarCodeType.Code128,
+                    .Data = id,
+                    .AutoResize = True,
+                    .CodabarStartChar = CodabarChar.A,
+                    .CodabarStopChar = CodabarChar.A,
+                    .ShowText = False,
+                    .ShowStartCharAndStopChar = False
+                }
+
+                Dim bg = New BarCodeGenerator(bs)
+                Dim image = bg.GenerateImage()
+                Dim imageData = ToByteArray(image)
+
+                dt.Rows.Add(_ticketNumber, _patientName, _counterName, _notes, imageData)
                 reportDocs.SetDataSource(dt)
                 reportDocs.PrintToPrinter(1, False, 0, 0)
                 reportDocs.Close()
@@ -43,4 +68,11 @@
             End Try
         End If
     End Sub
+
+    Private Function ToByteArray(img As Image) As Byte()
+        Using ms As New MemoryStream
+            img.Save(ms, ImageFormat.Png)
+            Return ms.ToArray()
+        End Using
+    End Function
 End Class
